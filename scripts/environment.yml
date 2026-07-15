@@ -1,0 +1,10 @@
+name: crate
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+    - requests>=2.28.0
+    - bia-ro-crate-validator

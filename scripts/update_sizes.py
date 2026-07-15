@@ -21,20 +21,15 @@ def main():
         description="Update the size column in a BIA file_list.tsv from zarr directories on disk."
     )
     parser.add_argument("file_list", help="Path to file_list.tsv")
-    parser.add_argument(
-        "--base-dir",
-        "-b",
-        default=".",
-        help="Base directory containing the zarr directories (default: .)",
-    )
     args = parser.parse_args()
 
+    base_dir = os.path.dirname(os.path.abspath(args.file_list))
     rows = []
     with open(args.file_list, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
         fieldnames = reader.fieldnames
         for row in reader:
-            zarr_path = os.path.join(args.base_dir, row["path"])
+            zarr_path = os.path.join(base_dir, row["path"])
             if os.path.isdir(zarr_path):
                 row["size"] = str(dir_size(zarr_path))
             else:

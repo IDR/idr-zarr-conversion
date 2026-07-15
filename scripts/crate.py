@@ -93,14 +93,34 @@ def get_annotations(container_type: str, container_id: int) -> dict:
     return result
 
 
-def find_container(study_id: str):
+def find_containers(study_id: str) -> list:
+    study_id_lower = study_id.lower()
+    matches = []
     for screen in idr_get("/m/screens/").get("data", []):
-        if study_id.lower() in screen["Name"].lower():
-            return "screen", screen
+        if study_id_lower in screen["Name"].lower():
+            matches.append(("screen", screen))
     for project in idr_get("/m/projects/").get("data", []):
-        if study_id.lower() in project["Name"].lower():
-            return "project", project
-    return None, None
+        if study_id_lower in project["Name"].lower():
+            matches.append(("project", project))
+    return matches
+
+
+def choose_container(matches: list):
+    if len(matches) == 1:
+        return matches[0]
+
+    print("Multiple matching containers found:")
+    for index, (container_type, container) in enumerate(matches, start=1):
+        print(f"  {index}. [{container_type}] {container['Name']}")
+
+    while True:
+        try:
+            choice = int(input(f"Choose a container [1-{len(matches)}]: "))
+        except ValueError:
+            choice = 0
+        if 1 <= choice <= len(matches):
+            return matches[choice - 1]
+        print("Invalid selection.", file=sys.stderr)
 
 
 def get_image_path(image_id: int) -> str:
@@ -206,9 +226,10 @@ def build_crate(container_type: str, container: dict, output_dir: str):
             image_entity = {
                 "@id": entity_id,
                 "@type": ["File", "bia:Image"],
-                "name": zarr_path,
+                "name": zarr,
                 "description": image.get("Description") or "",
                 "memberOf": [{"@id": dataset_id}],
+                "_zarr_path": zarr_path,
             }
             image_entities.append(image_entity)
             dataset_images.append({"@id": entity_id})
@@ -282,7 +303,7 @@ def build_crate(container_type: str, container: dict, output_dir: str):
     file_list_rows = []
     for img in image_entities:
         file_list_rows.append({
-            "path": img["name"],
+            "path": img.pop("_zarr_path"),
             "size": "",
             "dataset": img["memberOf"][0]["@id"],
             "biostudies_type": "file",
@@ -337,14 +358,17 @@ def main():
         description="Generate a BIA-compliant RO-Crate from an IDR study."
     )
     parser.add_argument("study_id", help="Study ID to search for, e.g. idr0027")
+    parser.add_argument("output_dir", help="Base output directory, e.g. /data/output")
     args = parser.parse_args()
 
-    container_type, container = find_container(args.study_id)
-    if container is None:
+    matches = find_containers(args.study_id)
+    if not matches:
         print(f"No screen or project found matching '{args.study_id}'", file=sys.stderr)
         sys.exit(1)
-    print(f"Found {container_type}: {container['Name']}")
-    build_crate(container_type, container, args.study_id)
+    container_type, container = choose_container(matches)
+    print(f"Selected {container_type}: {container['Name']}")
+    output_path = os.path.join(args.output_dir, container["Name"])
+    build_crate(container_type, container, output_path)
 
 
 if __name__ == "__main__":

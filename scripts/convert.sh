@@ -30,7 +30,7 @@ if [[ ! -f "$input_file" ]]; then
 fi
 
 if [[ -z "$id" ]]; then
-    read -rp "Enter ID (e.g. idr0123): " id
+    read -rp "Enter ID (e.g. idr0027-dickerson-chromatin/experimentA): " id
 fi
 
 total=$(wc -l < "$input_file")

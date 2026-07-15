@@ -84,6 +84,10 @@
                 "@id": "bia:experimentalVariableDescription",
                 "@container": "@set"
             },
+            "extrinsicVariableDescription": {
+                "@id": "bia:extrinsicVariableDescription",
+                "@container": "@set"
+            },
             "fbbiId": {
                 "@id": "bia:fbbiId",
                 "@container": "@set"
@@ -95,6 +99,9 @@
             "funding": {
                 "@id": "schema:funding",
                 "@container": "@set"
+            },
+            "growthProtocol": {
+                "@id": "bia:growthProtocol"
             },
             "hasPart": {
                 "@id": "schema:hasPart",
@@ -951,11 +958,6 @@
             "funding": [],
             "seeAlso": [],
             "pubmedId": "27609610",
-            "organismClassification": [
-                {
-                    "@id": "#organism-1"
-                }
-            ],
             "imagingMethodName": [
                 "fluorescence microscopy"
             ]
@@ -973,6 +975,21 @@
             "@type": "bia:Taxon",
             "scientificName": "Saccharomyces cerevisiae",
             "commonName": null
+        },
+        {
+            "@id": "#Biosample-1",
+            "@type": "bia:BioSample",
+            "name": "Saccharomyces cerevisiae",
+            "description": "Saccharomyces cerevisiae",
+            "experimentalVariableDescription": [],
+            "extrinsicVariableDescription": [],
+            "intrinsicVariableDescription": [],
+            "organismClassification": [
+                {
+                    "@id": "#organism-1"
+                }
+            ],
+            "growthProtocol": null
         },
         {
             "@id": "_:ts0",
@@ -1329,7 +1346,11 @@
                     "@id": "#Image-2858396"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1446,7 +1467,11 @@
                     "@id": "#Image-2858348"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1503,7 +1528,11 @@
                     "@id": "#Image-2858205"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1584,7 +1613,11 @@
                     "@id": "#Image-2858221"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1683,7 +1716,11 @@
                     "@id": "#Image-2858244"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1806,7 +1843,11 @@
                     "@id": "#Image-2858274"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1929,7 +1970,11 @@
                     "@id": "#Image-2858308"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,
@@ -1986,7 +2031,11 @@
                     "@id": "#Image-2858331"
                 }
             ],
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": null,
             "associatedCreationProcess": null,

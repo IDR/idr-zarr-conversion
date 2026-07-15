@@ -36,9 +36,11 @@ BIA_CONTEXT = {
     "doi": {"@id": "bia:doi"},
     "email": {"@id": "schema:email"},
     "experimentalVariableDescription": {"@id": "bia:experimentalVariableDescription", "@container": "@set"},
+    "extrinsicVariableDescription": {"@id": "bia:extrinsicVariableDescription", "@container": "@set"},
     "fbbiId": {"@id": "bia:fbbiId", "@container": "@set"},
     "funder": {"@id": "schema:funder", "@container": "@set"},
     "funding": {"@id": "schema:funding", "@container": "@set"},
+    "growthProtocol": {"@id": "bia:growthProtocol"},
     "hasPart": {"@id": "schema:hasPart", "@container": "@set"},
     "identifier": {"@id": "schema:identifier"},
     "imagingInstrumentDescription": {"@id": "bia:imagingInstrumentDescription"},
@@ -94,33 +96,14 @@ def get_annotations(container_type: str, container_id: int) -> dict:
 
 
 def find_containers(study_id: str) -> list:
-    study_id_lower = study_id.lower()
     matches = []
     for screen in idr_get("/m/screens/").get("data", []):
-        if study_id_lower in screen["Name"].lower():
+        if screen["Name"] == study_id:
             matches.append(("screen", screen))
     for project in idr_get("/m/projects/").get("data", []):
-        if study_id_lower in project["Name"].lower():
+        if project["Name"] == study_id:
             matches.append(("project", project))
     return matches
-
-
-def choose_container(matches: list):
-    if len(matches) == 1:
-        return matches[0]
-
-    print("Multiple matching containers found:")
-    for index, (container_type, container) in enumerate(matches, start=1):
-        print(f"  {index}. [{container_type}] {container['Name']}")
-
-    while True:
-        try:
-            choice = int(input(f"Choose a container [1-{len(matches)}]: "))
-        except ValueError:
-            choice = 0
-        if 1 <= choice <= len(matches):
-            return matches[choice - 1]
-        print("Invalid selection.", file=sys.stderr)
 
 
 def get_image_path(image_id: int) -> str:
@@ -241,7 +224,7 @@ def build_crate(container_type: str, container: dict, output_dir: str):
             "name": child["Name"],
             "description": child.get("Description") or "",
             "hasPart": dataset_images,
-            "associatedBiologicalEntity": [],
+            "associatedBiologicalEntity": [{"@id": "#Biosample-1"}] if organism else [],
             "associatedSpecimenImagingPreparationProtocol": [],
             "associatedSpecimen": None,
             "associatedCreationProcess": None,
@@ -274,8 +257,6 @@ def build_crate(container_type: str, container: dict, output_dir: str):
     }
     if pubmed_id:
         root_entity["pubmedId"] = pubmed_id
-    if organism:
-        root_entity["organismClassification"] = [{"@id": f"#organism-1"}]
     if imaging_method:
         root_entity["imagingMethodName"] = [imaging_method]
 
@@ -297,6 +278,17 @@ def build_crate(container_type: str, container: dict, output_dir: str):
             "@type": "bia:Taxon",
             "scientificName": organism,
             "commonName": None,
+        })
+        graph.append({
+            "@id": "#Biosample-1",
+            "@type": "bia:BioSample",
+            "name": organism,
+            "description": organism,
+            "experimentalVariableDescription": [],
+            "extrinsicVariableDescription": [],
+            "intrinsicVariableDescription": [],
+            "organismClassification": [{"@id": "#organism-1"}],
+            "growthProtocol": None,
         })
 
     file_list_name = "file_list.tsv"
@@ -357,16 +349,23 @@ def main():
     parser = argparse.ArgumentParser(
         description="Generate a BIA-compliant RO-Crate from an IDR study."
     )
-    parser.add_argument("study_id", help="Study ID to search for, e.g. idr0027")
+    parser.add_argument(
+        "study_id",
+        help="Exact full container name, e.g. idr0027-dickerson-chromatin/experimentA",
+    )
     parser.add_argument("output_dir", help="Base output directory, e.g. /data/output")
     args = parser.parse_args()
 
     matches = find_containers(args.study_id)
-    if not matches:
-        print(f"No screen or project found matching '{args.study_id}'", file=sys.stderr)
+    if len(matches) != 1:
+        print(
+            f"Expected exactly one screen or project named '{args.study_id}', "
+            f"found {len(matches)}",
+            file=sys.stderr,
+        )
         sys.exit(1)
-    container_type, container = choose_container(matches)
-    print(f"Selected {container_type}: {container['Name']}")
+    container_type, container = matches[0]
+    print(f"Found {container_type}: {container['Name']}")
     output_path = os.path.join(args.output_dir, container["Name"])
     build_crate(container_type, container, output_path)
 

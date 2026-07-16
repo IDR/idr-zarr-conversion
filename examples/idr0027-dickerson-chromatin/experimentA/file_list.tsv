@@ -1,0 +1,230 @@
+path	size	dataset	biostudies_type
+Colocalising/aaa_upper_rr_lower_ALX.ome.zarr	130244616	#Dataset-408	file
+Colocalising/aaa_upper_rr_lower.ome.zarr	64801832	#Dataset-408	file
+Colocalising/bb_upper_aa_lower_ALX.ome.zarr	145194942	#Dataset-408	file
+Colocalising/bb_upper_aa_lower.ome.zarr	64670632	#Dataset-408	file
+Colocalising/b_lower_ALX.ome.zarr	165447363	#Dataset-408	file
+Colocalising/b_lower.ome.zarr	79416066	#Dataset-408	file
+Colocalising/dd_lower_ALX.ome.zarr	140654339	#Dataset-408	file
+Colocalising/dd_lower.ome.zarr	64437033	#Dataset-408	file
+Colocalising/e_upper_h_lower_ALX.ome.zarr	133399289	#Dataset-408	file
+Colocalising/e_upper_h_lower.ome.zarr	64592181	#Dataset-408	file
+Colocalising/ff_upper_ee_lower_ALX.ome.zarr	141639630	#Dataset-408	file
+Colocalising/ff_upper_ee_lower.ome.zarr	64752206	#Dataset-408	file
+Colocalising/f_upper_d_lower_ALX.ome.zarr	133832817	#Dataset-408	file
+Colocalising/f_upper_d_lower.ome.zarr	64620373	#Dataset-408	file
+Colocalising/gg_upper_cc_lower_ALX.ome.zarr	140722513	#Dataset-408	file
+Colocalising/gg_upper_cc_lower.ome.zarr	64737039	#Dataset-408	file
+Colocalising/g_upper_c_lower_ALX.ome.zarr	164479110	#Dataset-408	file
+Colocalising/g_upper_c_lower.ome.zarr	79815576	#Dataset-408	file
+Colocalising/ii_upper_hh_lower_ALX.ome.zarr	142354895	#Dataset-408	file
+Colocalising/ii_upper_hh_lower.ome.zarr	64633625	#Dataset-408	file
+Colocalising/i_upper_a_lower_ALX.ome.zarr	167008954	#Dataset-408	file
+Colocalising/i_upper_a_lower.ome.zarr	79799948	#Dataset-408	file
+Colocalising/kk_upper_mm_lower_ALX.ome.zarr	167180383	#Dataset-408	file
+Colocalising/kk_upper_mm_lower.ome.zarr	79858447	#Dataset-408	file
+Colocalising/k_upper_ALX.ome.zarr	64547469	#Dataset-408	file
+Colocalising/k_upper.ome.zarr	32219511	#Dataset-408	file
+Colocalising/ll_lower_ALX.ome.zarr	167240170	#Dataset-408	file
+Colocalising/ll_lower.ome.zarr	79502897	#Dataset-408	file
+Colocalising/m_upper_s_lower_ALX.ome.zarr	132991009	#Dataset-408	file
+Colocalising/n_upper_ALX.ome.zarr	134177230	#Dataset-408	file
+Colocalising/oo_upper_nn_lower_ALX.ome.zarr	168687615	#Dataset-408	file
+Colocalising/oo_upper_nn_lower.ome.zarr	80005092	#Dataset-408	file
+Colocalising/o_upper_q_lower_ALX.ome.zarr	64590726	#Dataset-408	file
+Colocalising/o_upper_q_lower.ome.zarr	32353787	#Dataset-408	file
+Colocalising/pp_upper_jj_lower_ALX.ome.zarr	66022371	#Dataset-408	file
+Colocalising/pp_upper_jj_lower.ome.zarr	32346695	#Dataset-408	file
+Colocalising/p_upper_l_lower_ALX.ome.zarr	131688149	#Dataset-408	file
+Colocalising/p_upper_l_lower.ome.zarr	64675235	#Dataset-408	file
+Colocalising/qq_upper_ALX.ome.zarr	170563415	#Dataset-408	file
+Colocalising/qq_upper.ome.zarr	79515757	#Dataset-408	file
+Colocalising/r_upper_ALX.ome.zarr	67374532	#Dataset-408	file
+Colocalising/r_upper.ome.zarr	32216059	#Dataset-408	file
+Colocalising/t_lower_ALX.ome.zarr	67279709	#Dataset-408	file
+Colocalising/tt_upper_ss_lower_ALX.ome.zarr	131156605	#Dataset-408	file
+Colocalising/tt_upper_ss_lower.ome.zarr	64764197	#Dataset-408	file
+Colocalising/u_upper_ALX.ome.zarr	133404515	#Dataset-408	file
+Colocalising/v_upper_j_lower_ALX.ome.zarr	65838559	#Dataset-408	file
+Colocalising/v_upper_j_lower.ome.zarr	32352064	#Dataset-408	file
+Colocalising/vv_upper_yy_lower_ALX.ome.zarr	132937436	#Dataset-408	file
+Colocalising/vv_upper_yy_lower.ome.zarr	64764079	#Dataset-408	file
+Colocalising/w_upper_ALX.ome.zarr	134695917	#Dataset-408	file
+Colocalising/ww_upper_uu_lower_ALX.ome.zarr	133340273	#Dataset-408	file
+Colocalising/ww_upper_uu_lower.ome.zarr	64769519	#Dataset-408	file
+Colocalising/x_lower_ALX.ome.zarr	145366824	#Dataset-408	file
+Colocalising/x_lower.ome.zarr	64417073	#Dataset-408	file
+Colocalising/xx_upper_zz_lower_ALX.ome.zarr	130607658	#Dataset-408	file
+Colocalising/xx_upper_zz_lower.ome.zarr	64775042	#Dataset-408	file
+Colocalising/z_upper_y_lower_ALX.ome.zarr	144090961	#Dataset-408	file
+Colocalising/z_upper_y_lower.ome.zarr	64610539	#Dataset-408	file
+Genomic separation 100kb/aa_upper_x_lower_ALX.ome.zarr	138584083	#Dataset-407	file
+Genomic separation 100kb/aa_upper_x_lower.ome.zarr	64550767	#Dataset-407	file
+Genomic separation 100kb/ee_upper_cc_lower_ALX.ome.zarr	131335887	#Dataset-407	file
+Genomic separation 100kb/ee_upper_cc_lower.ome.zarr	64699565	#Dataset-407	file
+Genomic separation 100kb/gg_upper_ff_lower_ALX.ome.zarr	129993539	#Dataset-407	file
+Genomic separation 100kb/gg_upper_ff_lower.ome.zarr	64712430	#Dataset-407	file
+Genomic separation 100kb/hh_upper_dd_lower_ALX.ome.zarr	132645940	#Dataset-407	file
+Genomic separation 100kb/hh_upper_dd_lower.ome.zarr	64665488	#Dataset-407	file
+Genomic separation 100kb/i_upper_n_lower_ALX.ome.zarr	133947256	#Dataset-407	file
+Genomic separation 100kb/i_upper_n_lower.ome.zarr	64535937	#Dataset-407	file
+Genomic separation 100kb/j_upper_k_lower_ALX.ome.zarr	134352557	#Dataset-407	file
+Genomic separation 100kb/j_upper_k_lower.ome.zarr	64529605	#Dataset-407	file
+Genomic separation 100kb/l_lower_ALX.ome.zarr	66577975	#Dataset-407	file
+Genomic separation 100kb/l_lower.ome.zarr	32080277	#Dataset-407	file
+Genomic separation 100kb/m_lower_ALX.ome.zarr	135553467	#Dataset-407	file
+Genomic separation 100kb/m_lower.ome.zarr	64327246	#Dataset-407	file
+Genomic separation 100kb/q_lower_ALX.ome.zarr	64963276	#Dataset-407	file
+Genomic separation 100kb/q_lower.ome.zarr	32205367	#Dataset-407	file
+Genomic separation 100kb/r_upper_p_lower_ALX.ome.zarr	132463045	#Dataset-407	file
+Genomic separation 100kb/r_upper_p_lower.ome.zarr	64410839	#Dataset-407	file
+Genomic separation 100kb/s_lower_ALX.ome.zarr	136681278	#Dataset-407	file
+Genomic separation 100kb/s_lower.ome.zarr	64303275	#Dataset-407	file
+Genomic separation 100kb/t_lower_ALX.ome.zarr	132675823	#Dataset-407	file
+Genomic separation 100kb/t_lower.ome.zarr	64163274	#Dataset-407	file
+Genomic separation 100kb/u_upper_o_lower_ALX.ome.zarr	69135937	#Dataset-407	file
+Genomic separation 100kb/u_upper_o_lower.ome.zarr	32196880	#Dataset-407	file
+Genomic separation 100kb/w_upper_v_lower_ALX.ome.zarr	140738992	#Dataset-407	file
+Genomic separation 100kb/w_upper_v_lower.ome.zarr	64337131	#Dataset-407	file
+Genomic separation 100kb/y_upper_bb_lower_ALX.ome.zarr	137272599	#Dataset-407	file
+Genomic separation 100kb/y_upper_bb_lower.ome.zarr	64524826	#Dataset-407	file
+Genomic separation 100kb/z_upper_ALX.ome.zarr	142071752	#Dataset-407	file
+Genomic separation 100kb/z_upper.ome.zarr	64008931	#Dataset-407	file
+Genomic separation 25kb/a_upper_b_lower_ALX.ome.zarr	141490190	#Dataset-401	file
+Genomic separation 25kb/a_upper_b_lower.ome.zarr	64689551	#Dataset-401	file
+Genomic separation 25kb/c_upper_d_lower_ALX.ome.zarr	173463155	#Dataset-401	file
+Genomic separation 25kb/c_upper_d_lower.ome.zarr	79913057	#Dataset-401	file
+Genomic separation 25kb/e_upper_ALX.ome.zarr	66462804	#Dataset-401	file
+Genomic separation 25kb/e_upper.ome.zarr	32217842	#Dataset-401	file
+Genomic separation 25kb/f_lower_ALX.ome.zarr	68396296	#Dataset-401	file
+Genomic separation 25kb/f_lower.ome.zarr	32214133	#Dataset-401	file
+Genomic separation 25kb/h_upper_g_lower_ALX.ome.zarr	68886973	#Dataset-401	file
+Genomic separation 25kb/h_upper_g_lower.ome.zarr	32350196	#Dataset-401	file
+Genomic separation 25kb/j_upper_i_lower_ALX.ome.zarr	68615239	#Dataset-401	file
+Genomic separation 25kb/j_upper_i_lower.ome.zarr	32350174	#Dataset-401	file
+Genomic separation 42kb/bb_upper_aa_lower__ALX.ome.zarr	147757775	#Dataset-402	file
+Genomic separation 42kb/bb_upper_aa_lower.ome.zarr	64760809	#Dataset-402	file
+Genomic separation 42kb/m_upper_l_lower_ALX.ome.zarr	176001849	#Dataset-402	file
+Genomic separation 42kb/m_upper_l_lower.ome.zarr	79910773	#Dataset-402	file
+Genomic separation 42kb/o_upper_k_lower_ALX.ome.zarr	176556806	#Dataset-402	file
+Genomic separation 42kb/o_upper_k_lower.ome.zarr	79911881	#Dataset-402	file
+Genomic separation 42kb/q_upper_p_lower_ALX.ome.zarr	139371018	#Dataset-402	file
+Genomic separation 42kb/q_upper_p_lower.ome.zarr	64542465	#Dataset-402	file
+Genomic separation 42kb/r_upper_n_lower_ALX.ome.zarr	175114820	#Dataset-402	file
+Genomic separation 42kb/r_upper_n_lower.ome.zarr	79912315	#Dataset-402	file
+Genomic separation 42kb/s_lower_ALX.ome.zarr	138306259	#Dataset-402	file
+Genomic separation 42kb/s_lower.ome.zarr	64445321	#Dataset-402	file
+Genomic separation 42kb/u_upper_w_lower_ALX.ome.zarr	68266050	#Dataset-402	file
+Genomic separation 42kb/u_upper_w_lower.ome.zarr	32726316	#Dataset-402	file
+Genomic separation 42kb/v_upper_t_lower_ALX.ome.zarr	67705712	#Dataset-402	file
+Genomic separation 42kb/v_upper_t_lower.ome.zarr	32366861	#Dataset-402	file
+Genomic separation 42kb/x_upper_z_lower_ALX.ome.zarr	142068433	#Dataset-402	file
+Genomic separation 42kb/x_upper_z_lower.ome.zarr	64689911	#Dataset-402	file
+Genomic separation 42kb/y_upper_ALX.ome.zarr	145027273	#Dataset-402	file
+Genomic separation 42kb/y_upper.ome.zarr	64457834	#Dataset-402	file
+Genomic separation 51kb/cc_lower_ALX.ome.zarr	173443769	#Dataset-403	file
+Genomic separation 51kb/cc_lower.ome.zarr	79618459	#Dataset-403	file
+Genomic separation 51kb/dd_lower_ALX.ome.zarr	68143993	#Dataset-403	file
+Genomic separation 51kb/dd_lower.ome.zarr	32244132	#Dataset-403	file
+Genomic separation 51kb/gg_upper_ee_lower_ALX.ome.zarr	130938416	#Dataset-403	file
+Genomic separation 51kb/gg_upper_ee_lower.ome.zarr	64771183	#Dataset-403	file
+Genomic separation 51kb/hh_upper_ff_lower_ALX.ome.zarr	67482497	#Dataset-403	file
+Genomic separation 51kb/hh_upper_ff_lower.ome.zarr	32470481	#Dataset-403	file
+Genomic separation 51kb/ii_upper_oo_lower_ALX.ome.zarr	146477079	#Dataset-403	file
+Genomic separation 51kb/ii_upper_oo_lower.ome.zarr	64758505	#Dataset-403	file
+Genomic separation 51kb/kk_upper_jj_lower_ALX.ome.zarr	143329795	#Dataset-403	file
+Genomic separation 51kb/kk_upper_jj_lower.ome.zarr	64757553	#Dataset-403	file
+Genomic separation 51kb/mm_upper_ll_lower_ALX.ome.zarr	141858258	#Dataset-403	file
+Genomic separation 51kb/mm_upper_ll_lower.ome.zarr	64757526	#Dataset-403	file
+Genomic separation 51kb/nn_upper_ALX.ome.zarr	144906239	#Dataset-403	file
+Genomic separation 51kb/nn_upper.ome.zarr	64452542	#Dataset-403	file
+Genomic separation 51kb/pp_upper_tt_lower_ALX.ome.zarr	174402976	#Dataset-403	file
+Genomic separation 51kb/pp_upper_tt_lower.ome.zarr	79997032	#Dataset-403	file
+Genomic separation 51kb/rr_lower_ALX.ome.zarr	143886704	#Dataset-403	file
+Genomic separation 51kb/rr_lower.ome.zarr	64444920	#Dataset-403	file
+Genomic separation 51kb/ss_upper_ALX.ome.zarr	144271756	#Dataset-403	file
+Genomic separation 51kb/ss_upper.ome.zarr	64446196	#Dataset-403	file
+Genomic separation 51kb/uu_upper_qq_lower_ALX.ome.zarr	144688784	#Dataset-403	file
+Genomic separation 51kb/uu_upper_qq_lower.ome.zarr	64754535	#Dataset-403	file
+Genomic separation 51kb/vv_upper_ALX.ome.zarr	144296673	#Dataset-403	file
+Genomic separation 51kb/vv_upper.ome.zarr	64451111	#Dataset-403	file
+Genomic separation 64kb/a_upper_d_lower_ALX.ome.zarr	171319121	#Dataset-404	file
+Genomic separation 64kb/a_upper_d_lower.ome.zarr	79912843	#Dataset-404	file
+Genomic separation 64kb/bb_upper_x_lower_ALX.ome.zarr	144493395	#Dataset-404	file
+Genomic separation 64kb/bb_upper_x_lower.ome.zarr	64716579	#Dataset-404	file
+Genomic separation 64kb/b_upper_c_lower_ALX.ome.zarr	169701412	#Dataset-404	file
+Genomic separation 64kb/b_upper_c_lower.ome.zarr	79906168	#Dataset-404	file
+Genomic separation 64kb/cc_lower_ALX.ome.zarr	178414048	#Dataset-404	file
+Genomic separation 64kb/cc_lower.ome.zarr	79615804	#Dataset-404	file
+Genomic separation 64kb/dd_upper_y_lower_ALX.ome.zarr	177542923	#Dataset-404	file
+Genomic separation 64kb/dd_upper_y_lower.ome.zarr	79955017	#Dataset-404	file
+Genomic separation 64kb/e_upper_ALX.ome.zarr	136013231	#Dataset-404	file
+Genomic separation 64kb/e_upper.ome.zarr	64315705	#Dataset-404	file
+Genomic separation 64kb/g_upper_f_lower_ALX.ome.zarr	131742738	#Dataset-404	file
+Genomic separation 64kb/g_upper_f_lower.ome.zarr	64690299	#Dataset-404	file
+Genomic separation 64kb/h_upper_ALX.ome.zarr	67449087	#Dataset-404	file
+Genomic separation 64kb/h_upper.ome.zarr	32293420	#Dataset-404	file
+Genomic separation 64kb/i_upper_j_lower_ALX.ome.zarr	66364396	#Dataset-404	file
+Genomic separation 64kb/i_upper_j_lower.ome.zarr	32352385	#Dataset-404	file
+Genomic separation 64kb/m_upper_l_lower_ALX.ome.zarr	66028216	#Dataset-404	file
+Genomic separation 64kb/m_upper_l_lower.ome.zarr	32353025	#Dataset-404	file
+Genomic separation 64kb/n_upper_k_lower_ALX.ome.zarr	66410747	#Dataset-404	file
+Genomic separation 64kb/n_upper_k_lower.ome.zarr	32357487	#Dataset-404	file
+Genomic separation 64kb/o_upper_r_lower_ALX.ome.zarr	143250516	#Dataset-404	file
+Genomic separation 64kb/o_upper_r_lower.ome.zarr	64690225	#Dataset-404	file
+Genomic separation 64kb/p_upper_q_lower_ALX.ome.zarr	146158256	#Dataset-404	file
+Genomic separation 64kb/p_upper_q_lower.ome.zarr	64689605	#Dataset-404	file
+Genomic separation 64kb/s_upper_v_lower_ALX.ome.zarr	148039456	#Dataset-404	file
+Genomic separation 64kb/s_upper_v_lower.ome.zarr	64689319	#Dataset-404	file
+Genomic separation 64kb/u_upper_t_lower_ALX.ome.zarr	147160624	#Dataset-404	file
+Genomic separation 64kb/u_upper_t_lower.ome.zarr	64689350	#Dataset-404	file
+Genomic separation 64kb/w_upper_aa_lower_ALX.ome.zarr	178748457	#Dataset-404	file
+Genomic separation 64kb/w_upper_aa_lower.ome.zarr	79949642	#Dataset-404	file
+Genomic separation 64kb/z_lower_ALX.ome.zarr	145159929	#Dataset-404	file
+Genomic separation 64kb/z_lower.ome.zarr	64413999	#Dataset-404	file
+Genomic separation 70kb/aaa_upper_ss_lower_ALX.ome.zarr	62441873	#Dataset-405	file
+Genomic separation 70kb/aaa_upper_ss_lower.ome.zarr	32403138	#Dataset-405	file
+Genomic separation 70kb/bbb_upper_zz_lower_ALX.ome.zarr	126391122	#Dataset-405	file
+Genomic separation 70kb/bbb_upper_zz_lower.ome.zarr	64795199	#Dataset-405	file
+Genomic separation 70kb/ddd_upper_ggg.ome.zarr	32319840	#Dataset-405	file
+Genomic separation 70kb/ddd_upper_ggg_lower_ALX.ome.zarr	66003422	#Dataset-405	file
+Genomic separation 70kb/eee_upper_vv_lower_ALX.ome.zarr	124841205	#Dataset-405	file
+Genomic separation 70kb/eee_upper_vv_lower.ome.zarr	64796121	#Dataset-405	file
+Genomic separation 70kb/fff_upper_ALX.ome.zarr	66163324	#Dataset-405	file
+Genomic separation 70kb/fff_upper.ome.zarr	32251790	#Dataset-405	file
+Genomic separation 70kb/ff_upper_ee_lower_ALX.ome.zarr	167426981	#Dataset-405	file
+Genomic separation 70kb/ff_upper_ee_lower.ome.zarr	80005478	#Dataset-405	file
+Genomic separation 70kb/gg_upper_ALX.ome.zarr	127141236	#Dataset-405	file
+Genomic separation 70kb/gg_upper.ome.zarr	64458354	#Dataset-405	file
+Genomic separation 70kb/hh_lower_ALX.ome.zarr	166116612	#Dataset-405	file
+Genomic separation 70kb/hh_lower.ome.zarr	79627463	#Dataset-405	file
+Genomic separation 70kb/ii_upper_nn_lower_ALX.ome.zarr	126194821	#Dataset-405	file
+Genomic separation 70kb/ii_upper_nn_lower.ome.zarr	64785252	#Dataset-405	file
+Genomic separation 70kb/jj_upper_pp_lower_ALX.ome.zarr	125349195	#Dataset-405	file
+Genomic separation 70kb/jj_upper_pp_lower.ome.zarr	64765742	#Dataset-405	file
+Genomic separation 70kb/kk_upper_ll_lower_ALX.ome.zarr	126110027	#Dataset-405	file
+Genomic separation 70kb/kk_upper_ll_lower.ome.zarr	64765737	#Dataset-405	file
+Genomic separation 70kb/qq_upper_mm_lower_ALX.ome.zarr	128106453	#Dataset-405	file
+Genomic separation 70kb/qq_upper_mm_lower.ome.zarr	64763585	#Dataset-405	file
+Genomic separation 70kb/rr_upper_oo_lower_ALX.ome.zarr	62294723	#Dataset-405	file
+Genomic separation 70kb/rr_upper_oo_lower.ome.zarr	32389797	#Dataset-405	file
+Genomic separation 70kb/tt_upper_ccc_lower_ALX.ome.zarr	65815420	#Dataset-405	file
+Genomic separation 70kb/tt_upper_ccc_lower.ome.zarr	32404807	#Dataset-405	file
+Genomic separation 70kb/ww_upper_ALX.ome.zarr	64303785	#Dataset-405	file
+Genomic separation 70kb/ww_upper.ome.zarr	32234795	#Dataset-405	file
+Genomic separation 70kb/xx_upper_uu_lower_ALX.ome.zarr	126668521	#Dataset-405	file
+Genomic separation 70kb/xx_upper_uu_lower.ome.zarr	64768158	#Dataset-405	file
+Genomic separation 70kb/yy_upper_ALX.ome.zarr	63392076	#Dataset-405	file
+Genomic separation 70kb/yy_upper.ome.zarr	32233781	#Dataset-405	file
+Genomic separation 71kb/63_014_FUS_ALX_unused.ome.zarr	137468549	#Dataset-406	file
+Genomic separation 71kb/63_014unused.ome.zarr	64494350	#Dataset-406	file
+Genomic separation 71kb/a_lower_ALX.ome.zarr	136729947	#Dataset-406	file
+Genomic separation 71kb/a_lower.ome.zarr	64415351	#Dataset-406	file
+Genomic separation 71kb/c_upper_b_lower_ALX.ome.zarr	68358063	#Dataset-406	file
+Genomic separation 71kb/c_upper_b_lower.ome.zarr	32347253	#Dataset-406	file
+Genomic separation 71kb/e_upper_d_lower_ALX.ome.zarr	67933075	#Dataset-406	file
+Genomic separation 71kb/e_upper_d_lower.ome.zarr	32324401	#Dataset-406	file
+Genomic separation 71kb/g_lower_ALX.ome.zarr	142798717	#Dataset-406	file
+Genomic separation 71kb/g_lower.ome.zarr	64417013	#Dataset-406	file
+Genomic separation 71kb/h_upper_f_lower_ALX.ome.zarr	145970753	#Dataset-406	file
+Genomic separation 71kb/h_upper_f_lower.ome.zarr	64466165	#Dataset-406	file

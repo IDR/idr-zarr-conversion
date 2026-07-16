@@ -1,0 +1,9 @@
+path	size	dataset	biostudies_type	Annotation type	sourceImage	Genotype/Line	Channel 1
+WD1.1_17-03_WT_MP_segmented.ome.zarr.zip	2959273	#Annotations-1	file	segmentation mask	WD1.1_17-03_WT_MP.ome.zarr.zip		
+WD1_15-02_WT_confocalonly_segmented.ome.zarr.zip	1056777	#Annotations-1	file	segmentation mask	WD1_15-02_WT_confocalonly.ome.zarr.zip		
+WD2.1_21-02_WT_confocalonly_segmented.ome.zarr.zip	958385	#Annotations-1	file	segmentation mask	WD2.1_21-02_WT_confocalonly.ome.zarr.zip		
+WD3.2_21-03_WT_MP_segmented.ome.zarr.zip	1728680	#Annotations-1	file	segmentation mask	WD3.2_21-03_WT_MP.ome.zarr.zip		
+WD1_15-02_WT_confocalonly.ome.zarr.zip	7933589	#Study%20Component-1	file			; ubiCAAX-GFP/+ ; neuPH-RFP/+	CAAX
+WD2.1_21-02_WT_confocalonly.ome.zarr.zip	8770186	#Study%20Component-1	file			; ubiCAAX-GFP/+ ; neuPH-RFP/+	CAAX
+WD1.1_17-03_WT_MP.ome.zarr.zip	24628037	#Study%20Component-2	file			; ubiCAAX-GFP/+ ; neuPH-RFP/+	CAAX
+WD3.2_21-03_WT_MP.ome.zarr.zip	13161534	#Study%20Component-2	file			; ubiCAAX-GFP/+ ; neuPH-RFP/+	CAAX

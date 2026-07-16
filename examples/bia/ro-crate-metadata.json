@@ -1,0 +1,694 @@
+{
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "@type": {
+                "@container": "@set"
+            },
+            "accessionId": {
+                "@id": "bia:accessionId"
+            },
+            "acknowledgement": {
+                "@id": "bia:acknowledgement"
+            },
+            "additionalType": {
+                "@id": "schema:additionalType"
+            },
+            "address": {
+                "@id": "schema:address"
+            },
+            "annotationCoverage": {
+                "@id": "bia:annotationCoverage"
+            },
+            "annotationCriteria": {
+                "@id": "bia:annotationCriteria"
+            },
+            "annotationMethod": {
+                "@id": "bia:annotationMethod",
+                "@container": "@set"
+            },
+            "annotationSourceIndicator": {
+                "@id": "bia:annotationSourceIndicator"
+            },
+            "associatedAnnotationMethod": {
+                "@id": "bia:associatedAnnotationMethod",
+                "@container": "@set"
+            },
+            "associatedBiologicalEntity": {
+                "@id": "bia:associatedBiologicalEntity",
+                "@container": "@set"
+            },
+            "associatedCreationProcess": {
+                "@id": "bia:associatedCreationProcess"
+            },
+            "associatedImageAcquisitionProtocol": {
+                "@id": "bia:associatedImageAcquisitionProtocol",
+                "@container": "@set"
+            },
+            "associatedImageAnalysisMethod": {
+                "@id": "bia:associatedAnalysisMethod",
+                "@container": "@set"
+            },
+            "associatedImageCorrelationMethod": {
+                "@id": "bia:associatedCorrelationMethod",
+                "@container": "@set"
+            },
+            "associatedProtocol": {
+                "@id": "bia:associatedProtocol",
+                "@container": "@set"
+            },
+            "associatedSourceImage": {
+                "@id": "bia:associatedSourceImage",
+                "@container": "@set"
+            },
+            "associatedSpecimen": {
+                "@id": "bia:associatedSubject"
+            },
+            "associatedSpecimenImagingPreparationProtocol": {
+                "@id": "bia:associatedImagingPreparationProtocol",
+                "@container": "@set"
+            },
+            "author": {
+                "@id": "schema:author",
+                "@container": "@set"
+            },
+            "authorNames": {
+                "@id": "bia:authorNames"
+            },
+            "bia": "http://bia/",
+            "biologicalEntity": {
+                "@id": "bia:sampleOf",
+                "@container": "@set"
+            },
+            "channelBiologicalEntity": {
+                "@id": "bia:channelBiologicalEntity"
+            },
+            "channelContentDescription": {
+                "@id": "bia:channelContentDescription"
+            },
+            "column": {
+                "@id": "csvw:column",
+                "@container": "@set"
+            },
+            "columnName": {
+                "@id": "csvw:name"
+            },
+            "commonName": {
+                "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+            },
+            "csvw": "http://www.w3.org/ns/csvw#",
+            "datePublished": {
+                "@id": "schema:datePublished"
+            },
+            "dc": "http://purl.org/dc/terms/",
+            "description": {
+                "@id": "schema:description"
+            },
+            "doi": {
+                "@id": "bia:doi"
+            },
+            "email": {
+                "@id": "schema:email"
+            },
+            "experimentalVariableDescription": {
+                "@id": "bia:experimentalVariableDescription",
+                "@container": "@set"
+            },
+            "extrinsicVariableDescription": {
+                "@id": "bia:extrinsicVariableDescription",
+                "@container": "@set"
+            },
+            "fbbiId": {
+                "@id": "bia:fbbiId",
+                "@container": "@set"
+            },
+            "featuresAnalysed": {
+                "@id": "bia:featuresAnalysed"
+            },
+            "fiducialsUsed": {
+                "@id": "bia:fiducialsUsed"
+            },
+            "funder": {
+                "@id": "schema:funder",
+                "@container": "@set"
+            },
+            "funding": {
+                "@id": "schema:funding",
+                "@container": "@set"
+            },
+            "growthProtocol": {
+                "@id": "bia:growthProtocol"
+            },
+            "hasPart": {
+                "@id": "schema:hasPart",
+                "@container": "@set"
+            },
+            "identifier": {
+                "@id": "schema:identifier"
+            },
+            "imageAcquisitionProtocol": {
+                "@id": "bia:imageAcquisitionProtocol",
+                "@container": "@set"
+            },
+            "imagingInstrumentDescription": {
+                "@id": "bia:imagingInstrumentDescription"
+            },
+            "imagingMethodName": {
+                "@id": "bia:imagingMethodName",
+                "@container": "@set"
+            },
+            "imagingPreparationProtocol": {
+                "@id": "bia:imagingPreparationProtocol",
+                "@container": "@set"
+            },
+            "inputImage": {
+                "@id": "bia:inputImage",
+                "@container": "@set"
+            },
+            "intrinsicVariableDescription": {
+                "@id": "bia:intrinsicVariableDescription",
+                "@container": "@set"
+            },
+            "keywords": {
+                "@id": "schema:keywords",
+                "@container": "@set"
+            },
+            "license": {
+                "@id": "schema:license"
+            },
+            "memberOf": {
+                "@id": "schema:memberOf",
+                "@container": "@set"
+            },
+            "methodType": {
+                "@id": "bia:annotationMethodType",
+                "@container": "@set"
+            },
+            "name": {
+                "@id": "schema:name"
+            },
+            "organismClassification": {
+                "@id": "schema:taxonomicRange",
+                "@container": "@set"
+            },
+            "propertyUrl": {
+                "@id": "csvw:propertyUrl"
+            },
+            "protocol": {
+                "@id": "bia:protocol",
+                "@container": "@set"
+            },
+            "pubmedId": {
+                "@id": "bia:pubmedId"
+            },
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "relatedPublication": {
+                "@id": "bia:relatedPublication",
+                "@container": "@set"
+            },
+            "resultOf": {
+                "@id": "bia:resultOf"
+            },
+            "role": {
+                "@id": "bia:role",
+                "@container": "@set"
+            },
+            "schema": "http://schema.org/",
+            "scientificName": {
+                "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+            },
+            "seeAlso": {
+                "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "@container": "@set"
+            },
+            "signalChannelInformation": {
+                "@id": "bia:signalChannelInformation",
+                "@container": "@set"
+            },
+            "signalContrastMechanismDescription": {
+                "@id": "bia:signalContrastMechanismDescription"
+            },
+            "spatialInformation": {
+                "@id": "bia:spatialInformation"
+            },
+            "subject": {
+                "@id": "bia:subject"
+            },
+            "tableSchema": {
+                "@id": "csvw:tableSchema"
+            },
+            "transformationDescription": {
+                "@id": "bia:transformationDescription"
+            },
+            "transformationMatrix": {
+                "@id": "bia:transformationMatrix"
+            },
+            "website": {
+                "@id": "bia:website"
+            },
+            "yearPublished": {
+                "@id": "bia:yearPublished"
+            }
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "./"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": [
+                "Dataset",
+                "bia:Study"
+            ],
+            "name": "3D cell shape of Drosophila Wing Disc",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0003-0565-4356"
+                },
+                {
+                    "@id": "#author-3"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0001-5402-7637"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0002-8722-4992"
+                }
+            ],
+            "description": "Individual 3D cell shapes of Drosophila Wing Disc",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "datePublished": "2023-08-14",
+            "keywords": [],
+            "acknowledgement": null,
+            "hasPart": [
+                {
+                    "@id": "#Annotations-1"
+                },
+                {
+                    "@id": "#Study%20Component-1"
+                },
+                {
+                    "@id": "#Study%20Component-2"
+                },
+                {
+                    "@id": "combined_file_list.tsv"
+                }
+            ],
+            "accessionId": "S-BIAD843",
+            "doi": null,
+            "seeAlso": [
+                {
+                    "@id": "https://www.ucl.ac.uk/lmcb/users/yanlan-mao"
+                }
+            ],
+            "relatedPublication": [],
+            "funding": []
+        },
+        {
+            "@id": "https://www.ucl.ac.uk/lmcb/users/yanlan-mao",
+            "@type": "bia:ExternalReference",
+            "description": "Lab website",
+            "additionalType": null
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-5402-7637",
+            "@type": [
+                "Person",
+                "bia:Contributor"
+            ],
+            "name": "Pablo Vicente Munuera",
+            "address": null,
+            "website": null,
+            "memberOf": [
+                {
+                    "@id": "#o1"
+                }
+            ],
+            "role": [
+                "submitter"
+            ],
+            "email": "p.munuera@ucl.ac.uk"
+        },
+        {
+            "@id": "#author-3",
+            "@type": [
+                "Person",
+                "bia:Contributor"
+            ],
+            "name": "Ines Fernandez Mosquera",
+            "address": null,
+            "website": null,
+            "memberOf": [
+                {
+                    "@id": "#o1"
+                }
+            ],
+            "role": [
+                "data acquisition",
+                "data annotator",
+                "data curator"
+            ],
+            "email": null
+        },
+        {
+            "@id": "https://orcid.org/0000-0003-0565-4356",
+            "@type": [
+                "Person",
+                "bia:Contributor"
+            ],
+            "name": "Giulia Paci",
+            "address": null,
+            "website": null,
+            "memberOf": [
+                {
+                    "@id": "#o1"
+                }
+            ],
+            "role": [
+                "data acquisition",
+                "data curator"
+            ],
+            "email": "g.paci@ucl.ac.uk"
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-8722-4992",
+            "@type": [
+                "Person",
+                "bia:Contributor"
+            ],
+            "name": "Yanlan Mao",
+            "address": null,
+            "website": null,
+            "memberOf": [
+                {
+                    "@id": "#o2"
+                }
+            ],
+            "role": [
+                "conceptualisation",
+                "corresponding author"
+            ],
+            "email": "y.mao@ucl.ac.uk"
+        },
+        {
+            "@id": "#o1",
+            "@type": [
+                "Organisation",
+                "bia:Affiliation"
+            ],
+            "name": "LMCB, University College London",
+            "address": "London, UK",
+            "website": null
+        },
+        {
+            "@id": "#o2",
+            "@type": [
+                "Organisation",
+                "bia:Affiliation"
+            ],
+            "name": "MRC Laboratory for Molecular Cell Biology, University College London",
+            "address": "London, UK",
+            "website": null
+        },
+        {
+            "@id": "_:col7",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "Channel 1",
+            "propertyUrl": null
+        },
+        {
+            "@id": "_:col6",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "Genotype/Line",
+            "propertyUrl": null
+        },
+        {
+            "@id": "_:col5",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "sourceImage",
+            "propertyUrl": "http://bia/sourceImagePath"
+        },
+        {
+            "@id": "_:col4",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "Annotation type",
+            "propertyUrl": null
+        },
+        {
+            "@id": "_:col3",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "biostudies_type",
+            "propertyUrl": null
+        },
+        {
+            "@id": "_:col2",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "dataset",
+            "propertyUrl": "http://schema.org/isPartOf"
+        },
+        {
+            "@id": "_:col1",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "size",
+            "propertyUrl": "http://bia/sizeInBytes"
+        },
+        {
+            "@id": "_:col0",
+            "@type": [
+                "csvw:Column"
+            ],
+            "columnName": "path",
+            "propertyUrl": "http://bia/filePath"
+        },
+        {
+            "@id": "_:ts0",
+            "@type": [
+                "csvw:Schema"
+            ],
+            "column": [
+                {
+                    "@id": "_:col0"
+                },
+                {
+                    "@id": "_:col1"
+                },
+                {
+                    "@id": "_:col2"
+                },
+                {
+                    "@id": "_:col3"
+                },
+                {
+                    "@id": "_:col4"
+                },
+                {
+                    "@id": "_:col5"
+                },
+                {
+                    "@id": "_:col6"
+                },
+                {
+                    "@id": "_:col7"
+                }
+            ]
+        },
+        {
+            "@id": "combined_file_list.tsv",
+            "@type": [
+                "File",
+                "bia:FileList",
+                "csvw:Table"
+            ],
+            "tableSchema": {
+                "@id": "_:ts0"
+            }
+        },
+        {
+            "@id": "#Study%20Component-1",
+            "@type": [
+                "Dataset",
+                "bia:Dataset"
+            ],
+            "name": "Confocal fluorescence images",
+            "description": "Confocal fluorescence images of Drosophila wing disks expressing a cell outline marker",
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
+            "associatedSpecimenImagingPreparationProtocol": [
+                {
+                    "@id": "#Specimen-1"
+                }
+            ],
+            "associatedSpecimen": null,
+            "associatedCreationProcess": null,
+            "associatedSourceImage": [],
+            "associatedImageAcquisitionProtocol": [
+                {
+                    "@id": "#Image%20Acquisition-1"
+                }
+            ],
+            "associatedAnnotationMethod": [],
+            "associatedImageAnalysisMethod": [],
+            "associatedImageCorrelationMethod": [],
+            "associatedProtocol": []
+        },
+        {
+            "@id": "#Study%20Component-2",
+            "@type": [
+                "Dataset",
+                "bia:Dataset"
+            ],
+            "name": "Multi-photon fluorescence images",
+            "description": "Multi-photon fluorescence images of Drosophila wing disks expressing a cell outline marker",
+            "associatedBiologicalEntity": [
+                {
+                    "@id": "#Biosample-1"
+                }
+            ],
+            "associatedSpecimenImagingPreparationProtocol": [
+                {
+                    "@id": "#Specimen-1"
+                }
+            ],
+            "associatedSpecimen": null,
+            "associatedCreationProcess": null,
+            "associatedSourceImage": [],
+            "associatedImageAcquisitionProtocol": [
+                {
+                    "@id": "#Image%20Acquisition-2"
+                }
+            ],
+            "associatedAnnotationMethod": [],
+            "associatedImageAnalysisMethod": [],
+            "associatedImageCorrelationMethod": [],
+            "associatedProtocol": []
+        },
+        {
+            "@id": "#Annotations-1",
+            "@type": [
+                "Dataset",
+                "bia:Dataset"
+            ],
+            "name": "Segmentation masks",
+            "description": "Segmentation label of individual cells of Drosophila wing disc curated by experts from a model prediction",
+            "associatedBiologicalEntity": [],
+            "associatedSpecimenImagingPreparationProtocol": [],
+            "associatedSpecimen": null,
+            "associatedCreationProcess": null,
+            "associatedSourceImage": [],
+            "associatedImageAcquisitionProtocol": [],
+            "associatedAnnotationMethod": [
+                {
+                    "@id": "#_Annotations-1"
+                }
+            ],
+            "associatedImageAnalysisMethod": [],
+            "associatedImageCorrelationMethod": [],
+            "associatedProtocol": []
+        },
+        {
+            "@id": "#Image%20Acquisition-1",
+            "@type": [
+                "bia:ImageAcquisitionProtocol"
+            ],
+            "name": "Confocal imaging",
+            "description": "Voxel size 0.0430x0.0430x0.5002 micron^3",
+            "imagingInstrumentDescription": "Leica Microsystems Stellaris 8 DIVE (Deep In-Vivo Explorer)",
+            "imagingMethodName": [
+                "Confocal microscopy"
+            ],
+            "fbbiId": [
+                "http://purl.obolibrary.org/obo/FBbi_00000251"
+            ]
+        },
+        {
+            "@id": "#Image%20Acquisition-2",
+            "@type": [
+                "bia:ImageAcquisitionProtocol"
+            ],
+            "name": "Multi-photon imaging",
+            "description": "Voxel size 0.0430x0.0430x0.2985 micron^3",
+            "imagingInstrumentDescription": "Leica Microsystems Stellaris 8 DIVE (Deep In-Vivo Explorer)",
+            "imagingMethodName": [
+                "Multi-photon microscopy"
+            ],
+            "fbbiId": [
+                "http://purl.obolibrary.org/obo/FBbi_00000254"
+            ]
+        },
+        {
+            "@id": "#_Annotations-1",
+            "@type": [
+                "bia:AnnotationMethod"
+            ],
+            "name": "Segmentation masks",
+            "description": "Cellpose (a generalist algorithm for cell segmentation) was used to predict the annotations. Then, using napari,  images were corrected.",
+            "annotationCriteria": null,
+            "annotationCoverage": null,
+            "transformationDescription": null,
+            "spatialInformation": null,
+            "methodType": [
+                "other"
+            ],
+            "annotationSourceIndicator": null
+        },
+        {
+            "@id": "#Specimen-1",
+            "@type": [
+                "bia:SpecimenImagingPreparationProtocol"
+            ],
+            "name": "Wing disk culture",
+            "description": "Late third instar wing imaginal discs were cultured in Shields and Sang M3 media (Sigma) supplemented with 2% FBS (Sigma), 1% pen/strep (Gibco), 3ng/ml ecdysone (Sigma) and 2ng/ml insulin (Sigma). Wing discs were cultured in 35mm fluorodishes (WPI) under 12mm filters (Millicell), as described in https://doi.org/10.1038%2Fs41567-019-0618-1",
+            "signalChannelInformation": []
+        },
+        {
+            "@id": "NCBI:txid7227",
+            "@type": [
+                "bia:Taxon"
+            ],
+            "commonName": "fruit fly",
+            "scientificName": "Drosophila melanogaster"
+        },
+        {
+            "@id": "#Biosample-1",
+            "@type": [
+                "bia:BioSample"
+            ],
+            "name": "Wing disk",
+            "description": "Drosophila wing disk, http://purl.obolibrary.org/obo/UBERON_6001778",
+            "experimentalVariableDescription": [],
+            "extrinsicVariableDescription": [],
+            "intrinsicVariableDescription": [],
+            "organismClassification": [
+                {
+                    "@id": "NCBI:txid7227"
+                }
+            ],
+            "growthProtocol": null
+        }
+    ]
+}

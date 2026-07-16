@@ -20,7 +20,7 @@ if [[ -z "$input_file" ]]; then
     echo "" >&2
     echo "  <input_file>  File with one source path per line" >&2
     echo "  --workers N   Number of max workers (default: 14)" >&2
-    echo "  --id ID       Output ID, e.g. idr0123 (prompted if not provided)" >&2
+    echo "  --id ID       Output ID, e.g. idr0027-dickerson-chromatin/experimentA (prompted if not provided)" >&2
     exit 1
 fi
 

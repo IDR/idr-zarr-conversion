@@ -83,3 +83,59 @@ Check:
 ```
 bia-ro-crate validate /data/output/idr0027-dickerson-chromatin/experimentA
 ```
+
+## Submission
+
+### Zip the zarrs
+```
+cd /data/output/idr0027
+```
+Then copy/paste this script into the console:
+```
+find . -type d -name "*.ome.zarr" -exec sh -c '
+for d; do
+    parent=$(dirname "$d")
+    base=$(basename "$d")
+    (
+        cd "$parent" &&
+        zip -0 -r "${base}.zip" "$base"
+    )
+done
+' sh {} +
+```
+
+Quick check:
+`find * -type f -name "*.zip" | wc -l`
+
+should match:
+`find * -type d -name "*.ome.zarr" | wc -l`
+
+Then delete the ome.zarrs:
+` find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
+
+### Upload
+Globuspersonal has to run in the background, run in screen:
+```
+screen -S globus
+cd globusconnectpersonal-3.2.9
+./globusconnectpersonal -start
+```
+then detach from the session.
+
+Globus CLI was installed in mamba environment:
+```
+mm activate globus
+```
+
+You might have to login before being able to transfer:
+```
+globus login 
+```
+(will ask you about an auth token which you'll get in the webbrowser; will show you a URL)
+
+Transfer:
+```
+globus transfer "e59ed979-80f9-11f1-b195-0ee7ef9370d9:/data/output/idr0027-dickerson-chromatin" "7d3add40-d193-473e-b066-138c1ee54e3e:/" --recursive --label "idr0027"
+```
+
+You can find out the IDR collection ID in the webbrowser (in case it changes), the local one (probably won't change anyway) by `globus endpoint local-id`.

@@ -63,6 +63,25 @@ Brief check if all ome.zarr were created:
 Should match:
 `wc -l input.tsv`
 
+## Zip
+
+```
+find . -type d -name "*.ome.zarr" -exec sh -c '
+for d; do
+    parent=$(dirname "$d")
+    base=$(basename "$d")
+    (
+        cd "$parent" &&
+        zip -0 -r "${base}.zip" "$base"
+    )
+done
+' sh {} +
+```
+
+Check if all zarrs have been zipped:
+`find * -type f -name "*.zip" | wc -l`
+
+
 ## RO-Crate
 
 Run:

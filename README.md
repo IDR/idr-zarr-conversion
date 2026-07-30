@@ -3,7 +3,7 @@
 
 ## Setup
 
-There's currently two VMs configured for the conversion work:
+There are currently two VMs configured for the conversion work:
 
 ```
 ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv
@@ -25,7 +25,7 @@ idr-metadata cloned into: `/data/idr-metadata`.
 bioformats2raw (0.12.0) and bftools (8.5.0) installed too 
 (ie. `bioformats2raw`, `showinf` available on commandline)
 
-All necessary scripts are in the home directory of the rocky user.
+All necessary scripts are in the home directory of the rocky user under `idr-zarr-conversion/scripts`.
 
 ## Zarr Conversion
 

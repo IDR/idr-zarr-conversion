@@ -6,11 +6,11 @@
 There are currently two VMs configured for the conversion work:
 
 ```
-ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv
+ssh -J rocky@idr-pilot.openmicroscopy.org rocky@pilot-idrconv
 ```
 and
 ```
-ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv2
+ssh -J rocky@idr-pilot.openmicroscopy.org rocky@pilot-idrconv2
 ```
 
 EBI NFS mounted as usual: `/nfs/bioimage` and linked to `/uod/idr/filesets`.

@@ -36,7 +36,7 @@ fi
 total=$(wc -l < "$input_file")
 count=0
 
-while IFS=$'\t' read -r target_dir filepath; do
+while IFS=$'\t' read -r target_dir filepath extra; do
     count=$((count + 1))
     filename="${filepath##*/}"
     basename="${filename%.*}"

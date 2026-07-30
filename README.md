@@ -67,6 +67,27 @@ Change into the output directory, e.g.:
 Brief check if all ome.zarr were created:
 `find * -type d -name "*.ome.zarr" | wc -l`
 
+## RO-Crate
+
+Run:
+```
+mm activate crate
+python crate.py idr0027-dickerson-chromatin/experimentA /data/output
+```
+
+The first argument must exactly match one full IDR container name. It is also used as the directory structure; for example, `idr0027-dickerson-chromatin/experimentA` writes to `/data/output/idr0027-dickerson-chromatin/experimentA/`.
+
+Then run:
+```
+python update_sizes.py /data/output/idr0027-dickerson-chromatin/experimentA/file_list.tsv
+```
+This will update the file sizes in the tsv. 
+
+Check:
+```
+bia-ro-crate validate /data/output/idr0027-dickerson-chromatin/experimentA
+```
+
 ## Zip
 
 Change into the output directory, e.g.:
@@ -92,24 +113,3 @@ Check if all zarrs have been zipped:
 Then delete the zarrs:
 `find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
 (Make sure you are in the correct study directory, e.g. `/data/output/idr0027-dickerson-chromatin`!)
-
-## RO-Crate
-
-Run:
-```
-mm activate crate
-python crate.py idr0027-dickerson-chromatin/experimentA /data/output
-```
-
-The first argument must exactly match one full IDR container name. It is also used as the directory structure; for example, `idr0027-dickerson-chromatin/experimentA` writes to `/data/output/idr0027-dickerson-chromatin/experimentA/`.
-
-Then run:
-```
-python update_sizes.py /data/output/idr0027-dickerson-chromatin/experimentA/file_list.tsv
-```
-This will update the file sizes in the tsv. 
-
-Check:
-```
-bia-ro-crate validate /data/output/idr0027-dickerson-chromatin/experimentA
-```

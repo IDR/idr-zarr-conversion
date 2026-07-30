@@ -61,10 +61,16 @@ TreatStartDay3_mouse55	/uod/idr/filesets/idr0026-weigelin-immunotherapy/.../Pos0
 ```
 ### Check
 
+Change into the output directory, e.g.:
+`cd /data/output/idr0027-dickerson-chromatin`
+
 Brief check if all ome.zarr were created:
 `find * -type d -name "*.ome.zarr" | wc -l`
 
 ## Zip
+
+Change into the output directory, e.g.:
+`cd /data/output/idr0027-dickerson-chromatin`
 
 ```
 find . -type d -name "*.ome.zarr" -exec sh -c '
@@ -83,6 +89,9 @@ done
 Check if all zarrs have been zipped:
 `find * -type f -name "*.zip" | wc -l`
 
+Then delete the zarrs:
+`find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
+(Make sure you are in the correct study directory, e.g. `/data/output/idr0027-dickerson-chromatin`!)
 
 ## RO-Crate
 

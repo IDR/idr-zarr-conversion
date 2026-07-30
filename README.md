@@ -41,7 +41,7 @@ Run `./convert.sh` to batch-convert image files to OME-Zarr:
 
 ### Input TSV format
 
-The input file is a two-column, tab-separated file with no header:
+The input file is a two-column, tab-separated file with no header and linebreak at last line:
 
 | Column | Description |
 |--------|-------------|
@@ -63,9 +63,6 @@ TreatStartDay3_mouse55	/uod/idr/filesets/idr0026-weigelin-immunotherapy/.../Pos0
 
 Brief check if all ome.zarr were created:
 `find * -type d -name "*.ome.zarr" | wc -l`
-
-Should match:
-`wc -l input.tsv`
 
 ## Zip
 

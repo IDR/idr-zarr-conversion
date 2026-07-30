@@ -3,10 +3,14 @@
 
 ## Setup
 
-There's currently one VM configured for the conversion work:
+There are currently two VMs configured for the conversion work:
 
 ```
 ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv
+```
+and
+```
+ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv2
 ```
 
 EBI NFS mounted as usual: `/nfs/bioimage` and linked to `/uod/idr/filesets`.
@@ -21,7 +25,7 @@ idr-metadata cloned into: `/data/idr-metadata`.
 bioformats2raw (0.12.0) and bftools (8.5.0) installed too 
 (ie. `bioformats2raw`, `showinf` available on commandline)
 
-All necessary scripts are in the home directory of the rocky user.
+All necessary scripts are in the home directory of the rocky user under `idr-zarr-conversion/scripts`.
 
 ## Zarr Conversion
 
@@ -37,7 +41,7 @@ Run `./convert.sh` to batch-convert image files to OME-Zarr:
 
 ### Input TSV format
 
-The input file is a two-column, tab-separated file with no header:
+The input file is a two-column, tab-separated file with no header and linebreak at last line:
 
 | Column | Description |
 |--------|-------------|
@@ -57,13 +61,16 @@ TreatStartDay3_mouse55	/uod/idr/filesets/idr0026-weigelin-immunotherapy/.../Pos0
 ```
 ### Check
 
+Change into the output directory, e.g.:
+`cd /data/output/idr0027-dickerson-chromatin`
+
 Brief check if all ome.zarr were created:
 `find * -type d -name "*.ome.zarr" | wc -l`
 
-Should match:
-`wc -l input.tsv`
-
 ## Zip
+
+Change into the output directory, e.g.:
+`cd /data/output/idr0027-dickerson-chromatin`
 
 ```
 find . -type d -name "*.ome.zarr" -exec sh -c '
@@ -77,10 +84,14 @@ for d; do
 done
 ' sh {} +
 ```
+(just copy and paste the whole block into terminal)
 
 Check if all zarrs have been zipped:
 `find * -type f -name "*.zip" | wc -l`
 
+Then delete the zarrs:
+`find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
+(Make sure you are in the correct study directory, e.g. `/data/output/idr0027-dickerson-chromatin`!)
 
 ## RO-Crate
 

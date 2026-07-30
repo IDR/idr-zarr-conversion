@@ -40,6 +40,7 @@ while IFS=$'\t' read -r target_dir filepath; do
     count=$((count + 1))
     filename="${filepath##*/}"
     basename="${filename%.*}"
+    target_dir="${target_dir#*Dataset:name:}"
     mkdir -p "/data/output/${id}/${target_dir}"
     echo "[$count/$total] Converting $filepath to ${target_dir}/${basename}.ome.zarr"
     bioformats2raw --ngff-version=0.5 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${id}/${target_dir}/${basename}.ome.zarr"

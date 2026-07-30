@@ -41,24 +41,34 @@ Run `./convert.sh` to batch-convert image files to OME-Zarr:
 
 ### Input TSV format
 
-The input file is a two-column, tab-separated file with no header and linebreak at last line:
+The input file is a two-column, tab-separated file with no header.
 
-| Column | Description |
-|--------|-------------|
-| `target_dir` | Subdirectory name under `/data/output/<ID>/` where the output `.ome.zarr` will be placed |
-| `filepath` | Absolute path to the source image file |
+A study's filePaths.tsv can be used directly **if it specifies one image per line** (some specify a whole directory, that will not work).
 
-`target_dir` typically will be the Dataset names.
-
-Create this input.tsv from the filePaths.tsv (resp. plates.tsv) of the IDR project.
+`Dataset:name:` will be removed automatically and the zarrs written in a directory with the name of the dataset.
 
 Example:
 
 ```
-TreatStartDay3_mouse50	/uod/idr/filesets/idr0026-weigelin-immunotherapy/.../Pos00.tif
-TreatStartDay3_mouse50	/uod/idr/filesets/idr0026-weigelin-immunotherapy/.../Pos01.tif
-TreatStartDay3_mouse55	/uod/idr/filesets/idr0026-weigelin-immunotherapy/.../Pos00.tif
+Dataset:name:Genomic separation 25kb	/uod/idr/filesets/idr0027-dickerson-chromatin/20160719/RawVideos/25kb/a_upper_b_lower.dv
+Dataset:name:Genomic separation 25kb	/uod/idr/filesets/idr0027-dickerson-chromatin/20160719/RawVideos/25kb/c_upper_d_lower.dv
+Dataset:name:Genomic separation 25kb	/uod/idr/filesets/idr0027-dickerson-chromatin/20160719/RawVideos/25kb/e_upper.dv
+...
 ```
+
+```
+./convert.sh --id idr0027-dickerson-chromatin/experimentA /data/idr-metadata/idr0027-dickerson-chromatin/experimentA/idr0027-experimentA-filePaths.tsv
+```
+
+Will create ome.zarrs in:
+```
+/data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/a_upper_b_lower.ome.zarr
+/data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/c_upper_d_lower.ome.zarr
+/data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/e_upper.ome.zarr
+...
+```
+
+
 ### Check
 
 Change into the output directory, e.g.:

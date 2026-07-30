@@ -3,10 +3,14 @@
 
 ## Setup
 
-There's currently one VM configured for the conversion work:
+There's currently two VMs configured for the conversion work:
 
 ```
 ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv
+```
+and
+```
+ssh -J idr-pilot.openmicroscopy.org rocky@pilot-idrconv2
 ```
 
 EBI NFS mounted as usual: `/nfs/bioimage` and linked to `/uod/idr/filesets`.
@@ -77,6 +81,7 @@ for d; do
 done
 ' sh {} +
 ```
+(just copy and paste the whole block into terminal)
 
 Check if all zarrs have been zipped:
 `find * -type f -name "*.zip" | wc -l`

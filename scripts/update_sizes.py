@@ -29,9 +29,9 @@ def main():
         reader = csv.DictReader(f, delimiter="\t")
         fieldnames = reader.fieldnames
         for row in reader:
-            zarr_path = os.path.join(base_dir, row["path"])
+            zarr_path = os.path.join(base_dir, row["file_path"])
             if os.path.isdir(zarr_path):
-                row["size"] = str(dir_size(zarr_path))
+                row["size_in_bytes"] = str(dir_size(zarr_path))
             else:
                 print(f"Warning: not found: {zarr_path}", file=sys.stderr)
             rows.append(row)

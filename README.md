@@ -77,6 +77,17 @@ Change into the output directory, e.g.:
 Brief check if all ome.zarr were created:
 `find * -type d -name "*.ome.zarr" | wc -l`
 
+#### Check with validator
+
+SSH with port forward:
+`ssh rocky@pilot-idrconv -L 8000:localhost:8000`
+
+Then 
+`mm run -n crate ome_zarr view XYZ.ome.zarr` 
+
+Then go to
+`https://ome.github.io/ome-ngff-validator/?source=http://localhost:8000/XYZ.ome.zarr/0`
+
 ## RO-Crate
 
 Run:
@@ -123,3 +134,17 @@ Check if all zarrs have been zipped:
 Then delete the zarrs:
 `find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
 (Make sure you are in the correct study directory, e.g. `/data/output/idr0027-dickerson-chromatin`!)
+
+In case you need to unzip again:
+```
+find . -type f -name "*.zip" -exec sh -c '
+for d; do
+    parent=$(dirname "$d")
+    base=$(basename "$d")
+    (
+        cd "$parent" &&
+        unzip "$base"
+    )
+done
+' sh {} +
+```

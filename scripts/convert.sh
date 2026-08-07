@@ -3,6 +3,7 @@
 max_workers=14
 id=
 input_file=
+bf2raw="${BF2RAW:-bioformats2raw}"
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -46,7 +47,7 @@ while IFS=$'\t' read -r target_dir filepath image_name extra; do
     target_dir="${target_dir#*Dataset:name:}"
     mkdir -p "/data/output/${id}/${target_dir}"
     echo "[$count/$total] Converting $filepath to ${target_dir}/${zarr_name}.ome.zarr"
-    if ! bioformats2raw --ngff-version=0.5 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${id}/${target_dir}/${zarr_name}.ome.zarr"; then
+    if ! "$bf2raw" --ngff-version=0.5 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${id}/${target_dir}/${zarr_name}.ome.zarr"; then
         failed_lines+=("$count")
         failed_paths+=("$filepath")
         echo "[$count/$total] FAILED: $filepath" >&2

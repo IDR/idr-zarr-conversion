@@ -80,7 +80,7 @@ Brief check if all ome.zarr were created:
 #### Check with validator
 
 SSH with port forward:
-`ssh rocky@pilot-idrconv -L 8000:localhost:8000`
+`ssh -J rocky@idr-pilot.openmicroscopy.org rocky@pilot-idrconv -L 8000:localhost:8000`
 
 Then 
 `mm run -n crate ome_zarr view XYZ.ome.zarr` 
@@ -90,19 +90,14 @@ Then go to
 
 ## RO-Crate
 
-Run:
+Generate a minimal BIA RO-Crate from an IDR `study.txt` URL:
+
 ```
 mm activate crate
-python crate.py idr0027-dickerson-chromatin/experimentA /data/output
+python scripts/crate.py https://raw.githubusercontent.com/IDR/idr-metadata/master/idr0027-dickerson-chromatin/idr0027-study.txt --output-dir /data/output/idr0027-dickerson-chromatin/experimentA
 ```
 
-The first argument must exactly match one full IDR container name. It is also used as the directory structure; for example, `idr0027-dickerson-chromatin/experimentA` writes to `/data/output/idr0027-dickerson-chromatin/experimentA/`.
-
-Then run:
-```
-python update_sizes.py /data/output/idr0027-dickerson-chromatin/experimentA/file_list.tsv
-```
-This will update the file sizes in the tsv. 
+The script downloads the IDR study metadata, derives the OMERO project/screen name, fetches the image or plate list from the IDR JSON API, and writes `ro-crate-metadata.json` and `file_list.tsv` into the output directory. The TSV contains three columns: `file_path`, `dataset`, and `type`.
 
 Check:
 ```

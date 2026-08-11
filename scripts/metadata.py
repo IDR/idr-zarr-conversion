@@ -316,6 +316,7 @@ def build_crate(
     has_part = []
     dataset_entities = []
     file_list_rows = []
+    seen_file_paths = set()
 
     # BioSample/Taxon placeholders, linked from every dataset
     bio_sample_ref = []
@@ -378,6 +379,9 @@ def build_crate(
             has_part.append({"@id": ds_id})
 
             for f in get_child_files(container_type, child_id, child_name, container_letter_dir(container_name)):
+                if f["path"] in seen_file_paths:
+                    continue
+                seen_file_paths.add(f["path"])
                 file_list_rows.append({
                     "file_path": f["path"],
                     "dataset": ds_id,

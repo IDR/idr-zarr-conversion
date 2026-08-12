@@ -19,6 +19,7 @@ EBI NFS mounted as usual: `/nfs/bioimage` and linked to `/uod/idr/filesets`.
   - `/data/output` - output location
   - `/data/memo` - temporary memo directory for bioformats2raw
   - `/data/input` - input location (if needed, use `/nfs/bioimage` instead when possible)
+  - `/overflow[1/2/...]` - 'overflow' mounts to clear up space on `data` partition (I'm trying to add more of these)
 
 bioformats2raw (0.12.0) and bftools (8.5.0) installed too 
 (ie. `bioformats2raw`, `showinf` available on commandline)

@@ -15,8 +15,6 @@ ssh -J rocky@idr-pilot.openmicroscopy.org rocky@pilot-idrconv2
 
 EBI NFS mounted as usual: `/nfs/bioimage` and linked to `/uod/idr/filesets`.
 
-idr-metadata cloned into: `/data/idr-metadata`.
-
 10Tb data partition for temp ome.zarr storage: `/data`.
   - `/data/output` - output location
   - `/data/memo` - temporary memo directory for bioformats2raw
@@ -25,7 +23,12 @@ idr-metadata cloned into: `/data/idr-metadata`.
 bioformats2raw (0.12.0) and bftools (8.5.0) installed too 
 (ie. `bioformats2raw`, `showinf` available on commandline)
 
+There is also a bioformats2raw build using the IDR fork of bioformats; sometimes it might be necessary to use this version (use with convert.sh like this `export BF2RAW=~/bioformats2raw-0.13.0-idr/bin/bioformats2raw ./convert.sh ...`).
+
 All necessary scripts are in the home directory of the rocky user under `idr-zarr-conversion/scripts`.
+
+There is also a conda `crate` environment, needed for `metadata.py` script and also has `ome_zarr` and `bia-ro-crate` installed.
+Activate with `mm activate crate` (`mm` setup as alias for `micromamba`).
 
 ## Preparation
 

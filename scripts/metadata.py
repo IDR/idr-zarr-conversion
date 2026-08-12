@@ -11,8 +11,7 @@ the IDR OMERO JSON API, and writes three files to --output-dir:
   real filesystem path of the source image/plate file, and the
   ``<file name>.ome.zarr`` name to convert it to.
 - ``ro-crate-metadata.json`` — a minimal BIA RO-Crate for the study.
-- ``file_list.tsv`` — the RO-Crate's file list with 1024-byte placeholder
-  file sizes.
+- ``file_list.tsv`` — the RO-Crate's file list
 """
 
 import argparse

@@ -34,6 +34,8 @@ failed_lines_content=()
 
 while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     count=$((count + 1))
+    line_content=$(printf '%s\t%s\t%s' "$target_dir" "$filepath" "$zarr_name")
+    [[ -n "$extra" ]] && line_content+=$(printf '\t%s' "$extra")
     if [[ -z "$zarr_name" ]]; then
         filename="${filepath##*/}"
         zarr_name="${filename%.*}.ome.zarr"
@@ -43,7 +45,7 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     echo "[$count/$total] Converting $filepath to ${target_dir}/${zarr_name}"
     if ! "$bf2raw" --ngff-version=0.5 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}"; then
         failed_lines+=("$count")
-        failed_lines_content+=("$REPLY")
+        failed_lines_content+=("$line_content")
         echo "[$count/$total] FAILED: $filepath" >&2
     fi
 done < "$input_file"

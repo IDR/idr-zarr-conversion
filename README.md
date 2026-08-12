@@ -39,9 +39,9 @@ mm activate crate
 python scripts/metadata.py https://raw.githubusercontent.com/IDR/idr-metadata/master/idr0027-dickerson-chromatin/idr0027-study.txt --output-dir /data/output/idr0027-dickerson-chromatin
 ```
 
-The script downloads the IDR study metadata and, for every experiment/screen component declared in `study.txt` (a study may have several, e.g. idr0038 has experimentA/B/C each backed by its own OMERO project/screen), derives the OMERO project/screen name and fetches its image or plate list from the IDR JSON API. All components are written to a single set of output files in `--output-dir`:
+The script gets the IDR study metadata needed for the ro-crate from the study.txt. The image filepaths and names (image filename with extension changed to 'ome.zarr') needed for file_list.tsv (ro-crate) and filepaths.tsv (convert.sh) come from OMERO (image client_path). All components are written to a single set of output files in `--output-dir`:
 
-- `filepaths.tsv` — a 3-column, no-header TSV used as the input for `convert.sh`. Column 1 is rooted at the study accession, e.g. `<study>/experiment<A/B/...>/<Dataset name>` for projects or `<study>/screen<A/B/...>` for screens — this is a path relative to `/data/output`, so `convert.sh` needs no separate output identifier. Column 2 is the real source filesystem path (leading `/` added if missing, taken from the image's `client_path`), and column 3 is `<file name>.ome.zarr` (derived from the source file name, **not** the OMERO image/plate name). Rows are deduplicated, since more than one OMERO image can point at the same underlying file.
+- `filepaths.tsv` — a 3-column, no-header TSV used as the input for `convert.sh`: Relative output path (e.g. 'experimentA/<Dataset name>'), absolute source path (e.g. '/nfs/bioimage/...'), and output filename (e.g. '<file name>.ome.zarr')
 - `ro-crate-metadata.json` and `file_list.tsv` — a minimal BIA RO-Crate. `file_list.tsv` contains three columns: `file_path`, `dataset`, and `type`, where `file_path` is relative to the RO-Crate root (i.e. `--output-dir`, without the study accession), e.g. `experiment<A/B/...>/<dataset>/<image>.ome.zarr` for projects or `screen<A/B/...>/<plate>.ome.zarr` for screens.
 
 Check:

@@ -146,13 +146,31 @@ def normalise_path(path: str) -> str:
     return path
 
 
+# Companion/sidecar files that can show up alongside the real image file in
+# a fileset (e.g. MicroManager's ``*_metadata.txt``) but aren't themselves
+# importable by Bio-Formats.
+_SIDECAR_SUFFIXES = (".txt", ".log")
+
+
+def _is_zarr_source(client_paths: list[str]) -> bool:
+    """True if a fileset's client paths point into an OME-Zarr store.
+
+    Some IDR studies deposit images that are already OME-Zarr (e.g. served
+    from S3), rather than a raw microscopy file bioformats2raw can convert.
+    Such images should be skipped entirely rather than treated as a source
+    file to convert.
+    """
+    return any(".zarr/" in p or p.rstrip("/").endswith(".zarr") for p in client_paths)
+
+
 def get_client_path(image_id: int) -> str | None:
     """Fetch the real client-side (upload-time) filesystem path for an image.
 
     Uses OMERO's ``original_file_paths`` webgateway endpoint, which reports
     both the ``server`` (managed repository) and ``client`` (as-uploaded)
     paths for the files backing an image's fileset. Returns None if the
-    path can't be resolved (e.g. no permission, image has no fileset).
+    path can't be resolved (e.g. no permission, image has no fileset) or if
+    the fileset is itself an OME-Zarr store (nothing to convert).
     """
     try:
         resp = requests.get(
@@ -163,8 +181,12 @@ def get_client_path(image_id: int) -> str | None:
     except requests.RequestException:
         return None
     client_paths = data.get("client", [])
-    if not client_paths:
+    if not client_paths or _is_zarr_source(client_paths):
         return None
+    for path in client_paths:
+        name = path.rsplit("/", 1)[-1]
+        if not name.lower().endswith(_SIDECAR_SUFFIXES):
+            return normalise_path(path)
     return normalise_path(client_paths[0])
 
 
@@ -237,19 +259,32 @@ def get_child_files(
 
     if container_type == "screen":
         z = zarr_name(child_name)
-        return [{"path": f"{prefix}{z}", "zarr_name": z}]
+        # Use the first well's image to get a source file path for convert.sh
+        first_page = idr_get(f"/m/plates/{child_id}/wells/", limit=1, offset=0)
+        wells = first_page.get("data", [])
+        source_path = None
+        if wells:
+            well_samples = wells[0].get("WellSamples", [])
+            if well_samples:
+                image_id = well_samples[0]["Image"]["@id"]
+                source_path = get_client_path(image_id)
+        if source_path is None:
+            return []
+        return [{"path": f"{prefix}{z}", "zarr_name": z, "source_path": source_path}]
 
     files = []
     for img in get_images(container_type, child_id):
         image_id = img["@id"]
-        image_name = img.get("Name") or get_image_path(image_id)
         client_path = get_client_path(image_id)
-        z = zarr_name(client_path or image_name)
+        if client_path is None:
+            continue
+        z = zarr_name(client_path)
         files.append({
             "path": f"{prefix}{child_name}/{z}",
             "zarr_name": z,
+            "source_path": client_path,
             "image_id": image_id,
-            "image_name": image_name,
+            "image_name": img.get("Name", ""),
         })
     return files
 

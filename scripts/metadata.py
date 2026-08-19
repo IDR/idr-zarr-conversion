@@ -222,7 +222,7 @@ def filepaths_rows(containers_info: list):
     ``<study>/<experimentX>/<dataset>`` for projects or
     ``<study>/<screenX>`` for screens, so `convert.sh` can write directly
     under a shared output root without a separate ``--id``. Rows are
-    derived from each image's real client-side filesystem path;
+    derived from the same records used to build the RO-Crate file list;
     images/plates whose path can't be resolved are skipped, as are exact
     duplicate rows (multiple OMERO images can point at the same underlying
     file).
@@ -235,38 +235,24 @@ def filepaths_rows(containers_info: list):
 
         for child in get_children(container_type, container_id):
             child_id = child["@id"]
+            child_name = child.get("Name", "")
+            letter_dir = container_letter_dir(container_name)
 
-            if container_type == "screen":
-                first_page = idr_get(f"/m/plates/{child_id}/wells/", limit=1, offset=0)
-                wells = first_page.get("data", [])
-                if not wells:
+            for f in get_child_files(
+                container_type, child_id, child_name, letter_dir
+            ):
+                source_path = f.get("source_path")
+                if source_path is None:
                     continue
-                well_samples = wells[0].get("WellSamples", [])
-                if not well_samples:
+                if container_type == "screen":
+                    target_dir = container_name
+                else:
+                    target_dir = f"{container_name}/{child_name}"
+                row = (target_dir, f["zarr_name"])
+                if row in seen:
                     continue
-                image_id = well_samples[0]["Image"]["@id"]
-                client_path = get_client_path(image_id)
-                if client_path is None:
-                    continue
-                row = (container_name, client_path, zarr_name(client_path))
-            else:
-                dataset_name = child.get("Name", "")
-                target_dir = f"{container_name}/{dataset_name}"
-                for image in get_images(container_type, child_id):
-                    client_path = get_client_path(image["@id"])
-                    if client_path is None:
-                        continue
-                    row = (target_dir, client_path, zarr_name(client_path))
-                    if row in seen:
-                        continue
-                    seen.add(row)
-                    yield row
-                continue
-
-            if row in seen:
-                continue
-            seen.add(row)
-            yield row
+                seen.add(row)
+                yield target_dir, source_path, f["zarr_name"]
 
 
 def build_crate(

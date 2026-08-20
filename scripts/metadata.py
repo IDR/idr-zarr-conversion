@@ -65,18 +65,46 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
     Component sections start with a line like ``Experiment Number\t1`` or
     ``Screen Number\t1`` and contain per-component metadata such as
     ``Comment[IDR Experiment Name]``.
+
+    Values may span multiple lines (e.g. free-text descriptions), so lines
+    that do not begin with a non-comment key are treated as continuations
+    of the current row's value.
     """
     top = {}
     components = []
     current = None
-    reader = csv.reader(io.StringIO(text), delimiter="\t")
-    for row in reader:
-        if not row or len(row) < 2:
+
+    def _is_new_row(parts: list[str]) -> bool:
+        if not parts:
+            return False
+        first = parts[0].strip()
+        return bool(first) and not first.startswith("#")
+
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].rstrip("\r")
+        row = line.split("\t")
+        if not _is_new_row(row):
+            i += 1
             continue
+
+        # Absorb continuation lines that do not start a new key/value row.
+        while i + 1 < len(lines):
+            next_line = lines[i + 1].rstrip("\r")
+            next_row = next_line.split("\t")
+            if _is_new_row(next_row):
+                break
+            if len(row) >= 2 and next_line.strip():
+                row[1] += "\n" + next_line.strip()
+            i += 1
+
         key = normalise_key(row[0])
         value = row[1].strip() if len(row) > 1 else ""
         if not key:
+            i += 1
             continue
+
         m = re.match(r"^(Experiment|Screen) Number$", key, re.I)
         if m:
             current = {
@@ -85,16 +113,22 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
                 "data": {},
             }
             components.append(current)
+            i += 1
             continue
+
         # A study/experiment/screen can list more than one imaging method on
         # the same row (extra tab-separated columns), e.g.
         # "Experiment Imaging Method\tlight sheet fluorescence microscopy\tSPIM".
         if re.match(r"^(Study|Experiment|Screen) Imaging Method$", key, re.I):
             value = ", ".join(v.strip() for v in row[1:] if v.strip())
+
         if current is not None:
             current["data"][key] = value
         else:
             top[key] = value
+
+        i += 1
+
     return top, components
 
 

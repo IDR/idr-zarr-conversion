@@ -95,7 +95,7 @@ Change into the output directory, e.g.:
 `cd /data/output/idr0027-dickerson-chromatin`
 
 Brief check if all ome.zarr were created:
-`find * -type d -name "*.ome.zarr" | wc -l`
+`find * -maxdepth 4 -type d -name "*.ome.zarr" | wc -l`
 
 #### Check with validator
 
@@ -128,7 +128,7 @@ done
 (just copy and paste the whole block into terminal)
 
 Check if all zarrs have been zipped:
-`find * -type f -name "*.zip" | wc -l`
+`find * -maxdepth 4 -type f -name "*.zip" | wc -l`
 
 Then delete the zarrs:
 `find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`

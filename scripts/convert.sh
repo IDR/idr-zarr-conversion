@@ -43,7 +43,7 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     target_dir="${target_dir#*Dataset:name:}"
     mkdir -p "/data/output/${target_dir}"
     echo "[$count/$total] Converting $filepath to ${target_dir}/${zarr_name}"
-    if ! "$bf2raw" --ngff-version=0.5 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}"; then
+    if ! "$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd -w 128 -h 128 -z 128 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}"; then
         failed_lines+=("$count")
         failed_lines_content+=("$line_content")
         echo "[$count/$total] FAILED: $filepath" >&2

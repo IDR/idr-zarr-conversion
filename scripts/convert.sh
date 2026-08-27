@@ -4,6 +4,15 @@ max_workers=14
 input_file=
 bf2raw="${BF2RAW:-bioformats2raw}"
 
+chunk_w=128
+chunk_h=128
+chunk_z=128
+sharding=1
+
+shard_w=$((chunk_w * sharding))
+shard_h=$((chunk_h * sharding))
+shard_z=$((chunk_z * sharding))
+
 while [[ $# -gt 0 ]]; do
     case $1 in
         --workers) max_workers="$2"; shift 2 ;;
@@ -43,7 +52,11 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     target_dir="${target_dir#*Dataset:name:}"
     mkdir -p "/data/output/${target_dir}"
     echo "[$count/$total] Converting $filepath to ${target_dir}/${zarr_name}"
-    if ! "$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd -w 128 -h 128 -z 128 --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}"; then
+    command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd -w "$chunk_w" -h "$chunk_h" -z "$chunk_z" --shard-width="$shard_w" --shard-height="$shard_h" --shard-depth="$shard_z" --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}")
+    printf 'Command:'
+    printf ' %q' "${command[@]}"
+    printf '\n'
+    if ! "${command[@]}"; then
         failed_lines+=("$count")
         failed_lines_content+=("$line_content")
         echo "[$count/$total] FAILED: $filepath" >&2

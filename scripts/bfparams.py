@@ -158,17 +158,21 @@ def derive_parameters(
     bpp = bytes_per_pixel(pixel_type)
     shard_factor = 2
 
-    if size_z < 21: # XY plane image with a few Z planes 
-        chunk_w = min(512, width)
-        chunk_h = min(512, height)
-        chunk_z = min(4, size_z)
-    else: # Truely XYZ volume
+    # Calculate chunk sizes for 1mb chunk assuming 1 byte-per-pixel.
+    if size_z < 26: # XY plane image with a few Z planes, try to keep z=1
+        chunk_w = min(1024, width)
+        chunk_h = min(1024, height)
+        # target chunk_z size to ensure >= 1mb chunk
+        chunk_z = (1048576 + chunk_w * chunk_h - 1) // (chunk_w * chunk_h) # round up
+        # but it can't be larger than size_z
+        chunk_z = min(chunk_z, size_z)
+    else: # Truely XYZ volume, use 16 z slices
         chunk_w = min(256, width)
         chunk_h = min(256, height)
         chunk_z = min(16, size_z)
 
     # Scale chunk_z by "bytes per pixel"
-    chunk_z = (chunk_z + bpp - 1) // bpp # round up not down.
+    chunk_z = (chunk_z + bpp - 1) // bpp # round up
 
     # -> Should give a chunk size of 1Mb uncompressed bytes.
     chunk_size = chunk_w * chunk_h * chunk_z * bpp
@@ -232,13 +236,13 @@ def main() -> None:
     sys.stderr.flush()
 
     print(
-        f" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' "
-        f"-w {chunk_w} -h {chunk_h} -z {chunk_z} "
-        f"--shard-width={shard_w} --shard-height={shard_h} --shard-depth={shard_depth} "
-        f"--max_workers=8 "
+        f"-w {chunk_w} -h {chunk_h} -z {chunk_z} --shard-width={chunk_w} --shard-height={chunk_h} --shard-depth={chunk_z}"
+        #f"--shard-width={shard_w} --shard-height={shard_h} --shard-depth={shard_depth} "
+        # sharding doesn't work properly yet (shard == chunk disables it practically): 
+        # https://github.com/glencoesoftware/bioformats2raw/issues/299
     )
     print(
-        f"Resulting ChunkSize={chunk_size // 1024}kb and ShardSize={shard_size // 1024}kb",
+        f"Resulting ChunkSize={chunk_size // 1024}kb",
         file=sys.stderr,
     )
     sys.stderr.flush()

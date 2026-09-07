@@ -148,93 +148,34 @@ def derive_parameters(
     width: int,
     height: int,
     size_z: int,
-    size_t: int,
-    size_c: int,
     pixel_type: str,
 ) -> tuple[int, int, int, int, int, int, int, int]:
     """Return chunk and shard dimensions for bioformats2raw.
 
     Parameters are returned as ``(chunk_w, chunk_h, chunk_z,
     shard_w, shard_h, shard_depth, chunk_size, shard_size)``.
-
-    Chunk dimensions are grown from 32x32x1, roughly balancing X and Y, until
-    the in-memory chunk size reaches ``TARGET_CHUNK_SIZE``. Once X and Y hit
-    the image bounds, Z is increased. If the whole image is smaller than the
-    target chunk, the chunk is capped at the image size.
-
-    Shard dimensions start from the chosen chunk dimensions and are grown in
-    the same way until ``TARGET_SHARD_SIZE`` is reached, capped at the image
-    size in each axis.
-
-    ``chunk_size`` and ``shard_size`` are the full in-memory byte sizes of a
-    single chunk/shard, accounting for the pixel type.
     """
     bpp = bytes_per_pixel(pixel_type)
-    max_z = max(size_z, 1)
+    shard_factor = 2
 
-    chunk_w = min(32, width)
-    chunk_h = min(32, height)
-    chunk_z = 1
+    if size_z < 21: # XY plane image with a few Z planes 
+        chunk_w = min(512, width)
+        chunk_h = min(512, height)
+        chunk_z = min(4, size_z)
+    else: # Truely XYZ volume
+        chunk_w = min(256, width)
+        chunk_h = min(256, height)
+        chunk_z = min(16, size_z)
 
-    while chunk_w * chunk_h * chunk_z * bpp < TARGET_CHUNK_SIZE:
-        # Grow the smaller in-plane dimension first to keep chunks roughly
-        # square; if one dimension is already at the image bound, grow the
-        # other. Only move to Z once both X and Y are capped.
-        if chunk_w < width and (chunk_w <= chunk_h or chunk_h >= height):
-            chunk_w = min(width, chunk_w * 2)
-        elif chunk_h < height:
-            chunk_h = min(height, chunk_h * 2)
-        elif chunk_z < max_z:
-            chunk_z = min(max_z, chunk_z + 1)
-        else:
-            break
+    # Scale chunk_z by "bytes per pixel"
+    chunk_z = (chunk_z + bpp - 1) // bpp # round up not down.
 
-    # Shards must be whole multiples of the chosen chunk dimensions in each
-    # axis. Start with a 1x1x1 chunk grid per shard and greedily increase the
-    # per-axis chunk count until the target shard size is reached or no axis
-    # can be expanded further.
-    max_fw = width // chunk_w
-    max_fh = height // chunk_h
-    max_fz = max_z // chunk_z
-
-    fw = fh = fz = 1
-    while True:
-        current_size = chunk_w * fw * chunk_h * fh * chunk_z * fz * bpp
-        best = None
-        best_size = current_size
-
-        for dim, new_factor, dim_max in (
-            ("w", fw + 1, max_fw),
-            ("h", fh + 1, max_fh),
-            ("z", fz + 1, max_fz),
-        ):
-            if new_factor > dim_max:
-                continue
-            if dim == "w":
-                size = chunk_w * new_factor * chunk_h * fh * chunk_z * fz * bpp
-            elif dim == "h":
-                size = chunk_w * fw * chunk_h * new_factor * chunk_z * fz * bpp
-            else:
-                size = chunk_w * fw * chunk_h * fh * chunk_z * new_factor * bpp
-            if size <= TARGET_SHARD_SIZE and size > best_size:
-                best = dim
-                best_size = size
-
-        if best is None:
-            break
-
-        if best == "w":
-            fw += 1
-        elif best == "h":
-            fh += 1
-        else:
-            fz += 1
-
-    shard_w = chunk_w * fw
-    shard_h = chunk_h * fh
-    shard_depth = chunk_z * fz
-
+    # -> Should give a chunk size of 1Mb uncompressed bytes.
     chunk_size = chunk_w * chunk_h * chunk_z * bpp
+
+    shard_w = chunk_w * shard_factor
+    shard_h = chunk_h * shard_factor
+    shard_depth = chunk_z * shard_factor if size_z > 1 else chunk_z
     shard_size = shard_w * shard_h * shard_depth * bpp
 
     return chunk_w, chunk_h, chunk_z, shard_w, shard_h, shard_depth, chunk_size, shard_size
@@ -280,7 +221,7 @@ def main() -> None:
         shard_depth,
         chunk_size,
         shard_size,
-    ) = derive_parameters(width, height, size_z, size_t, size_c, pixel_type)
+    ) = derive_parameters(width, height, size_z, pixel_type)
 
     print(
         f"Image: Width={width} Height={height} SizeZ={size_z} "
@@ -291,9 +232,10 @@ def main() -> None:
     sys.stderr.flush()
 
     print(
-        f"--ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' "
+        f" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' "
         f"-w {chunk_w} -h {chunk_h} -z {chunk_z} "
-        f"--shard-width={shard_w} --shard-height={shard_h} --shard-depth={shard_depth}"
+        f"--shard-width={shard_w} --shard-height={shard_h} --shard-depth={shard_depth} "
+        f"--max_workers=8 "
     )
     print(
         f"Resulting ChunkSize={chunk_size // 1024}kb and ShardSize={shard_size // 1024}kb",

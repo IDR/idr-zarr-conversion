@@ -42,19 +42,17 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     fi
     target_dir="${target_dir#*Dataset:name:}"
     mkdir -p "/data/output/${target_dir}"
-    echo "[$count/$total] Converting $filepath to ${target_dir}/${zarr_name}"
     bfparams=$(python bfparams.py "$filepath")
-    if [[ -z "$bfparams" ]]; then
-        echo "[$count/$total] WARNING: bfparams empty or failed for $filepath" >&2
-    fi
     command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' $bfparams --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}")
-    printf 'Command:'
-    printf ' %q' "${command[@]}"
-    printf '\n'
-    if ! "${command[@]}"; then
+    log_path="/data/output/${target_dir}/${zarr_name}.log"
+    {
+        printf 'Command:'
+        printf ' %q' "${command[@]}"
+        printf '\n'
+    } > "$log_path"
+    if ! "${command[@]}" >> "$log_path" 2>&1; then
         failed_lines+=("$count")
         failed_lines_content+=("$line_content")
-        echo "[$count/$total] FAILED: $filepath" >&2
     fi
 done < "$input_file"
 

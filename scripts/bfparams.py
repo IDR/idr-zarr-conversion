@@ -160,8 +160,12 @@ def derive_parameters(
 
     # Calculate chunk sizes for 1mb chunk assuming 1 byte-per-pixel.
     if size_z < 26: # XY plane image with a few Z planes, try to keep z=1
-        chunk_w = min(1024, width)
-        chunk_h = min(1024, height)
+        if bpp < 4:
+            chunk_w = min(1024, width)
+            chunk_h = min(1024, height)
+        else:
+            chunk_w = min(512, width)
+            chunk_h = min(512, height)
         # target chunk_z size to ensure >= 1mb chunk
         chunk_z = (1048576 + chunk_w * chunk_h - 1) // (chunk_w * chunk_h) # round up
         # but it can't be larger than size_z

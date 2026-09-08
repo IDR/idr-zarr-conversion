@@ -2,6 +2,7 @@
 
 import json
 import re
+import time
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -12,6 +13,11 @@ WEBCLIENT = "https://idr.openmicroscopy.org/webclient"
 WEBGATEWAY = "https://idr.openmicroscopy.org/webgateway"
 NCBI_ESEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 NCBI_ESUMMARY = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+
+# NCBI E-utilities asks for no more than ~3 requests/sec without an API key.
+_MIN_NCBI_INTERVAL = 0.35
+_LAST_NCBI_REQUEST = 0.0
+_TAXON_CACHE: dict[str, dict | None] = {}
 
 
 def idr_get(path: str, **params) -> dict:
@@ -289,34 +295,58 @@ def get_child_files(
     return files
 
 
+def _ncbi_get(url: str, params: dict, retries: int = 3) -> requests.Response:
+    """Make a rate-limited NCBI E-utilities request, retrying on 429."""
+    global _LAST_NCBI_REQUEST
+
+    for attempt in range(retries):
+        elapsed = time.monotonic() - _LAST_NCBI_REQUEST
+        if elapsed < _MIN_NCBI_INTERVAL:
+            time.sleep(_MIN_NCBI_INTERVAL - elapsed)
+
+        r = requests.get(url, params=params, timeout=30)
+        _LAST_NCBI_REQUEST = time.monotonic()
+        if r.status_code == 429 and attempt < retries - 1:
+            time.sleep(1)
+            continue
+        r.raise_for_status()
+        return r
+
+    # Should only be reached if every attempt returned 429.
+    r.raise_for_status()
+    return r
+
+
 def ncbi_taxon(name: str) -> dict | None:
     """Look up an NCBI Taxon by scientific/common name."""
     if not name:
         return None
+    if name in _TAXON_CACHE:
+        return _TAXON_CACHE[name]
 
-    r = requests.get(
+    r = _ncbi_get(
         NCBI_ESEARCH,
         params={"db": "taxonomy", "term": name, "retmode": "json"},
-        timeout=30,
     )
-    r.raise_for_status()
     data = r.json()
     ids = data.get("esearchresult", {}).get("idlist", [])
     if not ids:
+        _TAXON_CACHE[name] = None
         return None
 
-    r2 = requests.get(
+    r2 = _ncbi_get(
         NCBI_ESUMMARY,
         params={"db": "taxonomy", "id": ids[0], "retmode": "json"},
-        timeout=30,
     )
-    r2.raise_for_status()
     summary = r2.json().get("result", {}).get(ids[0], {})
     if not summary:
+        _TAXON_CACHE[name] = None
         return None
 
-    return {
+    result = {
         "taxid": summary.get("taxid"),
         "scientificName": summary.get("scientificname"),
         "commonName": summary.get("commonname") or None,
     }
+    _TAXON_CACHE[name] = result
+    return result

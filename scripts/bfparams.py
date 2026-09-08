@@ -20,10 +20,6 @@ from pathlib import Path
 
 SHOWINF = "showinf"
 
-# Target sizes for a single chunk and a single shard.
-TARGET_CHUNK_SIZE = 768 * 1024  # ~768 KiB
-TARGET_SHARD_SIZE = 10 * 1024 * 1024  # ~10 MiB
-
 
 def run_showinf(image_path: str) -> str:
     """Run ``showinf -nopix`` and return its stdout as a string."""
@@ -168,8 +164,7 @@ def derive_parameters(
             chunk_h = min(512, height)
         # target chunk_z size to ensure >= 1mb chunk
         chunk_z = (1048576 + chunk_w * chunk_h - 1) // (chunk_w * chunk_h) # round up
-        # but it can't be larger than size_z
-        chunk_z = min(chunk_z, size_z)
+        
     else: # Truely XYZ volume, use 16 z slices
         chunk_w = min(256, width)
         chunk_h = min(256, height)
@@ -177,6 +172,9 @@ def derive_parameters(
 
     # Scale chunk_z by "bytes per pixel"
     chunk_z = (chunk_z + bpp - 1) // bpp # round up
+
+    # Ensure chunk_z doesn't exceed size_z
+    chunk_z = min(chunk_z, size_z)
 
     # -> Should give a chunk size of 1Mb uncompressed bytes.
     chunk_size = chunk_w * chunk_h * chunk_z * bpp
@@ -234,7 +232,7 @@ def main() -> None:
     print(
         f"Image: Width={width} Height={height} SizeZ={size_z} "
         f"SizeT={size_t} SizeC={size_c} PixelType={pixel_type}\n"
-        f"bioformats2raw parameters:",
+        f"bioformats2raw parameters: -w {chunk_w} -h {chunk_h} -z {chunk_z} --shard-width={chunk_w} --shard-height={chunk_h} --shard-depth={chunk_z}",
         file=sys.stderr,
     )
     sys.stderr.flush()

@@ -122,6 +122,11 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
         if re.match(r"^(Study|Experiment|Screen) Imaging Method$", key, re.I):
             value = ", ".join(v.strip() for v in row[1:] if v.strip())
 
+        # A study can list more than one organism on the same row (extra
+        # tab-separated columns).
+        if re.match(r"^Study Organism$", key, re.I):
+            value = [v.strip() for v in row[1:] if v.strip()]
+
         if current is not None:
             current["data"][key] = value
         else:
@@ -302,7 +307,10 @@ def build_crate(
     """
     title = study.get("Study Title", "").strip()
     description = study.get("Study Description", "").strip()
-    organism = study.get("Study Organism", "").strip()
+    raw_organisms = study.get("Study Organism", [])
+    if isinstance(raw_organisms, str):
+        raw_organisms = [raw_organisms] if raw_organisms.strip() else []
+    organisms = [o.strip() for o in raw_organisms if o.strip()]
     keywords = [k.strip() for k in study.get("Study Key Words", "").split(",") if k.strip()]
 
     imaging_methods = collect_imaging_methods(study, containers_info)
@@ -339,7 +347,8 @@ def build_crate(
 
     # BioSample/Taxon placeholders, linked from every dataset
     bio_sample_ref = []
-    if organism:
+    seen_taxon_ids = set()
+    for idx, organism in enumerate(organisms, start=1):
         taxon = ncbi_taxon(organism)
         if taxon and taxon.get("taxid"):
             taxon_id = f"NCBI:txid{taxon['taxid']}"
@@ -350,13 +359,15 @@ def build_crate(
             scientific_name = organism
             common_name = None
 
-        bio_sample_id = "#biosample-1"
-        graph.append({
-            "@id": taxon_id,
-            "@type": "bia:Taxon",
-            "scientificName": scientific_name,
-            "commonName": common_name,
-        })
+        bio_sample_id = f"#biosample-{idx}"
+        if taxon_id not in seen_taxon_ids:
+            seen_taxon_ids.add(taxon_id)
+            graph.append({
+                "@id": taxon_id,
+                "@type": "bia:Taxon",
+                "scientificName": scientific_name,
+                "commonName": common_name,
+            })
         graph.append({
             "@id": bio_sample_id,
             "@type": "bia:BioSample",
@@ -364,7 +375,7 @@ def build_crate(
             "description": organism,
             "organismClassification": [{"@id": taxon_id}],
         })
-        bio_sample_ref = [{"@id": bio_sample_id}]
+        bio_sample_ref.append({"@id": bio_sample_id})
 
     # Datasets / plates, across every container in the study
     for entry in containers_info:
@@ -405,6 +416,13 @@ def build_crate(
                     "file_path": f["path"],
                     "dataset": ds_id,
                     "type": "bia:Image",
+                    "size_in_bytes": -1,
+                })
+                file_list_rows.append({
+                    "file_path": f"{f['path']}.log",
+                    "dataset": ds_id,
+                    "type": "log",
+                    "size_in_bytes": -1,
                 })
 
     # Root Study entity
@@ -454,6 +472,7 @@ def build_crate(
                 {"@id": "_:col0"},
                 {"@id": "_:col1"},
                 {"@id": "_:col2"},
+                {"@id": "_:col3"},
             ],
         })
         graph.append({
@@ -475,6 +494,12 @@ def build_crate(
             "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
         })
         graph.append({
+            "@id": "_:col3",
+            "@type": ["csvw:Column"],
+            "columnName": "size_in_bytes",
+            "propertyUrl": "http://bia/fileSize",
+        })
+        graph.append({
             "@id": "file_list.tsv",
             "@type": ["File", "bia:FileList", "csvw:Table"],
             "tableSchema": {"@id": "_:ts0"},
@@ -492,7 +517,7 @@ def build_crate(
     with open(tsv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["file_path", "dataset", "type"],
+            fieldnames=["file_path", "dataset", "type", "size_in_bytes"],
             delimiter="\t",
         )
         writer.writeheader()

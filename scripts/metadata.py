@@ -530,8 +530,9 @@ def main():
     parser.add_argument(
         "--output-dir",
         "-o",
-        default=".",
-        help="Directory to write filepaths.tsv, ro-crate-metadata.json and file_list.tsv (default: current directory).",
+        default="/data/output",
+        help="Root output directory. Files are written under "
+             "<output_dir>/<study_name>/ (default: /data/output).",
     )
     args = parser.parse_args()
 
@@ -569,9 +570,12 @@ def main():
             "container": container,
         })
 
-    os.makedirs(args.output_dir, exist_ok=True)
-    build_crate(study, containers_info, args.output_dir)
-    write_filepaths_tsv(containers_info, args.output_dir)
+    study_name = containers_info[0]["container_name"].split("/")[0]
+    output_dir = str(Path(args.output_dir) / study_name)
+
+    os.makedirs(output_dir, exist_ok=True)
+    build_crate(study, containers_info, output_dir)
+    write_filepaths_tsv(containers_info, output_dir)
 
 
 if __name__ == "__main__":

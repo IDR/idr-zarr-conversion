@@ -2,22 +2,30 @@
 
 max_workers=14
 input_file=
+output_dir=/data/output
 bf2raw="${BF2RAW:-bioformats2raw}"
 
 while [[ $# -gt 0 ]]; do
     case $1 in
         --workers) max_workers="$2"; shift 2 ;;
         -*) echo "Unknown option: $1" >&2; exit 1 ;;
-        *)  input_file="$1";         shift ;;
+        *)
+            if [[ -z "$input_file" ]]; then
+                input_file="$1"
+            else
+                output_dir="$1"
+            fi
+            shift ;;
     esac
 done
 
 if [[ -z "$input_file" ]]; then
     echo "Error: no input file provided" >&2
     echo "" >&2
-    echo "Usage: $(basename "$0") [--workers N] <input_file>" >&2
+    echo "Usage: $(basename "$0") [--workers N] <input_file> [<output_dir>]" >&2
     echo "" >&2
     echo "  <input_file>  filepaths.tsv as written by metadata.py" >&2
+    echo "  <output_dir>  output root directory (default: /data/output)" >&2
     echo "  --workers N   Number of max workers (default: 14)" >&2
     exit 1
 fi
@@ -41,10 +49,10 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
         zarr_name="${filename%.*}.ome.zarr"
     fi
     target_dir="${target_dir#*Dataset:name:}"
-    mkdir -p "/data/output/${target_dir}"
+    mkdir -p "${output_dir}/${target_dir}"
     bfparams=$(python bfparams.py "$filepath")
-    command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' $bfparams --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "/data/output/${target_dir}/${zarr_name}")
-    log_path="/data/output/${target_dir}/${zarr_name}.log"
+    command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' $bfparams --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "${output_dir}/${target_dir}/${zarr_name}")
+    log_path="${output_dir}/${target_dir}/${zarr_name}.log"
     {
         printf 'Command:'
         printf ' %q' "${command[@]}"

@@ -54,7 +54,7 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' $bfparams --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "${output_dir}/${target_dir}/${zarr_name}")
     log_path="${output_dir}/${target_dir}/${zarr_name}.log"
     {
-        printf 'Version: %s\n' "$($bf2raw --version)"
+        printf 'Bioformats2raw %s\n' "$($bf2raw --version)"
         printf 'Command:'
         printf ' %q' "${command[@]}"
         printf '\n'

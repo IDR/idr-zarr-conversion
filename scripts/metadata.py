@@ -528,7 +528,7 @@ def build_crate(
         json.dump(crate_doc, f, indent=2, ensure_ascii=False)
 
     print(f"RO-Crate written to {out_path}")
-    print(f"File list written to {tsv_path} ({len(file_list_rows)} rows)")
+    print(f"File list written to {tsv_path}")
 
 
 def write_filepaths_tsv(containers_info: list, output_dir: str) -> int:

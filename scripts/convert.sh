@@ -51,7 +51,7 @@ while IFS=$'\t' read -r target_dir filepath zarr_name extra; do
     target_dir="${target_dir#*Dataset:name:}"
     mkdir -p "${output_dir}/${target_dir}"
     bfparams=$(python bfparams.py "$filepath")
-    command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties='level=1' $bfparams --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "${output_dir}/${target_dir}/${zarr_name}")
+    command=("$bf2raw" --ngff-version=0.5 --downsample-type=AREA -c zstd --compression-properties=\'level=1\' $bfparams --max_workers="$max_workers" --memo-directory=/data/memo "$filepath" "${output_dir}/${target_dir}/${zarr_name}")
     log_path="${output_dir}/${target_dir}/${zarr_name}.log"
     {
         printf 'Bioformats2raw %s\n' "$($bf2raw --version)"

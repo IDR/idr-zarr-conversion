@@ -93,7 +93,7 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
         while i + 1 < len(lines):
             next_line = lines[i + 1].rstrip("\r")
             next_row = next_line.split("\t")
-            if _is_new_row(next_row):
+            if _is_new_row(next_row) or next_line.lstrip().startswith("#"):
                 break
             if len(row) >= 2 and next_line.strip():
                 row[1] += "\n" + next_line.strip()
@@ -244,6 +244,22 @@ def slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
+def remove_empty_values(value):
+    if isinstance(value, dict):
+        return {
+            key: cleaned
+            for key, item in value.items()
+            if (cleaned := remove_empty_values(item)) not in (None, "", [], {})
+        }
+    if isinstance(value, list):
+        return [
+            cleaned
+            for item in value
+            if (cleaned := remove_empty_values(item)) not in (None, "", [], {})
+        ]
+    return value
+
+
 def container_letter_dir(container_name: str) -> str:
     """Return the last path segment of an OMERO container name.
 
@@ -345,10 +361,10 @@ def build_crate(
     file_list_rows = []
     seen_file_paths = set()
 
-    # BioSample/Taxon placeholders, linked from every dataset
-    bio_sample_ref = []
-    seen_taxon_ids = set()
-    for idx, organism in enumerate(organisms, start=1):
+    # Taxon entities from Study Organism
+    organism_to_taxon: dict[str, str] = {}
+    seen_taxon_ids: set[str] = set()
+    for organism in organisms:
         taxon = ncbi_taxon(organism)
         if taxon and taxon.get("taxid"):
             taxon_id = f"NCBI:txid{taxon['taxid']}"
@@ -359,7 +375,7 @@ def build_crate(
             scientific_name = organism
             common_name = None
 
-        bio_sample_id = f"#biosample-{idx}"
+        organism_to_taxon[organism] = taxon_id
         if taxon_id not in seen_taxon_ids:
             seen_taxon_ids.add(taxon_id)
             graph.append({
@@ -368,14 +384,72 @@ def build_crate(
                 "scientificName": scientific_name,
                 "commonName": common_name,
             })
-        graph.append({
-            "@id": bio_sample_id,
+
+    default_organism = organisms[0] if organisms else None
+    default_taxon_id = organism_to_taxon.get(default_organism) if default_organism else None
+
+    # BioSample entities, one per distinct Experiment/Screen Sample Type
+    biosample_keys: list[tuple[str, str | None]] = []
+    biosample_ids: dict[tuple[str, str | None], str] = {}
+    container_biosample_ref: dict[str, list[dict]] = {}
+
+    for entry in containers_info:
+        container_name = entry["container_name"]
+        component = entry.get("component")
+        is_screen = entry["container_type"] == "screen"
+        sample_key = "Screen Sample Type" if is_screen else "Experiment Sample Type"
+        if component:
+            sample_type = component["data"].get(sample_key, "").strip()
+        else:
+            sample_type = ""
+        if not sample_type:
+            sample_type = "unknown sample type"
+
+        taxon_id = default_taxon_id
+        key = (sample_type, taxon_id)
+        if key not in biosample_ids:
+            biosample_ids[key] = f"#biosample-{len(biosample_keys) + 1}"
+            biosample_keys.append(key)
+        bio_sample_id = biosample_ids[key]
+        container_biosample_ref[container_name] = [{"@id": bio_sample_id}]
+
+    for sample_type, taxon_id in biosample_keys:
+        bio_sample_entity = {
+            "@id": biosample_ids[(sample_type, taxon_id)],
             "@type": "bia:BioSample",
-            "name": organism,
-            "description": organism,
-            "organismClassification": [{"@id": taxon_id}],
-        })
-        bio_sample_ref.append({"@id": bio_sample_id})
+            "name": sample_type,
+            "description": sample_type,
+        }
+        if taxon_id:
+            bio_sample_entity["organismClassification"] = [{"@id": taxon_id}]
+        graph.append(bio_sample_entity)
+
+    # Imaging protocol entities, one per distinct Experiment/Screen Imaging Method
+    container_protocol_refs: dict[str, list[dict]] = {}
+    protocol_ids: dict[str, str] = {}
+    for entry in containers_info:
+        container_name = entry["container_name"]
+        component = entry.get("component")
+        is_screen = entry["container_type"] == "screen"
+        method_key = "Screen Imaging Method" if is_screen else "Experiment Imaging Method"
+        if component:
+            raw_methods = component["data"].get(method_key, "")
+            methods = [m.strip() for m in raw_methods.split(",") if m.strip()]
+        else:
+            methods = []
+        refs = []
+        for method in methods:
+            if method not in protocol_ids:
+                protocol_id = f"#image-acquisition-protocol-{slugify(method)}"
+                graph.append({
+                    "@id": protocol_id,
+                    "@type": "LabProtocol",
+                    "name": method,
+                    "description": method,
+                })
+                protocol_ids[method] = protocol_id
+            refs.append({"@id": protocol_ids[method]})
+        container_protocol_refs[container_name] = refs
 
     # Datasets / plates, across every container in the study
     for entry in containers_info:
@@ -394,12 +468,12 @@ def build_crate(
                 "@type": ["Dataset", "bia:Dataset"],
                 "name": child_name,
                 "description": child.get("Description", ""),
-                "associatedBiologicalEntity": bio_sample_ref,
-                "associatedSpecimenImagingPreparationProtocol": [],
+                "associatedBiologicalEntity": container_biosample_ref.get(container_name, []),
+                "associatedSpecimenImagingPreparationProtocol": container_protocol_refs.get(container_name, []),
                 "associatedSpecimen": None,
                 "associatedCreationProcess": None,
                 "associatedSourceImage": [],
-                "associatedImageAcquisitionProtocol": [],
+                "associatedImageAcquisitionProtocol": container_protocol_refs.get(container_name, []),
                 "associatedAnnotationMethod": [],
                 "associatedImageAnalysisMethod": [],
                 "associatedImageCorrelationMethod": [],
@@ -508,7 +582,7 @@ def build_crate(
 
     crate_doc = {
         "@context": load_bia_context(),
-        "@graph": graph,
+        "@graph": [remove_empty_values(entity) for entity in graph],
     }
 
     os.makedirs(output_dir, exist_ok=True)

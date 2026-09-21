@@ -19,7 +19,7 @@ from pathlib import Path
 
 
 SHOWINF = "showinf"
-
+Z_CUTOFF = 50 # only considered 3d with more z planes than this value
 
 def run_showinf(image_path: str) -> str:
     """Run ``showinf -nopix`` and return its stdout as a string."""
@@ -155,7 +155,7 @@ def derive_parameters(
     shard_factor = 2
 
     # Calculate chunk sizes for 1mb chunk assuming 1 byte-per-pixel.
-    if size_z < 26: # XY plane image with a few Z planes, try to keep z=1
+    if size_z < Z_CUTOFF: # XY plane image with a few Z planes, try to keep z=1
         if bpp < 4:
             chunk_w = min(1024, width)
             chunk_h = min(1024, height)

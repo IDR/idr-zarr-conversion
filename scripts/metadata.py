@@ -461,12 +461,17 @@ def build_crate(
         for child in children:
             child_id = child["@id"]
             child_name = child.get("Name", "")
+            dataset_name = (
+                child_name
+                if container_type == "screen"
+                else f"{container_letter_dir(container_name)}/{child_name}"
+            )
             ds_id = f"#{'Plate' if container_type == 'screen' else 'Dataset'}-{child_id}"
 
             dataset_entity = {
                 "@id": ds_id,
                 "@type": ["Dataset", "bia:Dataset"],
-                "name": child_name,
+                "name": dataset_name,
                 "description": child.get("Description", ""),
                 "associatedBiologicalEntity": container_biosample_ref.get(container_name, []),
                 "associatedSpecimenImagingPreparationProtocol": container_protocol_refs.get(container_name, []),
@@ -495,7 +500,7 @@ def build_crate(
                 file_list_rows.append({
                     "file_path": f"{f['path']}.log",
                     "dataset": ds_id,
-                    "type": "log",
+                    "type": "bia:File",
                     "size_in_bytes": -1,
                 })
 

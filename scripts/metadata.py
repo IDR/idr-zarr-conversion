@@ -9,7 +9,7 @@ the IDR OMERO JSON API, and writes three files to --output-dir:
   drive the bioformats2raw conversion. Columns: ``experiment<A/B/...>`` or
   ``experiment<A/B/...>/<Dataset name>`` (screens/projects respectively), the
   real filesystem path of the source image/plate file, and the
-  ``<file name>.ome.zarr`` name to convert it to.
+  ``<OMERO image/plate name>.ome.zarr`` name to convert it to.
 - ``ro-crate-metadata.json`` — a minimal BIA RO-Crate for the study.
 - ``file_list.tsv`` — the RO-Crate's file list
 """
@@ -37,7 +37,6 @@ from idr_client import (
     get_images,
     idr_get,
     ncbi_taxon,
-    zarr_name,
 )
 
 BIA_CONTEXT_PATH = Path(__file__).resolve().parent / "bia_context.json"
@@ -280,7 +279,8 @@ def filepaths_rows(containers_info: list):
     derived from the same records used to build the RO-Crate file list;
     images/plates whose path can't be resolved are skipped, as are exact
     duplicate rows (multiple OMERO images can point at the same underlying
-    file).
+    file). OME-Zarr URL sources are also skipped, because they do not need
+    to be converted.
     """
     seen = set()
     for entry in containers_info:
@@ -297,7 +297,7 @@ def filepaths_rows(containers_info: list):
                 container_type, child_id, child_name, letter_dir
             ):
                 source_path = f.get("source_path")
-                if source_path is None:
+                if source_path is None or f.get("is_zarr_source") or not f.get("zarr_name"):
                     continue
                 if container_type == "screen":
                     target_dir = container_name
@@ -497,12 +497,14 @@ def build_crate(
                     "type": "bia:Image",
                     "size_in_bytes": -1,
                 })
-                file_list_rows.append({
-                    "file_path": f"{f['path']}.log",
-                    "dataset": ds_id,
-                    "type": "bia:File",
-                    "size_in_bytes": -1,
-                })
+                # URL-backed OME-Zarr sources have no local conversion log.
+                if not f.get("is_zarr_source"):
+                    file_list_rows.append({
+                        "file_path": f"{f['path']}.log",
+                        "dataset": ds_id,
+                        "type": "bia:File",
+                        "size_in_bytes": -1,
+                    })
 
     # Root Study entity
     root_entity = {
@@ -608,6 +610,7 @@ def build_crate(
 
     print(f"RO-Crate written to {out_path}")
     print(f"File list written to {tsv_path}")
+    return len(file_list_rows)
 
 
 def write_filepaths_tsv(containers_info: list, output_dir: str) -> int:
@@ -678,8 +681,9 @@ def main():
     output_dir = str(Path(args.output_dir) / study_name)
 
     os.makedirs(output_dir, exist_ok=True)
-    build_crate(study, containers_info, output_dir)
-    write_filepaths_tsv(containers_info, output_dir)
+    file_list_count = build_crate(study, containers_info, output_dir)
+    filepaths_count = write_filepaths_tsv(containers_info, output_dir)
+    print(f"Total entries: file_list.tsv={file_list_count}, filepaths.tsv={filepaths_count}")
 
 
 if __name__ == "__main__":

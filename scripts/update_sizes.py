@@ -1,5 +1,6 @@
 import argparse
 import csv
+import re
 import sys
 from pathlib import Path
 
@@ -12,8 +13,13 @@ def update_image_sizes(file_list: Path) -> int:
     with file_list.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
         fieldnames = reader.fieldnames
+        url_re = re.compile(r"^[a-z][a-z0-9+.-]*://", re.I)
         for row in reader:
-            path = Path(row.get("file_path", ""))
+            path_str = row.get("file_path", "")
+            if url_re.match(path_str):
+                rows.append(row)
+                continue
+            path = Path(path_str)
             size = row.get("size_in_bytes", "")
             if size == "-1":
                 full_path = base_dir / path

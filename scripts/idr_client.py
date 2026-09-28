@@ -169,14 +169,14 @@ def _is_zarr_source(client_paths: list[str]) -> bool:
     return any(".zarr/" in p or p.rstrip("/").endswith(".zarr") for p in client_paths)
 
 
-def get_client_path(image_id: int) -> str | None:
-    """Fetch the real client-side (upload-time) filesystem path for an image.
+def get_source_path(image_id: int) -> tuple[str | None, bool]:
+    """Fetch the client-side source path for an image and flag OME-Zarr URLs.
 
-    Uses OMERO's ``original_file_paths`` webgateway endpoint, which reports
-    both the ``server`` (managed repository) and ``client`` (as-uploaded)
-    paths for the files backing an image's fileset. Returns None if the
-    path can't be resolved (e.g. no permission, image has no fileset) or if
-    the fileset is itself an OME-Zarr store (nothing to convert).
+    Uses OMERO's ``original_file_paths`` webgateway endpoint. Returns
+    ``(path, is_zarr_source)``. ``is_zarr_source`` is True when the source is
+    an already-converted OME-Zarr URL (e.g. an S3 URL) that should not be run
+    through bioformats2raw. Returns ``(None, False)`` if no usable path can be
+    resolved.
     """
     try:
         resp = requests.get(
@@ -185,15 +185,46 @@ def get_client_path(image_id: int) -> str | None:
         resp.raise_for_status()
         data = resp.json()
     except requests.RequestException:
-        return None
+        return None, False
     client_paths = data.get("client", [])
-    if not client_paths or _is_zarr_source(client_paths):
-        return None
+    if not client_paths:
+        return None, False
+    is_zarr = _is_zarr_source(client_paths)
     for path in client_paths:
         name = path.rsplit("/", 1)[-1]
         if not name.lower().endswith(_SIDECAR_SUFFIXES):
-            return normalise_path(path)
-    return normalise_path(client_paths[0])
+            selected = path
+            break
+    else:
+        selected = client_paths[0]
+    if is_zarr:
+        # The webgateway reports a .zattrs path inside the Zarr store; the
+        # file list needs the store URL itself and uses the new BIA object
+        # storage endpoint.
+        zarr_url = selected.rstrip("/")
+        if zarr_url.endswith("/.zattrs"):
+            zarr_url = zarr_url[: -len("/.zattrs")]
+        zarr_url = re.sub(
+            r"^https?://uk1s3\.embassy\.ebi\.ac\.uk/bia-integrator-data",
+            "https://livingobjects.ebi.ac.uk/bioimaging-integrator-data",
+            zarr_url,
+            count=1,
+            flags=re.I,
+        )
+        return zarr_url, True
+    return normalise_path(selected), False
+
+
+def get_client_path(image_id: int) -> str | None:
+    """Fetch the real client-side filesystem path for an image.
+
+    Returns None if the path can't be resolved or if the source is an
+    OME-Zarr store (nothing to convert).
+    """
+    path, is_zarr = get_source_path(image_id)
+    if path is None or is_zarr:
+        return None
+    return path
 
 
 def zarr_name(client_path: str) -> str:
@@ -208,6 +239,24 @@ def zarr_name(client_path: str) -> str:
     if m:
         return m.group(1) + ".ome.zarr"
     return Path(name).stem + ".ome.zarr"
+
+
+def _safe_zarr_base(name: str, fallback_id: int | str) -> str:
+    """Sanitise an OMERO image/plate name for use as a Zarr directory stem.
+
+    Unsafe filesystem characters are replaced with underscores, leading/trailing
+    whitespace and separators are stripped, and a numeric fallback is used when
+    the resulting name is empty.
+    """
+    base = str(name).strip()
+    if not base:
+        base = str(fallback_id)
+    base = re.sub(r"[^A-Za-z0-9_ .-]+", "_", base)
+    base = re.sub(r"_+", "_", base)
+    base = base.strip("_. ")
+    if not base:
+        base = str(fallback_id)
+    return base
 
 
 def load_study(study_input: str) -> dict:
@@ -264,31 +313,45 @@ def get_child_files(
     prefix = f"{letter_dir}/" if letter_dir else ""
 
     if container_type == "screen":
-        z = zarr_name(child_name)
         # Use the first well's image to get a source file path for convert.sh
         first_page = idr_get(f"/m/plates/{child_id}/wells/", limit=1, offset=0)
         wells = first_page.get("data", [])
         source_path = None
+        image_id = None
         if wells:
             well_samples = wells[0].get("WellSamples", [])
             if well_samples:
                 image_id = well_samples[0]["Image"]["@id"]
-                source_path = get_client_path(image_id)
+                source_path, is_zarr = get_source_path(image_id)
         if source_path is None:
             return []
-        return [{"path": f"{prefix}{z}", "zarr_name": z, "source_path": source_path}]
+        if is_zarr:
+            return [{"path": source_path, "zarr_name": None, "source_path": source_path, "is_zarr_source": True}]
+        z = _safe_zarr_base(child_name, child_id) + ".ome.zarr"
+        return [{"path": f"{prefix}{z}", "zarr_name": z, "source_path": source_path, "is_zarr_source": False}]
 
     files = []
     for img in get_images(container_type, child_id):
         image_id = img["@id"]
-        client_path = get_client_path(image_id)
-        if client_path is None:
+        source_path, is_zarr = get_source_path(image_id)
+        if source_path is None:
             continue
-        z = zarr_name(client_path)
+        if is_zarr:
+            files.append({
+                "path": source_path,
+                "zarr_name": None,
+                "source_path": source_path,
+                "is_zarr_source": True,
+                "image_id": image_id,
+                "image_name": img.get("Name", ""),
+            })
+            continue
+        z = _safe_zarr_base(img.get("Name", ""), image_id) + ".ome.zarr"
         files.append({
             "path": f"{prefix}{child_name}/{z}",
             "zarr_name": z,
-            "source_path": client_path,
+            "source_path": source_path,
+            "is_zarr_source": False,
             "image_id": image_id,
             "image_name": img.get("Name", ""),
         })

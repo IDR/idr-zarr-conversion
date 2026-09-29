@@ -230,15 +230,25 @@ def get_client_path(image_id: int) -> str | None:
 def zarr_name(client_path: str) -> str:
     """Turn an image file name into an OME-Zarr file name.
 
-    Strips the file extension, treating a trailing ``.ome.tif``/``.ome.tiff``
-    as a single extension (``Path.stem`` would otherwise only strip the
-    ``.tiff`` part, leaving e.g. ``image.ome.ome.zarr``).
+    Strips the file extension. ``.ome.<ext>`` is treated as a single
+    extension so ``image.ome.tif`` becomes ``image.ome.zarr`` rather than
+    ``image.ome.ome.zarr``.
     """
-    name = Path(client_path).name
-    m = re.match(r"^(.*)\.ome\.tiff?$", name, re.I)
+    return _stem_for_zarr(client_path) + ".ome.zarr"
+
+
+def _stem_for_zarr(name: str) -> str:
+    """Return the stem to use for an OME-Zarr directory name.
+
+    Strips the file extension. ``.ome.<ext>`` is treated as a single extension
+    so ``image.ome.tif`` becomes ``image`` rather than ``image.ome``.
+    """
+    base = Path(name).name
+    # Treat .ome.<ext> as a single extension.
+    m = re.match(r"^(.*)\.ome\.[^.]+$", base, re.I)
     if m:
-        return m.group(1) + ".ome.zarr"
-    return Path(name).stem + ".ome.zarr"
+        return m.group(1)
+    return Path(base).stem
 
 
 def _safe_zarr_base(name: str, fallback_id: int | str) -> str:
@@ -257,6 +267,43 @@ def _safe_zarr_base(name: str, fallback_id: int | str) -> str:
     if not base:
         base = str(fallback_id)
     return base
+
+
+def _unique_zarr_name(
+    stem: str,
+    source_path: str,
+    used_names: set[str],
+    fallback_id: int | str,
+) -> str:
+    """Return a Zarr directory name that is unique within ``used_names``.
+
+    If the simple stem would collide with a name already used in the same
+    dataset/plate, parent directory names from ``source_path`` are prepended
+    until the name becomes unique. Directory names that are identical to, or
+    a prefix of, ``stem`` are skipped because they add no useful disambiguation.
+    """
+    base = _safe_zarr_base(stem, fallback_id)
+    candidate = base + ".ome.zarr"
+    if candidate not in used_names:
+        return candidate
+
+    parts = [p for p in source_path.split("/") if p]
+    # Walk up parent directories (second-to-last, third-to-last, ...).
+    for i in range(2, min(len(parts) + 1, 10)):
+        comp = parts[-i]
+        # Skip components that are the same as the stem or just a prefix of it.
+        if (
+            comp.lower() == base.lower()
+            or base.lower().startswith(comp.lower() + "_")
+            or base.lower().startswith(comp.lower())
+        ):
+            continue
+        candidate = _safe_zarr_base(f"{comp}_{stem}", fallback_id) + ".ome.zarr"
+        if candidate not in used_names:
+            return candidate
+
+    # Final fallback: append the image/plate id.
+    return _safe_zarr_base(f"{stem}_{fallback_id}", fallback_id) + ".ome.zarr"
 
 
 def load_study(study_input: str) -> dict:
@@ -330,14 +377,18 @@ def get_child_files(
         z = _safe_zarr_base(child_name, child_id) + ".ome.zarr"
         return [{"path": f"{prefix}{z}", "zarr_name": z, "source_path": source_path, "is_zarr_source": False}]
 
+    # Group images by their source file so that multi-image files only
+    # produce a single OME-Zarr output.
     files = []
+    zarr_sources: list[dict] = []
+    by_source: dict[str, list[tuple[int, str]]] = {}
     for img in get_images(container_type, child_id):
         image_id = img["@id"]
         source_path, is_zarr = get_source_path(image_id)
         if source_path is None:
             continue
         if is_zarr:
-            files.append({
+            zarr_sources.append({
                 "path": source_path,
                 "zarr_name": None,
                 "source_path": source_path,
@@ -346,16 +397,32 @@ def get_child_files(
                 "image_name": img.get("Name", ""),
             })
             continue
-        z = _safe_zarr_base(img.get("Name", ""), image_id) + ".ome.zarr"
+        by_source.setdefault(source_path, []).append(
+            (image_id, img.get("Name", ""))
+        )
+
+    used_names: set[str] = set()
+    for source_path, entries in by_source.items():
+        image_id, image_name = entries[0]
+        if len(entries) > 1:
+            # Multi-image file: derive the output name from the original file.
+            stem = _stem_for_zarr(source_path)
+        else:
+            # Single-image file: use the OMERO image name, stripping any
+            # file extension it may carry.
+            stem = _stem_for_zarr(image_name)
+        z = _unique_zarr_name(stem, source_path, used_names, image_id)
+        used_names.add(z)
         files.append({
             "path": f"{prefix}{child_name}/{z}",
             "zarr_name": z,
             "source_path": source_path,
             "is_zarr_source": False,
             "image_id": image_id,
-            "image_name": img.get("Name", ""),
+            "image_name": image_name,
         })
-    return files
+
+    return files + zarr_sources
 
 
 def _ncbi_get(url: str, params: dict, retries: int = 3) -> requests.Response:

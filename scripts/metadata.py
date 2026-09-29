@@ -491,8 +491,14 @@ def build_crate(
                 if f["path"] in seen_file_paths:
                     continue
                 seen_file_paths.add(f["path"])
+                # The file list points to the final zipped OME-Zarr, not the
+                # unpacked directory.
+                if f.get("is_zarr_source"):
+                    file_list_path = f["path"]
+                else:
+                    file_list_path = f"{f['path']}.zip"
                 file_list_rows.append({
-                    "file_path": f["path"],
+                    "file_path": file_list_path,
                     "dataset": ds_id,
                     "type": "bia:Image",
                     "size_in_bytes": -1,

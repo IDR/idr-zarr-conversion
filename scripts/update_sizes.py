@@ -26,13 +26,6 @@ def update_image_sizes(file_list: Path) -> int:
                 if full_path.is_file():
                     row["size_in_bytes"] = str(full_path.stat().st_size)
                     updated += 1
-                elif full_path.suffixes and full_path.suffixes[-1] == ".zarr":
-                    zip_path = base_dir / f"{path}.zip"
-                    if zip_path.is_file():
-                        row["size_in_bytes"] = str(zip_path.stat().st_size)
-                        updated += 1
-                    else:
-                        print(f"Warning: zip not found: {zip_path}", file=sys.stderr)
             rows.append(row)
 
     with file_list.open("w", newline="", encoding="utf-8") as f:
@@ -45,7 +38,7 @@ def update_image_sizes(file_list: Path) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Update size_in_bytes in a BIA file_list.tsv from zipped OME-Zarr files."
+        description="Update size_in_bytes in a BIA file_list.tsv from local files."
     )
     parser.add_argument("file_list", type=Path, help="Path to file_list.tsv")
     args = parser.parse_args()

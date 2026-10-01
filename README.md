@@ -154,7 +154,7 @@ done
 
 Start globuspersonalconnect in a separate screen:
 ```
-screen -dmS globus /home/rocky/globusconnectpersonal-3.2.9/globusconnectpersonal -start
+screen -dmS globus /home/rocky/globusconnectpersonal-3.2.9/globusconnectpersonal -start -restrict-paths r/
 ```
 
 Start transfer (doesn't need screen, just triggers the transfer)

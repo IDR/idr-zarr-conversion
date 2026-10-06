@@ -145,17 +145,19 @@ def derive_parameters(
     height: int,
     size_z: int,
     pixel_type: str,
-) -> tuple[int, int, int, int, int, int, int, int]:
+) -> tuple[int, int, int, int, int, int, int, int, str]:
     """Return chunk and shard dimensions for bioformats2raw.
 
     Parameters are returned as ``(chunk_w, chunk_h, chunk_z,
-    shard_w, shard_h, shard_depth, chunk_size, shard_size)``.
+    shard_w, shard_h, shard_depth, chunk_size, shard_size, extra)``
+    (extra: any additional parameters to pass to bioformats2raw).
     """
     bpp = bytes_per_pixel(pixel_type)
     shard_factor = 2
 
     # Calculate chunk sizes for 1mb chunk assuming 1 byte-per-pixel.
     if size_z < Z_CUTOFF: # XY plane image with a few Z planes, try to keep z=1
+        extra = ""
         if bpp < 4:
             chunk_w = min(1024, width)
             chunk_h = min(1024, height)
@@ -169,6 +171,7 @@ def derive_parameters(
         chunk_w = min(256, width)
         chunk_h = min(256, height)
         chunk_z = min(16, size_z)
+        extra = "--downsample-z"
 
     # Scale chunk_z by "bytes per pixel"
     chunk_z = (chunk_z + bpp - 1) // bpp # round up
@@ -184,7 +187,7 @@ def derive_parameters(
     shard_depth = chunk_z * shard_factor if size_z > 1 else chunk_z
     shard_size = shard_w * shard_h * shard_depth * bpp
 
-    return chunk_w, chunk_h, chunk_z, shard_w, shard_h, shard_depth, chunk_size, shard_size
+    return chunk_w, chunk_h, chunk_z, shard_w, shard_h, shard_depth, chunk_size, shard_size, extra
 
 
 def main() -> None:
@@ -227,18 +230,19 @@ def main() -> None:
         shard_depth,
         chunk_size,
         shard_size,
+        extra
     ) = derive_parameters(width, height, size_z, pixel_type)
 
     print(
         f"Image: Width={width} Height={height} SizeZ={size_z} "
         f"SizeT={size_t} SizeC={size_c} PixelType={pixel_type}\n"
-        f"bioformats2raw parameters: -w {chunk_w} -h {chunk_h} -z {chunk_z} --shard-width={chunk_w} --shard-height={chunk_h} --shard-depth={chunk_z}",
+        f"bioformats2raw parameters: -w {chunk_w} -h {chunk_h} -z {chunk_z} --shard-width={chunk_w} --shard-height={chunk_h} --shard-depth={chunk_z} {extra}",
         file=sys.stderr,
     )
     sys.stderr.flush()
 
     print(
-        f"-w {chunk_w} -h {chunk_h} -z {chunk_z} --shard-width={chunk_w} --shard-height={chunk_h} --shard-depth={chunk_z}"
+        f"-w {chunk_w} -h {chunk_h} -z {chunk_z} --shard-width={chunk_w} --shard-height={chunk_h} --shard-depth={chunk_z} {extra}"
         #f"--shard-width={shard_w} --shard-height={shard_h} --shard-depth={shard_depth} "
         # sharding doesn't work properly yet (shard == chunk disables it practically): 
         # https://github.com/glencoesoftware/bioformats2raw/issues/299

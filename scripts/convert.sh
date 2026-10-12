@@ -5,6 +5,9 @@ input_file=
 output_dir=/data/output
 bf2raw="${BF2RAW:-bioformats2raw}"
 
+BF_MAX_MEM=24g
+JAVA_OPTS="-Xmx24g"
+
 while [[ $# -gt 0 ]]; do
     case $1 in
         --workers) max_workers="$2"; shift 2 ;;

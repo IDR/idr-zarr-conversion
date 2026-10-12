@@ -134,6 +134,22 @@ Then delete the zarrs:
 `find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
 (Make sure you are in the correct study directory, e.g. `/data/output/idr0027-dickerson-chromatin`!)
 
+## Sanity check
+
+After conversion and zipping, check the study directory is consistent:
+
+```
+./check_study.py /data/output/idr0027-dickerson-chromatin
+```
+
+This verifies that every row in `filepaths.tsv` produced a `.ome.zarr.zip`
+(`--min-zip-kb`, default 100KB) and a non-empty `.ome.zarr.log`, that every
+non-URL entry in `file_list.tsv` exists on disk (offering to remove stale
+rows, e.g. from failed conversions), and flags any files not listed in
+`file_list.tsv` (offering to delete them, including leftover unzipped
+`.ome.zarr` dirs). Use `--dry-run` to report without changing anything, or
+`--yes` to auto-accept all prompts.
+
 In case you need to unzip again:
 ```
 find . -type f -name "*.zip" -exec sh -c '

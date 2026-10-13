@@ -37,13 +37,13 @@ Generate `filepaths.tsv` (for `convert.sh` below), `ro-crate-metadata.json` and 
 
 ```
 mm activate crate
-python scripts/metadata.py https://raw.githubusercontent.com/IDR/idr-metadata/master/idr0027-dickerson-chromatin/idr0027-study.txt --output-dir /data/output/idr0027-dickerson-chromatin
+python scripts/metadata.py https://raw.githubusercontent.com/IDR/idr-metadata/master/idr0027-dickerson-chromatin/idr0027-study.txt 
 ```
 
-The script gets the IDR study metadata needed for the ro-crate from the study.txt. The image filepaths and names (image filename with extension changed to 'ome.zarr') needed for file_list.tsv (ro-crate) and filepaths.tsv (convert.sh) come from OMERO (image client_path). All components are written to a single set of output files in `--output-dir`:
+The script gets the IDR study metadata needed for the ro-crate from the study.txt. The image filepaths and names come from OMERO (image client_path). All files are written into `/data/output/` unless some other directory was specified with `--output-dir`:
 
 - `filepaths.tsv` — a 3-column, no-header TSV used as the input for `convert.sh`: Relative output path (e.g. 'experimentA/<Dataset name>'), absolute source path (e.g. '/nfs/bioimage/...'), and output filename (e.g. '<file name>.ome.zarr')
-- `ro-crate-metadata.json` and `file_list.tsv` — a minimal BIA RO-Crate. `file_list.tsv` contains three columns: `file_path`, `dataset`, and `type`, where `file_path` is relative to the RO-Crate root (i.e. `--output-dir`, without the study accession), e.g. `experiment<A/B/...>/<dataset>/<image>.ome.zarr` for projects or `screen<A/B/...>/<plate>.ome.zarr` for screens.
+- `ro-crate-metadata.json` and `file_list.tsv` — a minimal BIA RO-Crate. `file_list.tsv` contains three columns: `file_path`, `dataset`, and `type`, where `file_path` is relative to the RO-Crate root, e.g. `experiment<A/B/...>/<dataset>/<image>.ome.zarr` for projects or `screen<A/B/...>/<plate>.ome.zarr` for screens.
 
 Check:
 ```
@@ -84,29 +84,15 @@ Will create ome.zarrs in:
 ```
 /data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/a_upper_b_lower.ome.zarr
 /data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/c_upper_d_lower.ome.zarr
-/data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/e_upper.ome.zarr
 ...
 ```
 
-
-### Check
-
-Change into the output directory, e.g.:
-`cd /data/output/idr0027-dickerson-chromatin`
-
-Brief check if all ome.zarr were created:
-`find * -maxdepth 4 -type d -name "*.ome.zarr" | wc -l`
-
-#### Check with validator
-
-SSH with port forward:
-`ssh -J rocky@idr-pilot.openmicroscopy.org rocky@pilot-idrconv -L 8000:localhost:8000`
-
-Then
-`mm run -n crate ome_zarr view XYZ.ome.zarr` 
-
-Then go to
-`https://ome.github.io/ome-ngff-validator/?source=http://localhost:8000/XYZ.ome.zarr/0`
+and log the command used for the conversion in:
+```
+/data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/a_upper_b_lower.ome.zarr.log
+/data/output/idr0027-dickerson-chromatin/experimentA/Genomic separation 25kb/c_upper_d_lower.ome.zarr.log
+...
+```
 
 ## Zip
 
@@ -133,6 +119,13 @@ Check if all zarrs have been zipped:
 Then delete the zarrs:
 `find * -type d -name "*.ome.zarr" -exec rm -rf {} \;`
 (Make sure you are in the correct study directory, e.g. `/data/output/idr0027-dickerson-chromatin`!)
+
+## Update file_list.tsv
+
+The file_list.tsv has to be updated with the correct file sizes:
+```
+python update_sizes.py /data/output/idr0027-dickerson-chromatin/file_list.tsv
+```
 
 ## Sanity check
 
@@ -193,3 +186,24 @@ It might be necessary to login again, in which case:
 mm activate globus
 globus login
 ```
+
+## Notes
+
+### Check ome.zarrs
+
+Change into the output directory, e.g.:
+`cd /data/output/idr0027-dickerson-chromatin`
+
+Brief check if all ome.zarr were created:
+`find * -maxdepth 4 -type d -name "*.ome.zarr" | wc -l`
+
+#### Check with validator
+
+SSH with port forward:
+`ssh -J rocky@idr-pilot.openmicroscopy.org rocky@pilot-idrconv -L 8000:localhost:8000`
+
+Then
+`mm run -n crate ome_zarr view XYZ.ome.zarr` 
+
+Then go to
+`https://ome.github.io/ome-ngff-validator/?source=http://localhost:8000/XYZ.ome.zarr/0`

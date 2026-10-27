@@ -16,7 +16,6 @@ the IDR OMERO JSON API, and writes three files to --output-dir:
 
 import argparse
 import csv
-import io
 import json
 import os
 import re
@@ -500,7 +499,7 @@ def build_crate(
                 file_list_rows.append({
                     "file_path": file_list_path,
                     "dataset": ds_id,
-                    "type": "bia:Image",
+                    "type": "http://bia/Image",
                     "size_in_bytes": -1,
                 })
                 # URL-backed OME-Zarr sources have no local conversion log.
@@ -508,7 +507,7 @@ def build_crate(
                     file_list_rows.append({
                         "file_path": f"{f['path']}.log",
                         "dataset": ds_id,
-                        "type": "bia:File",
+                        "type": "http://bia/File",
                         "size_in_bytes": -1,
                     })
 

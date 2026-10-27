@@ -442,9 +442,10 @@ def build_crate(
                 protocol_id = f"#image-acquisition-protocol-{slugify(method)}"
                 graph.append({
                     "@id": protocol_id,
-                    "@type": "LabProtocol",
+                    "@type": ["LabProtocol", "bia:ImageAcquisitionProtocol"],
                     "name": method,
                     "description": method,
+                    "imagingInstrumentDescription": method,
                 })
                 protocol_ids[method] = protocol_id
             refs.append({"@id": protocol_ids[method]})

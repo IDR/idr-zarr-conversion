@@ -8,7 +8,13 @@ Cross-checks three sources:
   ``--min-zip-kb``) and a non-empty ``<name>.ome.zarr.log``.
 - ``file_list.tsv`` (the BIA RO-Crate file list): every non-URL ``file_path``
   should exist under the study directory. Missing files (i.e. failed
-  conversions) can optionally be removed from ``file_list.tsv``.
+  conversions) can optionally be removed from ``file_list.tsv``. Every
+  non-URL row should also have a real ``size_in_bytes`` (run
+  ``update_sizes.py`` to fill them in).
+- ``ro-crate-metadata.json``: should parse, contain a ``bia:Study`` root
+  entity, a ``file_list.tsv`` entity, and no dangling ``@id`` references.
+  If the ``bia-ro-crate`` CLI is installed, its ``validate`` command is
+  run too.
 - Files on disk: any regular file not listed in ``file_list.tsv`` (and not a
   crate bookkeeping file) is flagged and can optionally be deleted, as can
   leftover unzipped ``.ome.zarr`` directories.
@@ -19,8 +25,10 @@ Usage:
 
 import argparse
 import csv
+import json
 import re
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -161,6 +169,118 @@ def check_file_list(
     return len(missing)
 
 
+def check_file_list_sizes(rows: list) -> int:
+    """Flag non-URL file_list.tsv rows without a real size_in_bytes."""
+    bad = []
+    for row in rows:
+        path_str = row.get("file_path", "")
+        if not path_str or URL_RE.match(path_str):
+            continue
+        size = row.get("size_in_bytes", "")
+        try:
+            if int(size) > 0:
+                continue
+        except (TypeError, ValueError):
+            pass
+        bad.append(path_str)
+    for p in bad[:10]:
+        print(f"  no size: {p}")
+    if len(bad) > 10:
+        print(f"  ... and {len(bad) - 10} more")
+    print(f"file_list.tsv sizes: {len(bad)} row(s) missing size_in_bytes\n")
+    if bad:
+        print("  hint: run 'update_sizes.py <file_list.tsv>' to fill them in\n")
+    return len(bad)
+
+
+def _walk_refs(value):
+    """Yield every @id reference found in a nested structure."""
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if key == "@id" and isinstance(item, str):
+                yield item
+            else:
+                yield from _walk_refs(item)
+    elif isinstance(value, list):
+        for item in value:
+            yield from _walk_refs(item)
+
+
+def check_ro_crate(study_dir: Path) -> int:
+    """Validate ro-crate-metadata.json structurally (and via bia-ro-crate)."""
+    problems = 0
+    crate_path = study_dir / "ro-crate-metadata.json"
+    if not crate_path.is_file():
+        print(f"  missing: {crate_path}")
+        return 1
+    try:
+        crate = json.loads(crate_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"  invalid JSON: {e}")
+        return 1
+
+    graph = crate.get("@graph")
+    if "@context" not in crate:
+        print("  missing @context")
+        problems += 1
+    if not isinstance(graph, list):
+        print("  missing @graph")
+        return problems + 1
+
+    ids = {
+        e["@id"] for e in graph if isinstance(e, dict) and isinstance(e.get("@id"), str)
+    }
+    root = next((e for e in graph if isinstance(e, dict) and e.get("@id") == "./"), None)
+    if root is None:
+        print("  no root entity ('@id': './')")
+        problems += 1
+    else:
+        root_type = root.get("@type") or []
+        if not isinstance(root_type, list):
+            root_type = [root_type]
+        if "bia:Study" not in root_type:
+            print(f"  root entity is not a bia:Study (@type={root_type})")
+            problems += 1
+        if not root.get("accessionId"):
+            print("  root entity has no accessionId")
+            problems += 1
+    if "file_list.tsv" not in ids:
+        print("  no file_list.tsv entity in @graph")
+        problems += 1
+
+    for entity in graph:
+        if not isinstance(entity, dict):
+            continue
+        entity_id = entity.get("@id", "?")
+        for key, value in entity.items():
+            if key in ("@id", "@type", "@context"):
+                continue
+            for ref in _walk_refs(value):
+                if ref not in ids and not URL_RE.match(ref):
+                    print(f"  dangling ref: {entity_id} -> {ref} ({key})")
+                    problems += 1
+
+    print(f"ro-crate-metadata.json: {problems} problem(s)")
+
+    bia_cli = shutil.which("bia-ro-crate")
+    if bia_cli:
+        result = subprocess.run(
+            [bia_cli, "validate", str(study_dir)],
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            print("  bia-ro-crate validate FAILED:")
+            print("  " + "\n  ".join((result.stdout + result.stderr).splitlines()[:20]))
+            problems += 1
+        else:
+            print("  bia-ro-crate validate: OK")
+    else:
+        print("  bia-ro-crate not installed; external validation skipped")
+    print()
+    return problems
+
+
 def check_unlisted_files(
     study_dir: Path,
     listed_paths: set,
@@ -254,6 +374,12 @@ def main() -> int:
     problems += check_file_list(
         study_dir, file_list, rows, args.yes, args.dry_run
     )
+
+    print("== Checking file_list.tsv sizes ==")
+    problems += check_file_list_sizes(rows)
+
+    print("== Checking ro-crate-metadata.json ==")
+    problems += check_ro_crate(study_dir)
 
     print("== Checking for files not listed in file_list.tsv ==")
     listed = {

@@ -1,0 +1,2799 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid4932",
+      "@type": "bia:Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "commonName": "brewer's yeast"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid4932"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-fluorescence-microscopy",
+      "@type": [
+        "LabProtocol",
+        "bia:ImageAcquisitionProtocol"
+      ],
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "imagingInstrumentDescription": "fluorescence microscopy"
+    },
+    {
+      "@id": "#image-acquisition-protocol-transmission-electron-microscopy",
+      "@type": [
+        "LabProtocol",
+        "bia:ImageAcquisitionProtocol"
+      ],
+      "name": "transmission electron microscopy",
+      "description": "transmission electron microscopy",
+      "imagingInstrumentDescription": "transmission electron microscopy"
+    },
+    {
+      "@id": "#image-acquisition-protocol-bright-field-microscopy",
+      "@type": [
+        "LabProtocol",
+        "bia:ImageAcquisitionProtocol"
+      ],
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "imagingInstrumentDescription": "bright-field microscopy"
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.47156",
+      "@type": "bia:Publication",
+      "name": "Meiotic cellular rejuvenation is coupled to nuclear remodeling in budding yeast",
+      "doi": "https://doi.org/10.7554/eLife.47156",
+      "pubmedId": "31397671",
+      "authorNames": "King GA, Goodman JS, Schick JG, Chetlapalli K, Jorgens DM, McDonald KL, Ünal E"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "King GA",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Goodman JS",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Schick JG",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Chetlapalli K",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Jorgens DM",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "McDonald KL",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Ünal E",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-9008",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 1B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9009",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 1C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9010",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 1S1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9011",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 1S2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9012",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 2A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9013",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 2B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9014",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 2E",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9015",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9016",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9017",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3D",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9018",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3E",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9019",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3F",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9020",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3G",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9021",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3H",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9022",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S1A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9023",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S1B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9024",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9025",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9026",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S4",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9027",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S5",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9028",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S6A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9029",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 3S6B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9030",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 4A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9031",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 4B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9032",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 4C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9033",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 4S1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9034",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 4S2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9035",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9036",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9037",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9038",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5D",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9039",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5E",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9040",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5F",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9041",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5S1A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9042",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5S1B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9043",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 5S2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9044",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9045",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9046",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6C+6D",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9047",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6S1A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9048",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6S1B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9049",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6S2A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9050",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6S2B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9051",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 6S3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9052",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 7A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9053",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 7C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9054",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9055",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9056",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8D",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9057",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8F",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9058",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8S1A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9059",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8S1B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9060",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8S1C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9061",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8S2A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9062",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8S2B",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9063",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 8S2C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9064",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 9A",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9065",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 9C",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9066",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 9S1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9067",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Figure 9S2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-transmission-electron-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Meiotic cellular rejuvenation is coupled to nuclear remodeling in budding yeast",
+      "description": "Production of healthy gametes in meiosis relies on the quality control and proper distribution of both nuclear and cytoplasmic contents. Meiotic differentiation naturally eliminates age-induced cellular damage by an unknown mechanism. Using time-lapse fluorescence microscopy in budding yeast, we found that nuclear senescence factors - including protein aggregates, extrachromosomal ribosomal DNA circles, and abnormal nucleolar material - are sequestered away from chromosomes during meiosis II and subsequently eliminated. A similar sequestration and elimination process occurs for the core subunits of the nuclear pore complex in both young and aged cells. Nuclear envelope remodeling drives the formation of a membranous compartment containing the sequestered material. Importantly, de novo generation of plasma membrane is required for the sequestration event, preventing the inheritance of long-lived nucleoporins and senescence factors into the newly formed gametes. Our study uncovers a new mechanism of nuclear quality control and provides insight into its function in meiotic cellular rejuvenation.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2019-12-10",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        }
+      ],
+      "keywords": [
+        "fluorescence microscopy",
+        "transmission electron microscopy",
+        "bright-field microscopy",
+        "meiosis"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-9008"
+        },
+        {
+          "@id": "#Dataset-9009"
+        },
+        {
+          "@id": "#Dataset-9010"
+        },
+        {
+          "@id": "#Dataset-9011"
+        },
+        {
+          "@id": "#Dataset-9012"
+        },
+        {
+          "@id": "#Dataset-9013"
+        },
+        {
+          "@id": "#Dataset-9014"
+        },
+        {
+          "@id": "#Dataset-9015"
+        },
+        {
+          "@id": "#Dataset-9016"
+        },
+        {
+          "@id": "#Dataset-9017"
+        },
+        {
+          "@id": "#Dataset-9018"
+        },
+        {
+          "@id": "#Dataset-9019"
+        },
+        {
+          "@id": "#Dataset-9020"
+        },
+        {
+          "@id": "#Dataset-9021"
+        },
+        {
+          "@id": "#Dataset-9022"
+        },
+        {
+          "@id": "#Dataset-9023"
+        },
+        {
+          "@id": "#Dataset-9024"
+        },
+        {
+          "@id": "#Dataset-9025"
+        },
+        {
+          "@id": "#Dataset-9026"
+        },
+        {
+          "@id": "#Dataset-9027"
+        },
+        {
+          "@id": "#Dataset-9028"
+        },
+        {
+          "@id": "#Dataset-9029"
+        },
+        {
+          "@id": "#Dataset-9030"
+        },
+        {
+          "@id": "#Dataset-9031"
+        },
+        {
+          "@id": "#Dataset-9032"
+        },
+        {
+          "@id": "#Dataset-9033"
+        },
+        {
+          "@id": "#Dataset-9034"
+        },
+        {
+          "@id": "#Dataset-9035"
+        },
+        {
+          "@id": "#Dataset-9036"
+        },
+        {
+          "@id": "#Dataset-9037"
+        },
+        {
+          "@id": "#Dataset-9038"
+        },
+        {
+          "@id": "#Dataset-9039"
+        },
+        {
+          "@id": "#Dataset-9040"
+        },
+        {
+          "@id": "#Dataset-9041"
+        },
+        {
+          "@id": "#Dataset-9042"
+        },
+        {
+          "@id": "#Dataset-9043"
+        },
+        {
+          "@id": "#Dataset-9044"
+        },
+        {
+          "@id": "#Dataset-9045"
+        },
+        {
+          "@id": "#Dataset-9046"
+        },
+        {
+          "@id": "#Dataset-9047"
+        },
+        {
+          "@id": "#Dataset-9048"
+        },
+        {
+          "@id": "#Dataset-9049"
+        },
+        {
+          "@id": "#Dataset-9050"
+        },
+        {
+          "@id": "#Dataset-9051"
+        },
+        {
+          "@id": "#Dataset-9052"
+        },
+        {
+          "@id": "#Dataset-9053"
+        },
+        {
+          "@id": "#Dataset-9054"
+        },
+        {
+          "@id": "#Dataset-9055"
+        },
+        {
+          "@id": "#Dataset-9056"
+        },
+        {
+          "@id": "#Dataset-9057"
+        },
+        {
+          "@id": "#Dataset-9058"
+        },
+        {
+          "@id": "#Dataset-9059"
+        },
+        {
+          "@id": "#Dataset-9060"
+        },
+        {
+          "@id": "#Dataset-9061"
+        },
+        {
+          "@id": "#Dataset-9062"
+        },
+        {
+          "@id": "#Dataset-9063"
+        },
+        {
+          "@id": "#Dataset-9064"
+        },
+        {
+          "@id": "#Dataset-9065"
+        },
+        {
+          "@id": "#Dataset-9066"
+        },
+        {
+          "@id": "#Dataset-9067"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0067",
+      "doi": "https://doi.org/10.17867/10000130",
+      "pubmedId": "31397671",
+      "imagingMethodName": [
+        "fluorescence microscopy",
+        "transmission electron microscopy",
+        "bright-field microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.47156"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

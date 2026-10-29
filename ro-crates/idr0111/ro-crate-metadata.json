@@ -1,0 +1,913 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid9606",
+      "@type": "bia:Taxon",
+      "scientificName": "Homo sapiens",
+      "commonName": "human"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid9606"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-phase-contrast-microscopy",
+      "@type": [
+        "LabProtocol",
+        "bia:ImageAcquisitionProtocol"
+      ],
+      "name": "phase contrast microscopy",
+      "description": "phase contrast microscopy",
+      "imagingInstrumentDescription": "phase contrast microscopy"
+    },
+    {
+      "@id": "#image-acquisition-protocol-spinning-disk-confocal-microscopy",
+      "@type": [
+        "LabProtocol",
+        "bia:ImageAcquisitionProtocol"
+      ],
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "imagingInstrumentDescription": "spinning disk confocal microscopy"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-021-89130-6",
+      "@type": "bia:Publication",
+      "name": "Distinct Roles of Tumor Associated Mutations in Collective Cell Migration",
+      "doi": "https://doi.org/10.1038/s41598-021-89130-6",
+      "pubmedId": "33986306",
+      "authorNames": "Lee RM, Vitolo MI, Losert W, Martin SS"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Lee RM",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Vitolo MI",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Losert W",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Martin SS",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-14901",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14909",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14910",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14911",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14912",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14913",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14914",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14915",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14916",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14902",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14903",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14904",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp12",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14905",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14906",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14907",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14908",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Exp16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14917",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/Exp01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spinning-disk-confocal-microscopy"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spinning-disk-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Distinct Roles of Tumor Associated Mutations in Collective Cell Migration",
+      "description": "Recent evidence suggests that groups of cells are more likely to form clinically dangerous metastatic tumors, emphasizing the importance of understanding mechanisms underlying collective behavior. The emergent collective behavior of migrating cell sheets in vitro has been shown to be disrupted in tumorigenic cells but the connection between this behavior and in vivo tumorigenicity remains unclear. We use particle image velocimetry to measure a multidimensional migration phenotype for genetically defined human breast epithelial cell lines that range in their in vivo behavior from non-tumorigenic to aggressively metastatic. By using cells with controlled mutations, we show that PTEN deletion enhances collective migration, while Ras activation suppresses it, even when combined with PTEN deletion. These opposing effects on collective migration of two mutations that are frequently found in patient tumors could be exploited in the development of novel treatments for metastatic disease. Our methods are based on label-free phase contrast imaging, and thus could easily be applied to patient tumor cells. The short time scales of our approach do not require potentially selective growth, and thus in combination with label-free imaging would allow multidimensional collective migration phenotypes to be utilized in clinical assessments of metastatic potential.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2021-06-30",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        }
+      ],
+      "keywords": [
+        "phase contrast microscopy",
+        "spinning disk confocal microscopy",
+        "cell migration"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-14901"
+        },
+        {
+          "@id": "#Dataset-14909"
+        },
+        {
+          "@id": "#Dataset-14910"
+        },
+        {
+          "@id": "#Dataset-14911"
+        },
+        {
+          "@id": "#Dataset-14912"
+        },
+        {
+          "@id": "#Dataset-14913"
+        },
+        {
+          "@id": "#Dataset-14914"
+        },
+        {
+          "@id": "#Dataset-14915"
+        },
+        {
+          "@id": "#Dataset-14916"
+        },
+        {
+          "@id": "#Dataset-14902"
+        },
+        {
+          "@id": "#Dataset-14903"
+        },
+        {
+          "@id": "#Dataset-14904"
+        },
+        {
+          "@id": "#Dataset-14905"
+        },
+        {
+          "@id": "#Dataset-14906"
+        },
+        {
+          "@id": "#Dataset-14907"
+        },
+        {
+          "@id": "#Dataset-14908"
+        },
+        {
+          "@id": "#Dataset-14917"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0111",
+      "doi": "https://doi.org/10.17867/10000163",
+      "pubmedId": "33986306",
+      "imagingMethodName": [
+        "phase contrast microscopy",
+        "spinning disk confocal microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-021-89130-6"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

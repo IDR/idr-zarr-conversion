@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 import requests
+from concurrent.futures import ThreadPoolExecutor
 
 BASE_URL = "https://idr.openmicroscopy.org/api/v0"
 WEBCLIENT = "https://idr.openmicroscopy.org/webclient"
@@ -20,11 +21,30 @@ _LAST_NCBI_REQUEST = 0.0
 _TAXON_CACHE: dict[str, dict | None] = {}
 
 
+def _requests_get(url: str, retries: int = 5, **kwargs) -> requests.Response:
+    """GET with retry/backoff for transient connection failures and 5xx/429.
+
+    Large studies need tens of thousands of requests; the IDR server
+    occasionally refuses or resets connections under load.
+    """
+    for attempt in range(retries):
+        try:
+            resp = requests.get(url, timeout=30, **kwargs)
+            if resp.status_code in (429,) or resp.status_code >= 500:
+                raise requests.RequestException(f"HTTP {resp.status_code}")
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException:
+            if attempt == retries - 1:
+                raise
+            time.sleep(2**attempt)
+    raise AssertionError("unreachable")
+
+
 def idr_get(path: str, **params) -> dict:
     """Make a single GET request to the IDR JSON API."""
     url = f"{BASE_URL}{path}"
-    resp = requests.get(url, params=params or None, timeout=30)
-    resp.raise_for_status()
+    resp = _requests_get(url, params=params or None)
     return resp.json()
 
 
@@ -110,15 +130,27 @@ def get_annotations(container_type: str, container_id: int) -> dict:
     return result
 
 
+_CHILDREN_CACHE: dict[tuple[str, int], list[dict]] = {}
+_IMAGES_CACHE: dict[tuple[str, int], list[dict]] = {}
+_SOURCE_PATH_CACHE: dict[int, tuple[str | None, bool]] = {}
+
+
 def get_children(container_type: str, container_id: int) -> list[dict]:
     """Return datasets (project) or plates (screen) for a container."""
-    if container_type == "screen":
-        return idr_get_all(f"/m/screens/{container_id}/plates/")
-    return idr_get_all(f"/m/projects/{container_id}/datasets/")
+    key = (container_type, container_id)
+    if key not in _CHILDREN_CACHE:
+        if container_type == "screen":
+            _CHILDREN_CACHE[key] = idr_get_all(f"/m/screens/{container_id}/plates/")
+        else:
+            _CHILDREN_CACHE[key] = idr_get_all(f"/m/projects/{container_id}/datasets/")
+    return _CHILDREN_CACHE[key]
 
 
 def get_images(container_type: str, child_id: int) -> list[dict]:
     """Return the images belonging to a dataset or plate."""
+    key = (container_type, child_id)
+    if key in _IMAGES_CACHE:
+        return _IMAGES_CACHE[key]
     images = []
     if container_type == "screen":
         wells = idr_get_all(f"/m/plates/{child_id}/wells/")
@@ -127,6 +159,7 @@ def get_images(container_type: str, child_id: int) -> list[dict]:
                 images.append(ws["Image"])
     else:
         images = idr_get_all(f"/m/datasets/{child_id}/images/")
+    _IMAGES_CACHE[key] = images
     return images
 
 
@@ -178,16 +211,17 @@ def get_source_path(image_id: int) -> tuple[str | None, bool]:
     through bioformats2raw. Returns ``(None, False)`` if no usable path can be
     resolved.
     """
+    if image_id in _SOURCE_PATH_CACHE:
+        return _SOURCE_PATH_CACHE[image_id]
     try:
-        resp = requests.get(
-            f"{WEBGATEWAY}/original_file_paths/{image_id}/", timeout=30
-        )
-        resp.raise_for_status()
+        resp = _requests_get(f"{WEBGATEWAY}/original_file_paths/{image_id}/")
         data = resp.json()
     except requests.RequestException:
+        _SOURCE_PATH_CACHE[image_id] = (None, False)
         return None, False
     client_paths = data.get("client", [])
     if not client_paths:
+        _SOURCE_PATH_CACHE[image_id] = (None, False)
         return None, False
     is_zarr = _is_zarr_source(client_paths)
     for path in client_paths:
@@ -211,8 +245,11 @@ def get_source_path(image_id: int) -> tuple[str | None, bool]:
             count=1,
             flags=re.I,
         )
-        return zarr_url, True
-    return normalise_path(selected), False
+        result = (zarr_url, True)
+    else:
+        result = (normalise_path(selected), False)
+    _SOURCE_PATH_CACHE[image_id] = result
+    return result
 
 
 def get_client_path(image_id: int) -> str | None:
@@ -382,9 +419,13 @@ def get_child_files(
     files = []
     zarr_sources: list[dict] = []
     by_source: dict[str, list[tuple[int, str]]] = {}
-    for img in get_images(container_type, child_id):
+    images = get_images(container_type, child_id)
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        source_results = list(
+            pool.map(lambda i: get_source_path(i["@id"]), images)
+        )
+    for img, (source_path, is_zarr) in zip(images, source_results):
         image_id = img["@id"]
-        source_path, is_zarr = get_source_path(image_id)
         if source_path is None:
             continue
         if is_zarr:

@@ -117,12 +117,22 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
         # A study/experiment/screen can list more than one imaging method on
         # the same row (extra tab-separated columns), e.g.
         # "Experiment Imaging Method\tlight sheet fluorescence microscopy\tSPIM".
-        if re.match(r"^(Study|Experiment|Screen) Imaging Method$", key, re.I):
+        if re.match(
+            r"^(Study|Experiment|Screen) Imaging Method( Term Accession)?$",
+            key,
+            re.I,
+        ):
             value = ", ".join(v.strip() for v in row[1:] if v.strip())
 
         # A study can list more than one organism on the same row (extra
         # tab-separated columns).
         if re.match(r"^Study Organism$", key, re.I):
+            value = [v.strip() for v in row[1:] if v.strip()]
+
+        # Study Person * rows (Last Name, First Name, Address, Email, ...)
+        # carry one tab-separated value per person; keep them all so they
+        # stay aligned by position.
+        if re.match(r"^Study Person ", key, re.I):
             value = [v.strip() for v in row[1:] if v.strip()]
 
         if current is not None:
@@ -220,22 +230,53 @@ def collect_imaging_methods(study: dict, containers_info: list) -> list[str]:
     return methods
 
 
-def build_authors(authors_str: str) -> list:
+def _as_list(value) -> list:
+    if isinstance(value, list):
+        return value
+    return [value] if value else []
+
+
+def build_authors(authors_str: str, study: dict) -> tuple[list, list]:
+    """Build bia:Contributor entities plus bia:Affiliation entities for
+    each distinct ``Study Person Address``.
+
+    Authors (``Study Author List``, "Surname INITIALS" format) are matched
+    to ``Study Person *`` rows by surname; the matching row's address
+    becomes a memberOf affiliation.
+    """
+    persons_last = _as_list(study.get("Study Person Last Name"))
+    persons_addr = _as_list(study.get("Study Person Address"))
+
+    affiliations = []
+    aff_ids = {}
     authors = []
     for i, name in enumerate(authors_str.split(",")):
         name = name.strip()
-        if name:
-            authors.append({
-                "@id": f"#author-{i}",
-                "@type": ["Person", "bia:Contributor"],
-                "name": name,
-                "address": None,
-                "website": None,
-                "memberOf": [],
-                "role": ["author"],
-                "email": None,
-            })
-    return authors
+        if not name:
+            continue
+        member_of = []
+        surname = name.split()[0]
+        if surname in persons_last:
+            idx = persons_last.index(surname)
+            if idx < len(persons_addr):
+                addr = persons_addr[idx]
+                if addr not in aff_ids:
+                    aff_id = f"#affiliation-{slugify(addr)}"
+                    aff_ids[addr] = aff_id
+                    affiliations.append({
+                        "@id": aff_id,
+                        "@type": ["Organisation", "bia:Affiliation"],
+                        "name": addr,
+                    })
+                member_of.append({"@id": aff_ids[addr]})
+        authors.append({
+            "@id": f"#author-{i}",
+            "@type": ["Person", "bia:Contributor"],
+            "name": name,
+            "memberOf": member_of,
+            "role": ["author"],
+        })
+    return authors, affiliations
 
 
 def slugify(text: str) -> str:
@@ -341,7 +382,7 @@ def build_crate(
     pub_title = study.get("Study Publication Title", "").strip()
     authors_str = study.get("Study Author List", "").strip()
 
-    author_entities = build_authors(authors_str)
+    author_entities, affiliation_entities = build_authors(authors_str, study)
     author_refs = [{"@id": a["@id"]} for a in author_entities]
     accession_id = derive_accession_id(study, containers_info[0]["container_name"])
 
@@ -431,21 +472,33 @@ def build_crate(
         component = entry.get("component")
         is_screen = entry["container_type"] == "screen"
         method_key = "Screen Imaging Method" if is_screen else "Experiment Imaging Method"
+        accession_key = f"{method_key} Term Accession"
         if component:
             raw_methods = component["data"].get(method_key, "")
             methods = [m.strip() for m in raw_methods.split(",") if m.strip()]
+            raw_accessions = component["data"].get(accession_key, "")
+            accessions = [a.strip() for a in raw_accessions.split(",") if a.strip()]
         else:
             methods = []
+            accessions = []
         refs = []
-        for method in methods:
+        for i, method in enumerate(methods):
             if method not in protocol_ids:
                 protocol_id = f"#image-acquisition-protocol-{slugify(method)}"
+                # Pair method/accession by position when counts match;
+                # otherwise attach all accessions to each protocol.
+                fbbi_ids = (
+                    [accessions[i]]
+                    if len(accessions) == len(methods)
+                    else accessions
+                )
                 graph.append({
                     "@id": protocol_id,
-                    "@type": ["LabProtocol", "bia:ImageAcquisitionProtocol"],
+                    "@type": "bia:ImageAcquisitionProtocol",
                     "name": method,
                     "description": method,
                     "imagingInstrumentDescription": method,
+                    "fbbiId": fbbi_ids,
                 })
                 protocol_ids[method] = protocol_id
             refs.append({"@id": protocol_ids[method]})
@@ -546,6 +599,7 @@ def build_crate(
             "authorNames": authors_str,
         })
 
+    graph.extend(affiliation_entities)
     graph.extend(author_entities)
     graph.extend(dataset_entities)
     graph.append(root_entity)

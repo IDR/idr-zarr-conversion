@@ -281,23 +281,35 @@
     },
     {
       "@id": "#image-acquisition-protocol-phase-contrast-microscopy",
-      "@type": [
-        "LabProtocol",
-        "bia:ImageAcquisitionProtocol"
-      ],
+      "@type": "bia:ImageAcquisitionProtocol",
       "name": "phase contrast microscopy",
       "description": "phase contrast microscopy",
-      "imagingInstrumentDescription": "phase contrast microscopy"
+      "imagingInstrumentDescription": "phase contrast microscopy",
+      "imagingMethodName": [
+        "phase contrast microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000247"
+      ]
     },
     {
       "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy",
-      "@type": [
-        "LabProtocol",
-        "bia:ImageAcquisitionProtocol"
-      ],
+      "@type": "bia:ImageAcquisitionProtocol",
       "name": "wide-field epi-fluorescence microscopy",
       "description": "wide-field epi-fluorescence microscopy",
-      "imagingInstrumentDescription": "wide-field epi-fluorescence microscopy"
+      "imagingInstrumentDescription": "wide-field epi-fluorescence microscopy",
+      "imagingMethodName": [
+        "wide-field epi-fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000246"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "Bacteria grown at 37ºC in M9 minimal media supplemented with 0.2% sugar\n\nperiodic exposure to lactose or lactose analogues (IPTG).\n\nTime-laps image acquisition using a Nikon Ti setup controlled with Micro-Manager (100x, Ph3, NA 1.4, typical GFP excitation: Lumencor Cyan at 17% with ND4 during 2 sec).\n\nImage analysis using MoMA default settings."
     },
     {
       "@id": "https://doi.org/10.1371/journal.pbio.3000952",
@@ -308,12 +320,25 @@
       "authorNames": "Julou T, Zweifel L, Blank D, Fiori A, van Nimwegen E"
     },
     {
+      "@id": "#affiliation-computational-and-systems-biology-biozentrum-university-of-basel-klingelbergstr-70-4056-basel-switzerland",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Computational and Systems Biology, Biozentrum – University of Basel, Klingelbergstr. 70, 4056 Basel, Switzerland"
+    },
+    {
       "@id": "#author-0",
       "@type": [
         "Person",
         "bia:Contributor"
       ],
       "name": "Julou T",
+      "memberOf": [
+        {
+          "@id": "#affiliation-computational-and-systems-biology-biozentrum-university-of-basel-klingelbergstr-70-4056-basel-switzerland"
+        }
+      ],
       "role": [
         "author"
       ]
@@ -376,10 +401,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -405,10 +427,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -434,10 +453,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -463,10 +479,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -492,10 +505,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -521,10 +531,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -550,10 +557,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -579,10 +583,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -608,10 +609,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -637,10 +635,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -666,10 +661,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -695,10 +687,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -724,10 +713,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -753,10 +739,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -782,10 +765,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -811,10 +791,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -840,10 +817,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -869,10 +843,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -898,10 +869,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -927,10 +895,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -956,10 +921,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -985,10 +947,7 @@
       ],
       "associatedSpecimenImagingPreparationProtocol": [
         {
-          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
-        },
-        {
-          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+          "@id": "#specimen-imaging-preparation-protocol-idr0091-julou-lacinduction-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [

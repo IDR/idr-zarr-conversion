@@ -91,7 +91,12 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
         while i + 1 < len(lines):
             next_line = lines[i + 1].rstrip("\r")
             next_row = next_line.split("\t")
-            if _is_new_row(next_row) or next_line.lstrip().startswith("#"):
+            protocol_continuation = (
+                row[0].strip() == "Protocol Description" and "\t" not in next_line
+            )
+            if next_line.lstrip().startswith("#") or (
+                _is_new_row(next_row) and not protocol_continuation
+            ):
                 break
             if len(row) >= 2 and next_line.strip():
                 row[1] += "\n" + next_line.strip()
@@ -126,6 +131,9 @@ def parse_study_txt(text: str) -> tuple[dict, list]:
 
         # A study can list more than one organism on the same row (extra
         # tab-separated columns).
+        if key == "Protocol Description":
+            value = "\n\n".join(v.strip() for v in row[1:] if v.strip())
+
         if re.match(r"^Study Organism$", key, re.I):
             value = [v.strip() for v in row[1:] if v.strip()]
 
@@ -466,6 +474,7 @@ def build_crate(
 
     # Imaging protocol entities, one per distinct Experiment/Screen Imaging Method
     container_protocol_refs: dict[str, list[dict]] = {}
+    container_preparation_refs: dict[str, list[dict]] = {}
     protocol_ids: dict[str, str] = {}
     for entry in containers_info:
         container_name = entry["container_name"]
@@ -498,11 +507,25 @@ def build_crate(
                     "name": method,
                     "description": method,
                     "imagingInstrumentDescription": method,
+                    "imagingMethodName": [method],
                     "fbbiId": fbbi_ids,
                 })
                 protocol_ids[method] = protocol_id
             refs.append({"@id": protocol_ids[method]})
         container_protocol_refs[container_name] = refs
+        protocol_description = (
+            component["data"].get("Protocol Description", "") if component
+            else study.get("Protocol Description", "")
+        ).strip()
+        if protocol_description:
+            preparation_id = f"#specimen-imaging-preparation-protocol-{slugify(container_name)}"
+            graph.append({
+                "@id": preparation_id,
+                "@type": "bia:SpecimenImagingPreparationProtocol",
+                "name": "Specimen imaging preparation protocol",
+                "description": protocol_description,
+            })
+            container_preparation_refs[container_name] = [{"@id": preparation_id}]
 
     # Datasets / plates, across every container in the study
     for entry in containers_info:
@@ -527,7 +550,7 @@ def build_crate(
                 "name": dataset_name,
                 "description": child.get("Description", ""),
                 "associatedBiologicalEntity": container_biosample_ref.get(container_name, []),
-                "associatedSpecimenImagingPreparationProtocol": container_protocol_refs.get(container_name, []),
+                "associatedSpecimenImagingPreparationProtocol": container_preparation_refs.get(container_name, []),
                 "associatedSpecimen": None,
                 "associatedCreationProcess": None,
                 "associatedSourceImage": [],

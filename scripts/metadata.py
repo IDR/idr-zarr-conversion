@@ -419,9 +419,16 @@ def build_crate(
             scientific_name = taxon.get("scientificName") or organism
             common_name = taxon.get("commonName")
         else:
-            taxon_id = f"#taxon-{slugify(organism)}"
+            taxon_id = "NCBI:txid000000"
+            if taxon_id in seen_taxon_ids:
+                taxon_id = f"NCBI:txid000000-{len(seen_taxon_ids)}"
             scientific_name = organism
             common_name = None
+            print(
+                f"Warning: unresolved taxonomy for {organism!r}; "
+                f"replace placeholder {taxon_id} manually in ro-crate-metadata.json",
+                file=sys.stderr,
+            )
 
         organism_to_taxon[organism] = taxon_id
         if taxon_id not in seen_taxon_ids:

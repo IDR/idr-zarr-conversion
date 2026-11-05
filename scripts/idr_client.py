@@ -475,13 +475,16 @@ def _ncbi_get(url: str, params: dict, retries: int = 3) -> requests.Response:
         if elapsed < _MIN_NCBI_INTERVAL:
             time.sleep(_MIN_NCBI_INTERVAL - elapsed)
 
-        r = requests.get(url, params=params, timeout=30)
-        _LAST_NCBI_REQUEST = time.monotonic()
-        if r.status_code == 429 and attempt < retries - 1:
-            time.sleep(1)
-            continue
-        r.raise_for_status()
-        return r
+        try:
+            r = requests.get(url, params=params, timeout=30)
+            r.raise_for_status()
+            return r
+        except requests.RequestException:
+            if attempt == retries - 1:
+                raise
+            time.sleep(2**attempt)
+        finally:
+            _LAST_NCBI_REQUEST = time.monotonic()
 
     # Should only be reached if every attempt returned 429.
     r.raise_for_status()
@@ -489,6 +492,15 @@ def _ncbi_get(url: str, params: dict, retries: int = 3) -> requests.Response:
 
 
 def ncbi_taxon(name: str) -> dict | None:
+    try:
+        return _lookup_ncbi_taxon(name)
+    except (requests.RequestException, ValueError) as exc:
+        import sys
+        print(f"Warning: taxonomy lookup failed for {name!r}: {exc}", file=sys.stderr)
+        return None
+
+
+def _lookup_ncbi_taxon(name: str) -> dict | None:
     """Look up an NCBI Taxon by scientific/common name."""
     if not name:
         return None

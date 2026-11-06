@@ -1,0 +1,189 @@
+file_path	dataset	type	size_in_bytes
+experimentA/Cell Line_A375/140605_A375.ome.zarr.zip	#Dataset-13853	http://bia/Image	63344820186
+experimentA/Cell Line_A375/140605_A375.ome.zarr.log	#Dataset-13853	http://bia/File	480
+experimentA/Cell Line_A375/140606_A375_MV3.ome.zarr.zip	#Dataset-13853	http://bia/Image	137786308727
+experimentA/Cell Line_A375/140606_A375_MV3.ome.zarr.log	#Dataset-13853	http://bia/File	488
+experimentA/Cell Line_A375/140609_A375.ome.zarr.zip	#Dataset-13853	http://bia/Image	72058802012
+experimentA/Cell Line_A375/140609_A375.ome.zarr.log	#Dataset-13853	http://bia/File	480
+experimentA/Cell Line_MV3/140604_MV3.ome.zarr.zip	#Dataset-13852	http://bia/Image	67419518587
+experimentA/Cell Line_MV3/140604_MV3.ome.zarr.log	#Dataset-13852	http://bia/File	477
+experimentA/Cell Line_MV3/140606_A375_MV3.ome.zarr.zip	#Dataset-13852	http://bia/Image	137786308727
+experimentA/Cell Line_MV3/140606_A375_MV3.ome.zarr.log	#Dataset-13852	http://bia/File	487
+experimentA/Cell Line_MV3/140614_SKMel2_MV3.ome.zarr.zip	#Dataset-13852	http://bia/Image	129137401342
+experimentA/Cell Line_MV3/140614_SKMel2_MV3.ome.zarr.log	#Dataset-13852	http://bia/File	491
+experimentA/Cell Line_SKMel2/140611_SKMel2.ome.zarr.zip	#Dataset-13854	http://bia/Image	69517551251
+experimentA/Cell Line_SKMel2/140611_SKMel2.ome.zarr.log	#Dataset-13854	http://bia/File	486
+experimentA/Cell Line_SKMel2/140614_SKMel2_MV3.ome.zarr.zip	#Dataset-13854	http://bia/Image	129137401342
+experimentA/Cell Line_SKMel2/140614_SKMel2_MV3.ome.zarr.log	#Dataset-13854	http://bia/File	494
+experimentA/Cell Line_SKMel2/140617_SKMel2.ome.zarr.zip	#Dataset-13854	http://bia/Image	71931480005
+experimentA/Cell Line_SKMel2/140617_SKMel2.ome.zarr.log	#Dataset-13854	http://bia/File	486
+experimentA/Cell Line_WM1361/140619_WM1361_WM1366.ome.zarr.zip	#Dataset-13855	http://bia/Image	138944347541
+experimentA/Cell Line_WM1361/140619_WM1361_WM1366.ome.zarr.log	#Dataset-13855	http://bia/File	500
+experimentA/Cell Line_WM1361/140620_WM1361_WM1366.ome.zarr.zip	#Dataset-13855	http://bia/Image	147609825222
+experimentA/Cell Line_WM1361/140620_WM1361_WM1366.ome.zarr.log	#Dataset-13855	http://bia/File	500
+experimentA/Cell Line_WM1361/140624_WM1361_WM1366.ome.zarr.zip	#Dataset-13855	http://bia/Image	142234007555
+experimentA/Cell Line_WM1361/140624_WM1361_WM1366.ome.zarr.log	#Dataset-13855	http://bia/File	500
+experimentA/Cell Line_WM1366/140619_WM1361_WM1366.ome.zarr.zip	#Dataset-13856	http://bia/Image	138944347541
+experimentA/Cell Line_WM1366/140619_WM1361_WM1366.ome.zarr.log	#Dataset-13856	http://bia/File	500
+experimentA/Cell Line_WM1366/140620_WM1361_WM1366.ome.zarr.zip	#Dataset-13856	http://bia/Image	147609825222
+experimentA/Cell Line_WM1366/140620_WM1361_WM1366.ome.zarr.log	#Dataset-13856	http://bia/File	500
+experimentA/Cell Line_WM1366/140624_WM1361_WM1366.ome.zarr.zip	#Dataset-13856	http://bia/Image	142234007555
+experimentA/Cell Line_WM1366/140624_WM1361_WM1366.ome.zarr.log	#Dataset-13856	http://bia/File	500
+experimentA/Cell Line_WM3670/140707_WM3670.ome.zarr.zip	#Dataset-13857	http://bia/Image	68669163037
+experimentA/Cell Line_WM3670/140707_WM3670.ome.zarr.log	#Dataset-13857	http://bia/File	486
+experimentA/Cell Line_WM3670/140708_WM3670.ome.zarr.zip	#Dataset-13857	http://bia/Image	64731736692
+experimentA/Cell Line_WM3670/140708_WM3670.ome.zarr.log	#Dataset-13857	http://bia/File	486
+experimentA/Cell Line_WM3670/140709_WM3670.ome.zarr.zip	#Dataset-13857	http://bia/Image	64718917728
+experimentA/Cell Line_WM3670/140709_WM3670.ome.zarr.log	#Dataset-13857	http://bia/File	486
+experimentA/Clonal_A375c1/150603_A375c2_A375c1.ome.zarr.zip	#Dataset-13867	http://bia/Image	155887981575
+experimentA/Clonal_A375c1/150603_A375c2_A375c1.ome.zarr.log	#Dataset-13867	http://bia/File	496
+experimentA/Clonal_A375c1/150624_A375c1.ome.zarr.zip	#Dataset-13867	http://bia/Image	109680113501
+experimentA/Clonal_A375c1/150624_A375c1.ome.zarr.log	#Dataset-13867	http://bia/File	482
+experimentA/Clonal_A375c1/150703_A375c1_A375c2.ome.zarr.zip	#Dataset-13867	http://bia/Image	167021672373
+experimentA/Clonal_A375c1/150703_A375c1_A375c2.ome.zarr.log	#Dataset-13867	http://bia/File	496
+experimentA/Clonal_A375c2/150603_A375c2_A375c1.ome.zarr.zip	#Dataset-13866	http://bia/Image	155887981575
+experimentA/Clonal_A375c2/150603_A375c2_A375c1.ome.zarr.log	#Dataset-13866	http://bia/File	496
+experimentA/Clonal_A375c2/150703_A375c1_A375c2.ome.zarr.zip	#Dataset-13866	http://bia/Image	167021672373
+experimentA/Clonal_A375c2/150703_A375c1_A375c2.ome.zarr.log	#Dataset-13866	http://bia/File	496
+experimentA/Clonal_m405c2/170712_m405c2.ome.zarr.zip	#Dataset-13872	http://bia/Image	38432259930
+experimentA/Clonal_m405c2/170712_m405c2.ome.zarr.log	#Dataset-13872	http://bia/File	482
+experimentA/Clonal_m405c2/170718_m405c2.ome.zarr.zip	#Dataset-13872	http://bia/Image	32685127933
+experimentA/Clonal_m405c2/170718_m405c2.ome.zarr.log	#Dataset-13872	http://bia/File	482
+experimentA/Clonal_m405c2/170720_m405c2.ome.zarr.zip	#Dataset-13872	http://bia/Image	32667841155
+experimentA/Clonal_m405c2/170720_m405c2.ome.zarr.log	#Dataset-13872	http://bia/File	482
+experimentA/Clonal_m405c3/150714_m405c3.ome.zarr.zip	#Dataset-13870	http://bia/Image	83418061977
+experimentA/Clonal_m405c3/150714_m405c3.ome.zarr.log	#Dataset-13870	http://bia/File	482
+experimentA/Clonal_m405c3/170719_m405c3.ome.zarr.zip	#Dataset-13870	http://bia/Image	32509621607
+experimentA/Clonal_m405c3/170719_m405c3.ome.zarr.log	#Dataset-13870	http://bia/File	482
+experimentA/Clonal_m405c3/170726_m405c3.ome.zarr.zip	#Dataset-13870	http://bia/Image	42336662324
+experimentA/Clonal_m405c3/170726_m405c3.ome.zarr.log	#Dataset-13870	http://bia/File	482
+experimentA/Melanocyte_ATCC/141010_ATCC.ome.zarr.zip	#Dataset-13861	http://bia/Image	63373385046
+experimentA/Melanocyte_ATCC/141010_ATCC.ome.zarr.log	#Dataset-13861	http://bia/File	480
+experimentA/Melanocyte_ATCC/141013_ATCC.ome.zarr.zip	#Dataset-13861	http://bia/Image	64399243422
+experimentA/Melanocyte_ATCC/141013_ATCC.ome.zarr.log	#Dataset-13861	http://bia/File	480
+experimentA/Melanocyte_ATCC/141020_ATCC.ome.zarr.zip	#Dataset-13861	http://bia/Image	57469041453
+experimentA/Melanocyte_ATCC/141020_ATCC.ome.zarr.log	#Dataset-13861	http://bia/File	480
+experimentA/Melanocyte_m116/150414_m116.ome.zarr.zip	#Dataset-13864	http://bia/Image	77118746235
+experimentA/Melanocyte_m116/150414_m116.ome.zarr.log	#Dataset-13864	http://bia/File	480
+experimentA/Melanocyte_m116/150419_m116.ome.zarr.zip	#Dataset-13864	http://bia/Image	132343942991
+experimentA/Melanocyte_m116/150419_m116.ome.zarr.log	#Dataset-13864	http://bia/File	480
+experimentA/Melanocyte_m116/150703_m116_m597.ome.zarr.zip	#Dataset-13864	http://bia/Image	147122759040
+experimentA/Melanocyte_m116/150703_m116_m597.ome.zarr.log	#Dataset-13864	http://bia/File	490
+experimentA/PDX_m405/150309_m610_m405.ome.zarr.zip	#Dataset-13863	http://bia/Image	169512130966
+experimentA/PDX_m405/150309_m610_m405.ome.zarr.log	#Dataset-13863	http://bia/File	483
+experimentA/PDX_m405/150312_m405_m610.ome.zarr.zip	#Dataset-13863	http://bia/Image	152555443662
+experimentA/PDX_m405/150312_m405_m610.ome.zarr.log	#Dataset-13863	http://bia/File	483
+experimentA/PDX_m405/150416_m405_m610.ome.zarr.zip	#Dataset-13863	http://bia/Image	174043854672
+experimentA/PDX_m405/150416_m405_m610.ome.zarr.log	#Dataset-13863	http://bia/File	483
+experimentA/PDX_m481/140729_m481.ome.zarr.zip	#Dataset-13858	http://bia/Image	62605189756
+experimentA/PDX_m481/140729_m481.ome.zarr.log	#Dataset-13858	http://bia/File	473
+experimentA/PDX_m481/150322_m481.ome.zarr.zip	#Dataset-13858	http://bia/Image	259784371959
+experimentA/PDX_m481/150322_m481.ome.zarr.log	#Dataset-13858	http://bia/File	473
+experimentA/PDX_m481/150413_m528_m481.ome.zarr.zip	#Dataset-13858	http://bia/Image	157824100339
+experimentA/PDX_m481/150413_m528_m481.ome.zarr.log	#Dataset-13858	http://bia/File	483
+experimentA/PDX_m481/150415_m481_UT8.ome.zarr.zip	#Dataset-13858	http://bia/Image	175256321622
+experimentA/PDX_m481/150415_m481_UT8.ome.zarr.log	#Dataset-13858	http://bia/File	481
+experimentA/PDX_m481/150424_m481_UT8.ome.zarr.zip	#Dataset-13858	http://bia/Image	209320460829
+experimentA/PDX_m481/150424_m481_UT8.ome.zarr.log	#Dataset-13858	http://bia/File	481
+experimentA/PDX_m481/160802_m481_m610_m634_m498.ome.zarr.zip	#Dataset-13858	http://bia/Image	54151669437
+experimentA/PDX_m481/160802_m481_m610_m634_m498.ome.zarr.log	#Dataset-13858	http://bia/File	503
+experimentA/PDX_m481/160808_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13858	http://bia/Image	53234075115
+experimentA/PDX_m481/160808_m498_m634_m610_m481.ome.zarr.log	#Dataset-13858	http://bia/File	503
+experimentA/PDX_m481/161206_m481.ome.zarr.zip	#Dataset-13858	http://bia/Image	29497182993
+experimentA/PDX_m481/161206_m481.ome.zarr.log	#Dataset-13858	http://bia/File	473
+experimentA/PDX_m481/161209_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13858	http://bia/Image	55415667873
+experimentA/PDX_m481/161209_m498_m634_m610_m481.ome.zarr.log	#Dataset-13858	http://bia/File	503
+experimentA/PDX_m481/161214_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13858	http://bia/Image	56918837388
+experimentA/PDX_m481/161214_m481_m498_m610_m634.ome.zarr.log	#Dataset-13858	http://bia/File	503
+experimentA/PDX_m481/161220_m481_m498_m634_m610.ome.zarr.zip	#Dataset-13858	http://bia/Image	54646299005
+experimentA/PDX_m481/161220_m481_m498_m634_m610.ome.zarr.log	#Dataset-13858	http://bia/File	503
+experimentA/PDX_m481/161224_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13858	http://bia/Image	55464402596
+experimentA/PDX_m481/161224_m481_m498_m610_m634.ome.zarr.log	#Dataset-13858	http://bia/File	503
+experimentA/PDX_m498/150730_m498_um12.ome.zarr.zip	#Dataset-13871	http://bia/Image	164355056395
+experimentA/PDX_m498/150730_m498_um12.ome.zarr.log	#Dataset-13871	http://bia/File	483
+experimentA/PDX_m498/150803_um12_m498.ome.zarr.zip	#Dataset-13871	http://bia/Image	155953301442
+experimentA/PDX_m498/150803_um12_m498.ome.zarr.log	#Dataset-13871	http://bia/File	483
+experimentA/PDX_m498/150805_m498_m634.ome.zarr.zip	#Dataset-13871	http://bia/Image	158187722311
+experimentA/PDX_m498/150805_m498_m634.ome.zarr.log	#Dataset-13871	http://bia/File	483
+experimentA/PDX_m498/160802_m481_m610_m634_m498.ome.zarr.zip	#Dataset-13871	http://bia/Image	54151684797
+experimentA/PDX_m498/160802_m481_m610_m634_m498.ome.zarr.log	#Dataset-13871	http://bia/File	503
+experimentA/PDX_m498/160808_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13871	http://bia/Image	53234090403
+experimentA/PDX_m498/160808_m498_m634_m610_m481.ome.zarr.log	#Dataset-13871	http://bia/File	503
+experimentA/PDX_m498/161209_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13871	http://bia/Image	55415682957
+experimentA/PDX_m498/161209_m498_m634_m610_m481.ome.zarr.log	#Dataset-13871	http://bia/File	503
+experimentA/PDX_m498/161214_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13871	http://bia/Image	56918852580
+experimentA/PDX_m498/161214_m481_m498_m610_m634.ome.zarr.log	#Dataset-13871	http://bia/File	503
+experimentA/PDX_m498/161220_m481_m498_m634_m610.ome.zarr.zip	#Dataset-13871	http://bia/Image	54646314233
+experimentA/PDX_m498/161220_m481_m498_m634_m610.ome.zarr.log	#Dataset-13871	http://bia/File	503
+experimentA/PDX_m498/161224_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13871	http://bia/Image	55464417812
+experimentA/PDX_m498/161224_m481_m498_m610_m634.ome.zarr.log	#Dataset-13871	http://bia/File	503
+experimentA/PDX_m528/140729_um12_m528.ome.zarr.zip	#Dataset-13860	http://bia/Image	112789251898
+experimentA/PDX_m528/140729_um12_m528.ome.zarr.log	#Dataset-13860	http://bia/File	483
+experimentA/PDX_m528/150413_m528_m481.ome.zarr.zip	#Dataset-13860	http://bia/Image	157824100387
+experimentA/PDX_m528/150413_m528_m481.ome.zarr.log	#Dataset-13860	http://bia/File	483
+experimentA/PDX_m528/150626_m528_UT8.ome.zarr.zip	#Dataset-13860	http://bia/Image	174032815191
+experimentA/PDX_m528/150626_m528_UT8.ome.zarr.log	#Dataset-13860	http://bia/File	481
+experimentA/PDX_m528/150702_UT8_m528.ome.zarr.zip	#Dataset-13860	http://bia/Image	166206703327
+experimentA/PDX_m528/150702_UT8_m528.ome.zarr.log	#Dataset-13860	http://bia/File	481
+experimentA/PDX_m597/150603_m597.ome.zarr.zip	#Dataset-13868	http://bia/Image	95697274791
+experimentA/PDX_m597/150603_m597.ome.zarr.log	#Dataset-13868	http://bia/File	473
+experimentA/PDX_m597/150616_m634_m597.ome.zarr.zip	#Dataset-13868	http://bia/Image	170739537657
+experimentA/PDX_m597/150616_m634_m597.ome.zarr.log	#Dataset-13868	http://bia/File	483
+experimentA/PDX_m597/150703_m116_m597.ome.zarr.zip	#Dataset-13868	http://bia/Image	147122758908
+experimentA/PDX_m597/150703_m116_m597.ome.zarr.log	#Dataset-13868	http://bia/File	483
+experimentA/PDX_m597/150709_m597_m634.ome.zarr.zip	#Dataset-13868	http://bia/Image	175473392485
+experimentA/PDX_m597/150709_m597_m634.ome.zarr.log	#Dataset-13868	http://bia/File	483
+experimentA/PDX_m610/150309_m610_m405.ome.zarr.zip	#Dataset-13862	http://bia/Image	169512085594
+experimentA/PDX_m610/150309_m610_m405.ome.zarr.log	#Dataset-13862	http://bia/File	483
+experimentA/PDX_m610/150312_m405_m610.ome.zarr.zip	#Dataset-13862	http://bia/Image	152555398554
+experimentA/PDX_m610/150312_m405_m610.ome.zarr.log	#Dataset-13862	http://bia/File	483
+experimentA/PDX_m610/150416_m405_m610.ome.zarr.zip	#Dataset-13862	http://bia/Image	174043809060
+experimentA/PDX_m610/150416_m405_m610.ome.zarr.log	#Dataset-13862	http://bia/File	483
+experimentA/PDX_m610/160802_m481_m610_m634_m498.ome.zarr.zip	#Dataset-13862	http://bia/Image	54151669437
+experimentA/PDX_m610/160802_m481_m610_m634_m498.ome.zarr.log	#Dataset-13862	http://bia/File	503
+experimentA/PDX_m610/160808_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13862	http://bia/Image	53234075151
+experimentA/PDX_m610/160808_m498_m634_m610_m481.ome.zarr.log	#Dataset-13862	http://bia/File	503
+experimentA/PDX_m610/161209_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13862	http://bia/Image	55415667729
+experimentA/PDX_m610/161209_m498_m634_m610_m481.ome.zarr.log	#Dataset-13862	http://bia/File	503
+experimentA/PDX_m610/161214_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13862	http://bia/Image	56918836704
+experimentA/PDX_m610/161214_m481_m498_m610_m634.ome.zarr.log	#Dataset-13862	http://bia/File	503
+experimentA/PDX_m610/161220_m481_m498_m634_m610.ome.zarr.zip	#Dataset-13862	http://bia/Image	54646298069
+experimentA/PDX_m610/161220_m481_m498_m634_m610.ome.zarr.log	#Dataset-13862	http://bia/File	503
+experimentA/PDX_m610/161224_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13862	http://bia/Image	55464402248
+experimentA/PDX_m610/161224_m481_m498_m610_m634.ome.zarr.log	#Dataset-13862	http://bia/File	503
+experimentA/PDX_m634/150616_m634_m597.ome.zarr.zip	#Dataset-13869	http://bia/Image	170739538053
+experimentA/PDX_m634/150616_m634_m597.ome.zarr.log	#Dataset-13869	http://bia/File	483
+experimentA/PDX_m634/150709_m597_m634.ome.zarr.zip	#Dataset-13869	http://bia/Image	175473392929
+experimentA/PDX_m634/150709_m597_m634.ome.zarr.log	#Dataset-13869	http://bia/File	483
+experimentA/PDX_m634/150805_m498_m634.ome.zarr.zip	#Dataset-13869	http://bia/Image	158187723127
+experimentA/PDX_m634/150805_m498_m634.ome.zarr.log	#Dataset-13869	http://bia/File	483
+experimentA/PDX_m634/160802_m481_m610_m634_m498.ome.zarr.zip	#Dataset-13869	http://bia/Image	54151684641
+experimentA/PDX_m634/160802_m481_m610_m634_m498.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_m634/160808_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13869	http://bia/Image	53234090451
+experimentA/PDX_m634/160808_m498_m634_m610_m481.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_m634/161209_m498_m634_m610_m481.ome.zarr.zip	#Dataset-13869	http://bia/Image	55415683029
+experimentA/PDX_m634/161209_m498_m634_m610_m481.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_m634/161214_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13869	http://bia/Image	56918851968
+experimentA/PDX_m634/161214_m481_m498_m610_m634.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_m634/161220_m481_m498_m634_m610.ome.zarr.zip	#Dataset-13869	http://bia/Image	54646313381
+experimentA/PDX_m634/161220_m481_m498_m634_m610.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_m634/161224_m481_m498_m610_m634.ome.zarr.zip	#Dataset-13869	http://bia/Image	55464417536
+experimentA/PDX_m634/161224_m481_m498_m610_m634.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_m634/161225_m634_m634_m634_m634.ome.zarr.zip	#Dataset-13869	http://bia/Image	56240723190
+experimentA/PDX_m634/161225_m634_m634_m634_m634.ome.zarr.log	#Dataset-13869	http://bia/File	503
+experimentA/PDX_um12/140729_um12_m528.ome.zarr.zip	#Dataset-13859	http://bia/Image	112789251898
+experimentA/PDX_um12/140729_um12_m528.ome.zarr.log	#Dataset-13859	http://bia/File	483
+experimentA/PDX_um12/141029_um12.ome.zarr.zip	#Dataset-13859	http://bia/Image	76447806434
+experimentA/PDX_um12/141029_um12.ome.zarr.log	#Dataset-13859	http://bia/File	473
+experimentA/PDX_um12/150730_m498_um12.ome.zarr.zip	#Dataset-13859	http://bia/Image	164355011779
+experimentA/PDX_um12/150730_m498_um12.ome.zarr.log	#Dataset-13859	http://bia/File	483
+experimentA/PDX_um12/150803_um12_m498.ome.zarr.zip	#Dataset-13859	http://bia/Image	155953257510
+experimentA/PDX_um12/150803_um12_m498.ome.zarr.log	#Dataset-13859	http://bia/File	483
+experimentA/PDX_UT8/150415_m481_UT8.ome.zarr.zip	#Dataset-13865	http://bia/Image	175256366958
+experimentA/PDX_UT8/150415_m481_UT8.ome.zarr.log	#Dataset-13865	http://bia/File	480
+experimentA/PDX_UT8/150424_m481_UT8.ome.zarr.zip	#Dataset-13865	http://bia/Image	209320513245
+experimentA/PDX_UT8/150424_m481_UT8.ome.zarr.log	#Dataset-13865	http://bia/File	480
+experimentA/PDX_UT8/150626_m528_UT8.ome.zarr.zip	#Dataset-13865	http://bia/Image	174032860035
+experimentA/PDX_UT8/150626_m528_UT8.ome.zarr.log	#Dataset-13865	http://bia/File	480
+experimentA/PDX_UT8/150702_UT8_m528.ome.zarr.zip	#Dataset-13865	http://bia/Image	166206751051
+experimentA/PDX_UT8/150702_UT8_m528.ome.zarr.log	#Dataset-13865	http://bia/File	480

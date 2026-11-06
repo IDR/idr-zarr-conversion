@@ -1,0 +1,459 @@
+file_path	dataset	type	size_in_bytes
+experimentA/Colocalising/aaa_upper_rr_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	146811528
+experimentA/Colocalising/aaa_upper_rr_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	685
+experimentA/Colocalising/aaa_upper_rr_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	54479383
+experimentA/Colocalising/aaa_upper_rr_lower.ome.zarr.log	#Dataset-408	http://bia/File	671
+experimentA/Colocalising/bb_upper_aa_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	158584010
+experimentA/Colocalising/bb_upper_aa_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/bb_upper_aa_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	48384340
+experimentA/Colocalising/bb_upper_aa_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/b_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	185337045
+experimentA/Colocalising/b_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/b_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	62110249
+experimentA/Colocalising/b_lower.ome.zarr.log	#Dataset-408	http://bia/File	649
+experimentA/Colocalising/dd_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	156354250
+experimentA/Colocalising/dd_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/dd_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	49571697
+experimentA/Colocalising/dd_lower.ome.zarr.log	#Dataset-408	http://bia/File	651
+experimentA/Colocalising/e_upper_h_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	148765861
+experimentA/Colocalising/e_upper_h_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/e_upper_h_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	49454831
+experimentA/Colocalising/e_upper_h_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/ff_upper_ee_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	157826121
+experimentA/Colocalising/ff_upper_ee_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/ff_upper_ee_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	50277640
+experimentA/Colocalising/ff_upper_ee_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/f_upper_d_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	149329096
+experimentA/Colocalising/f_upper_d_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/f_upper_d_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	49797109
+experimentA/Colocalising/f_upper_d_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/gg_upper_cc_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	156606259
+experimentA/Colocalising/gg_upper_cc_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/gg_upper_cc_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	49932605
+experimentA/Colocalising/gg_upper_cc_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/g_upper_c_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	183563369
+experimentA/Colocalising/g_upper_c_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/g_upper_c_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	61230836
+experimentA/Colocalising/g_upper_c_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/ii_upper_hh_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	158232051
+experimentA/Colocalising/ii_upper_hh_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/ii_upper_hh_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	50744880
+experimentA/Colocalising/ii_upper_hh_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/i_upper_a_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	185733779
+experimentA/Colocalising/i_upper_a_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/i_upper_a_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	61661985
+experimentA/Colocalising/i_upper_a_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/kk_upper_mm_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	185626235
+experimentA/Colocalising/kk_upper_mm_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/kk_upper_mm_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	61219830
+experimentA/Colocalising/kk_upper_mm_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/k_upper_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	74375753
+experimentA/Colocalising/k_upper_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/k_upper.ome.zarr.zip	#Dataset-408	http://bia/Image	28087135
+experimentA/Colocalising/k_upper.ome.zarr.log	#Dataset-408	http://bia/File	649
+experimentA/Colocalising/ll_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	186149726
+experimentA/Colocalising/ll_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/ll_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	61383404
+experimentA/Colocalising/ll_lower.ome.zarr.log	#Dataset-408	http://bia/File	651
+experimentA/Colocalising/m_upper_s_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	150776155
+experimentA/Colocalising/m_upper_s_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/n_upper_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	150077988
+experimentA/Colocalising/n_upper_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/oo_upper_nn_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	187602607
+experimentA/Colocalising/oo_upper_nn_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/oo_upper_nn_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	64672907
+experimentA/Colocalising/oo_upper_nn_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/o_upper_q_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	73598920
+experimentA/Colocalising/o_upper_q_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/o_upper_q_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	27515301
+experimentA/Colocalising/o_upper_q_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/pp_upper_jj_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	74194169
+experimentA/Colocalising/pp_upper_jj_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/pp_upper_jj_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	25690248
+experimentA/Colocalising/pp_upper_jj_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/p_upper_l_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	146528598
+experimentA/Colocalising/p_upper_l_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/p_upper_l_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	49650153
+experimentA/Colocalising/p_upper_l_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/qq_upper_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	188963746
+experimentA/Colocalising/qq_upper_ALX.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/qq_upper.ome.zarr.zip	#Dataset-408	http://bia/Image	62339714
+experimentA/Colocalising/qq_upper.ome.zarr.log	#Dataset-408	http://bia/File	651
+experimentA/Colocalising/r_upper_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	75110985
+experimentA/Colocalising/r_upper_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/r_upper.ome.zarr.zip	#Dataset-408	http://bia/Image	25527965
+experimentA/Colocalising/r_upper.ome.zarr.log	#Dataset-408	http://bia/File	649
+experimentA/Colocalising/t_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	75583456
+experimentA/Colocalising/t_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/tt_upper_ss_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	147856230
+experimentA/Colocalising/tt_upper_ss_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/tt_upper_ss_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	54243092
+experimentA/Colocalising/tt_upper_ss_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/u_upper_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	149991132
+experimentA/Colocalising/u_upper_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/v_upper_j_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	74205442
+experimentA/Colocalising/v_upper_j_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/v_upper_j_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	26927004
+experimentA/Colocalising/v_upper_j_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Colocalising/vv_upper_yy_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	149712121
+experimentA/Colocalising/vv_upper_yy_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/vv_upper_yy_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	53205037
+experimentA/Colocalising/vv_upper_yy_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/w_upper_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	149339384
+experimentA/Colocalising/w_upper_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/ww_upper_uu_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	150434479
+experimentA/Colocalising/ww_upper_uu_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/ww_upper_uu_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	54133806
+experimentA/Colocalising/ww_upper_uu_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/x_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	160152293
+experimentA/Colocalising/x_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	663
+experimentA/Colocalising/x_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	49442175
+experimentA/Colocalising/x_lower.ome.zarr.log	#Dataset-408	http://bia/File	649
+experimentA/Colocalising/xx_upper_zz_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	147684581
+experimentA/Colocalising/xx_upper_zz_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	683
+experimentA/Colocalising/xx_upper_zz_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	53303041
+experimentA/Colocalising/xx_upper_zz_lower.ome.zarr.log	#Dataset-408	http://bia/File	669
+experimentA/Colocalising/z_upper_y_lower_ALX.ome.zarr.zip	#Dataset-408	http://bia/Image	157708557
+experimentA/Colocalising/z_upper_y_lower_ALX.ome.zarr.log	#Dataset-408	http://bia/File	679
+experimentA/Colocalising/z_upper_y_lower.ome.zarr.zip	#Dataset-408	http://bia/Image	48684036
+experimentA/Colocalising/z_upper_y_lower.ome.zarr.log	#Dataset-408	http://bia/File	665
+experimentA/Genomic separation 100kb/aa_upper_x_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	156924741
+experimentA/Genomic separation 100kb/aa_upper_x_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	688
+experimentA/Genomic separation 100kb/aa_upper_x_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	52645039
+experimentA/Genomic separation 100kb/aa_upper_x_lower.ome.zarr.log	#Dataset-407	http://bia/File	674
+experimentA/Genomic separation 100kb/ee_upper_cc_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	149596503
+experimentA/Genomic separation 100kb/ee_upper_cc_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	690
+experimentA/Genomic separation 100kb/ee_upper_cc_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	54468646
+experimentA/Genomic separation 100kb/ee_upper_cc_lower.ome.zarr.log	#Dataset-407	http://bia/File	676
+experimentA/Genomic separation 100kb/gg_upper_ff_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	148879960
+experimentA/Genomic separation 100kb/gg_upper_ff_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	690
+experimentA/Genomic separation 100kb/gg_upper_ff_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	54064722
+experimentA/Genomic separation 100kb/gg_upper_ff_lower.ome.zarr.log	#Dataset-407	http://bia/File	676
+experimentA/Genomic separation 100kb/hh_upper_dd_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	150521534
+experimentA/Genomic separation 100kb/hh_upper_dd_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	690
+experimentA/Genomic separation 100kb/hh_upper_dd_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	52778179
+experimentA/Genomic separation 100kb/hh_upper_dd_lower.ome.zarr.log	#Dataset-407	http://bia/File	676
+experimentA/Genomic separation 100kb/i_upper_n_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	150980669
+experimentA/Genomic separation 100kb/i_upper_n_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	686
+experimentA/Genomic separation 100kb/i_upper_n_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	53272003
+experimentA/Genomic separation 100kb/i_upper_n_lower.ome.zarr.log	#Dataset-407	http://bia/File	672
+experimentA/Genomic separation 100kb/j_upper_k_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	151975418
+experimentA/Genomic separation 100kb/j_upper_k_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	686
+experimentA/Genomic separation 100kb/j_upper_k_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	53491161
+experimentA/Genomic separation 100kb/j_upper_k_lower.ome.zarr.log	#Dataset-407	http://bia/File	672
+experimentA/Genomic separation 100kb/l_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	74973570
+experimentA/Genomic separation 100kb/l_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	670
+experimentA/Genomic separation 100kb/l_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	26322070
+experimentA/Genomic separation 100kb/l_lower.ome.zarr.log	#Dataset-407	http://bia/File	655
+experimentA/Genomic separation 100kb/m_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	151886754
+experimentA/Genomic separation 100kb/m_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	670
+experimentA/Genomic separation 100kb/m_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	51673249
+experimentA/Genomic separation 100kb/m_lower.ome.zarr.log	#Dataset-407	http://bia/File	655
+experimentA/Genomic separation 100kb/q_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	74200912
+experimentA/Genomic separation 100kb/q_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	670
+experimentA/Genomic separation 100kb/q_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	26907868
+experimentA/Genomic separation 100kb/q_lower.ome.zarr.log	#Dataset-407	http://bia/File	655
+experimentA/Genomic separation 100kb/r_upper_p_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	148849689
+experimentA/Genomic separation 100kb/r_upper_p_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	686
+experimentA/Genomic separation 100kb/r_upper_p_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	52436519
+experimentA/Genomic separation 100kb/r_upper_p_lower.ome.zarr.log	#Dataset-407	http://bia/File	671
+experimentA/Genomic separation 100kb/s_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	152338704
+experimentA/Genomic separation 100kb/s_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	670
+experimentA/Genomic separation 100kb/s_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	49938873
+experimentA/Genomic separation 100kb/s_lower.ome.zarr.log	#Dataset-407	http://bia/File	655
+experimentA/Genomic separation 100kb/t_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	149256820
+experimentA/Genomic separation 100kb/t_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	670
+experimentA/Genomic separation 100kb/t_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	52468998
+experimentA/Genomic separation 100kb/t_lower.ome.zarr.log	#Dataset-407	http://bia/File	656
+experimentA/Genomic separation 100kb/u_upper_o_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	76712329
+experimentA/Genomic separation 100kb/u_upper_o_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	686
+experimentA/Genomic separation 100kb/u_upper_o_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	26031702
+experimentA/Genomic separation 100kb/u_upper_o_lower.ome.zarr.log	#Dataset-407	http://bia/File	672
+experimentA/Genomic separation 100kb/w_upper_v_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	157483537
+experimentA/Genomic separation 100kb/w_upper_v_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	686
+experimentA/Genomic separation 100kb/w_upper_v_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	50905122
+experimentA/Genomic separation 100kb/w_upper_v_lower.ome.zarr.log	#Dataset-407	http://bia/File	672
+experimentA/Genomic separation 100kb/y_upper_bb_lower_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	155898150
+experimentA/Genomic separation 100kb/y_upper_bb_lower_ALX.ome.zarr.log	#Dataset-407	http://bia/File	688
+experimentA/Genomic separation 100kb/y_upper_bb_lower.ome.zarr.zip	#Dataset-407	http://bia/Image	51893617
+experimentA/Genomic separation 100kb/y_upper_bb_lower.ome.zarr.log	#Dataset-407	http://bia/File	674
+experimentA/Genomic separation 100kb/z_upper_ALX.ome.zarr.zip	#Dataset-407	http://bia/Image	156603758
+experimentA/Genomic separation 100kb/z_upper_ALX.ome.zarr.log	#Dataset-407	http://bia/File	670
+experimentA/Genomic separation 100kb/z_upper.ome.zarr.zip	#Dataset-407	http://bia/Image	50231027
+experimentA/Genomic separation 100kb/z_upper.ome.zarr.log	#Dataset-407	http://bia/File	656
+experimentA/Genomic separation 25kb/a_upper_b_lower_ALX.ome.zarr.zip	#Dataset-401	http://bia/Image	157681675
+experimentA/Genomic separation 25kb/a_upper_b_lower_ALX.ome.zarr.log	#Dataset-401	http://bia/File	684
+experimentA/Genomic separation 25kb/a_upper_b_lower.ome.zarr.zip	#Dataset-401	http://bia/Image	52727524
+experimentA/Genomic separation 25kb/a_upper_b_lower.ome.zarr.log	#Dataset-401	http://bia/File	670
+experimentA/Genomic separation 25kb/c_upper_d_lower_ALX.ome.zarr.zip	#Dataset-401	http://bia/Image	194541823
+experimentA/Genomic separation 25kb/c_upper_d_lower_ALX.ome.zarr.log	#Dataset-401	http://bia/File	684
+experimentA/Genomic separation 25kb/c_upper_d_lower.ome.zarr.zip	#Dataset-401	http://bia/Image	65189531
+experimentA/Genomic separation 25kb/c_upper_d_lower.ome.zarr.log	#Dataset-401	http://bia/File	670
+experimentA/Genomic separation 25kb/e_upper_ALX.ome.zarr.zip	#Dataset-401	http://bia/Image	73685775
+experimentA/Genomic separation 25kb/e_upper_ALX.ome.zarr.log	#Dataset-401	http://bia/File	668
+experimentA/Genomic separation 25kb/e_upper.ome.zarr.zip	#Dataset-401	http://bia/Image	25650336
+experimentA/Genomic separation 25kb/e_upper.ome.zarr.log	#Dataset-401	http://bia/File	654
+experimentA/Genomic separation 25kb/f_lower_ALX.ome.zarr.zip	#Dataset-401	http://bia/Image	74676895
+experimentA/Genomic separation 25kb/f_lower_ALX.ome.zarr.log	#Dataset-401	http://bia/File	668
+experimentA/Genomic separation 25kb/f_lower.ome.zarr.zip	#Dataset-401	http://bia/Image	24754911
+experimentA/Genomic separation 25kb/f_lower.ome.zarr.log	#Dataset-401	http://bia/File	654
+experimentA/Genomic separation 25kb/h_upper_g_lower_ALX.ome.zarr.zip	#Dataset-401	http://bia/Image	74931293
+experimentA/Genomic separation 25kb/h_upper_g_lower_ALX.ome.zarr.log	#Dataset-401	http://bia/File	684
+experimentA/Genomic separation 25kb/h_upper_g_lower.ome.zarr.zip	#Dataset-401	http://bia/Image	24951066
+experimentA/Genomic separation 25kb/h_upper_g_lower.ome.zarr.log	#Dataset-401	http://bia/File	670
+experimentA/Genomic separation 25kb/j_upper_i_lower_ALX.ome.zarr.zip	#Dataset-401	http://bia/Image	74940222
+experimentA/Genomic separation 25kb/j_upper_i_lower_ALX.ome.zarr.log	#Dataset-401	http://bia/File	684
+experimentA/Genomic separation 25kb/j_upper_i_lower.ome.zarr.zip	#Dataset-401	http://bia/Image	24925888
+experimentA/Genomic separation 25kb/j_upper_i_lower.ome.zarr.log	#Dataset-401	http://bia/File	670
+experimentA/Genomic separation 42kb/bb_upper_aa_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	164009291
+experimentA/Genomic separation 42kb/bb_upper_aa_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	689
+experimentA/Genomic separation 42kb/bb_upper_aa_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	53489734
+experimentA/Genomic separation 42kb/bb_upper_aa_lower.ome.zarr.log	#Dataset-402	http://bia/File	674
+experimentA/Genomic separation 42kb/m_upper_l_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	194501384
+experimentA/Genomic separation 42kb/m_upper_l_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/m_upper_l_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	64800092
+experimentA/Genomic separation 42kb/m_upper_l_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/o_upper_k_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	195662215
+experimentA/Genomic separation 42kb/o_upper_k_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/o_upper_k_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	65559722
+experimentA/Genomic separation 42kb/o_upper_k_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/q_upper_p_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	153638864
+experimentA/Genomic separation 42kb/q_upper_p_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/q_upper_p_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	51118917
+experimentA/Genomic separation 42kb/q_upper_p_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/r_upper_n_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	194222627
+experimentA/Genomic separation 42kb/r_upper_n_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/r_upper_n_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	64303860
+experimentA/Genomic separation 42kb/r_upper_n_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/s_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	152361492
+experimentA/Genomic separation 42kb/s_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	668
+experimentA/Genomic separation 42kb/s_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	54794904
+experimentA/Genomic separation 42kb/s_lower.ome.zarr.log	#Dataset-402	http://bia/File	654
+experimentA/Genomic separation 42kb/u_upper_w_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	76596167
+experimentA/Genomic separation 42kb/u_upper_w_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/u_upper_w_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	29849728
+experimentA/Genomic separation 42kb/u_upper_w_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/v_upper_t_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	75930012
+experimentA/Genomic separation 42kb/v_upper_t_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/v_upper_t_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	28034997
+experimentA/Genomic separation 42kb/v_upper_t_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/x_upper_z_lower_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	159793580
+experimentA/Genomic separation 42kb/x_upper_z_lower_ALX.ome.zarr.log	#Dataset-402	http://bia/File	684
+experimentA/Genomic separation 42kb/x_upper_z_lower.ome.zarr.zip	#Dataset-402	http://bia/Image	54111986
+experimentA/Genomic separation 42kb/x_upper_z_lower.ome.zarr.log	#Dataset-402	http://bia/File	670
+experimentA/Genomic separation 42kb/y_upper_ALX.ome.zarr.zip	#Dataset-402	http://bia/Image	160151108
+experimentA/Genomic separation 42kb/y_upper_ALX.ome.zarr.log	#Dataset-402	http://bia/File	668
+experimentA/Genomic separation 42kb/y_upper.ome.zarr.zip	#Dataset-402	http://bia/Image	54536201
+experimentA/Genomic separation 42kb/y_upper.ome.zarr.log	#Dataset-402	http://bia/File	654
+experimentA/Genomic separation 51kb/cc_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	191834258
+experimentA/Genomic separation 51kb/cc_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	670
+experimentA/Genomic separation 51kb/cc_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	62451064
+experimentA/Genomic separation 51kb/cc_lower.ome.zarr.log	#Dataset-403	http://bia/File	656
+experimentA/Genomic separation 51kb/dd_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	76377349
+experimentA/Genomic separation 51kb/dd_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	670
+experimentA/Genomic separation 51kb/dd_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	28312317
+experimentA/Genomic separation 51kb/dd_lower.ome.zarr.log	#Dataset-403	http://bia/File	656
+experimentA/Genomic separation 51kb/gg_upper_ee_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	149466862
+experimentA/Genomic separation 51kb/gg_upper_ee_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/gg_upper_ee_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	56163151
+experimentA/Genomic separation 51kb/gg_upper_ee_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/hh_upper_ff_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	76419788
+experimentA/Genomic separation 51kb/hh_upper_ff_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/hh_upper_ff_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	29259345
+experimentA/Genomic separation 51kb/hh_upper_ff_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/ii_upper_oo_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	161148728
+experimentA/Genomic separation 51kb/ii_upper_oo_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/ii_upper_oo_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	54484283
+experimentA/Genomic separation 51kb/ii_upper_oo_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/kk_upper_jj_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	160808896
+experimentA/Genomic separation 51kb/kk_upper_jj_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/kk_upper_jj_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	54148113
+experimentA/Genomic separation 51kb/kk_upper_jj_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/mm_upper_ll_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	158846281
+experimentA/Genomic separation 51kb/mm_upper_ll_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/mm_upper_ll_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	53315474
+experimentA/Genomic separation 51kb/mm_upper_ll_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/nn_upper_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	159622626
+experimentA/Genomic separation 51kb/nn_upper_ALX.ome.zarr.log	#Dataset-403	http://bia/File	670
+experimentA/Genomic separation 51kb/nn_upper.ome.zarr.zip	#Dataset-403	http://bia/Image	53764181
+experimentA/Genomic separation 51kb/nn_upper.ome.zarr.log	#Dataset-403	http://bia/File	656
+experimentA/Genomic separation 51kb/pp_upper_tt_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	197493958
+experimentA/Genomic separation 51kb/pp_upper_tt_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/pp_upper_tt_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	67295104
+experimentA/Genomic separation 51kb/pp_upper_tt_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/rr_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	159471839
+experimentA/Genomic separation 51kb/rr_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	670
+experimentA/Genomic separation 51kb/rr_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	52074368
+experimentA/Genomic separation 51kb/rr_lower.ome.zarr.log	#Dataset-403	http://bia/File	656
+experimentA/Genomic separation 51kb/ss_upper_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	159665095
+experimentA/Genomic separation 51kb/ss_upper_ALX.ome.zarr.log	#Dataset-403	http://bia/File	670
+experimentA/Genomic separation 51kb/ss_upper.ome.zarr.zip	#Dataset-403	http://bia/Image	51989072
+experimentA/Genomic separation 51kb/ss_upper.ome.zarr.log	#Dataset-403	http://bia/File	656
+experimentA/Genomic separation 51kb/uu_upper_qq_lower_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	160383941
+experimentA/Genomic separation 51kb/uu_upper_qq_lower_ALX.ome.zarr.log	#Dataset-403	http://bia/File	688
+experimentA/Genomic separation 51kb/uu_upper_qq_lower.ome.zarr.zip	#Dataset-403	http://bia/Image	52522913
+experimentA/Genomic separation 51kb/uu_upper_qq_lower.ome.zarr.log	#Dataset-403	http://bia/File	674
+experimentA/Genomic separation 51kb/vv_upper_ALX.ome.zarr.zip	#Dataset-403	http://bia/Image	161626915
+experimentA/Genomic separation 51kb/vv_upper_ALX.ome.zarr.log	#Dataset-403	http://bia/File	670
+experimentA/Genomic separation 51kb/vv_upper.ome.zarr.zip	#Dataset-403	http://bia/Image	52281562
+experimentA/Genomic separation 51kb/vv_upper.ome.zarr.log	#Dataset-403	http://bia/File	656
+experimentA/Genomic separation 64kb/a_upper_d_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	192215014
+experimentA/Genomic separation 64kb/a_upper_d_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/a_upper_d_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	66642848
+experimentA/Genomic separation 64kb/a_upper_d_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/bb_upper_x_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	160328928
+experimentA/Genomic separation 64kb/bb_upper_x_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	686
+experimentA/Genomic separation 64kb/bb_upper_x_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	51976892
+experimentA/Genomic separation 64kb/bb_upper_x_lower.ome.zarr.log	#Dataset-404	http://bia/File	672
+experimentA/Genomic separation 64kb/b_upper_c_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	189315514
+experimentA/Genomic separation 64kb/b_upper_c_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/b_upper_c_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	66004358
+experimentA/Genomic separation 64kb/b_upper_c_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/cc_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	197094126
+experimentA/Genomic separation 64kb/cc_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/cc_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	64552731
+experimentA/Genomic separation 64kb/cc_lower.ome.zarr.log	#Dataset-404	http://bia/File	656
+experimentA/Genomic separation 64kb/dd_upper_y_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	197405621
+experimentA/Genomic separation 64kb/dd_upper_y_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	686
+experimentA/Genomic separation 64kb/dd_upper_y_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	64596958
+experimentA/Genomic separation 64kb/dd_upper_y_lower.ome.zarr.log	#Dataset-404	http://bia/File	672
+experimentA/Genomic separation 64kb/e_upper_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	151755245
+experimentA/Genomic separation 64kb/e_upper_ALX.ome.zarr.log	#Dataset-404	http://bia/File	668
+experimentA/Genomic separation 64kb/e_upper.ome.zarr.zip	#Dataset-404	http://bia/Image	52485133
+experimentA/Genomic separation 64kb/e_upper.ome.zarr.log	#Dataset-404	http://bia/File	654
+experimentA/Genomic separation 64kb/g_upper_f_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	150061722
+experimentA/Genomic separation 64kb/g_upper_f_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/g_upper_f_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	55065751
+experimentA/Genomic separation 64kb/g_upper_f_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/h_upper_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	75814427
+experimentA/Genomic separation 64kb/h_upper_ALX.ome.zarr.log	#Dataset-404	http://bia/File	668
+experimentA/Genomic separation 64kb/h_upper.ome.zarr.zip	#Dataset-404	http://bia/Image	28481864
+experimentA/Genomic separation 64kb/h_upper.ome.zarr.log	#Dataset-404	http://bia/File	654
+experimentA/Genomic separation 64kb/i_upper_j_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	74833280
+experimentA/Genomic separation 64kb/i_upper_j_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/i_upper_j_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	27725973
+experimentA/Genomic separation 64kb/i_upper_j_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/m_upper_l_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	74603854
+experimentA/Genomic separation 64kb/m_upper_l_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/m_upper_l_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	27990047
+experimentA/Genomic separation 64kb/m_upper_l_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/n_upper_k_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	74679693
+experimentA/Genomic separation 64kb/n_upper_k_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/n_upper_k_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	27978367
+experimentA/Genomic separation 64kb/n_upper_k_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/o_upper_r_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	160006499
+experimentA/Genomic separation 64kb/o_upper_r_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/o_upper_r_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	54291971
+experimentA/Genomic separation 64kb/o_upper_r_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/p_upper_q_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	161286632
+experimentA/Genomic separation 64kb/p_upper_q_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/p_upper_q_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	53926979
+experimentA/Genomic separation 64kb/p_upper_q_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/s_upper_v_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	161539446
+experimentA/Genomic separation 64kb/s_upper_v_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/s_upper_v_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	53039396
+experimentA/Genomic separation 64kb/s_upper_v_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/u_upper_t_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	161599221
+experimentA/Genomic separation 64kb/u_upper_t_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	684
+experimentA/Genomic separation 64kb/u_upper_t_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	53945181
+experimentA/Genomic separation 64kb/u_upper_t_lower.ome.zarr.log	#Dataset-404	http://bia/File	670
+experimentA/Genomic separation 64kb/w_upper_aa_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	198107390
+experimentA/Genomic separation 64kb/w_upper_aa_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	686
+experimentA/Genomic separation 64kb/w_upper_aa_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	64487066
+experimentA/Genomic separation 64kb/w_upper_aa_lower.ome.zarr.log	#Dataset-404	http://bia/File	672
+experimentA/Genomic separation 64kb/z_lower_ALX.ome.zarr.zip	#Dataset-404	http://bia/Image	160351697
+experimentA/Genomic separation 64kb/z_lower_ALX.ome.zarr.log	#Dataset-404	http://bia/File	668
+experimentA/Genomic separation 64kb/z_lower.ome.zarr.zip	#Dataset-404	http://bia/Image	52931949
+experimentA/Genomic separation 64kb/z_lower.ome.zarr.log	#Dataset-404	http://bia/File	654
+experimentA/Genomic separation 70kb/aaa_upper_ss_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	73334313
+experimentA/Genomic separation 70kb/aaa_upper_ss_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	690
+experimentA/Genomic separation 70kb/aaa_upper_ss_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	28908745
+experimentA/Genomic separation 70kb/aaa_upper_ss_lower.ome.zarr.log	#Dataset-405	http://bia/File	676
+experimentA/Genomic separation 70kb/bbb_upper_zz_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	145580808
+experimentA/Genomic separation 70kb/bbb_upper_zz_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	690
+experimentA/Genomic separation 70kb/bbb_upper_zz_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	56379528
+experimentA/Genomic separation 70kb/bbb_upper_zz_lower.ome.zarr.log	#Dataset-405	http://bia/File	676
+experimentA/Genomic separation 70kb/ddd_upper_ggg.ome.zarr.zip	#Dataset-405	http://bia/Image	28060998
+experimentA/Genomic separation 70kb/ddd_upper_ggg.ome.zarr.log	#Dataset-405	http://bia/File	666
+experimentA/Genomic separation 70kb/ddd_upper_ggg_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	74808027
+experimentA/Genomic separation 70kb/ddd_upper_ggg_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	692
+experimentA/Genomic separation 70kb/eee_upper_vv_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	144239956
+experimentA/Genomic separation 70kb/eee_upper_vv_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	690
+experimentA/Genomic separation 70kb/eee_upper_vv_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	56418865
+experimentA/Genomic separation 70kb/eee_upper_vv_lower.ome.zarr.log	#Dataset-405	http://bia/File	676
+experimentA/Genomic separation 70kb/fff_upper_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	74683147
+experimentA/Genomic separation 70kb/fff_upper_ALX.ome.zarr.log	#Dataset-405	http://bia/File	672
+experimentA/Genomic separation 70kb/fff_upper.ome.zarr.zip	#Dataset-405	http://bia/Image	27697056
+experimentA/Genomic separation 70kb/fff_upper.ome.zarr.log	#Dataset-405	http://bia/File	658
+experimentA/Genomic separation 70kb/ff_upper_ee_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	188942723
+experimentA/Genomic separation 70kb/ff_upper_ee_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/ff_upper_ee_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	67050437
+experimentA/Genomic separation 70kb/ff_upper_ee_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/gg_upper_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	146844996
+experimentA/Genomic separation 70kb/gg_upper_ALX.ome.zarr.log	#Dataset-405	http://bia/File	670
+experimentA/Genomic separation 70kb/gg_upper.ome.zarr.zip	#Dataset-405	http://bia/Image	54749428
+experimentA/Genomic separation 70kb/gg_upper.ome.zarr.log	#Dataset-405	http://bia/File	656
+experimentA/Genomic separation 70kb/hh_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	187186804
+experimentA/Genomic separation 70kb/hh_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	670
+experimentA/Genomic separation 70kb/hh_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	66677390
+experimentA/Genomic separation 70kb/hh_lower.ome.zarr.log	#Dataset-405	http://bia/File	656
+experimentA/Genomic separation 70kb/ii_upper_nn_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	146799753
+experimentA/Genomic separation 70kb/ii_upper_nn_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/ii_upper_nn_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	56186361
+experimentA/Genomic separation 70kb/ii_upper_nn_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/jj_upper_pp_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	147084312
+experimentA/Genomic separation 70kb/jj_upper_pp_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/jj_upper_pp_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	58329990
+experimentA/Genomic separation 70kb/jj_upper_pp_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/kk_upper_ll_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	147004100
+experimentA/Genomic separation 70kb/kk_upper_ll_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/kk_upper_ll_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	58165794
+experimentA/Genomic separation 70kb/kk_upper_ll_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/qq_upper_mm_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	148376447
+experimentA/Genomic separation 70kb/qq_upper_mm_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/qq_upper_mm_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	56815567
+experimentA/Genomic separation 70kb/qq_upper_mm_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/rr_upper_oo_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	72851225
+experimentA/Genomic separation 70kb/rr_upper_oo_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/rr_upper_oo_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	29124987
+experimentA/Genomic separation 70kb/rr_upper_oo_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/tt_upper_ccc_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	73769992
+experimentA/Genomic separation 70kb/tt_upper_ccc_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	690
+experimentA/Genomic separation 70kb/tt_upper_ccc_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	27720516
+experimentA/Genomic separation 70kb/tt_upper_ccc_lower.ome.zarr.log	#Dataset-405	http://bia/File	676
+experimentA/Genomic separation 70kb/ww_upper_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	73339950
+experimentA/Genomic separation 70kb/ww_upper_ALX.ome.zarr.log	#Dataset-405	http://bia/File	670
+experimentA/Genomic separation 70kb/ww_upper.ome.zarr.zip	#Dataset-405	http://bia/Image	27797566
+experimentA/Genomic separation 70kb/ww_upper.ome.zarr.log	#Dataset-405	http://bia/File	656
+experimentA/Genomic separation 70kb/xx_upper_uu_lower_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	145924591
+experimentA/Genomic separation 70kb/xx_upper_uu_lower_ALX.ome.zarr.log	#Dataset-405	http://bia/File	688
+experimentA/Genomic separation 70kb/xx_upper_uu_lower.ome.zarr.zip	#Dataset-405	http://bia/Image	56901108
+experimentA/Genomic separation 70kb/xx_upper_uu_lower.ome.zarr.log	#Dataset-405	http://bia/File	674
+experimentA/Genomic separation 70kb/yy_upper_ALX.ome.zarr.zip	#Dataset-405	http://bia/Image	73409017
+experimentA/Genomic separation 70kb/yy_upper_ALX.ome.zarr.log	#Dataset-405	http://bia/File	670
+experimentA/Genomic separation 70kb/yy_upper.ome.zarr.zip	#Dataset-405	http://bia/Image	28590552
+experimentA/Genomic separation 70kb/yy_upper.ome.zarr.log	#Dataset-405	http://bia/File	656
+experimentA/Genomic separation 71kb/63_014_FUS_ALX_unused.ome.zarr.zip	#Dataset-406	http://bia/Image	153089935
+experimentA/Genomic separation 71kb/63_014_FUS_ALX_unused.ome.zarr.log	#Dataset-406	http://bia/File	688
+experimentA/Genomic separation 71kb/63_014unused.ome.zarr.zip	#Dataset-406	http://bia/Image	51196819
+experimentA/Genomic separation 71kb/63_014unused.ome.zarr.log	#Dataset-406	http://bia/File	664
+experimentA/Genomic separation 71kb/a_lower_ALX.ome.zarr.zip	#Dataset-406	http://bia/Image	151730886
+experimentA/Genomic separation 71kb/a_lower_ALX.ome.zarr.log	#Dataset-406	http://bia/File	668
+experimentA/Genomic separation 71kb/a_lower.ome.zarr.zip	#Dataset-406	http://bia/Image	51894443
+experimentA/Genomic separation 71kb/a_lower.ome.zarr.log	#Dataset-406	http://bia/File	654
+experimentA/Genomic separation 71kb/c_upper_b_lower_ALX.ome.zarr.zip	#Dataset-406	http://bia/Image	75936321
+experimentA/Genomic separation 71kb/c_upper_b_lower_ALX.ome.zarr.log	#Dataset-406	http://bia/File	684
+experimentA/Genomic separation 71kb/c_upper_b_lower.ome.zarr.zip	#Dataset-406	http://bia/Image	25635988
+experimentA/Genomic separation 71kb/c_upper_b_lower.ome.zarr.log	#Dataset-406	http://bia/File	670
+experimentA/Genomic separation 71kb/e_upper_d_lower_ALX.ome.zarr.zip	#Dataset-406	http://bia/Image	75525075
+experimentA/Genomic separation 71kb/e_upper_d_lower_ALX.ome.zarr.log	#Dataset-406	http://bia/File	684
+experimentA/Genomic separation 71kb/e_upper_d_lower.ome.zarr.zip	#Dataset-406	http://bia/Image	26314523
+experimentA/Genomic separation 71kb/e_upper_d_lower.ome.zarr.log	#Dataset-406	http://bia/File	670
+experimentA/Genomic separation 71kb/g_lower_ALX.ome.zarr.zip	#Dataset-406	http://bia/Image	158848501
+experimentA/Genomic separation 71kb/g_lower_ALX.ome.zarr.log	#Dataset-406	http://bia/File	668
+experimentA/Genomic separation 71kb/g_lower.ome.zarr.zip	#Dataset-406	http://bia/Image	52467854
+experimentA/Genomic separation 71kb/g_lower.ome.zarr.log	#Dataset-406	http://bia/File	654
+experimentA/Genomic separation 71kb/h_upper_f_lower_ALX.ome.zarr.zip	#Dataset-406	http://bia/Image	160901325
+experimentA/Genomic separation 71kb/h_upper_f_lower_ALX.ome.zarr.log	#Dataset-406	http://bia/File	684
+experimentA/Genomic separation 71kb/h_upper_f_lower.ome.zarr.zip	#Dataset-406	http://bia/Image	50507853
+experimentA/Genomic separation 71kb/h_upper_f_lower.ome.zarr.log	#Dataset-406	http://bia/File	670

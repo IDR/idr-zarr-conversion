@@ -1,0 +1,548 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid7070",
+      "@type": "bia:Taxon",
+      "scientificName": "Tribolium castaneum"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid7070"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "light sheet fluorescence microscopy",
+      "description": "light sheet fluorescence microscopy",
+      "imagingInstrumentDescription": "light sheet fluorescence microscopy",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-spim",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "SPIM",
+      "description": "SPIM",
+      "imagingInstrumentDescription": "SPIM",
+      "imagingMethodName": [
+        "SPIM"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0159-strobl-insectlightsheet-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "We used an advanced variant of LSFM termed monolithic digital scanned laser light sheet-based fluorescence microscopy (mDSLM), which is based on DSLM (Keller and Stelzer, 2010). Parameters are provided in supplementary material Table S1. Imaging started immediately after the embryo was inserted into the sample chamber.\n\nImage processing was performed with Mathematica (Wolfram). Single planes (SP) were used to calculate the maximum projections. With those projections, two processing steps were performed. (1) Background correction (BC). A brightness threshold was applied that distinguishes the specimen from the background. The background was used to calculate the mean image background and then set to zero. Then, the mean image background was subtracted from the whole image. This led to an overall intensity decrease. (2) Mean transform (MT). For the desired series of images, the brightest and the dimmest images were selected and the mean intensity was calculated. For the desired series, the image closest to that intensity was determined and designated the reference image. All images were normalized to match the intensity of the reference image. This included both increase and decrease of intensities (supplementary material Fig. S3). Images that underwent this procedure are marked as maximum projections with image processing (MP). If necessary, images underwent equal brightness adjustment. Further details of image processing can be provided upon request. Images were cropped to 600×1000 pixels (XD×YD, supplementary material Table S1), maintaining the original line and pixel pitches used during the imaging recording process. Cell tracking in Fig. 3B was performed manually. Amira (FEI Visualization Science Group, Düsseldorf, Germany) was used for volume rendering (AV) in Fig. 2D and supplementary material Movie 3. Meta information about the three long-term imaging datasets is provided in supplementary material Table S1 (the original datasets, associated figures and movies in full quality are available at www.physikalischebiologie.de/bugcube)."
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.108795",
+      "@type": "bia:Publication",
+      "name": "Non-invasive long-term fluorescence live imaging of Tribolium castaneum embryos",
+      "doi": "https://doi.org/10.1242/dev.108795",
+      "pubmedId": "24803590",
+      "authorNames": "Strobl F, Stelzer EHK"
+    },
+    {
+      "@id": "#affiliation-goethe-university-buchmann-institute-for-molecular-life-sciences-max-von-laue-stra-e-15-60438-frankfurt-am-main",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Goethe University, Buchmann Institute for Molecular Life Sciences, Max-von-Laue-Straße 15, 60438 Frankfurt am Main"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Strobl F",
+      "memberOf": [
+        {
+          "@id": "#affiliation-goethe-university-buchmann-institute-for-molecular-life-sciences-max-von-laue-stra-e-15-60438-frankfurt-am-main"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Stelzer EHK",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-18501",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DS0001",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0159-strobl-insectlightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-18502",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DS0002",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0159-strobl-insectlightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-18503",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DS0003",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0159-strobl-insectlightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Non-invasive long-term fluorescence live imaging of Tribolium",
+      "description": "Insect development has contributed significantly to our understanding",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2025-02-18",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        }
+      ],
+      "keywords": [
+        "light sheet fluorescence microscopy",
+        "SPIM",
+        "Arthropod development"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-18501"
+        },
+        {
+          "@id": "#Dataset-18502"
+        },
+        {
+          "@id": "#Dataset-18503"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0159",
+      "doi": "https://doi.org/10.17867/10000202",
+      "pubmedId": "24803590",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy",
+        "SPIM"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1242/dev.108795"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

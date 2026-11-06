@@ -1,0 +1,686 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid10090",
+      "@type": "bia:Taxon",
+      "scientificName": "Mus musculus",
+      "commonName": "house mouse"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid10090"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
+      "imagingInstrumentDescription": "two-photon laser scanning microscopy",
+      "imagingMethodName": [
+        "two-photon laser scanning microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000254"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "The surgical intervention for demyelinating an area of the CC and placing the transcortical window was carried out in Ascl1CreERT2/tdTom mice aged ok 9- 12 weeks. A stereotaxic injection of 2 _l of a solution of 1% lysolecithin (LPc) in 0.9% NaCl was performed in deeply anaesthetized mice. LPC was injected unilaterally into the CC at -1.3 mm dorso/ventral from brain surface and -2.5 12 mm anterior/posterior, -0.9mm lateral from Bregma. After 30 minutes, the implantation of the window was started. above the demyelinated CC (-2.5 anterior/posterior / Đ1.5 mediolateral mm from Bregma) the cranial bone is locally removed (circle 3mm Ż). A cylinder (3mm Ż) of cortical tissue that has been punched out using biopsy punches until a defined depth (1.5mm deep from skull, level of the corpus callosum) was aspirated using a blunt needle (22g) connected to an air pump until white matter tracks were visible. The area was cleaned and the window (3mm Ż stainless steel cannula, 1.5mm height, covered by a 3mm Ż glass coverslip) was inserted, secured in place using the stereotactic arm and stably fixed to the cranial bone with UV curable dental cement.\"\n\n\"Two and three days after surgery, sparse labeling of OPCs was achieved by i.p. injection of Tamoxifen (Tam; 180mg/kg bodyweight). Imaging fields of view containing identified OPCs were selected to obtain 10-20 SPOTs per mouse. Chronic 2-photon imaging was performed starting 3 days after surgery. All SPOTs were checked on a daily basis and no z-stack was acquired if no changes occurred. The imaging was performed on custom-built 2-photon microscope (Sutter Instrument Movable Objective Microscope type) using a long-working distance objective (water immersion, 16x magnification, 0.8NA, Nikon) and equipped with a ytterbium-doped laser system at 1045nm and 200fs (Femtotrain, High-Q lasers) or a fiber oscillator 45 laser at 1070nm (Fidelity-2, Coherent) to excite tdTomato labeled cells in the CC. Emission light was detected using a photomultiplier tube (Hamamatsu) after passing a red emission filter (610/75 nm; AHF).\n\nEvery cell of each lineage was annotated with a code. The coding parameters were: Cell ID, Cell Type, Uncertainty Cell Type, Time point, Mother ID, Uncertainty Mother Cell, Sister ID, Uncertainty Sister Cell and Cell Death. For details see document \"\"ROIs code explanation\"\"."
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2025795118",
+      "@type": "bia:Publication",
+      "name": "Live imaging of remyelination in the adult mouse corpus callosum",
+      "doi": "https://doi.org/10.1073/pnas.2025795118",
+      "pubmedId": "34244440",
+      "authorNames": "Bottes S, Jessberger S"
+    },
+    {
+      "@id": "#affiliation-brain-research-institute-university-of-zurich-winterthurerstrasse-190-ch-8057-z-rich",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Brain Research Institute, University of Zurich, Winterthurerstrasse 190, CH-8057 Zźrich"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Bottes S",
+      "memberOf": [
+        {
+          "@id": "#affiliation-brain-research-institute-university-of-zurich-winterthurerstrasse-190-ch-8057-z-rich"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Jessberger S",
+      "memberOf": [
+        {
+          "@id": "#affiliation-brain-research-institute-university-of-zurich-winterthurerstrasse-190-ch-8057-z-rich"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-14971",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3092",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14972",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3093",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14973",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3343",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14974",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3345",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14975",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3347",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14976",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3541",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14979",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3546",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14977",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf3558",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-14978",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/bf4961",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0113-bottes-opcclones-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-two-photon-laser-scanning-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Live imaging of remyelination in the adult mouse corpus callosum",
+      "description": "Oligodendrocyte precursor cells (OPCs) retain the capacity to remyelinate axons in the corpus callosum (CC) upon demyelination. However, the dynamics of OPC activation, mode of cell division, migration, and differentiation on a single cell level remain poorly understood due to the lack of longitudinal observations of individual cells within the injured brain. After inducing focal demyelination with lysophosphatidylcholin (LPC) in the CC of adult mice, we used 2-photon microscopy to follow for up to 2 months OPCs and their differentiating progeny, genetically labeled through conditional recombination driven by the regulatory elements of the gene Achaete-scute homolog 1 (Ascl1). OPCs underwent several rounds of symmetric and asymmetric cell divisions, producing a subset of daughter cells that differentiates into myelinating oligodendrocytes. While OPCs continue to proliferate, differentiation into myelinating oligodendrocytes declines with time and death of OPC-derived daughter cells increases. Thus, chronic in vivo imaging delineates the cellular principles leading to remyelination in the adult brain, providing a framework for the development of novel strategies to enhance endogenous brain repair in acute and chronic demyelinating disease.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2021-08-03",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        }
+      ],
+      "keywords": [
+        "two-photon laser scanning microscopy",
+        "Myelination"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-14971"
+        },
+        {
+          "@id": "#Dataset-14972"
+        },
+        {
+          "@id": "#Dataset-14973"
+        },
+        {
+          "@id": "#Dataset-14974"
+        },
+        {
+          "@id": "#Dataset-14975"
+        },
+        {
+          "@id": "#Dataset-14976"
+        },
+        {
+          "@id": "#Dataset-14979"
+        },
+        {
+          "@id": "#Dataset-14977"
+        },
+        {
+          "@id": "#Dataset-14978"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0113",
+      "doi": "https://doi.org/10.17867/10000165",
+      "pubmedId": "34244440",
+      "imagingMethodName": [
+        "two-photon laser scanning microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.2025795118"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

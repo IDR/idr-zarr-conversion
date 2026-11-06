@@ -1,0 +1,675 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid10090",
+      "@type": "bia:Taxon",
+      "scientificName": "Mus musculus",
+      "commonName": "house mouse"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid10090"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "light sheet fluorescence microscopy",
+      "description": "light sheet fluorescence microscopy",
+      "imagingInstrumentDescription": "light sheet fluorescence microscopy",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-spim",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "SPIM",
+      "description": "SPIM",
+      "imagingInstrumentDescription": "SPIM",
+      "imagingMethodName": [
+        "SPIM"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0044-mcdole-tardislightsheet-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "See attached methods\n\nN/A\n\nSee attached methods\n\nSee attached methods"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cell.2018.09.031",
+      "@type": "bia:Publication",
+      "name": "In Toto Imaging and Reconstruction of Post-Implantation Mouse Development at the Single-Cell Level.",
+      "doi": "https://doi.org/10.1016/j.cell.2018.09.031",
+      "pubmedId": "30318151",
+      "authorNames": "McDole K, Guignard L, Amat F, Berger A, Malandain G, Royer LA, Turaga SC, Branson K, Keller PJ"
+    },
+    {
+      "@id": "#affiliation-19700-helix-dr-ashburn-va-20147-usa",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "19700 Helix Dr. Ashburn Va 20147 USA"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "McDole K",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Guignard L",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Amat F",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Berger A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Malandain G",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Royer LA",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Turaga SC",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-7",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Branson K",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-8",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Keller PJ",
+      "memberOf": [
+        {
+          "@id": "#affiliation-19700-helix-dr-ashburn-va-20147-usa"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-3351",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Embryo1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0044-mcdole-tardislightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-3352",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Embryo2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0044-mcdole-tardislightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-3353",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Embryo3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0044-mcdole-tardislightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-3354",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Embryo4",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0044-mcdole-tardislightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "In Toto Imaging and Reconstruction of Post-Implantation Mouse Development at the Single-Cell Level",
+      "description": "The mouse embryo has long been central to the study of mammalian development; however, elucidating the cell behaviors governing gastrulation and the formation of tissues and organs remains a fundamental challenge. A major obstacle is the lack of live imaging and image analysis technologies capable of systematically following cellular dynamics across the developing embryo. We developed a light-sheet microscope that adapts itself to the dramatic changes in size, shape and optical properties of the post-implantation mouse embryo and captures its development from gastrulation to early organogenesis at the cellular level. We furthermore developed a computational framework for reconstructing long-term cell tracks, cell divisions, dynamic fate maps and maps of tissue morphogenesis across the entire embryo. By jointly analyzing cellular dynamics in multiple embryos registered in space and time, we built a dynamic atlas of post-implantation mouse development that, together with our microscopy and computational methods, is provided as a resource.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2018-11-29",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        },
+        {
+          "@id": "#author-7"
+        },
+        {
+          "@id": "#author-8"
+        }
+      ],
+      "keywords": [
+        "light sheet fluorescence microscopy",
+        "SPIM"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-3351"
+        },
+        {
+          "@id": "#Dataset-3352"
+        },
+        {
+          "@id": "#Dataset-3353"
+        },
+        {
+          "@id": "#Dataset-3354"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0044",
+      "doi": "https://doi.org/10.17867/10000116",
+      "pubmedId": "30318151",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy",
+        "SPIM"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1016/j.cell.2018.09.031"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

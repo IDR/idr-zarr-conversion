@@ -1,0 +1,1477 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid9606",
+      "@type": "bia:Taxon",
+      "scientificName": "Homo sapiens",
+      "commonName": "human"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid9606"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-confocal-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "imagingInstrumentDescription": "confocal microscopy",
+      "imagingMethodName": [
+        "confocal microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000251"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "HeLa Kyoto cells were cultured at 37C, 5% CO2 atmosphere in Dulbecco's modified Eagle's medium with 1 g/mL glucose (Gibco 31885023) supplemented with 1% penicillin-streptomycin (Sigma P0781), 1% L-Glutamine (Sigma G7513) and 9% FBS (Sigma F7524). The cells were regularly tested for mycoplasma contamination and found to be mycoplasma-negative. The cells were passaged every 2-3 days up to maximum of 15-17 passages.\n\nCells were seeded 1 or 2 days prior the experiment at low density (10000-12000 cells per well) in a glass bottom 8-well Lab-Tek II chambered coverglass (Thermo Scientific Nunc, 155383). Cells for transport assays were stained with 100 nM MitoTracker green (Invitrogen, M7514) in growth medium for 30 min, at 37C, 5% CO2. For nuclear staining, cells were rinsed once with PBS and incubated for 10 min, at room temperature with 20 nM Hoechst 33342 (Sigma, B2261). Cells were then washed once with transport buffer (1XTB: 20 mM Hepes, 110 mM KOAc, 5 mM NaOAc, 2 mM MgOAc, 1 mM EGTA, pH 7.3 adjusted with KOH) and permeabilised by incubation for 10 min, at room temperature with digitonin (40 ug/mL). Cells were then washed 3 times with 1XTB supplied with 5 mg/mL PEG 6000 to avoid osmotic shock. After the final wash, excess buffer was removed and the transport mix was quickly added to the cells to start the experiment. The final transport mix was composed of 1 uM Importin-alpha, 1 uM Importin-beta, 4 uM RanGDP, 2 uM NTF2, 2 mM GTP and 8 nM capsid cargo. In order to allow the import complex to form, the cargo was first pre-incubated with Importin-beta and Importin-alpha on ice for at least 10 minutes, then the rest of the transport mix was added and the solution was spun down for 10 min at 10000 rpm to remove any aggregates.\n\nTime-lapse confocal imaging of nuclear import was performed on an Olympus FLUOVIEW FV3000 scanning confocal microscope, using a 40x air objective (NA = 0.95). An automated multi-position acquisition was carried out, where 12 different regions (typically containing 10 cells each) were imaged in two different wells. Three channels were recorded at each time step, using the 405 nm (Hoechst), 488 nm (Mitotracker) and 640 nm (cargo) laser lines for excitation. Images were acquired every 2 minutes for 80 minutes, using continuous autofocusing with Z-drift compensation to ensure imaging stability.\n\nThe Hoechst and Mitotracker channels were used to generate reference masks for the nucleus, nuclear envelope and cytoplasm at each time point. Briefly, the two images were pre-processed with Gaussian blur to aid in area segmentation, and then thresholded. The nuclear mask was eroded three times to remove contributions coming from the nuclear envelope, and the envelope mask was generated by subtracting the eroded mask from the non-eroded one. The final masks were then used to extract the average intensity of cargo signal in the different areas of interest. Final data analysis and plotting was performed in IgorPro (Wavemetrics).\n\nFluorescence intensities were background-corrected, rescaled according to the capsid brightness and fitted to an inverse exponential function I(t)=A+I_MAX(1-e^(-tau*t)), with I_MAX being the plateau value reached at infinity, tau the reaction constant with units 1/s and A an offset parameter."
+    },
+    {
+      "@id": "https://doi.org/10.7554/eLife.55963",
+      "@type": "bia:Publication",
+      "name": "Molecular determinants of large cargo transport into the nucleus",
+      "doi": "https://doi.org/10.7554/eLife.55963",
+      "pubmedId": "32692309",
+      "authorNames": "Paci G, Zheng T, Caria J, Zilman A, Lemke EA"
+    },
+    {
+      "@id": "#affiliation-johannes-gutenberg-university-mainz-hanns-dieter-huesch-weg-15-mainz-55128",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Johannes Gutenberg-University Mainz, Hanns-Dieter-Huesch-Weg 15, Mainz 55128"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Paci G",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Zheng T",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Caria J",
+      "memberOf": [
+        {
+          "@id": "#affiliation-johannes-gutenberg-university-mainz-hanns-dieter-huesch-weg-15-mainz-55128"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Zilman A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Lemke EA",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-10655",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/10_I53-47_18NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10656",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/11_I53-47_22NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10657",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/12_I53-47_22NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10658",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/13_I53-47_25NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10659",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/14_I53-47_30NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10660",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/15_I53-47_35NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10661",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/16_I53-47_37NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10662",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/17_I53-47_37NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10663",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/18_I53-47_41NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10664",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/19_I53-47_44NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10665",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/1_MS2_S37P_0NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10666",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/20_MS2_0NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10667",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/21_MS2_42NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10668",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/22_MS2_54NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10669",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/23_MS2_57NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10670",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/24_MS2_77NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10671",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/25_MS2_86NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10672",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/26_MS2_93NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10673",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/27_MS2_98NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10674",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/2_MS2_S37P_14NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10675",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/3_MS2_S37P_19NLS_R1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10676",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/3_MS2_S37P_19NLS_R2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10677",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/4_MS2_S37P_23NLS_R1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10678",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/4_MS2_S37P_23NLS_R2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10679",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/5_MS2_S37P_29NLS_R1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10680",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/5_MS2_S37P_29NLS_R2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10681",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/6_MS2_S37P_38NLS_R1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10682",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/6_MS2_S37P_38NLS_R2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10683",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/6_MS2_S37P_38NLS_R3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10684",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/6_MS2_S37P_38NLS_R4",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10685",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/6_MS2_S37P_38NLS_R5",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10686",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/6_MS2_S37P_38NLS_R6",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10687",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/7_MS2_S37P_54NLS_R1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10688",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/7_MS2_S37P_54NLS_R2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10689",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/7_MS2_S37P_54NLS_R3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10690",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/7_MS2_S37P_54NLS_R4",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10691",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/8_I53-47_0NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10692",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/9_I53-47_15NLS",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0087-paci-nuclearimport-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-confocal-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Molecular determinants of large cargo transport into the nucleus",
+      "description": "Nucleocytoplasmic transport is tightly regulated by the nuclear pore complex (NPC). Even very large cargoes such as many pathogens, mRNAs and pre-ribosomal subunits can pass the NPC intact. Compared to small import complexes, for such large cargoes >15 nm there is very little quantitative understanding of the mechanism for efficient transport, the role of multivalent binding to nuclear transport receptors via nuclear localisation sequences (NLSs) and effects of size differences. Here, we assayed nuclear import kinetics in cells for a total of 30 large cargo models based on four capsid-like particles in the size range of 17-36 nm, with tuneable numbers of up to 240 NLSs. We show that the requirements for transport can be recapitulated by a simple two-parameter biophysical model that allow us to correlate the import flux to the energetic requirements for nuclear transport. Together, our results reveal key molecular determinants of large cargo import in cells.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2020-07-22",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        }
+      ],
+      "keywords": [
+        "confocal microscopy",
+        "large cargo"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-10655"
+        },
+        {
+          "@id": "#Dataset-10656"
+        },
+        {
+          "@id": "#Dataset-10657"
+        },
+        {
+          "@id": "#Dataset-10658"
+        },
+        {
+          "@id": "#Dataset-10659"
+        },
+        {
+          "@id": "#Dataset-10660"
+        },
+        {
+          "@id": "#Dataset-10661"
+        },
+        {
+          "@id": "#Dataset-10662"
+        },
+        {
+          "@id": "#Dataset-10663"
+        },
+        {
+          "@id": "#Dataset-10664"
+        },
+        {
+          "@id": "#Dataset-10665"
+        },
+        {
+          "@id": "#Dataset-10666"
+        },
+        {
+          "@id": "#Dataset-10667"
+        },
+        {
+          "@id": "#Dataset-10668"
+        },
+        {
+          "@id": "#Dataset-10669"
+        },
+        {
+          "@id": "#Dataset-10670"
+        },
+        {
+          "@id": "#Dataset-10671"
+        },
+        {
+          "@id": "#Dataset-10672"
+        },
+        {
+          "@id": "#Dataset-10673"
+        },
+        {
+          "@id": "#Dataset-10674"
+        },
+        {
+          "@id": "#Dataset-10675"
+        },
+        {
+          "@id": "#Dataset-10676"
+        },
+        {
+          "@id": "#Dataset-10677"
+        },
+        {
+          "@id": "#Dataset-10678"
+        },
+        {
+          "@id": "#Dataset-10679"
+        },
+        {
+          "@id": "#Dataset-10680"
+        },
+        {
+          "@id": "#Dataset-10681"
+        },
+        {
+          "@id": "#Dataset-10682"
+        },
+        {
+          "@id": "#Dataset-10683"
+        },
+        {
+          "@id": "#Dataset-10684"
+        },
+        {
+          "@id": "#Dataset-10685"
+        },
+        {
+          "@id": "#Dataset-10686"
+        },
+        {
+          "@id": "#Dataset-10687"
+        },
+        {
+          "@id": "#Dataset-10688"
+        },
+        {
+          "@id": "#Dataset-10689"
+        },
+        {
+          "@id": "#Dataset-10690"
+        },
+        {
+          "@id": "#Dataset-10691"
+        },
+        {
+          "@id": "#Dataset-10692"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0087",
+      "doi": "https://doi.org/10.17867/10000140",
+      "pubmedId": "32692309",
+      "imagingMethodName": [
+        "confocal microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.7554/eLife.55963"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

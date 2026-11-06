@@ -1,0 +1,1090 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid9606",
+      "@type": "bia:Taxon",
+      "scientificName": "Homo sapiens",
+      "commonName": "human"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid9606"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-phase-contrast-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "phase contrast microscopy",
+      "description": "phase contrast microscopy",
+      "imagingInstrumentDescription": "phase contrast microscopy",
+      "imagingMethodName": [
+        "phase contrast microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000247"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "Cell cultures were grown on polystyrene tissue culture dishes to confluence at 37°C and 5% CO2. Melanoma cells derived from murine PDX models were gifts from Sean Morrison (UT Southwestern Medical Center, Dallas, TX) and cultured in medium containing the Melanocyte Growth Kit and Dermal Cell Basal Medium from ATCC. Primary melanocytes were obtained from ATCC (PCS-200-013) and grown in medium containing the Melanocyte Growth Kit and Dermal Cell Basal Medium from ATCC. The m116 melanocytes, a gift from J. Shay (UT Southwestern Medical Center, Dallas), were derived from fetal foreskin and were cultured in medium 254 (Fisher). A375 cells were obtained from ATCC (CRL-1619). SK-Mel2 cells were obtained from ATCC (HTB-68). MV3 cells were a gift from Peter Friedl (MD Anderson Cancer Center, Houston, TX). MV3 and A375 cells were cultured in DMEM with 10% FBS. WM3670, WM1361, and WM1366 were obtained directly from the Wistar Institute and cultured in the recommended medium (80% MCDB1653, 20%, 2% FBS, CaCl2 and bovine insulin)."
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cels.2021.05.003",
+      "@type": "bia:Publication",
+      "name": "Interpretable deep learning uncovers cellular properties in label-free live cell images that are predictive of highly metastatic melanoma",
+      "doi": "https://doi.org/10.1016/j.cels.2021.05.003",
+      "pubmedId": "34077708",
+      "authorNames": "Zaritsky A, Jamieson AR, Welf ES, Nevarez A, Cillay J, Eskiocak U, Cantarel BL, Danuser G"
+    },
+    {
+      "@id": "#affiliation-department-of-software-and-information-systems-engineering-ben-gurion-university-of-the-negev-beer-sheva-84105-israel",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Department of Software and Information Systems Engineering, Ben-Gurion University of the Negev, Beer-Sheva 84105, Israel"
+    },
+    {
+      "@id": "#affiliation-department-of-bioinformatics-ut-southwestern-medical-center-dallas-tx-75390-usa",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Department of Bioinformatics, UT Southwestern Medical Center, Dallas, TX 75390, USA"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Zaritsky A",
+      "memberOf": [
+        {
+          "@id": "#affiliation-department-of-software-and-information-systems-engineering-ben-gurion-university-of-the-negev-beer-sheva-84105-israel"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Jamieson AR",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Welf ES",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Nevarez A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Cillay J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Eskiocak U",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Cantarel BL",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-7",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Danuser G",
+      "memberOf": [
+        {
+          "@id": "#affiliation-department-of-bioinformatics-ut-southwestern-medical-center-dallas-tx-75390-usa"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-13853",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Cell Line_A375",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13852",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Cell Line_MV3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13854",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Cell Line_SKMel2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13855",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Cell Line_WM1361",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13856",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Cell Line_WM1366",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13857",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Cell Line_WM3670",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13867",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Clonal_A375c1",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13866",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Clonal_A375c2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13872",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Clonal_m405c2",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13870",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Clonal_m405c3",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13861",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Melanocyte_ATCC",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13864",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Melanocyte_m116",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13863",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m405",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13858",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m481",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13871",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m498",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13860",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m528",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13868",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m597",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13862",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m610",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13869",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_m634",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13859",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_um12",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13865",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX_UT8",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0109-zaritsky-melanoma-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Interpretable deep learning uncovers cellular properties in label-free live cell images that are predictive of highly metastatic melanoma",
+      "description": "Deep learning has emerged as the technique of choice for identifying hidden patterns in cell imaging data, but is often criticized as ‘black-box’. Here, we demonstrate that a generative neural network captures subtle details of cell appearance, which permit the prediction of the metastatic efficiency of patient-derived melanoma xenografts with known clinical outcomes. To probe the predictor, we used the network to generate “in-silico” cell images that amplified the critical predictive cellular features. These images unveiled pseudopodial extensions and increased light scattering as hallmark properties of metastatic cells. We validated this interpretation using live cells spontaneously transitioning between states indicative of low and high metastatic efficiency. This study illustrates how the application of Artificial Intelligence can support the identification of cellular properties that are predictive of complex phenotypes and integrated cell functions, but are too subtle to be identified in the raw imagery by a human expert.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2021-05-31",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        },
+        {
+          "@id": "#author-7"
+        }
+      ],
+      "keywords": [
+        "phase contrast microscopy",
+        "live cell imaging"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-13853"
+        },
+        {
+          "@id": "#Dataset-13852"
+        },
+        {
+          "@id": "#Dataset-13854"
+        },
+        {
+          "@id": "#Dataset-13855"
+        },
+        {
+          "@id": "#Dataset-13856"
+        },
+        {
+          "@id": "#Dataset-13857"
+        },
+        {
+          "@id": "#Dataset-13867"
+        },
+        {
+          "@id": "#Dataset-13866"
+        },
+        {
+          "@id": "#Dataset-13872"
+        },
+        {
+          "@id": "#Dataset-13870"
+        },
+        {
+          "@id": "#Dataset-13861"
+        },
+        {
+          "@id": "#Dataset-13864"
+        },
+        {
+          "@id": "#Dataset-13863"
+        },
+        {
+          "@id": "#Dataset-13858"
+        },
+        {
+          "@id": "#Dataset-13871"
+        },
+        {
+          "@id": "#Dataset-13860"
+        },
+        {
+          "@id": "#Dataset-13868"
+        },
+        {
+          "@id": "#Dataset-13862"
+        },
+        {
+          "@id": "#Dataset-13869"
+        },
+        {
+          "@id": "#Dataset-13859"
+        },
+        {
+          "@id": "#Dataset-13865"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0109",
+      "doi": "https://doi.org/10.17867/10000161",
+      "pubmedId": "34077708",
+      "imagingMethodName": [
+        "phase contrast microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1016/j.cels.2021.05.003"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

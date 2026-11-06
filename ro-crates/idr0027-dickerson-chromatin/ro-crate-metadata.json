@@ -1,0 +1,737 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid4932",
+      "@type": "bia:Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "commonName": "brewer's yeast"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid4932"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "imagingInstrumentDescription": "fluorescence microscopy",
+      "imagingMethodName": [
+        "fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000246"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "The S. cerevisiae strains in this study are summarized in Table S2 and illustrated in Figure 1 A.  The tet and lac operator arrays for all Chr XIV strains were integrated between convergent genes.  The terminators of these genes were duplicated and flank the insertion sites such that all genes retain their wild type terminators.  Table S2 columns 5' and 3' indicate the pairs of convergent genes where the insertions took place.  DD1407 generation: WT yeast strain K699 (W303) was transformed first with pDD2244 (tetR-GFP-TetR-mCherry::ADE2) linearized with PciI, and then with pDD2246 linearized with PfoI.  DD1413 was generated by successively cloning in linearized pAFS135, pDD2248, pDD202, pDD206, and pDD207.  It was verified by PCR using primer pairs 1988+1952, 2061+2062, 2044+2529, and 2051+2058, which flank the appropriate integration sites at the URA3 locus.  Strains DD1471-1475 were generated using plasmids pDD2244 and pDD2245, and the appropriate lacO and tetO array plasmids pDD246, 2247, 2248, and pDD249-256, and were verified by PCR using primers 2452-2468.  Strain DD1336 was generated by cloning linearized pDD2247 into T6002 and was verified by PCR using primers 2067-2074. Cell Culture. Tetracycline was added to all cell cultures to diminish the affinity of the tet repressor DNA binding protein for its DNA binding site, as per Dubarry [53].  Optimal concentration resulting in 94% maximum fluorescence intensity was determined via concentration series and measured on the OMX.  The colocalising strain and most sample strains were streaked to YPAD and cultured overnight, propagated in liquid culture for 8 hours, cultured overnight in 75%SC/25%YPA + 2%dextrose + 20 ng/ml tetracycline, washed in the culture media and placed on ice.  In all cases cells were adhered to concanavalin A-treated 35 mm glass-bottomed MatTek culture dishes for 10 minutes at 22.0oC, then allowed to temperature-equilibrate in the microscope enclosure at 23.5oC for an additional 10 minutes. All imaging was performed with a GE|OMX Blaze microscope.  Immersion oil with refractive index 1.514 was used in all cases.  Typical video acquisition included 5 um stack height, 250 nm step size, 21 images per stack, 128x128 field of view (FOV), 50-100 time points, excitation 3-8 msec, ND 31-100 for mCherry and ND 5-10 for GFP, and sequential channel acquisition.  The microscope enclosure is maintained at 23.5o Celsius. Channel alignment parameters for an initial coarse alignment were generated using single stacks of twenty-nine 1024x1024 FOV images with step size of 125 nm of a Tetraspeck 100 nm bead slide or laser milled slide (LMS) using the red and green channel cameras.  Coarse alignment lateral parameters were calculated using Softworx software, which included a translation, magnification, and rotation.  Coarse axial alignment offset was determined manually using the Softworx Measure Chromatic Correction function.  Channel alignment fine tuning parameters were calculated using live cell 3-D tracking data from the colocalising strain, DD1407, which has single red and green colocalising spots of dimensions assumed to be smaller than the PSF.  50-100 time points of 17 128x128 FOV images/stack were generated with 3-8msec exposures generated sequentially from red and green channels.  Videos were split into individual channels and saved in 4-byte float format.  Darkfield images, generated previously by taking the mean pixel intensity of 1000 images at set exposure times, were then subtracted from the individual video channels to correct for noise arising from the CMOS cameras.  Videos were denoised with the ND-SAFIR denoising software [91] using the Sedat Lab settings iter=5, p=3, sampling=2, noise=Gaussian, adapt=0, island=4, and np=8 [54], and then deconvolved via Softworx using a ratio (conservative) method tailored to an idealized objective of the model used in our OMX Blaze, and saved in 4-byte float format.  Individual channel files were fused into a single red plus green video file and coarse alignment was performed with Softworx using the bead slide or LMS alignment offset parameters.  The spots were tracked using Imaris, the x, y, and z offsets between the different channels were determined for each time point using Excel spreadsheet, and the means of these offsets were calculated from data from multiple videos.  Fine-tuning alignment was performed in Excel by subtracting these mean offsets from the red channel x, y, and z spot coordinates, which resulted in a final translation. After the fine tuning alignment had been performed on the colocalising strain videos, the mean distance between the red and green spots for all time points from all videos was determined via Pythagorean Theorem to be 63 nm, with a standard deviation of 37 nm. Quality Control. Plotting z coordinate versus error indicated that once tagged loci diffused to within 1 _m of the top or bottom of a stack, error increased (not shown), and for this reason these data points were eliminated from both control and sample data sets.  Plotting maximum spot intensity or contrast versus error, followed by LOESS smoothing, revealed correlations which allowed for elimination of data points with high error (not shown).  Based on this GFP and mCherry contrast thresholds were both set at 12, while minimum intensity threshold for mCherry and GFP was set at 25 and 16 respectively. Use of these thresholding values removed images where the positions of foci were not sufficiently well defined to obtain high resolution locations.  Using these threshold values, we were able to generate live cell 3-D 2-channel videos with 250 nm step size, 5 _m stack size, 21 images per stack, and up to 100 time points.  As sample strain video data were subjected to the same thresholding protocol, it is assumed that the resulting error was also 63 nm."
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12860-016-0111-y",
+      "@type": "bia:Publication",
+      "name": "High resolution imaging reveals heterogeneity in chromatin states between cells that is not inherited through cell division.",
+      "doi": "https://doi.org/10.1186/s12860-016-0111-y",
+      "pubmedId": "27609610",
+      "authorNames": "Dickerson D, Gierliński M, Singh V, Kitamura E, Ball G, Tanaka TU, Owen-Hughes T"
+    },
+    {
+      "@id": "#affiliation-centre-for-gene-regulation-and-expression-college-of-life-sciences-university-of-dundee-dundee-dd1-5eh-uk",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee DD1 5EH, UK\""
+    },
+    {
+      "@id": "#affiliation-centre-for-gene-regulation-and-expression-college-of-life-sciences-university-of-dundee-dundee-dd1-5eh-uk",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "\"Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee DD1 5EH, UK"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Dickerson D",
+      "memberOf": [
+        {
+          "@id": "#affiliation-centre-for-gene-regulation-and-expression-college-of-life-sciences-university-of-dundee-dundee-dd1-5eh-uk"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Gierliński M",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Singh V",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Kitamura E",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Ball G",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Tanaka TU",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Owen-Hughes T",
+      "memberOf": [
+        {
+          "@id": "#affiliation-centre-for-gene-regulation-and-expression-college-of-life-sciences-university-of-dundee-dundee-dd1-5eh-uk"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-408",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Colocalising",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-407",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 100kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-401",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 25kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-402",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 42kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-403",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 51kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-404",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 64kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-405",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 70kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-406",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Genomic separation 71kb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0027-dickerson-chromatin-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "High resolution imaging reveals heterogeneity in chromatin states between cells that is not inherited through cell division.",
+      "description": "We established a work flow for measuring the distance between two fluorescently tagged, syntenic gene loci with a mean measurement error of 63 nm.  In general, physical separation was observed to increase with increasing genomic separations.  However, the extent to which chromatin is compressed varies for different genomic regions. No correlation was observed between compaction and the distribution of chromatin markers from genomic datasets or with contacts identified using capture based approaches. Variation in spatial separation was also observed within cells over time and between cells.  Differences in the conformation of individual loci can persist for minutes in individual cells. Separation of reporter loci was found to be similar in related and unrelated daughter cell pairs.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2016-11-01",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        }
+      ],
+      "keywords": [
+        "fluorescence microscopy"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-408"
+        },
+        {
+          "@id": "#Dataset-407"
+        },
+        {
+          "@id": "#Dataset-401"
+        },
+        {
+          "@id": "#Dataset-402"
+        },
+        {
+          "@id": "#Dataset-403"
+        },
+        {
+          "@id": "#Dataset-404"
+        },
+        {
+          "@id": "#Dataset-405"
+        },
+        {
+          "@id": "#Dataset-406"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0027",
+      "doi": "https://doi.org/10.17867/10000102",
+      "pubmedId": "27609610",
+      "imagingMethodName": [
+        "fluorescence microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1186/s12860-016-0111-y"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

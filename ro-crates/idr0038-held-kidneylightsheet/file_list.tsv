@@ -1,0 +1,51 @@
+file_path	dataset	type	size_in_bytes
+experimentA/endpoint imaging Cytokeratin PNA/10percent-Wt1-GFP-spheroid-MV.ome.zarr.zip	#Dataset-701	http://bia/Image	20940363623
+experimentA/endpoint imaging Cytokeratin PNA/10percent-Wt1-GFP-spheroid-MV.ome.zarr.log	#Dataset-701	http://bia/File	1347
+experimentA/endpoint imaging Cytokeratin PNA/Lam-Cytok-MV.ome.zarr.zip	#Dataset-701	http://bia/Image	43990147669
+experimentA/endpoint imaging Cytokeratin PNA/Lam-Cytok-MV.ome.zarr.log	#Dataset-701	http://bia/File	1583
+experimentA/endpoint imaging Cytokeratin PNA/wtFK-72hrs-cleared-Nephrin-Calb-PNA-rh-MV-2.ome.zarr.zip	#Dataset-701	http://bia/Image	23368571292
+experimentA/endpoint imaging Cytokeratin PNA/wtFK-72hrs-cleared-Nephrin-Calb-PNA-rh-MV-2.ome.zarr.log	#Dataset-701	http://bia/File	1375
+experimentA/endpoint imaging Cytokeratin PNA/wtFK-cleared-cytok-nephrin-MV.ome.zarr.zip	#Dataset-701	http://bia/Image	56262449006
+experimentA/endpoint imaging Cytokeratin PNA/wtFK-cleared-cytok-nephrin-MV.ome.zarr.log	#Dataset-701	http://bia/File	1617
+experimentA/endpoint imaging glomeruli nephrin/100-U-9-MV.ome.zarr.zip	#Dataset-702	http://bia/Image	61859991343
+experimentA/endpoint imaging glomeruli nephrin/100-U-9-MV.ome.zarr.log	#Dataset-702	http://bia/File	1851
+experimentA/endpoint imaging glomeruli synaptopodin/100-U-2-MV.ome.zarr.zip	#Dataset-703	http://bia/Image	41590800618
+experimentA/endpoint imaging glomeruli synaptopodin/100-U-2-MV.ome.zarr.log	#Dataset-703	http://bia/File	1856
+experimentA/endpoint imaging Megalin Laminin/FK-09-MV.ome.zarr.zip	#Dataset-704	http://bia/Image	21991501305
+experimentA/endpoint imaging Megalin Laminin/FK-09-MV.ome.zarr.log	#Dataset-704	http://bia/File	1573
+experimentA/endpoint imaging Megalin Laminin/GFP-24hrs-2ndy-cleared-MV.ome.zarr.zip	#Dataset-704	http://bia/Image	12146039521
+experimentA/endpoint imaging Megalin Laminin/GFP-24hrs-2ndy-cleared-MV.ome.zarr.log	#Dataset-704	http://bia/File	1607
+experimentA/endpoint imaging Megalin Laminin/GFP-2hrs-2ndy-uncleared-2_DualSideFusion.ome.zarr.zip	#Dataset-704	http://bia/Image	26884303122
+experimentA/endpoint imaging Megalin Laminin/GFP-2hrs-2ndy-uncleared-2_DualSideFusion.ome.zarr.log	#Dataset-704	http://bia/File	1637
+experimentA/endpoint imaging Megalin Laminin/whole-kidney-megalin-laminin.ome.zarr.zip	#Dataset-704	http://bia/Image	31079292948
+experimentA/endpoint imaging Megalin Laminin/whole-kidney-megalin-laminin.ome.zarr.log	#Dataset-704	http://bia/File	1613
+experimentA/endpoint imaging Pax2 PNA/Pax2-PNArh-large-MV.ome.zarr.zip	#Dataset-705	http://bia/Image	55710807379
+experimentA/endpoint imaging Pax2 PNA/Pax2-PNArh-large-MV.ome.zarr.log	#Dataset-705	http://bia/File	1589
+experimentA/endpoint imaging Pax2 PNA/Pax2-PNArh-small-MV.ome.zarr.zip	#Dataset-705	http://bia/Image	42915161054
+experimentA/endpoint imaging Pax2 PNA/Pax2-PNArh-small-MV.ome.zarr.log	#Dataset-705	http://bia/File	1589
+experimentA/endpoint imaging Pax2 PNA/Wt1-FK-4-stack.ome.zarr.zip	#Dataset-705	http://bia/Image	8342593452
+experimentA/endpoint imaging Pax2 PNA/Wt1-FK-4-stack.ome.zarr.log	#Dataset-705	http://bia/File	1849
+experimentA/endpoint imaging Pax2 PNA/wtFK-72hrs-clearing.ome.zarr.zip	#Dataset-705	http://bia/Image	6719174529
+experimentA/endpoint imaging Pax2 PNA/wtFK-72hrs-clearing.ome.zarr.log	#Dataset-705	http://bia/File	1859
+experimentA/endpoint imaging Pax2 PNA/wtFK-cleared-Wt1-Pax2.ome.zarr.zip	#Dataset-705	http://bia/Image	12418116
+experimentA/endpoint imaging Pax2 PNA/wtFK-cleared-Wt1-Pax2.ome.zarr.log	#Dataset-705	http://bia/File	1694
+experimentA/endpoint imaging Six2/100-U-13-Six2-PNA-Synpo-MV-with-beads.ome.zarr.zip	#Dataset-706	http://bia/Image	45772463961
+experimentA/endpoint imaging Six2/100-U-13-Six2-PNA-Synpo-MV-with-beads.ome.zarr.log	#Dataset-706	http://bia/File	1891
+experimentA/endpoint imaging Wt1-GFP knock-in/100-U-14-Six2-PNA-Synpo-MV.ome.zarr.zip	#Dataset-707	http://bia/Image	36036897946
+experimentA/endpoint imaging Wt1-GFP knock-in/100-U-14-Six2-PNA-Synpo-MV.ome.zarr.log	#Dataset-707	http://bia/File	1890
+experimentA/endpoint imaging Wt1-GFP knock-in/GFP_-fixed-cleared_DualSideFusion.ome.zarr.zip	#Dataset-707	http://bia/Image	7836550243
+experimentA/endpoint imaging Wt1-GFP knock-in/GFP_-fixed-cleared_DualSideFusion.ome.zarr.log	#Dataset-707	http://bia/File	1364
+experimentB/Full kidney functional assay/FK-wo-prob-B1-low-res-stack.ome.zarr.zip	#Dataset-708	http://bia/Image	7542110972
+experimentB/Full kidney functional assay/FK-wo-prob-B1-low-res-stack.ome.zarr.log	#Dataset-708	http://bia/File	1599
+experimentB/Full kidney functional assay control/FK-w-prob-A1-low-res-stack.ome.zarr.zip	#Dataset-709	http://bia/Image	8738050228
+experimentB/Full kidney functional assay control/FK-w-prob-A1-low-res-stack.ome.zarr.log	#Dataset-709	http://bia/File	1606
+experimentB/Organoid functional assay/S-wo-prob-C7.ome.zarr.zip	#Dataset-710	http://bia/Image	7152956601
+experimentB/Organoid functional assay/S-wo-prob-C7.ome.zarr.log	#Dataset-710	http://bia/File	1295
+experimentB/Organoid functional assay control/S-w-prob-H11-detail-MV.ome.zarr.zip	#Dataset-711	http://bia/Image	9809126242
+experimentB/Organoid functional assay control/S-w-prob-H11-detail-MV.ome.zarr.log	#Dataset-711	http://bia/File	1324
+experimentC/Time Series PNA vital test/Time-PNA-rh-vital-test.ome.zarr.zip	#Dataset-712	http://bia/Image	226783935260
+experimentC/Time Series PNA vital test/Time-PNA-rh-vital-test.ome.zarr.log	#Dataset-712	http://bia/File	1319
+experimentC/Wt1-GFP Time Series 1/WT1-GFP-PNA-time-series.ome.zarr.zip	#Dataset-713	http://bia/Image	658011804808
+experimentC/Wt1-GFP Time Series 1/WT1-GFP-PNA-time-series.ome.zarr.log	#Dataset-713	http://bia/File	1327
+experimentC/Wt1-GFP Time Series 2/Wt1-GFP-PNA-rh-time-series.ome.zarr.zip	#Dataset-714	http://bia/Image	210592441863
+experimentC/Wt1-GFP Time Series 2/Wt1-GFP-PNA-rh-time-series.ome.zarr.log	#Dataset-714	http://bia/File	1333

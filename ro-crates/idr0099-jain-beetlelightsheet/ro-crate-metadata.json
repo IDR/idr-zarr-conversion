@@ -1,0 +1,773 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid7070",
+      "@type": "bia:Taxon",
+      "scientificName": "Tribolium castaneum",
+      "commonName": "red flour beetle"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid7070"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "light sheet fluorescence microscopy",
+      "description": "light sheet fluorescence microscopy",
+      "imagingInstrumentDescription": "light sheet fluorescence microscopy",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-spim",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "SPIM",
+      "description": "SPIM",
+      "imagingInstrumentDescription": "SPIM",
+      "imagingMethodName": [
+        "SPIM"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0099-jain-beetlelightsheet-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "The embryo was mounted in 1% low melting agarose dissolved in 1xPBS together with fluorescent beads in glass capillaries by using a metallic plunger. The time interval for the data is 90 seconds or 5 minutes. The imaging was performed at 22 Celsius, 25 Celsius or 30 Celsius."
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-020-19356-x",
+      "@type": "bia:Publication",
+      "name": "Regionalized tissue fluidization is required for epithelial gap closure during insect gastrulation",
+      "doi": "https://doi.org/10.1038/s41467-020-19356-x",
+      "pubmedId": "33154375",
+      "authorNames": "Jain A, Ulman V, Mukherjee A, Prakash M, Cuenca MB, Pimpale LG, Muenster S, Haase R, Panfilio KA, Jug F, Grill SW, Tomancak P, Pavlopoulos A"
+    },
+    {
+      "@id": "#affiliation-d-bsse-eth-zurich-basel-switzerland",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "D-BSSE, ETH Zurich, Basel, Switzerland"
+    },
+    {
+      "@id": "#affiliation-max-planck-institute-of-molecular-cell-biology-and-genetics-dresden-germany",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Max-Planck-Institute of Molecular Cell Biology and Genetics, Dresden, Germany"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Jain A",
+      "memberOf": [
+        {
+          "@id": "#affiliation-d-bsse-eth-zurich-basel-switzerland"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Ulman V",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Mukherjee A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Prakash M",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Cuenca MB",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Pimpale LG",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Muenster S",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-7",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Haase R",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-8",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Panfilio KA",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-9",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Jug F",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-10",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Grill SW",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-11",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Tomancak P",
+      "memberOf": [
+        {
+          "@id": "#affiliation-max-planck-institute-of-molecular-cell-biology-and-genetics-dresden-germany"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-12",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Pavlopoulos A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-13705",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Histone-eGFP",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0099-jain-beetlelightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13701",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LifeAct-eGFP",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0099-jain-beetlelightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13703",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/nGFP",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0099-jain-beetlelightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13702",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Tc-Squash-eGFP",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0099-jain-beetlelightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-13704",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ZenKD_GAP43-eYFP",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0099-jain-beetlelightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Regionalized tissue fluidization is required for epithelial gap closure during insect gastrulation",
+      "description": "Many animal embryos pull and close an epithelial sheet around the ellipsoidal egg surface during a gastrulation process known as epiboly. The ovoidal geometry dictates that the epithelial sheet first expands and subsequently compacts. Moreover, the spreading epithelium is mechanically stressed and this stress needs to be released. We show that during extraembryonic tissue (serosa) epiboly in the insect Tribolium castaneum, the non-proliferative serosa becomes regionalized into a solid-like dorsal region with larger non-rearranging cells, and a more fluid-like ventral region surrounding the leading edge with smaller cells undergoing intercalations. Our results suggest that a heterogeneous actomyosin cable contributes to the fluidization of the leading edge by driving sequential eviction and intercalation of individual cells away from the serosa margin. Since this developmental solution utilized during epiboly resembles the mechanism of wound healing, we propose actomyosin cable-driven local tissue fluidization as a conserved morphogenetic module for closure of epithelial gaps.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2021-03-02",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        },
+        {
+          "@id": "#author-7"
+        },
+        {
+          "@id": "#author-8"
+        },
+        {
+          "@id": "#author-9"
+        },
+        {
+          "@id": "#author-10"
+        },
+        {
+          "@id": "#author-11"
+        },
+        {
+          "@id": "#author-12"
+        }
+      ],
+      "keywords": [
+        "light sheet fluorescence microscopy",
+        "SPIM",
+        "Morphogenesis"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-13705"
+        },
+        {
+          "@id": "#Dataset-13701"
+        },
+        {
+          "@id": "#Dataset-13703"
+        },
+        {
+          "@id": "#Dataset-13702"
+        },
+        {
+          "@id": "#Dataset-13704"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0099",
+      "pubmedId": "33154375",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy",
+        "SPIM"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-020-19356-x"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

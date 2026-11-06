@@ -1,0 +1,663 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid7227",
+      "@type": "bia:Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "commonName": "fruit fly"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid7227"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "light sheet fluorescence microscopy",
+      "description": "light sheet fluorescence microscopy",
+      "imagingInstrumentDescription": "light sheet fluorescence microscopy",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-spim",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "SPIM",
+      "description": "SPIM",
+      "imagingInstrumentDescription": "SPIM",
+      "imagingMethodName": [
+        "SPIM"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0118-keenan-flylightsheet-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "Virgin females maternally expressing Histone-GFP and MCP-mCherry (genotype: +;+;His-GFP/MCP-mCherry) were crossed to males with one of the endogenous transcriptional reporters (genotypes: +;+;tll-ms2/tll-ms2, +;+;hkb-ms2/hkb-ms2, +;+;byn-ms2/byn-ms2, +;+;fkh-ms2/fkh-ms2, or +;wg-ms2/wg-ms2;tll-ms2/+). An embryo from this cross was used in this experiment.\n\nNo treatment was performed on embryos\n\nEmbryos were imaged on a Luxendo MuVi SPIM light-sheet microscope, using 30x magnification setting on the Nikon 10x/0.3 water objective.  The 488 nm laser was used to image nuclei (His-GFP), and the 561 nm laser was used to image transcriptional dots (MCP-mCherry),  both at 5% laser power. Exposure time for the green channel was 55 ms and exposure for the red channel was 70 ms.  The line illumination tool was used to improve background levels and was set to 40 pixels. Image segmentation was performed for each 2D slice using a program called ilastik, which utilizes semantic segmentation. 3D object creation from 2D binary images and feature extraction was performed in a program called Arivis."
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.2112892119",
+      "@type": "bia:Publication",
+      "name": "Dynamics of Drosophila endoderm specification",
+      "doi": "https://doi.org/10.1073/pnas.2112892119",
+      "pubmedId": "35412853",
+      "authorNames": "Keenan SE, Avdeeva M, Yang L, Alber DS, Wieschaus EF, Shvartsman SY"
+    },
+    {
+      "@id": "#affiliation-lewis-sigler-institute-for-integrative-genomics-carl-icahn-laboratory-princeton-university-princeton-nj-08544",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Lewis-Sigler Institute for Integrative Genomics, Carl Icahn Laboratory, Princeton University, Princeton, NJ 08544"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Keenan SE",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Avdeeva M",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Yang L",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Alber DS",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Wieschaus EF",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Shvartsman SY",
+      "memberOf": [
+        {
+          "@id": "#affiliation-lewis-sigler-institute-for-integrative-genomics-carl-icahn-laboratory-princeton-university-princeton-nj-08544"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-15201",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/byn",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0118-keenan-flylightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-15202",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/fkh",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0118-keenan-flylightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-15203",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/hkb",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0118-keenan-flylightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-15204",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/tll",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0118-keenan-flylightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-15205",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/wg",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0118-keenan-flylightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Dynamics of Drosophila endoderm specification",
+      "description": "During early Drosophila embryogenesis, a network of gene regulatory interactions orchestrates terminal patterning, playing a critical role in the subsequent formation of the gut. We utilized CRISPR gene editing at endogenous loci to create live reporters of transcription and light-sheet microscopy to monitor the individual components of posterior patterning network across 90 minutes prior to gastrulation. We developed a computational pipeline for fusing imaging datasets of the individual components into a common multivariable trajectory. This heterogeneous data fusion approach revealed low intrinsic dimensionality of posterior patterning and cell fate specification in wild type embryos.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2021-11-10",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        }
+      ],
+      "keywords": [
+        "light sheet fluorescence microscopy",
+        "SPIM",
+        "gene regulatory networks"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-15201"
+        },
+        {
+          "@id": "#Dataset-15202"
+        },
+        {
+          "@id": "#Dataset-15203"
+        },
+        {
+          "@id": "#Dataset-15204"
+        },
+        {
+          "@id": "#Dataset-15205"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0118",
+      "doi": "https://doi.org/10.17867/10000171",
+      "pubmedId": "35412853",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy",
+        "SPIM"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1073/pnas.2112892119"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

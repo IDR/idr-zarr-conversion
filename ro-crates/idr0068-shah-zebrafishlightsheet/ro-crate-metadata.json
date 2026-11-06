@@ -1,0 +1,615 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid7955",
+      "@type": "bia:Taxon",
+      "scientificName": "Danio rerio",
+      "commonName": "zebrafish"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid7955"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "light sheet fluorescence microscopy",
+      "description": "light sheet fluorescence microscopy",
+      "imagingInstrumentDescription": "light sheet fluorescence microscopy",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-spim",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "SPIM",
+      "description": "SPIM",
+      "imagingInstrumentDescription": "SPIM",
+      "imagingMethodName": [
+        "SPIM"
+      ],
+      "fbbiId": [
+        "FBbi_00000369"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0068-shah-zebrafishlightsheet-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "All experimental and data analysis protocols are described in Shah et al., 2019, Nature Communications"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-019-13625-0",
+      "@type": "bia:Publication",
+      "name": "Multi-scale imaging and analysis identifies pan-embryo cell dynamics of germlayer formation in zebrafish",
+      "doi": "https://doi.org/10.1038/s41467-019-13625-0",
+      "pubmedId": "31848345",
+      "authorNames": "Shah G, Thierbach K, Schmid B, Waschke J, Reade A, Hlawitschka M, Roeder I, Scherf N, Huisken J"
+    },
+    {
+      "@id": "#affiliation-embl-carrer-del-dr-aiguader-88-08003-barcelona-spain",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "EMBL, Carrer del Dr. Aiguader, 88, 08003 Barcelona, Spain"
+    },
+    {
+      "@id": "#affiliation-institute-for-medical-informatics-and-biometry-fetscherstr-74-01307-dresden-germany",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Institute for Medical Informatics and Biometry, Fetscherstr. 74, 01307 Dresden, Germany"
+    },
+    {
+      "@id": "#affiliation-morgridge-institute-for-research-madison-wisconsin-53715-usa",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Morgridge Institute for Research, Madison, Wisconsin 53715, USA"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Shah G",
+      "memberOf": [
+        {
+          "@id": "#affiliation-embl-carrer-del-dr-aiguader-88-08003-barcelona-spain"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Thierbach K",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Schmid B",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Waschke J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Reade A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Hlawitschka M",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Roeder I",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-7",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Scherf N",
+      "memberOf": [
+        {
+          "@id": "#affiliation-institute-for-medical-informatics-and-biometry-fetscherstr-74-01307-dresden-germany"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-8",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Huisken J",
+      "memberOf": [
+        {
+          "@id": "#affiliation-morgridge-institute-for-research-madison-wisconsin-53715-usa"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-15471",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Embryo",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0068-shah-zebrafishlightsheet-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-light-sheet-fluorescence-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-spim"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Multi-scale imaging and analysis identifies pan-embryo cell dynamics of germlayer formation in zebrafish",
+      "description": "The coordination of cell movements across spatio-temporal scales ensures precise positioning of organs during vertebrate gastrulation. Mechanisms governing such morphogenetic movements have been studied only within a local region, a single germlayer or in whole embryos without cell identity. Scale-bridging imaging and automated analysis of cell dynamics are needed for a deeper understanding of tissue formation during gastrulation. Here we report pan-embryo analyses of formation and dynamics of all three germlayers simultaneously within a developing zebrafish embryo. We show that a distinct distribution of cells in each germlayer is established during early gastrulation via cell movement characteristics that are predominantly determined by their position in the embryo. The differences in initial germlayer distributions are subsequently amplified by a global movement, which organizes the organ precursors along the embryonic body axis, giving rise to the blueprint of organ formation. The tools and data are available as a resource for the community.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2021-12-07",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        },
+        {
+          "@id": "#author-7"
+        },
+        {
+          "@id": "#author-8"
+        }
+      ],
+      "keywords": [
+        "light sheet fluorescence microscopy",
+        "SPIM",
+        "Zebrafish"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-15471"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0068",
+      "doi": "https://doi.org/10.17867/10000172",
+      "pubmedId": "31848345",
+      "imagingMethodName": [
+        "light sheet fluorescence microscopy",
+        "SPIM"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1038/s41467-019-13625-0"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

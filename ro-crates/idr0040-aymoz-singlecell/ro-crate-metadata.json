@@ -1,0 +1,2492 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid4932",
+      "@type": "bia:Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "commonName": "brewer's yeast"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid4932"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "imagingInstrumentDescription": "fluorescence microscopy",
+      "imagingMethodName": [
+        "fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000246"
+      ]
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "\"The cells were grown overnight in selective synthetic medium to saturation (YNB:CYN3801, CSM:DCS0031, ForMedium). They were diluted to an OD600 of 0.05 in the morning and grown for 4 hours before starting the experiment.\" \"All the time-lapse experiments were performed in well slides, for which selected wells of 96-well plates (MGB096-1-2LG, Matrical Bioscience) were coated with filtered solution of Concanavalin A in H2O (0.5 mg/ml, C2010-250MG, Sigma- Aldrich) for 30 minutes, rinsed with H2O and dried for at least ten hours. Before the experiments, the cells were diluted to an OD600 of 0.04, briefly sonicated, and 200μL of cell suspension were added to a well. Imaging was started 30 minutes later, so as to let the cells settle to the bottom to the well. To stimulate the cells, 100 μL of a 3 μM solution of synthetic exogenous α-factor (gift from M. Peter’s lab.) was added in the well before the 4th timepoint to reach a final 1 μM concentration of pheromone.\" \"Images were acquired on a fully automated inverted epi-fluorescence microscope (Ti-Eclipse, Nikon) controlled by Micro-Manager (Edelstein et al, 2010) and placed in an incubation chamber set at 30°C, with a 40X oil objective and appropriate excitation and emission filters. The excitation was provided by a solid-state light source (SpectraX, Lumencor). The images were recorded with a sCMOS camera (Flash4.0, Hamamatsu). A motorized XY-stage allowed recording multiple fields of view at every time point, typically 5 positions per well. CFP (50ms), RFP (300ms) and YFP (300ms) and 2 bright-field (10ms) images were recorded at time intervals of 5 minutes.\" \"Time-lapse movies were analyzed with the YeastQuant platform (Pelet et al, 2012). Briefly, the nuclei of the cells were segmented by thresholding of the CFP images. The contour of the cell around each nucleus was detected using two bright-field images. The cytoplasm object was obtained by removing the nucleus object expanded by two pixels from the cell object. \""
+    },
+    {
+      "@id": "https://doi.org/10.15252/msb.20178024",
+      "@type": "bia:Publication",
+      "name": "Timing of gene expression in a cell-fate decision system.",
+      "doi": "https://doi.org/10.15252/msb.20178024",
+      "pubmedId": "29695607",
+      "authorNames": "Aymoz D, Solé C, Pierre JJ, Schmitt M, de Nadal E, Posas F, Pelet S"
+    },
+    {
+      "@id": "#affiliation-d-partement-de-microbiologie-fondamentale-b-timent-biophore-1015-lausanne",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Département de Microbiologie Fondamentale - Bâtiment Biophore - 1015 Lausanne"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Aymoz D",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Solé C",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Pierre JJ",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Schmitt M",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "de Nadal E",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Posas F",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Pelet S",
+      "memberOf": [
+        {
+          "@id": "#affiliation-d-partement-de-microbiologie-fondamentale-b-timent-biophore-1015-lausanne"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-1226",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA141_AGA1y_FIG1r_kss1D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1225",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA142_AGA1y_FIG1r_fus3D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1194",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA146_AGA1y_FAR1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1224",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA151_AGA1y_FIG1r_dig1D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1223",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA159_AGA1y_FIG1r_tec1D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1193",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA160_AGA1y_FIG1r_KAR4D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1222",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA161_AGA1y_FIG1r_ste11D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1221",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA162_AGA1y_FIG1r_ste12D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1220",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA163_AGA1y_FIG1r_far1D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1219",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA164_AGA1y_FIG1r_ste2D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1192",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA186_AGA1y_STE12r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1160",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA189_AGA1y_FUS1r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1162",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA189_AGA1y_FUS1r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1191",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA189_AGA1y_FUS1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1159",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA198_AGA1y_KAR4r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1163",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA198_AGA1y_KAR4r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1190",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA198_AGA1y_KAR4r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1218",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA203_KAR3y_KAR4r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1189",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA207_KAR3y_FIG1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1217",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA208_AGA1y_FIG1r_mot3D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1216",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA218_AGA1y_FIG1r_gcn5D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1215",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA219_AGA1y_FIG1r_arp8D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1188",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA228_AGA1y_FIG1*AGA1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1187",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA234_AGA1y_FIG1*AGA1r_KARD_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1214",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA238_AGA1y_AGA1syn__PREIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1213",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA239_AGA1y_AGA1syn__PREIIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1212",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA240_AGA1y_AGA1syn__PREIIIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1186",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA244_AGA1y_BAR1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1185",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA245_AGA1y_SST2r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1161",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA247_AGA1y_KAR3r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1164",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA247_AGA1y_KAR3r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1184",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA247_AGA1y_KAR3r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1158",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA249_AGA1y_PRM3r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1165",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA249_AGA1y_PRM3r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1183",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA249_AGA1y_PRM3r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1211",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA256_FIG1y_FIG1syn__PREIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1210",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA257_FIG1y_FIG1syn__PREIIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1209",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA258_FIG1y_FIG1syn__PREIIIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1208",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA263_AGA1y_AGA1syn__PREIPREIIIr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1157",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA296_AGA1y_FUS2r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1166",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA296_AGA1y_FUS2r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1182",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA296_AGA1y_FUS2r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1156",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA302_AGA1y_FIG2r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1167",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA302_AGA1y_FIG2r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1181",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA302_AGA1y_FIG2r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1207",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA305_AGA1y_FIG1r_dig1dig2D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1155",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA306_AGA1y_PRM1r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1168",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA306_AGA1y_PRM1r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1180",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA306_AGA1y_PRM1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1179",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA313_FIG1y_FIG1syn_PREIInc _to_consensusr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1206",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA314_FIG1y_FIG1syn__PREIIncr_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1205",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA316_AGA1y_PRM3r_KAR4D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1204",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA317_AGA1y_FIG1r_dig2D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1203",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA319_AGA1y_FUS2r_KAR4D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1202",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA320_AGA1y_FIG2r_KAR4D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1201",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA322_AGA1y_PRM1r_KAR4D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1178",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA326_FIG1y_FIG1syn_PREIInc _to_consensusr_KAR4_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1177",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA348_AGA1y_AGA1r_kar4_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1176",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA352_FIG1y_FIG1syn_PREIInc _to_consensus*AGA1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1175",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YDA358_FIG1y_FIG1syn_PREIInc _to_consensus*AGA1r_KAR4D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1196",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP614_Ste7DSy_FIG1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1195",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP615_Ste7DSy_AGA1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1154",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP642_AGA1y_AGA1r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1169",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP642_AGA1y_AGA1r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1174",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP642_AGA1y_AGA1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1153",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP643_AGA1y_FIG1r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1170",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP643_AGA1y_FIG1r_Mating",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1171",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP643_AGA1y_FIG1r_MatingAlone",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1172",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP643_AGA1y_FIG1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1200",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP645_FIG1y_AGA1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1199",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP646_FIG1y_FIG1r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1173",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP663_FIG1y_PRM5r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1152",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP664_AGA1y_PRM5r_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1197",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP664_AGA1y_PRM5r_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1151",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP692_AGA1y_FIG1r_bar1D_DoseResponsePheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-1198",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YSP692_AGA1y_FIG1r_bar1D_PheromoneTreatment",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0040-aymoz-singlecell-experimenta"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Timing of gene expression in a cell-fate decision system",
+      "description": "During development, morphogens provide extracellular cues allowing cells to select a specific fate by inducing complex transcriptional programs. The mating pathway in budding yeast offers simplified settings to understand this process. Pheromone secreted by the mating partner triggers the activity of a MAPK pathway, which results in the expression of hundreds of genes. Using a dynamic expression reporter, we quantified the kinetics of gene expression in single cells upon exogenous pheromone stimulation and in the physiological context of mating. In both conditions, we observed striking differences in the timing of induction of mating-responsive promoters. Biochemical analyses and generation of synthetic promoter variants demonstrated how the interplay between transcription factor binding and nucleosomes contribute to determine the kinetics of transcription in a simplified cell-fate decision system.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2018-04-12",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        }
+      ],
+      "keywords": [
+        "fluorescence microscopy"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-1226"
+        },
+        {
+          "@id": "#Dataset-1225"
+        },
+        {
+          "@id": "#Dataset-1194"
+        },
+        {
+          "@id": "#Dataset-1224"
+        },
+        {
+          "@id": "#Dataset-1223"
+        },
+        {
+          "@id": "#Dataset-1193"
+        },
+        {
+          "@id": "#Dataset-1222"
+        },
+        {
+          "@id": "#Dataset-1221"
+        },
+        {
+          "@id": "#Dataset-1220"
+        },
+        {
+          "@id": "#Dataset-1219"
+        },
+        {
+          "@id": "#Dataset-1192"
+        },
+        {
+          "@id": "#Dataset-1160"
+        },
+        {
+          "@id": "#Dataset-1162"
+        },
+        {
+          "@id": "#Dataset-1191"
+        },
+        {
+          "@id": "#Dataset-1159"
+        },
+        {
+          "@id": "#Dataset-1163"
+        },
+        {
+          "@id": "#Dataset-1190"
+        },
+        {
+          "@id": "#Dataset-1218"
+        },
+        {
+          "@id": "#Dataset-1189"
+        },
+        {
+          "@id": "#Dataset-1217"
+        },
+        {
+          "@id": "#Dataset-1216"
+        },
+        {
+          "@id": "#Dataset-1215"
+        },
+        {
+          "@id": "#Dataset-1188"
+        },
+        {
+          "@id": "#Dataset-1187"
+        },
+        {
+          "@id": "#Dataset-1214"
+        },
+        {
+          "@id": "#Dataset-1213"
+        },
+        {
+          "@id": "#Dataset-1212"
+        },
+        {
+          "@id": "#Dataset-1186"
+        },
+        {
+          "@id": "#Dataset-1185"
+        },
+        {
+          "@id": "#Dataset-1161"
+        },
+        {
+          "@id": "#Dataset-1164"
+        },
+        {
+          "@id": "#Dataset-1184"
+        },
+        {
+          "@id": "#Dataset-1158"
+        },
+        {
+          "@id": "#Dataset-1165"
+        },
+        {
+          "@id": "#Dataset-1183"
+        },
+        {
+          "@id": "#Dataset-1211"
+        },
+        {
+          "@id": "#Dataset-1210"
+        },
+        {
+          "@id": "#Dataset-1209"
+        },
+        {
+          "@id": "#Dataset-1208"
+        },
+        {
+          "@id": "#Dataset-1157"
+        },
+        {
+          "@id": "#Dataset-1166"
+        },
+        {
+          "@id": "#Dataset-1182"
+        },
+        {
+          "@id": "#Dataset-1156"
+        },
+        {
+          "@id": "#Dataset-1167"
+        },
+        {
+          "@id": "#Dataset-1181"
+        },
+        {
+          "@id": "#Dataset-1207"
+        },
+        {
+          "@id": "#Dataset-1155"
+        },
+        {
+          "@id": "#Dataset-1168"
+        },
+        {
+          "@id": "#Dataset-1180"
+        },
+        {
+          "@id": "#Dataset-1179"
+        },
+        {
+          "@id": "#Dataset-1206"
+        },
+        {
+          "@id": "#Dataset-1205"
+        },
+        {
+          "@id": "#Dataset-1204"
+        },
+        {
+          "@id": "#Dataset-1203"
+        },
+        {
+          "@id": "#Dataset-1202"
+        },
+        {
+          "@id": "#Dataset-1201"
+        },
+        {
+          "@id": "#Dataset-1178"
+        },
+        {
+          "@id": "#Dataset-1177"
+        },
+        {
+          "@id": "#Dataset-1176"
+        },
+        {
+          "@id": "#Dataset-1175"
+        },
+        {
+          "@id": "#Dataset-1196"
+        },
+        {
+          "@id": "#Dataset-1195"
+        },
+        {
+          "@id": "#Dataset-1154"
+        },
+        {
+          "@id": "#Dataset-1169"
+        },
+        {
+          "@id": "#Dataset-1174"
+        },
+        {
+          "@id": "#Dataset-1153"
+        },
+        {
+          "@id": "#Dataset-1170"
+        },
+        {
+          "@id": "#Dataset-1171"
+        },
+        {
+          "@id": "#Dataset-1172"
+        },
+        {
+          "@id": "#Dataset-1200"
+        },
+        {
+          "@id": "#Dataset-1199"
+        },
+        {
+          "@id": "#Dataset-1173"
+        },
+        {
+          "@id": "#Dataset-1152"
+        },
+        {
+          "@id": "#Dataset-1197"
+        },
+        {
+          "@id": "#Dataset-1151"
+        },
+        {
+          "@id": "#Dataset-1198"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0040",
+      "doi": "https://doi.org/10.17867/10000114",
+      "pubmedId": "29695607",
+      "imagingMethodName": [
+        "fluorescence microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.15252/msb.20178024"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4270 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid562",
+      "@type": "bia:Taxon",
+      "scientificName": "Escherichia coli",
+      "commonName": "E. coli"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "cell",
+      "description": "cell",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid562"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-phase-contrast-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "phase contrast microscopy",
+      "description": "phase contrast microscopy",
+      "imagingInstrumentDescription": "phase contrast microscopy",
+      "imagingMethodName": [
+        "phase contrast microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000247"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "wide-field epi-fluorescence microscopy",
+      "description": "wide-field epi-fluorescence microscopy",
+      "imagingInstrumentDescription": "wide-field epi-fluorescence microscopy",
+      "imagingMethodName": [
+        "wide-field epi-fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000246"
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-019-0629-y",
+      "@type": "bia:Publication",
+      "name": "Time-resolved imaging-based CRISPRi screening",
+      "doi": "https://doi.org/10.1038/s41592-019-0629-y",
+      "pubmedId": "31740817",
+      "authorNames": "Camsund D, Lawson MJ, Larsson J, Jones D, Zikrin S, Fange D, Elf J"
+    },
+    {
+      "@id": "#affiliation-department-of-cell-and-molecular-biology-scilifelab-uppsala-university-uppsala-sweden",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "Department of Cell and Molecular Biology, SciLifeLab, Uppsala University, Uppsala, Sweden"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Camsund D",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Lawson MJ",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Larsson J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Jones D",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Zikrin S",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Fange D",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Elf J",
+      "memberOf": [
+        {
+          "@id": "#affiliation-department-of-cell-and-molecular-biology-scilifelab-uppsala-university-uppsala-sweden"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-8852",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-1_run-1_EXP-19-BQ3550",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8853",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-1_run-2_EXP-18-BQ3523",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8854",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-2_run-1_EXP-18-BQ3524",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8855",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-2_run-2_EXP-18-BQ3542",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8856",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-2_run-3_EXP-19-BQ3553",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8857",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-3_run-1_EXP-18-BQ3526",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8858",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-3_run-2_EXP-18-BQ3537",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8859",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-4_run-1_EXP-18-BQ3519",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8860",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-4_run-2_EXP-18-BQ3539",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8861",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-5_run-1_EXP-18-BQ3520",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8862",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-5_run-2_EXP-18-BQ3531",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8863",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-6_run-1_EXP-18-BQ3532",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8864",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/subpool-6_run-2_EXP-18-BQ3521",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8865",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8866",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8867",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8868",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8869",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8870",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8871",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8872",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8873",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8874",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8875",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-1_EXP-19-BQ3550_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8876",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8877",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8878",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8879",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8880",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8881",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8882",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8883",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8884",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8885",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8886",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-1_run-2_EXP-18-BQ3523_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8887",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8888",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8889",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8890",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8891",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8892",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8893",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8894",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8895",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8896",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8897",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-1_EXP-18-BQ3524_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8898",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8899",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8900",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8901",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8902",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8903",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8904",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8905",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8906",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8907",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8908",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-2_EXP-18-BQ3542_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8909",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8910",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8911",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8912",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8913",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8914",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8915",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8916",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8917",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8918",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8919",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-2_run-3_EXP-19-BQ3553_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8920",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8921",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8922",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8923",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8924",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8925",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8926",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8927",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8928",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8929",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8930",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-1_EXP-18-BQ3526_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8931",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8932",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8933",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8934",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8935",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8936",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8937",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8938",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8939",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8940",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8941",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-3_run-2_EXP-18-BQ3537_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8942",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8943",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8944",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8945",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8946",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8947",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8948",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8949",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8950",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8951",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8952",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-1_EXP-18-BQ3519_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8953",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8954",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8955",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8956",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8957",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8958",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8959",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8960",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8961",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8962",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8963",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-4_run-2_EXP-18-BQ3539_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8964",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8965",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8966",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8967",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8968",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8969",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8970",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8971",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8972",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8973",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8974",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-1_EXP-18-BQ3520_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8975",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8976",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8977",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8978",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8979",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8980",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8981",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8982",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8983",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8984",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8985",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-5_run-2_EXP-18-BQ3531_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8986",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8987",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8988",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8989",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8990",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8991",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8992",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8993",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8994",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8995",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8996",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-1_EXP-18-BQ3532_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8997",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-01",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8998",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-02",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-8999",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-03",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9000",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-04",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9001",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-05",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9002",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-06",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9003",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-07",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9004",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-08",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9005",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-09",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9006",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-10",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-9007",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentB/subpool-6_run-2_EXP-18-BQ3521_round-11",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-wide-field-epi-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Time-resolved imaging-based CRISPRi screening method",
+      "description": "Our ability to connect genotypic variation to biologically important phenotypes has been seriously limited by the gap between live-cell microscopy and library-scale genomic engineering. Here, we show how in situ genotyping of a library of strains after time-lapse imaging in a microfluidic device overcomes this problem. We determine how 235 different CRISPR interference knockdowns impact the coordination of the replication and division cycles of Escherichia coli by monitoring the location of replication forks throughout on average >500 cell cycles per knockdown. Subsequent in situ genotyping allows us to map each phenotype distribution to a specific genetic perturbation to determine which genes are important for cell cycle control. The single-cell time-resolved assay allows us to determine the distribution of single-cell growth rates, cell division sizes and replication initiation volumes. The technology presented in this study enables genome-scale screens of most live-cell microscopy assays.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2019-12-10",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        }
+      ],
+      "keywords": [
+        "phase contrast microscopy",
+        "wide-field epi-fluorescence microscopy",
+        "CRISPR interference knockdown"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-8852"
+        },
+        {
+          "@id": "#Dataset-8853"
+        },
+        {
+          "@id": "#Dataset-8854"
+        },
+        {
+          "@id": "#Dataset-8855"
+        },
+        {
+          "@id": "#Dataset-8856"
+        },
+        {
+          "@id": "#Dataset-8857"
+        },
+        {
+          "@id": "#Dataset-8858"
+        },
+        {
+          "@id": "#Dataset-8859"
+        },
+        {
+          "@id": "#Dataset-8860"
+        },
+        {
+          "@id": "#Dataset-8861"
+        },
+        {
+          "@id": "#Dataset-8862"
+        },
+        {
+          "@id": "#Dataset-8863"
+        },
+        {
+          "@id": "#Dataset-8864"
+        },
+        {
+          "@id": "#Dataset-8865"
+        },
+        {
+          "@id": "#Dataset-8866"
+        },
+        {
+          "@id": "#Dataset-8867"
+        },
+        {
+          "@id": "#Dataset-8868"
+        },
+        {
+          "@id": "#Dataset-8869"
+        },
+        {
+          "@id": "#Dataset-8870"
+        },
+        {
+          "@id": "#Dataset-8871"
+        },
+        {
+          "@id": "#Dataset-8872"
+        },
+        {
+          "@id": "#Dataset-8873"
+        },
+        {
+          "@id": "#Dataset-8874"
+        },
+        {
+          "@id": "#Dataset-8875"
+        },
+        {
+          "@id": "#Dataset-8876"
+        },
+        {
+          "@id": "#Dataset-8877"
+        },
+        {
+          "@id": "#Dataset-8878"
+        },
+        {
+          "@id": "#Dataset-8879"
+        },
+        {
+          "@id": "#Dataset-8880"
+        },
+        {
+          "@id": "#Dataset-8881"
+        },
+        {
+          "@id": "#Dataset-8882"
+        },
+        {
+          "@id": "#Dataset-8883"
+        },
+        {
+          "@id": "#Dataset-8884"
+        },
+        {
+          "@id": "#Dataset-8885"
+        },
+        {
+          "@id": "#Dataset-8886"
+        },
+        {
+          "@id": "#Dataset-8887"
+        },
+        {
+          "@id": "#Dataset-8888"
+        },
+        {
+          "@id": "#Dataset-8889"
+        },
+        {
+          "@id": "#Dataset-8890"
+        },
+        {
+          "@id": "#Dataset-8891"
+        },
+        {
+          "@id": "#Dataset-8892"
+        },
+        {
+          "@id": "#Dataset-8893"
+        },
+        {
+          "@id": "#Dataset-8894"
+        },
+        {
+          "@id": "#Dataset-8895"
+        },
+        {
+          "@id": "#Dataset-8896"
+        },
+        {
+          "@id": "#Dataset-8897"
+        },
+        {
+          "@id": "#Dataset-8898"
+        },
+        {
+          "@id": "#Dataset-8899"
+        },
+        {
+          "@id": "#Dataset-8900"
+        },
+        {
+          "@id": "#Dataset-8901"
+        },
+        {
+          "@id": "#Dataset-8902"
+        },
+        {
+          "@id": "#Dataset-8903"
+        },
+        {
+          "@id": "#Dataset-8904"
+        },
+        {
+          "@id": "#Dataset-8905"
+        },
+        {
+          "@id": "#Dataset-8906"
+        },
+        {
+          "@id": "#Dataset-8907"
+        },
+        {
+          "@id": "#Dataset-8908"
+        },
+        {
+          "@id": "#Dataset-8909"
+        },
+        {
+          "@id": "#Dataset-8910"
+        },
+        {
+          "@id": "#Dataset-8911"
+        },
+        {
+          "@id": "#Dataset-8912"
+        },
+        {
+          "@id": "#Dataset-8913"
+        },
+        {
+          "@id": "#Dataset-8914"
+        },
+        {
+          "@id": "#Dataset-8915"
+        },
+        {
+          "@id": "#Dataset-8916"
+        },
+        {
+          "@id": "#Dataset-8917"
+        },
+        {
+          "@id": "#Dataset-8918"
+        },
+        {
+          "@id": "#Dataset-8919"
+        },
+        {
+          "@id": "#Dataset-8920"
+        },
+        {
+          "@id": "#Dataset-8921"
+        },
+        {
+          "@id": "#Dataset-8922"
+        },
+        {
+          "@id": "#Dataset-8923"
+        },
+        {
+          "@id": "#Dataset-8924"
+        },
+        {
+          "@id": "#Dataset-8925"
+        },
+        {
+          "@id": "#Dataset-8926"
+        },
+        {
+          "@id": "#Dataset-8927"
+        },
+        {
+          "@id": "#Dataset-8928"
+        },
+        {
+          "@id": "#Dataset-8929"
+        },
+        {
+          "@id": "#Dataset-8930"
+        },
+        {
+          "@id": "#Dataset-8931"
+        },
+        {
+          "@id": "#Dataset-8932"
+        },
+        {
+          "@id": "#Dataset-8933"
+        },
+        {
+          "@id": "#Dataset-8934"
+        },
+        {
+          "@id": "#Dataset-8935"
+        },
+        {
+          "@id": "#Dataset-8936"
+        },
+        {
+          "@id": "#Dataset-8937"
+        },
+        {
+          "@id": "#Dataset-8938"
+        },
+        {
+          "@id": "#Dataset-8939"
+        },
+        {
+          "@id": "#Dataset-8940"
+        },
+        {
+          "@id": "#Dataset-8941"
+        },
+        {
+          "@id": "#Dataset-8942"
+        },
+        {
+          "@id": "#Dataset-8943"
+        },
+        {
+          "@id": "#Dataset-8944"
+        },
+        {
+          "@id": "#Dataset-8945"
+        },
+        {
+          "@id": "#Dataset-8946"
+        },
+        {
+          "@id": "#Dataset-8947"
+        },
+        {
+          "@id": "#Dataset-8948"
+        },
+        {
+          "@id": "#Dataset-8949"
+        },
+        {
+          "@id": "#Dataset-8950"
+        },
+        {
+          "@id": "#Dataset-8951"
+        },
+        {
+          "@id": "#Dataset-8952"
+        },
+        {
+          "@id": "#Dataset-8953"
+        },
+        {
+          "@id": "#Dataset-8954"
+        },
+        {
+          "@id": "#Dataset-8955"
+        },
+        {
+          "@id": "#Dataset-8956"
+        },
+        {
+          "@id": "#Dataset-8957"
+        },
+        {
+          "@id": "#Dataset-8958"
+        },
+        {
+          "@id": "#Dataset-8959"
+        },
+        {
+          "@id": "#Dataset-8960"
+        },
+        {
+          "@id": "#Dataset-8961"
+        },
+        {
+          "@id": "#Dataset-8962"
+        },
+        {
+          "@id": "#Dataset-8963"
+        },
+        {
+          "@id": "#Dataset-8964"
+        },
+        {
+          "@id": "#Dataset-8965"
+        },
+        {
+          "@id": "#Dataset-8966"
+        },
+        {
+          "@id": "#Dataset-8967"
+        },
+        {
+          "@id": "#Dataset-8968"
+        },
+        {
+          "@id": "#Dataset-8969"
+        },
+        {
+          "@id": "#Dataset-8970"
+        },
+        {
+          "@id": "#Dataset-8971"
+        },
+        {
+          "@id": "#Dataset-8972"
+        },
+        {
+          "@id": "#Dataset-8973"
+        },
+        {
+          "@id": "#Dataset-8974"
+        },
+        {
+          "@id": "#Dataset-8975"
+        },
+        {
+          "@id": "#Dataset-8976"
+        },
+        {
+          "@id": "#Dataset-8977"
+        },
+        {
+          "@id": "#Dataset-8978"
+        },
+        {
+          "@id": "#Dataset-8979"
+        },
+        {
+          "@id": "#Dataset-8980"
+        },
+        {
+          "@id": "#Dataset-8981"
+        },
+        {
+          "@id": "#Dataset-8982"
+        },
+        {
+          "@id": "#Dataset-8983"
+        },
+        {
+          "@id": "#Dataset-8984"
+        },
+        {
+          "@id": "#Dataset-8985"
+        },
+        {
+          "@id": "#Dataset-8986"
+        },
+        {
+          "@id": "#Dataset-8987"
+        },
+        {
+          "@id": "#Dataset-8988"
+        },
+        {
+          "@id": "#Dataset-8989"
+        },
+        {
+          "@id": "#Dataset-8990"
+        },
+        {
+          "@id": "#Dataset-8991"
+        },
+        {
+          "@id": "#Dataset-8992"
+        },
+        {
+          "@id": "#Dataset-8993"
+        },
+        {
+          "@id": "#Dataset-8994"
+        },
+        {
+          "@id": "#Dataset-8995"
+        },
+        {
+          "@id": "#Dataset-8996"
+        },
+        {
+          "@id": "#Dataset-8997"
+        },
+        {
+          "@id": "#Dataset-8998"
+        },
+        {
+          "@id": "#Dataset-8999"
+        },
+        {
+          "@id": "#Dataset-9000"
+        },
+        {
+          "@id": "#Dataset-9001"
+        },
+        {
+          "@id": "#Dataset-9002"
+        },
+        {
+          "@id": "#Dataset-9003"
+        },
+        {
+          "@id": "#Dataset-9004"
+        },
+        {
+          "@id": "#Dataset-9005"
+        },
+        {
+          "@id": "#Dataset-9006"
+        },
+        {
+          "@id": "#Dataset-9007"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0065",
+      "doi": "https://doi.org/10.17867/10000131",
+      "pubmedId": "31740817",
+      "imagingMethodName": [
+        "phase contrast microscopy",
+        "wide-field epi-fluorescence microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1038/s41592-019-0629-y"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

@@ -156,6 +156,7 @@ def main() -> int:
         # leading slash).
         source_to_zip = {}
         by_basename = {}
+        composite = {}
         for _, target_dir, source, zarr_name, _ in rows:
             source_path = Path(source)
             if not zarr_name:
@@ -165,12 +166,31 @@ def main() -> int:
             key = source_path.as_posix().lstrip("/")
             source_to_zip[key] = (rel, zip_file)
             by_basename.setdefault(source_path.name, []).append(key)
+            # Composite key: IDR dataset names are often
+            # "<grandparent-dir>-<parent-dir>", e.g. path
+            # ".../TimEmbryos-102219/HybCycle_0/X.ome.zarr" maps to dataset
+            # "TimEmbryos-102219-HybCycle_0".
+            parts = key.split("/")
+            if len(parts) >= 3:
+                comp = f"{parts[-3]}-{parts[-2]}/{parts[-1]}"
+                composite.setdefault(comp, (rel, zip_file))
+
+        def truncate_at_zarr(fp: str) -> str:
+            norm = fp.lstrip("/")
+            if ".ome.zarr" in norm:
+                norm = norm[: norm.index(".ome.zarr") + len(".ome.zarr")]
+            return norm
 
         def find_match(fp: str):
-            """Match a file_path to a source path by suffix equality."""
-            norm = fp.lstrip("/")
+            """Match a file_path to a source path."""
+            norm = truncate_at_zarr(fp)
             if norm in source_to_zip:
                 return source_to_zip[norm]
+            parts = norm.split("/")
+            if len(parts) >= 3:
+                hit = composite.get(f"{parts[-3]}-{parts[-2]}/{parts[-1]}")
+                if hit:
+                    return hit
             for key in by_basename.get(Path(norm).name, []):
                 if norm.endswith(key) or key.endswith(norm):
                     return source_to_zip[key]
@@ -183,6 +203,7 @@ def main() -> int:
 
         kept = []
         unmatched = []
+        seen_rows = set()
         for row in file_rows:
             fp = row.get("file_path", "")
             if re.match(r"^[a-z][a-z0-9+.-]*://", fp, re.I):
@@ -197,6 +218,10 @@ def main() -> int:
             row["file_path"] = rel
             if zip_file.is_file():
                 row["size_in_bytes"] = str(zip_file.stat().st_size)
+            dedupe = (row["file_path"], row.get("dataset", ""))
+            if dedupe in seen_rows:
+                continue
+            seen_rows.add(dedupe)
             kept.append(row)
 
         if not any(r["file_path"].endswith(".zip") for r in kept) and file_rows:

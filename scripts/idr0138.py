@@ -83,6 +83,11 @@ def main() -> int:
     )
     parser.add_argument("--workers", type=int, default=14)
     parser.add_argument(
+        "--no-zip",
+        action="store_true",
+        help="Skip zipping; only update file_list.tsv",
+    )
+    parser.add_argument(
         "--file-list",
         help="file_list.tsv to update (default: <output_dir>/file_list.tsv)",
     )
@@ -110,18 +115,21 @@ def main() -> int:
             (lineno, target_dir, cols[1].strip(), zarr_name, out_root)
         )
 
-    print(f"Zipping {len(rows)} OME-Zarr store(s) to {out_root}/...")
-    failures = []
-    done = 0
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = [pool.submit(zip_row, row) for row in rows]
-        for future in as_completed(futures):
-            result = future.result()
-            done += 1
-            if done % 100 == 0:
-                print(f"  {done}/{len(rows)}")
-            if result:
-                failures.append(result)
+    if args.no_zip:
+        failures = []
+    else:
+        print(f"Zipping {len(rows)} OME-Zarr store(s) to {out_root}/...")
+        failures = []
+        done = 0
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            futures = [pool.submit(zip_row, row) for row in rows]
+            for future in as_completed(futures):
+                result = future.result()
+                done += 1
+                if done % 100 == 0:
+                    print(f"  {done}/{len(rows)}")
+                if result:
+                    failures.append(result)
 
     if failures:
         print(
@@ -135,21 +143,38 @@ def main() -> int:
             )
         return 1
 
-    print(f"Zipping completed successfully ({len(rows)}/{len(rows)}).")
+    if not args.no_zip:
+        print(f"Zipping completed successfully ({len(rows)}/{len(rows)}).")
 
     file_list = Path(args.file_list) if args.file_list else (
         Path(args.output_dir) / "file_list.tsv"
     )
     if file_list.is_file():
-        # Map source .ome.zarr path -> relative zip path under output_dir.
+        # Map source .ome.zarr path -> relative zip path under output_dir,
+        # indexed by basename for suffix matching (the paths in
+        # file_list.tsv may differ in leading components, e.g. a missing
+        # leading slash).
         source_to_zip = {}
+        by_basename = {}
         for _, target_dir, source, zarr_name, _ in rows:
             source_path = Path(source)
             if not zarr_name:
                 zarr_name = source_path.name
             rel = f"{component}/{target_dir}/{zarr_name}.zip"
             zip_file = Path(args.output_dir) / rel
-            source_to_zip[source_path.as_posix()] = (rel, zip_file)
+            key = source_path.as_posix().lstrip("/")
+            source_to_zip[key] = (rel, zip_file)
+            by_basename.setdefault(source_path.name, []).append(key)
+
+        def find_match(fp: str):
+            """Match a file_path to a source path by suffix equality."""
+            norm = fp.lstrip("/")
+            if norm in source_to_zip:
+                return source_to_zip[norm]
+            for key in by_basename.get(Path(norm).name, []):
+                if norm.endswith(key) or key.endswith(norm):
+                    return source_to_zip[key]
+            return None
 
         with file_list.open(newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f, delimiter="\t")
@@ -157,22 +182,34 @@ def main() -> int:
             file_rows = list(reader)
 
         kept = []
+        unmatched = []
         for row in file_rows:
             fp = row.get("file_path", "")
             if re.match(r"^[a-z][a-z0-9+.-]*://", fp, re.I):
                 kept.append(row)
                 continue
-            match = source_to_zip.get(fp) or source_to_zip.get(
-                "/" + fp.lstrip("/")
-            )
+            match = find_match(fp)
             if match is None:
                 # Local non-zarr rows (e.g. .log files) don't apply here.
+                unmatched.append(fp)
                 continue
             rel, zip_file = match
             row["file_path"] = rel
             if zip_file.is_file():
                 row["size_in_bytes"] = str(zip_file.stat().st_size)
             kept.append(row)
+
+        if not any(r["file_path"].endswith(".zip") for r in kept) and file_rows:
+            print(
+                "ERROR: no file_list.tsv rows matched any source path; "
+                "not writing changes.",
+                file=sys.stderr,
+            )
+            for fp in unmatched[:5]:
+                print(f"  unmatched: {fp}", file=sys.stderr)
+            for key in list(source_to_zip)[:5]:
+                print(f"  source:    /{key}", file=sys.stderr)
+            return 1
 
         shutil.copy2(file_list, file_list.with_suffix(".tsv.bak"))
         with file_list.open("w", newline="", encoding="utf-8") as f:

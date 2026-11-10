@@ -16,12 +16,20 @@ Each source ``.ome.zarr`` directory is zipped (stored, ``zip -0``) to
 The component (e.g. ``experimentA``) is derived from the input filename
 (``idr0138-experimentA-filePaths.tsv``) or set with ``--component``.
 
+After zipping, ``file_list.tsv`` (in <output_dir>, or ``--file-list``) is
+updated in place: rows whose ``file_path`` was a zipped source path are
+rewritten to the relative zip path and their ``size_in_bytes`` filled in;
+other non-URL rows (e.g. ``.log`` files) are dropped. URL rows are kept.
+A ``file_list.tsv.bak`` backup is written alongside.
+
 Usage:
     idr0138.py [--workers N] [--component experimentA] <input_file> [<output_dir>]
 """
 
 import argparse
+import csv
 import re
+import shutil
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -46,7 +54,7 @@ def zip_row(row):
     if zip_path.exists():
         return None
     result = subprocess.run(
-        ["zip", "-0", "-r", str(zip_path), source_path.name],
+        ["zip", "-1", "-r", str(zip_path), source_path.name],
         cwd=source_path.parent,
         capture_output=True,
         text=True,
@@ -74,6 +82,10 @@ def main() -> int:
         "the input filename)",
     )
     parser.add_argument("--workers", type=int, default=14)
+    parser.add_argument(
+        "--file-list",
+        help="file_list.tsv to update (default: <output_dir>/file_list.tsv)",
+    )
     args = parser.parse_args()
 
     input_file = Path(args.input_file)
@@ -124,6 +136,57 @@ def main() -> int:
         return 1
 
     print(f"Zipping completed successfully ({len(rows)}/{len(rows)}).")
+
+    file_list = Path(args.file_list) if args.file_list else (
+        Path(args.output_dir) / "file_list.tsv"
+    )
+    if file_list.is_file():
+        # Map source .ome.zarr path -> relative zip path under output_dir.
+        source_to_zip = {}
+        for _, target_dir, source, zarr_name, _ in rows:
+            source_path = Path(source)
+            if not zarr_name:
+                zarr_name = source_path.name
+            rel = f"{component}/{target_dir}/{zarr_name}.zip"
+            zip_file = Path(args.output_dir) / rel
+            source_to_zip[source_path.as_posix()] = (rel, zip_file)
+
+        with file_list.open(newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f, delimiter="\t")
+            fieldnames = reader.fieldnames
+            file_rows = list(reader)
+
+        kept = []
+        for row in file_rows:
+            fp = row.get("file_path", "")
+            if re.match(r"^[a-z][a-z0-9+.-]*://", fp, re.I):
+                kept.append(row)
+                continue
+            match = source_to_zip.get(fp) or source_to_zip.get(
+                "/" + fp.lstrip("/")
+            )
+            if match is None:
+                # Local non-zarr rows (e.g. .log files) don't apply here.
+                continue
+            rel, zip_file = match
+            row["file_path"] = rel
+            if zip_file.is_file():
+                row["size_in_bytes"] = str(zip_file.stat().st_size)
+            kept.append(row)
+
+        shutil.copy2(file_list, file_list.with_suffix(".tsv.bak"))
+        with file_list.open("w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(
+                f, fieldnames=fieldnames, delimiter="\t"
+            )
+            writer.writeheader()
+            writer.writerows(kept)
+        print(
+            f"Updated {file_list}: {len(kept)} rows kept "
+            f"(removed {len(file_rows) - len(kept)})."
+        )
+    else:
+        print(f"Note: no file_list.tsv at {file_list}; skipped update.")
     return 0
 
 

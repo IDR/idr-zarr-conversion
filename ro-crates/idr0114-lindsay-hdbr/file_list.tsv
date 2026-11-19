@@ -1,0 +1,1689 @@
+file_path	dataset	type	size_in_bytes
+experimentA/ALX4_10PCW/13168_6_ribs_10pcw_15_ALX4.ome.zarr.zip	#Dataset-15404	http://bia/Image	1058727395
+experimentA/ALX4_10PCW/13168_6_ribs_10pcw_15_ALX4.ome.zarr.log	#Dataset-15404	http://bia/File	543
+experimentA/ALX4_10PCW/13168_6_ribs_10pcw_16_ALX4.ome.zarr.zip	#Dataset-15404	http://bia/Image	1084976514
+experimentA/ALX4_10PCW/13168_6_ribs_10pcw_16_ALX4.ome.zarr.log	#Dataset-15404	http://bia/File	543
+experimentA/ALX4_9PCW/13159_6_ribs_9pcw_12_ALX4.ome.zarr.zip	#Dataset-15399	http://bia/Image	1883142120
+experimentA/ALX4_9PCW/13159_6_ribs_9pcw_12_ALX4.ome.zarr.log	#Dataset-15399	http://bia/File	540
+experimentA/ALX4_9PCW/13159_6_ribs_9pcw_15_ALX4.ome.zarr.zip	#Dataset-15399	http://bia/Image	1657801556
+experimentA/ALX4_9PCW/13159_6_ribs_9pcw_15_ALX4.ome.zarr.log	#Dataset-15399	http://bia/File	540
+experimentA/ALX4_CS14/Autotest_0000015733_ALX4.ome.zarr.zip	#Dataset-15379	http://bia/Image	570512594
+experimentA/ALX4_CS14/Autotest_0000015733_ALX4.ome.zarr.log	#Dataset-15379	http://bia/File	534
+experimentA/ALX4_CS14/N951_1_body_CS14_7_ALX4.ome.zarr.zip	#Dataset-15379	http://bia/Image	546647307
+experimentA/ALX4_CS14/N951_1_body_CS14_7_ALX4.ome.zarr.log	#Dataset-15379	http://bia/File	536
+experimentA/ALX4_CS16/1060_1_whole_CS16_41_ALX4.ome.zarr.zip	#Dataset-15336	http://bia/Image	627451995
+experimentA/ALX4_CS16/1060_1_whole_CS16_41_ALX4.ome.zarr.log	#Dataset-15336	http://bia/File	540
+experimentA/ALX4_CS16/1060_1_whole_CS16_42_ALX4.ome.zarr.zip	#Dataset-15336	http://bia/Image	524051548
+experimentA/ALX4_CS16/1060_1_whole_CS16_42_ALX4.ome.zarr.log	#Dataset-15336	http://bia/File	540
+experimentA/ALX4_CS18/11863_1_sag_CS18_20_ALX4.ome.zarr.zip	#Dataset-15364	http://bia/Image	1045207365
+experimentA/ALX4_CS18/11863_1_sag_CS18_20_ALX4.ome.zarr.log	#Dataset-15364	http://bia/File	538
+experimentA/ALX4_CS18/11863_1_sag_CS18_21_ALX4.ome.zarr.zip	#Dataset-15364	http://bia/Image	1031315680
+experimentA/ALX4_CS18/11863_1_sag_CS18_21_ALX4.ome.zarr.log	#Dataset-15364	http://bia/File	538
+experimentA/ALX4_CS21/Autotest_0000015734_ALX4.ome.zarr.zip	#Dataset-15418	http://bia/Image	867534695
+experimentA/ALX4_CS21/Autotest_0000015734_ALX4.ome.zarr.log	#Dataset-15418	http://bia/File	534
+experimentA/ALX4_CS21/Autotest_0000015735_ALX4.ome.zarr.zip	#Dataset-15418	http://bia/Image	920069005
+experimentA/ALX4_CS21/Autotest_0000015735_ALX4.ome.zarr.log	#Dataset-15418	http://bia/File	534
+experimentA/ALX4_CS22/11949_3_U torso_CS22_71_ALX4.ome.zarr.zip	#Dataset-15370	http://bia/Image	826348136
+experimentA/ALX4_CS22/11949_3_U torso_CS22_71_ALX4.ome.zarr.log	#Dataset-15370	http://bia/File	548
+experimentA/ALX4_CS22/11949_3_U torso_CS22_72_ALX4.ome.zarr.zip	#Dataset-15370	http://bia/Image	878502338
+experimentA/ALX4_CS22/11949_3_U torso_CS22_72_ALX4.ome.zarr.log	#Dataset-15370	http://bia/File	548
+experimentA/ALX4_CS23/1160_2_body_CS23_6_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	709153824
+experimentA/ALX4_CS23/1160_2_body_CS23_6_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	536
+experimentA/ALX4_CS23/1160_2_body_CS23_7_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	708423182
+experimentA/ALX4_CS23/1160_2_body_CS23_7_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	536
+experimentA/ALX4_CS23/11737_2_body_CS23_19_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	853916286
+experimentA/ALX4_CS23/11737_2_body_CS23_19_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	540
+experimentA/ALX4_CS23/11737_2_body_CS23_20_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1013688679
+experimentA/ALX4_CS23/11737_2_body_CS23_20_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	540
+experimentA/ALX4_CS23/12212_3_L Body_CS23_148_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1434926255
+experimentA/ALX4_CS23/12212_3_L Body_CS23_148_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	548
+experimentA/ALX4_CS23/12212_3_L Body_CS23_149_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1528459478
+experimentA/ALX4_CS23/12212_3_L Body_CS23_149_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	548
+experimentA/ALX4_CS23/12212_4_R body_CS23_76_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1529513712
+experimentA/ALX4_CS23/12212_4_R body_CS23_76_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	546
+experimentA/ALX4_CS23/12212_4_R body_CS23_77_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1829217077
+experimentA/ALX4_CS23/12212_4_R body_CS23_77_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	546
+experimentA/ALX4_CS23/12212_4_R body_CS23_78_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1785478621
+experimentA/ALX4_CS23/12212_4_R body_CS23_78_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	546
+experimentA/ALX4_CS23/12212_4_R body_CS23_79_ALX4.ome.zarr.zip	#Dataset-15356	http://bia/Image	1571584061
+experimentA/ALX4_CS23/12212_4_R body_CS23_79_ALX4.ome.zarr.log	#Dataset-15356	http://bia/File	546
+experimentA/ARL3_14PCW/12686_19_K_A_14pcw_35_arl3.ome.zarr.zip	#Dataset-15396	http://bia/Image	2683717137
+experimentA/ARL3_14PCW/12686_19_K_A_14pcw_35_arl3.ome.zarr.log	#Dataset-15396	http://bia/File	544
+experimentA/ARL3_14PCW/13002_23_Hindbrain_14pcw_26_arl3.ome.zarr.zip	#Dataset-15396	http://bia/Image	2371948605
+experimentA/ARL3_14PCW/13002_23_Hindbrain_14pcw_26_arl3.ome.zarr.log	#Dataset-15396	http://bia/File	555
+experimentA/ARL3_14PCW/13002_23_Hindbrain_14pcw_27_arl3.ome.zarr.zip	#Dataset-15396	http://bia/Image	2505797020
+experimentA/ARL3_14PCW/13002_23_Hindbrain_14pcw_27_arl3.ome.zarr.log	#Dataset-15396	http://bia/File	555
+experimentA/ARL3_18PCW/12130_12_K_A_18pcw_32_arl3.ome.zarr.zip	#Dataset-15342	http://bia/Image	3771932722
+experimentA/ARL3_18PCW/12130_12_K_A_18pcw_32_arl3.ome.zarr.log	#Dataset-15342	http://bia/File	544
+experimentA/ARL3_19PCW/12963_5_L HB_19pcw_10_arl3.ome.zarr.zip	#Dataset-15391	http://bia/Image	2034159853
+experimentA/ARL3_19PCW/12963_5_L HB_19pcw_10_arl3.ome.zarr.log	#Dataset-15391	http://bia/File	545
+experimentA/ARL3_CS23/11613_1_Embryo_CS23_171_arl3.ome.zarr.zip	#Dataset-15357	http://bia/Image	2227852793
+experimentA/ARL3_CS23/11613_1_Embryo_CS23_171_arl3.ome.zarr.log	#Dataset-15357	http://bia/File	546
+experimentA/ARL3_CS23/11613_1_Embryo_CS23_219_arl3.ome.zarr.zip	#Dataset-15357	http://bia/Image	2331121365
+experimentA/ARL3_CS23/11613_1_Embryo_CS23_219_arl3.ome.zarr.log	#Dataset-15357	http://bia/File	546
+experimentA/ASCL1_10PCW/13341_1_Brain_10pcw_143_ASCL1.ome.zarr.zip	#Dataset-15392	http://bia/Image	1267709764
+experimentA/ASCL1_10PCW/13341_1_Brain_10pcw_143_ASCL1.ome.zarr.log	#Dataset-15392	http://bia/File	550
+experimentA/ASCL1_10PCW/13341_1_Brain_10pcw_172_ASCL1.ome.zarr.zip	#Dataset-15392	http://bia/Image	855440380
+experimentA/ASCL1_10PCW/13341_1_Brain_10pcw_172_ASCL1.ome.zarr.log	#Dataset-15392	http://bia/File	550
+experimentA/ASCL1_12PCW/12968_12.sl3_FB_12PCW_53_ASLC1.ome.zarr.zip	#Dataset-15251	http://bia/Image	2301502799
+experimentA/ASCL1_12PCW/12968_12.sl3_FB_12PCW_53_ASLC1.ome.zarr.log	#Dataset-15251	http://bia/File	552
+experimentA/ASCL1_12PCW/12968_12.sl3_FB_12PCW_73_2018-05-15 09_28_50.ome.zarr.zip	#Dataset-15251	http://bia/Image	5562265090
+experimentA/ASCL1_12PCW/12968_12.sl3_FB_12PCW_73_2018-05-15 09_28_50.ome.zarr.log	#Dataset-15251	http://bia/File	556
+experimentA/ASCL1_CS19/1032_1_head_CS19_49_ASCL1.ome.zarr.zip	#Dataset-15252	http://bia/Image	638525119
+experimentA/ASCL1_CS19/1032_1_head_CS19_49_ASCL1.ome.zarr.log	#Dataset-15252	http://bia/File	541
+experimentA/ASCL1_CS19/1032_1_head_CS19_59_ASCL1.ome.zarr.zip	#Dataset-15252	http://bia/Image	390514495
+experimentA/ASCL1_CS19/1032_1_head_CS19_59_ASCL1.ome.zarr.log	#Dataset-15252	http://bia/File	541
+experimentA/ASCL1_CS19/1032_1_head_CS19_73_ASCL1.ome.zarr.zip	#Dataset-15252	http://bia/Image	346089109
+experimentA/ASCL1_CS19/1032_1_head_CS19_73_ASCL1.ome.zarr.log	#Dataset-15252	http://bia/File	541
+experimentA/ASCL1_CS19/1032_1_head_CS19_99_ASCl1.ome.zarr.zip	#Dataset-15252	http://bia/Image	796143667
+experimentA/ASCL1_CS19/1032_1_head_CS19_99_ASCl1.ome.zarr.log	#Dataset-15252	http://bia/File	541
+experimentA/ASCL1_CS19/3DView.ome.zarr.zip	#Dataset-15252	http://bia/Image	17771036
+experimentA/ASCL1_CS19/3DView.ome.zarr.log	#Dataset-15252	http://bia/File	626
+experimentA/ASCL1_CS19/ASCL1_CS19_3DView.ome.zarr.zip	#Dataset-15252	http://bia/Image	204719
+experimentA/ASCL1_CS19/ASCL1_CS19_3DView.ome.zarr.log	#Dataset-15252	http://bia/File	637
+experimentA/ASCL1_CS21/13436_1_embryo_CS21_151_ASCL1.ome.zarr.zip	#Dataset-15394	http://bia/Image	942815901
+experimentA/ASCL1_CS21/13436_1_embryo_CS21_151_ASCL1.ome.zarr.log	#Dataset-15394	http://bia/File	549
+experimentA/ASCL1_CS23/11613_1_Embryo_CS23_326_2018-05-16 11_03_41.ome.zarr.zip	#Dataset-15253	http://bia/Image	954875020
+experimentA/ASCL1_CS23/11613_1_Embryo_CS23_326_2018-05-16 11_03_41.ome.zarr.log	#Dataset-15253	http://bia/File	552
+experimentA/ASCL1_CS23/12602_1_head_CS23_72_ASCL1.ome.zarr.zip	#Dataset-15253	http://bia/Image	1069000488
+experimentA/ASCL1_CS23/12602_1_head_CS23_72_ASCL1.ome.zarr.log	#Dataset-15253	http://bia/File	543
+experimentA/ASCL1_CS23/12602_1_head_CS23_99_ASLC1.ome.zarr.zip	#Dataset-15253	http://bia/Image	921413062
+experimentA/ASCL1_CS23/12602_1_head_CS23_99_ASLC1.ome.zarr.log	#Dataset-15253	http://bia/File	543
+experimentA/ASCL1_CS23/3DView.ome.zarr.zip	#Dataset-15253	http://bia/Image	41283236
+experimentA/ASCL1_CS23/3DView.ome.zarr.log	#Dataset-15253	http://bia/File	626
+experimentA/ASCL1_CS23/ASCL1_CS23_3DView.ome.zarr.zip	#Dataset-15253	http://bia/Image	190211
+experimentA/ASCL1_CS23/ASCL1_CS23_3DView.ome.zarr.log	#Dataset-15253	http://bia/File	637
+experimentA/ATOH1_10PCW/12929_20_R.Head_10PCW_116_atoh1.ome.zarr.zip	#Dataset-15409	http://bia/Image	1984067027
+experimentA/ATOH1_10PCW/12929_20_R.Head_10PCW_116_atoh1.ome.zarr.log	#Dataset-15409	http://bia/File	554
+experimentA/ATOH1_14PCW/13002_23_Hindbrain_14pcw_15_atoh1.ome.zarr.zip	#Dataset-15378	http://bia/Image	2217734750
+experimentA/ATOH1_14PCW/13002_23_Hindbrain_14pcw_15_atoh1.ome.zarr.log	#Dataset-15378	http://bia/File	558
+experimentA/ATOH1_18PCW/13463_31_MBHB_18pcw_41_atoh1.ome.zarr.zip	#Dataset-15411	http://bia/Image	3380616476
+experimentA/ATOH1_18PCW/13463_31_MBHB_18pcw_41_atoh1.ome.zarr.log	#Dataset-15411	http://bia/File	548
+experimentA/ATOH1_8PCW/12932_1_head_L8pcw_52_atoh1.ome.zarr.zip	#Dataset-15390	http://bia/Image	921232740
+experimentA/ATOH1_8PCW/12932_1_head_L8pcw_52_atoh1.ome.zarr.log	#Dataset-15390	http://bia/File	545
+experimentA/ATOH1_CS20/11587_1_head_CS20_51_atoh1.ome.zarr.zip	#Dataset-15346	http://bia/Image	561030232
+experimentA/ATOH1_CS20/11587_1_head_CS20_51_atoh1.ome.zarr.log	#Dataset-15346	http://bia/File	543
+experimentA/AUTS2_12PCW/12998_4_12 PCW_MB_HB_114_auts2.ome.zarr.zip	#Dataset-15377	http://bia/Image	1381401059
+experimentA/AUTS2_12PCW/12998_4_12 PCW_MB_HB_114_auts2.ome.zarr.log	#Dataset-15377	http://bia/File	554
+experimentA/AUTS2_14PCW/12807_17_Hindbrain_14 PCW_232_auts2.ome.zarr.zip	#Dataset-15403	http://bia/Image	730060592
+experimentA/AUTS2_14PCW/12807_17_Hindbrain_14 PCW_232_auts2.ome.zarr.log	#Dataset-15403	http://bia/File	564
+experimentA/AUTS2_14PCW/13002_23_Hindbrain_14pcw_23_auts2.ome.zarr.zip	#Dataset-15403	http://bia/Image	4646777381
+experimentA/AUTS2_14PCW/13002_23_Hindbrain_14pcw_23_auts2.ome.zarr.log	#Dataset-15403	http://bia/File	558
+experimentA/AUTS2_18PCW/14730_35_HB_18PCW_29_auts2.ome.zarr.zip	#Dataset-15427	http://bia/Image	1163998317
+experimentA/AUTS2_18PCW/14730_35_HB_18PCW_29_auts2.ome.zarr.log	#Dataset-15427	http://bia/File	544
+experimentA/AUTS2_CS20/11587_1_head_CS20_54_auts2.ome.zarr.zip	#Dataset-15351	http://bia/Image	1454280469
+experimentA/AUTS2_CS20/11587_1_head_CS20_54_auts2.ome.zarr.log	#Dataset-15351	http://bia/File	543
+experimentA/BCL11A_12PCW/12998_4_12 PCW_MB_HB_114_bcl11a.ome.zarr.zip	#Dataset-15397	http://bia/Image	1266580684
+experimentA/BCL11A_12PCW/12998_4_12 PCW_MB_HB_114_bcl11a.ome.zarr.log	#Dataset-15397	http://bia/File	557
+experimentA/BCL11A_14PCW/12807_17_Hindbrain_14 PCW_232_bcl11a.ome.zarr.zip	#Dataset-15382	http://bia/Image	606023420
+experimentA/BCL11A_14PCW/12807_17_Hindbrain_14 PCW_232_bcl11a.ome.zarr.log	#Dataset-15382	http://bia/File	567
+experimentA/BCL11A_14PCW/13002_23_Hindbrain_14pcw_21_bcl11a.ome.zarr.zip	#Dataset-15382	http://bia/Image	2506092804
+experimentA/BCL11A_14PCW/13002_23_Hindbrain_14pcw_21_bcl11a.ome.zarr.log	#Dataset-15382	http://bia/File	561
+experimentA/BCL11A_18PCW/14730_35_HB_18PCW_37_bcl11a.ome.zarr.zip	#Dataset-15428	http://bia/Image	969727200
+experimentA/BCL11A_18PCW/14730_35_HB_18PCW_37_bcl11a.ome.zarr.log	#Dataset-15428	http://bia/File	547
+experimentA/BCL11A_8PCW/12932_1_head_L8pcw_51_bcl11a.ome.zarr.zip	#Dataset-15388	http://bia/Image	1116102027
+experimentA/BCL11A_8PCW/12932_1_head_L8pcw_51_bcl11a.ome.zarr.log	#Dataset-15388	http://bia/File	548
+experimentA/BCL11A_CS16/13714_3_HEAD _sag_CS16_47_bcl11a.ome.zarr.zip	#Dataset-15425	http://bia/Image	365397782
+experimentA/BCL11A_CS16/13714_3_HEAD _sag_CS16_47_bcl11a.ome.zarr.log	#Dataset-15425	http://bia/File	561
+experimentA/BCL11A_CS18/14542_3_Head_CS18_51_bcl11a.ome.zarr.zip	#Dataset-15426	http://bia/Image	511579459
+experimentA/BCL11A_CS18/14542_3_Head_CS18_51_bcl11a.ome.zarr.log	#Dataset-15426	http://bia/File	546
+experimentA/BCL11A_CS20/11587_1_head_CS20_53_bcl11a.ome.zarr.zip	#Dataset-15350	http://bia/Image	1425748787
+experimentA/BCL11A_CS20/11587_1_head_CS20_53_bcl11a.ome.zarr.log	#Dataset-15350	http://bia/File	546
+experimentA/BCL11B_10PCW/13136_5_Forebrain_10pcw_123_CTIP.ome.zarr.zip	#Dataset-15408	http://bia/Image	741155169
+experimentA/BCL11B_10PCW/13136_5_Forebrain_10pcw_123_CTIP.ome.zarr.log	#Dataset-15408	http://bia/File	557
+experimentA/BCL11B_12PCW/Autotest_0000019875_CTIP2.ome.zarr.zip	#Dataset-15419	http://bia/Image	4024092853
+experimentA/BCL11B_12PCW/Autotest_0000019875_CTIP2.ome.zarr.log	#Dataset-15419	http://bia/File	539
+experimentA/CALB1_10PCW/12721_4_fb_10pcw_94_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	2066508514
+experimentA/CALB1_10PCW/12721_4_fb_10pcw_94_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	542
+experimentA/CALB1_10PCW/13136_5_Forebrain_10pcw_147_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	1059793164
+experimentA/CALB1_10PCW/13136_5_Forebrain_10pcw_147_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	558
+experimentA/CALB1_10PCW/13136_5_Forebrain_10pcw_98_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	1146990557
+experimentA/CALB1_10PCW/13136_5_Forebrain_10pcw_98_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	556
+experimentA/CALB1_10PCW/13331_9_LFB_10PCW_65_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	1034131379
+experimentA/CALB1_10PCW/13331_9_LFB_10PCW_65_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	544
+experimentA/CALB1_10PCW/13341_1_Brain_10pcw_140_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	1282168916
+experimentA/CALB1_10PCW/13341_1_Brain_10pcw_140_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	550
+experimentA/CALB1_10PCW/13341_1_Brain_10pcw_168_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	1868347921
+experimentA/CALB1_10PCW/13341_1_Brain_10pcw_168_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	550
+experimentA/CALB1_10PCW/13341_1_Brain_10pcw_186_CALB1.ome.zarr.zip	#Dataset-15333	http://bia/Image	1610440710
+experimentA/CALB1_10PCW/13341_1_Brain_10pcw_186_CALB1.ome.zarr.log	#Dataset-15333	http://bia/File	550
+experimentA/CALB1_12PCW/11523_11_Brain SL3_12pcw_72_2017-05-26 17_55_39.ome.zarr.zip	#Dataset-15254	http://bia/Image	12260090596
+experimentA/CALB1_12PCW/11523_11_Brain SL3_12pcw_72_2017-05-26 17_55_39.ome.zarr.log	#Dataset-15254	http://bia/File	564
+experimentA/CALB1_12PCW/Autotest_0000019880_CALB1.ome.zarr.zip	#Dataset-15254	http://bia/Image	3169422785
+experimentA/CALB1_12PCW/Autotest_0000019880_CALB1.ome.zarr.log	#Dataset-15254	http://bia/File	538
+experimentA/CALB1_12PCW/Autotest_0000019881_CALB1.ome.zarr.zip	#Dataset-15254	http://bia/Image	3412584390
+experimentA/CALB1_12PCW/Autotest_0000019881_CALB1.ome.zarr.log	#Dataset-15254	http://bia/File	538
+experimentA/CALB1_CS19/1032_1_head_CS19_47_CALB1.ome.zarr.zip	#Dataset-15255	http://bia/Image	376027225
+experimentA/CALB1_CS19/1032_1_head_CS19_47_CALB1.ome.zarr.log	#Dataset-15255	http://bia/File	541
+experimentA/CALB1_CS19/12769_4_Head_CS19_102_CALB1.ome.zarr.zip	#Dataset-15255	http://bia/Image	653923222
+experimentA/CALB1_CS19/12769_4_Head_CS19_102_CALB1.ome.zarr.log	#Dataset-15255	http://bia/File	545
+experimentA/CALB1_CS19/12769_4_Head_CS19_108_CALB1.ome.zarr.zip	#Dataset-15255	http://bia/Image	544584611
+experimentA/CALB1_CS19/12769_4_Head_CS19_108_CALB1.ome.zarr.log	#Dataset-15255	http://bia/File	545
+experimentA/CALB1_CS19/12769_4_Head_CS19_115_CALB1.ome.zarr.zip	#Dataset-15255	http://bia/Image	516251066
+experimentA/CALB1_CS19/12769_4_Head_CS19_115_CALB1.ome.zarr.log	#Dataset-15255	http://bia/File	545
+experimentA/CALB1_CS19/3DView.ome.zarr.zip	#Dataset-15255	http://bia/Image	17785526
+experimentA/CALB1_CS19/3DView.ome.zarr.log	#Dataset-15255	http://bia/File	626
+experimentA/CALB1_CS19/CALB1_CS19_3DView.ome.zarr.zip	#Dataset-15255	http://bia/Image	203906
+experimentA/CALB1_CS19/CALB1_CS19_3DView.ome.zarr.log	#Dataset-15255	http://bia/File	637
+experimentA/CALB1_CS21/12128_1_head_CS21_107_CALB1.ome.zarr.zip	#Dataset-15337	http://bia/Image	578279440
+experimentA/CALB1_CS21/12128_1_head_CS21_107_CALB1.ome.zarr.log	#Dataset-15337	http://bia/File	545
+experimentA/CALB1_CS21/12128_1_head_CS21_116_CALB1.ome.zarr.zip	#Dataset-15337	http://bia/Image	735610736
+experimentA/CALB1_CS21/12128_1_head_CS21_116_CALB1.ome.zarr.log	#Dataset-15337	http://bia/File	545
+experimentA/CALB1_CS21/12128_1_head_CS21_129_CALB1.ome.zarr.zip	#Dataset-15337	http://bia/Image	488573577
+experimentA/CALB1_CS21/12128_1_head_CS21_129_CALB1.ome.zarr.log	#Dataset-15337	http://bia/File	545
+experimentA/CALB1_CS21/ImageCollection_0000011648_CALB1.ome.zarr.zip	#Dataset-15337	http://bia/Image	823744684
+experimentA/CALB1_CS21/ImageCollection_0000011648_CALB1.ome.zarr.log	#Dataset-15337	http://bia/File	551
+experimentA/CALB1_CS23/12204_1_Head_CS23_77_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	955872878
+experimentA/CALB1_CS23/12204_1_Head_CS23_77_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12204_1_Head_CS23_80_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	1193230192
+experimentA/CALB1_CS23/12204_1_Head_CS23_80_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12204_1_Head_CS23_92_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	1107500031
+experimentA/CALB1_CS23/12204_1_Head_CS23_92_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12506_5_R hemi_CS23_64_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	1414544158
+experimentA/CALB1_CS23/12506_5_R hemi_CS23_64_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	549
+experimentA/CALB1_CS23/12780_1_head_CS23_101_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	837650341
+experimentA/CALB1_CS23/12780_1_head_CS23_101_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	545
+experimentA/CALB1_CS23/12780_1_head_CS23_121_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	914109674
+experimentA/CALB1_CS23/12780_1_head_CS23_121_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	545
+experimentA/CALB1_CS23/12780_1_head_CS23_54_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	831674550
+experimentA/CALB1_CS23/12780_1_head_CS23_54_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12780_1_head_CS23_61_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	891527775
+experimentA/CALB1_CS23/12780_1_head_CS23_61_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12780_1_head_CS23_82_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	1340301366
+experimentA/CALB1_CS23/12780_1_head_CS23_82_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12780_1_head_CS23_84_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	1124783998
+experimentA/CALB1_CS23/12780_1_head_CS23_84_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB1_CS23/12780_1_head_CS23_89_CALB1.ome.zarr.zip	#Dataset-15360	http://bia/Image	858326223
+experimentA/CALB1_CS23/12780_1_head_CS23_89_CALB1.ome.zarr.log	#Dataset-15360	http://bia/File	543
+experimentA/CALB2_10PCW/12721_4_fb_10pcw_94_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	2063362093
+experimentA/CALB2_10PCW/12721_4_fb_10pcw_94_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	542
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_100_2017-11-23 15_09_03.ome.zarr.zip	#Dataset-15256	http://bia/Image	3178059802
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_100_2017-11-23 15_09_03.ome.zarr.log	#Dataset-15256	http://bia/File	562
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_109_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	1139336837
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_109_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	558
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_147_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	882148229
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_147_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	558
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_148_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	901939880
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_148_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	558
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_98_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	673030792
+experimentA/CALB2_10PCW/13136_5_Forebrain_10pcw_98_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	556
+experimentA/CALB2_10PCW/13331_9_LFB_10PCW_65_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	918877441
+experimentA/CALB2_10PCW/13331_9_LFB_10PCW_65_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	544
+experimentA/CALB2_10PCW/13341_1_Brain_10pcw_140_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	1169663800
+experimentA/CALB2_10PCW/13341_1_Brain_10pcw_140_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	550
+experimentA/CALB2_10PCW/13341_1_Brain_10pcw_168_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	1617093599
+experimentA/CALB2_10PCW/13341_1_Brain_10pcw_168_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	550
+experimentA/CALB2_10PCW/13341_1_Brain_10pcw_186_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	1620053649
+experimentA/CALB2_10PCW/13341_1_Brain_10pcw_186_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	550
+experimentA/CALB2_10PCW/Autotest_0000025809_CALB2.ome.zarr.zip	#Dataset-15256	http://bia/Image	3250264760
+experimentA/CALB2_10PCW/Autotest_0000025809_CALB2.ome.zarr.log	#Dataset-15256	http://bia/File	538
+experimentA/CALB2_12PCW/11761_11_Left Hemisphere_12pcw_17_2015-12-01 12_48_44.ome.zarr.zip	#Dataset-15257	http://bia/Image	5639364269
+experimentA/CALB2_12PCW/11761_11_Left Hemisphere_12pcw_17_2015-12-01 12_48_44.ome.zarr.log	#Dataset-15257	http://bia/File	576
+experimentA/CALB2_12PCW/12968_12.sl3_FB_12PCW_19_CALB2.ome.zarr.zip	#Dataset-15257	http://bia/Image	4513530117
+experimentA/CALB2_12PCW/12968_12.sl3_FB_12PCW_19_CALB2.ome.zarr.log	#Dataset-15257	http://bia/File	552
+experimentA/CALB2_12PCW/12968_12.sl3_FB_12PCW_50_CALB2.ome.zarr.zip	#Dataset-15257	http://bia/Image	2583890444
+experimentA/CALB2_12PCW/12968_12.sl3_FB_12PCW_50_CALB2.ome.zarr.log	#Dataset-15257	http://bia/File	552
+experimentA/CALB2_CS19/1032_1_head_CS19_47_CALB2.ome.zarr.zip	#Dataset-15258	http://bia/Image	427879341
+experimentA/CALB2_CS19/1032_1_head_CS19_47_CALB2.ome.zarr.log	#Dataset-15258	http://bia/File	541
+experimentA/CALB2_CS19/1032_1_head_CS19_61_CALB2.ome.zarr.zip	#Dataset-15258	http://bia/Image	529856026
+experimentA/CALB2_CS19/1032_1_head_CS19_61_CALB2.ome.zarr.log	#Dataset-15258	http://bia/File	541
+experimentA/CALB2_CS19/12769_4_Head_CS19_102_CALB2.ome.zarr.zip	#Dataset-15258	http://bia/Image	619979251
+experimentA/CALB2_CS19/12769_4_Head_CS19_102_CALB2.ome.zarr.log	#Dataset-15258	http://bia/File	545
+experimentA/CALB2_CS19/12769_4_Head_CS19_113_CALB2.ome.zarr.zip	#Dataset-15258	http://bia/Image	442727882
+experimentA/CALB2_CS19/12769_4_Head_CS19_113_CALB2.ome.zarr.log	#Dataset-15258	http://bia/File	545
+experimentA/CALB2_CS19/3DView.ome.zarr.zip	#Dataset-15258	http://bia/Image	17767739
+experimentA/CALB2_CS19/3DView.ome.zarr.log	#Dataset-15258	http://bia/File	626
+experimentA/CALB2_CS19/CALB2_CS19_3DView.ome.zarr.zip	#Dataset-15258	http://bia/Image	203606
+experimentA/CALB2_CS19/CALB2_CS19_3DView.ome.zarr.log	#Dataset-15258	http://bia/File	637
+experimentA/CALB2_CS21/12128_1_head_CS21_129_CALB2.ome.zarr.zip	#Dataset-15381	http://bia/Image	502144084
+experimentA/CALB2_CS21/12128_1_head_CS21_129_CALB2.ome.zarr.log	#Dataset-15381	http://bia/File	545
+experimentA/CALB2_CS23/12204_1_Head_CS23_77_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	951003560
+experimentA/CALB2_CS23/12204_1_Head_CS23_77_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CALB2_CS23/12204_1_Head_CS23_80_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	944837105
+experimentA/CALB2_CS23/12204_1_Head_CS23_80_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CALB2_CS23/12204_1_Head_CS23_91_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	840054261
+experimentA/CALB2_CS23/12204_1_Head_CS23_91_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CALB2_CS23/12506_5_R hemi_CS23_55_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	1688090463
+experimentA/CALB2_CS23/12506_5_R hemi_CS23_55_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	549
+experimentA/CALB2_CS23/12506_5_R hemi_CS23_64_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	1053263463
+experimentA/CALB2_CS23/12506_5_R hemi_CS23_64_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	549
+experimentA/CALB2_CS23/12780_1_head_CS23_54_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	714478822
+experimentA/CALB2_CS23/12780_1_head_CS23_54_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CALB2_CS23/12780_1_head_CS23_61_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	749451233
+experimentA/CALB2_CS23/12780_1_head_CS23_61_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CALB2_CS23/12780_1_head_CS23_82_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	1206659974
+experimentA/CALB2_CS23/12780_1_head_CS23_82_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CALB2_CS23/12780_1_head_CS23_92_CALB2.ome.zarr.zip	#Dataset-15352	http://bia/Image	969730622
+experimentA/CALB2_CS23/12780_1_head_CS23_92_CALB2.ome.zarr.log	#Dataset-15352	http://bia/File	543
+experimentA/CDC42BPB_10PCW/12929_20_R.Head_10PCW_102_CDC42BPB.ome.zarr.zip	#Dataset-15384	http://bia/Image	2274734162
+experimentA/CDC42BPB_10PCW/12929_20_R.Head_10PCW_102_CDC42BPB.ome.zarr.log	#Dataset-15384	http://bia/File	563
+experimentA/CDC42BPB_10PCW/12929_20_R.Head_10PCW_105_CDC42BPB.ome.zarr.zip	#Dataset-15384	http://bia/Image	2691837027
+experimentA/CDC42BPB_10PCW/12929_20_R.Head_10PCW_105_CDC42BPB.ome.zarr.log	#Dataset-15384	http://bia/File	563
+experimentA/CDC42BPB_10PCW/12929_20_R.Head_10PCW_95_CDC42BPB.ome.zarr.zip	#Dataset-15384	http://bia/Image	2313458363
+experimentA/CDC42BPB_10PCW/12929_20_R.Head_10PCW_95_CDC42BPB.ome.zarr.log	#Dataset-15384	http://bia/File	561
+experimentA/CDC42BPB_13PCW/13987_32_heart_13pcw_48_CDC42BPB.ome.zarr.zip	#Dataset-15417	http://bia/Image	773378223
+experimentA/CDC42BPB_13PCW/13987_32_heart_13pcw_48_CDC42BPB.ome.zarr.log	#Dataset-15417	http://bia/File	559
+experimentA/CDC42BPB_CS15/11847_1_embryo_CS15_150_CDC42BPB.ome.zarr.zip	#Dataset-15362	http://bia/Image	182701110
+experimentA/CDC42BPB_CS15/11847_1_embryo_CS15_150_CDC42BPB.ome.zarr.log	#Dataset-15362	http://bia/File	558
+experimentA/CDC42BPB_CS17/11911_3_Head_CS17_105_CDC42BPB.ome.zarr.zip	#Dataset-15368	http://bia/Image	308389900
+experimentA/CDC42BPB_CS17/11911_3_Head_CS17_105_CDC42BPB.ome.zarr.log	#Dataset-15368	http://bia/File	554
+experimentA/CDC42BPB_CS19/12769_3_body_CS19_15_CDC42BPB.ome.zarr.zip	#Dataset-15400	http://bia/Image	145359129
+experimentA/CDC42BPB_CS19/12769_3_body_CS19_15_CDC42BPB.ome.zarr.log	#Dataset-15400	http://bia/File	552
+experimentA/CDC42BPB_CS19/12769_3_body_CS19_57_CDC42BPB.ome.zarr.zip	#Dataset-15400	http://bia/Image	532275898
+experimentA/CDC42BPB_CS19/12769_3_body_CS19_57_CDC42BPB.ome.zarr.log	#Dataset-15400	http://bia/File	552
+experimentA/CDC42BPB_CS23/11613_1_Embryo_CS23_235_2018-07-20 12_55_06.ome.zarr.zip	#Dataset-15259	http://bia/Image	2854612624
+experimentA/CDC42BPB_CS23/11613_1_Embryo_CS23_235_2018-07-20 12_55_06.ome.zarr.log	#Dataset-15259	http://bia/File	558
+experimentA/CEP120_14PCW/12686_19_K_A_14pcw_32_cep120.ome.zarr.zip	#Dataset-15375	http://bia/Image	2508157725
+experimentA/CEP120_14PCW/12686_19_K_A_14pcw_32_cep120.ome.zarr.log	#Dataset-15375	http://bia/File	550
+experimentA/CEP120_14PCW/12686_19_K_A_14pcw_35_cep120.ome.zarr.zip	#Dataset-15375	http://bia/Image	2872111335
+experimentA/CEP120_14PCW/12686_19_K_A_14pcw_35_cep120.ome.zarr.log	#Dataset-15375	http://bia/File	550
+experimentA/CEP120_14PCW/13002_23_Hindbrain_14pcw_28_cep120.ome.zarr.zip	#Dataset-15375	http://bia/Image	2235289126
+experimentA/CEP120_14PCW/13002_23_Hindbrain_14pcw_28_cep120.ome.zarr.log	#Dataset-15375	http://bia/File	561
+experimentA/CEP120_17PCW/ImageCollection_0000000599_cep120.ome.zarr.zip	#Dataset-15420	http://bia/Image	838090910
+experimentA/CEP120_17PCW/ImageCollection_0000000599_cep120.ome.zarr.log	#Dataset-15420	http://bia/File	555
+experimentA/CEP120_18PCW/12130_12_K_A_18pcw_32_cep120.ome.zarr.zip	#Dataset-15343	http://bia/Image	3914680770
+experimentA/CEP120_18PCW/12130_12_K_A_18pcw_32_cep120.ome.zarr.log	#Dataset-15343	http://bia/File	532
+experimentA/CEP120_19PCW/12963_5_L HB_19pcw_12_cep120.ome.zarr.zip	#Dataset-15393	http://bia/Image	1931218446
+experimentA/CEP120_19PCW/12963_5_L HB_19pcw_12_cep120.ome.zarr.log	#Dataset-15393	http://bia/File	551
+experimentA/CEP120_CS23/11613_1_Embryo_CS23_172_cep120.ome.zarr.zip	#Dataset-15358	http://bia/Image	2046332014
+experimentA/CEP120_CS23/11613_1_Embryo_CS23_172_cep120.ome.zarr.log	#Dataset-15358	http://bia/File	552
+experimentA/CEP120_CS23/11613_1_Embryo_CS23_220_cep120.ome.zarr.zip	#Dataset-15358	http://bia/Image	2439235030
+experimentA/CEP120_CS23/11613_1_Embryo_CS23_220_cep120.ome.zarr.log	#Dataset-15358	http://bia/File	552
+experimentA/CEP164_11PCW/13434_21_HB_11pcw_20_cep164.ome.zarr.zip	#Dataset-15422	http://bia/Image	601163177
+experimentA/CEP164_11PCW/13434_21_HB_11pcw_20_cep164.ome.zarr.log	#Dataset-15422	http://bia/File	547
+experimentA/CEP164_14PCW/12686_19_K_A_14pcw_29_cep164.ome.zarr.zip	#Dataset-15330	http://bia/Image	6086334818
+experimentA/CEP164_14PCW/12686_19_K_A_14pcw_29_cep164.ome.zarr.log	#Dataset-15330	http://bia/File	550
+experimentA/CEP164_14PCW/12686_19_kidney_14pcw_11_cep164.ome.zarr.zip	#Dataset-15330	http://bia/Image	2146617514
+experimentA/CEP164_14PCW/12686_19_kidney_14pcw_11_cep164.ome.zarr.log	#Dataset-15330	http://bia/File	555
+experimentA/CEP164_14PCW/14189_11_Kidney_14pcw_36_cep164.ome.zarr.zip	#Dataset-15330	http://bia/Image	1460410671
+experimentA/CEP164_14PCW/14189_11_Kidney_14pcw_36_cep164.ome.zarr.log	#Dataset-15330	http://bia/File	555
+experimentA/CEP164_14PCW/N1996_ K_A_14pcw_42_cep164.ome.zarr.zip	#Dataset-15330	http://bia/Image	5169349807
+experimentA/CEP164_14PCW/N1996_ K_A_14pcw_42_cep164.ome.zarr.log	#Dataset-15330	http://bia/File	546
+experimentA/CEP164_15PCW/11977_18_kidney_15pcw_24_cep164.ome.zarr.zip	#Dataset-15373	http://bia/Image	1679759400
+experimentA/CEP164_15PCW/11977_18_kidney_15pcw_24_cep164.ome.zarr.log	#Dataset-15373	http://bia/File	555
+experimentA/CEP164_17PCW/12026_13_K_A_17pcw_45_cep164.ome.zarr.zip	#Dataset-15327	http://bia/Image	6743122735
+experimentA/CEP164_17PCW/12026_13_K_A_17pcw_45_cep164.ome.zarr.log	#Dataset-15327	http://bia/File	550
+experimentA/CEP164_17PCW/12026_13_Kidney_17pcw_138_cep164.ome.zarr.zip	#Dataset-15327	http://bia/Image	1814572275
+experimentA/CEP164_17PCW/12026_13_Kidney_17pcw_138_cep164.ome.zarr.log	#Dataset-15327	http://bia/File	557
+experimentA/CEP164_17PCW/12026_16_Eye_17pcw_96_cep164.ome.zarr.zip	#Dataset-15327	http://bia/Image	7268392755
+experimentA/CEP164_17PCW/12026_16_Eye_17pcw_96_cep164.ome.zarr.log	#Dataset-15327	http://bia/File	549
+experimentA/CEP164_18PCW/12130_12_K_A_18pcw_27_cep164.ome.zarr.zip	#Dataset-15341	http://bia/Image	4634239014
+experimentA/CEP164_18PCW/12130_12_K_A_18pcw_27_cep164.ome.zarr.log	#Dataset-15341	http://bia/File	532
+experimentA/CEP164_19PCW/12963_10_K_bl_gon_19pcw_89_cep164.ome.zarr.zip	#Dataset-15366	http://bia/Image	5705511183
+experimentA/CEP164_19PCW/12963_10_K_bl_gon_19pcw_89_cep164.ome.zarr.log	#Dataset-15366	http://bia/File	561
+experimentA/CEP164_19PCW/12963_5_L HB_19pcw_16_cep164.ome.zarr.zip	#Dataset-15366	http://bia/Image	6398908039
+experimentA/CEP164_19PCW/12963_5_L HB_19pcw_16_cep164.ome.zarr.log	#Dataset-15366	http://bia/File	551
+experimentA/CEP164_8PCW/13368_1_Kidney_L8pcw_10_cep164.ome.zarr.zip	#Dataset-15421	http://bia/Image	581911039
+experimentA/CEP164_8PCW/13368_1_Kidney_L8pcw_10_cep164.ome.zarr.log	#Dataset-15421	http://bia/File	552
+experimentA/CEP164_9PCW/11845_K_A_9pcw_12_cep164.ome.zarr.zip	#Dataset-15361	http://bia/Image	2143408236
+experimentA/CEP164_9PCW/11845_K_A_9pcw_12_cep164.ome.zarr.log	#Dataset-15361	http://bia/File	539
+experimentA/CEP164_CS23/11599_1_Eye_CS23_21_cep164.ome.zarr.zip	#Dataset-15354	http://bia/Image	1868656057
+experimentA/CEP164_CS23/11599_1_Eye_CS23_21_cep164.ome.zarr.log	#Dataset-15354	http://bia/File	544
+experimentA/CEP164_CS23/1160_2_body_CS23_41_cep164.ome.zarr.zip	#Dataset-15354	http://bia/Image	1639448585
+experimentA/CEP164_CS23/1160_2_body_CS23_41_cep164.ome.zarr.log	#Dataset-15354	http://bia/File	544
+experimentA/CEP164_CS23/11613_1_Embryo_CS23_234_cep164.ome.zarr.zip	#Dataset-15354	http://bia/Image	2253794212
+experimentA/CEP164_CS23/11613_1_Embryo_CS23_234_cep164.ome.zarr.log	#Dataset-15354	http://bia/File	552
+experimentA/CHRNA4_CS23/12204_1_Head_CS23_81_CHRNA4.ome.zarr.zip	#Dataset-15355	http://bia/Image	891779409
+experimentA/CHRNA4_CS23/12204_1_Head_CS23_81_CHRNA4.ome.zarr.log	#Dataset-15355	http://bia/File	546
+experimentA/CHRNA4_CS23/12602_1_head_CS23_114_CHRNA4.ome.zarr.zip	#Dataset-15355	http://bia/Image	952654369
+experimentA/CHRNA4_CS23/12602_1_head_CS23_114_CHRNA4.ome.zarr.log	#Dataset-15355	http://bia/File	548
+experimentA/CHRNA4_CS23/12602_1_head_CS23_122_CHRNA4.ome.zarr.zip	#Dataset-15355	http://bia/Image	1377124220
+experimentA/CHRNA4_CS23/12602_1_head_CS23_122_CHRNA4.ome.zarr.log	#Dataset-15355	http://bia/File	548
+experimentA/CHRNA4_CS23/ImageCollection_0000000075_CHRNA4.ome.zarr.zip	#Dataset-15355	http://bia/Image	1281601242
+experimentA/CHRNA4_CS23/ImageCollection_0000000075_CHRNA4.ome.zarr.log	#Dataset-15355	http://bia/File	554
+experimentA/CHRNB2_CS23/12204_1_Head_CS23_74_CHRNB2.ome.zarr.zip	#Dataset-15349	http://bia/Image	1011990467
+experimentA/CHRNB2_CS23/12204_1_Head_CS23_74_CHRNB2.ome.zarr.log	#Dataset-15349	http://bia/File	546
+experimentA/CHRNB2_CS23/12602_1_head_CS23_114_CHRNB2.ome.zarr.zip	#Dataset-15349	http://bia/Image	1338664156
+experimentA/CHRNB2_CS23/12602_1_head_CS23_114_CHRNB2.ome.zarr.log	#Dataset-15349	http://bia/File	548
+experimentA/CHRNB2_CS23/12602_1_head_CS23_122_CHRNB2.ome.zarr.zip	#Dataset-15349	http://bia/Image	1415461521
+experimentA/CHRNB2_CS23/12602_1_head_CS23_122_CHRNB2.ome.zarr.log	#Dataset-15349	http://bia/File	548
+experimentA/CHRNB2_CS23/ImageCollection_0000000075_CHRNB2.ome.zarr.zip	#Dataset-15349	http://bia/Image	1308433037
+experimentA/CHRNB2_CS23/ImageCollection_0000000075_CHRNB2.ome.zarr.log	#Dataset-15349	http://bia/File	554
+experimentA/CRYAA_MIP_12PCW/hEyeF412wk_lens_CRYAAgAQPOrHoe_20xApo_030812_c1_c2_c3.ome.zarr.zip	#Dataset-15260	http://bia/Image	3961978
+experimentA/CRYAA_MIP_12PCW/hEyeF412wk_lens_CRYAAgAQPOrHoe_20xApo_030812_c1_c2_c3.ome.zarr.log	#Dataset-15260	http://bia/File	580
+experimentA/CRYAA_MIP_12PCW/hEyeF412wk_lens_CRYAAgAQPOrHoe_40xApo1_030812_c1_c2_c3.ome.zarr.zip	#Dataset-15260	http://bia/Image	3789965
+experimentA/CRYAA_MIP_12PCW/hEyeF412wk_lens_CRYAAgAQPOrHoe_40xApo1_030812_c1_c2_c3.ome.zarr.log	#Dataset-15260	http://bia/File	582
+experimentA/CRYAA_SOX1_CS18/CS18_s37_N12612_HoeCRYAAgSOX1rPh_20x1_090216_c1_c2_c3.ome.zarr.zip	#Dataset-15261	http://bia/Image	3043999
+experimentA/CRYAA_SOX1_CS18/CS18_s37_N12612_HoeCRYAAgSOX1rPh_20x1_090216_c1_c2_c3.ome.zarr.log	#Dataset-15261	http://bia/File	580
+experimentA/CRYAA_SOX1_CS18/CS18_s37_N12612_HoeCRYAAgSOX1rPh_40x1_090216_c1_c2_c3.ome.zarr.zip	#Dataset-15261	http://bia/Image	4545748
+experimentA/CRYAA_SOX1_CS18/CS18_s37_N12612_HoeCRYAAgSOX1rPh_40x1_090216_c1_c2_c3.ome.zarr.log	#Dataset-15261	http://bia/File	580
+experimentA/CRYAB_BFSP1_12PCW/hEyeF412wk_lens_CRYABgBFSP1rHoe_20xApo_030812_c1_c2_c3.ome.zarr.zip	#Dataset-15262	http://bia/Image	4151948
+experimentA/CRYAB_BFSP1_12PCW/hEyeF412wk_lens_CRYABgBFSP1rHoe_20xApo_030812_c1_c2_c3.ome.zarr.log	#Dataset-15262	http://bia/File	586
+experimentA/CRYAB_BFSP1_12PCW/hEyeF412wk_lens_CRYABgBFSP1rHoe_40xApo_030812_c1_c2_c3.ome.zarr.zip	#Dataset-15262	http://bia/Image	4663802
+experimentA/CRYAB_BFSP1_12PCW/hEyeF412wk_lens_CRYABgBFSP1rHoe_40xApo_030812_c1_c2_c3.ome.zarr.log	#Dataset-15262	http://bia/File	586
+experimentA/CRYAB_IGF1R_CS18/CS18_s36_N12612_HoeCRYABgIGF1RrPh_10x1_090216_c1_c2_c3.ome.zarr.zip	#Dataset-15263	http://bia/Image	3194669
+experimentA/CRYAB_IGF1R_CS18/CS18_s36_N12612_HoeCRYABgIGF1RrPh_10x1_090216_c1_c2_c3.ome.zarr.log	#Dataset-15263	http://bia/File	584
+experimentA/CRYAB_IGF1R_CS18/CS18_s36_N12612_HoeCRYABgIGF1RrPh_20x1_090216_c1_c2_c3.ome.zarr.zip	#Dataset-15263	http://bia/Image	3721429
+experimentA/CRYAB_IGF1R_CS18/CS18_s36_N12612_HoeCRYABgIGF1RrPh_20x1_090216_c1_c2_c3.ome.zarr.log	#Dataset-15263	http://bia/File	584
+experimentA/DLX2_10PCW/13331_9_LFB_10PCW_52_2017-11-23 14_52_33.ome.zarr.zip	#Dataset-15264	http://bia/Image	2600771424
+experimentA/DLX2_10PCW/13331_9_LFB_10PCW_52_2017-11-23 14_52_33.ome.zarr.log	#Dataset-15264	http://bia/File	546
+experimentA/DLX2_10PCW/13341_1_Brain_10pcw_143_DLX2.ome.zarr.zip	#Dataset-15264	http://bia/Image	1356835432
+experimentA/DLX2_10PCW/13341_1_Brain_10pcw_143_DLX2.ome.zarr.log	#Dataset-15264	http://bia/File	547
+experimentA/DLX2_10PCW/13341_1_Brain_10pcw_172_DLX2.ome.zarr.zip	#Dataset-15264	http://bia/Image	1969675218
+experimentA/DLX2_10PCW/13341_1_Brain_10pcw_172_DLX2.ome.zarr.log	#Dataset-15264	http://bia/File	547
+experimentA/DLX2_12PCW/12968_12.sl3_FB_12PCW_53_DLX2.ome.zarr.zip	#Dataset-15376	http://bia/Image	2627399720
+experimentA/DLX2_12PCW/12968_12.sl3_FB_12PCW_53_DLX2.ome.zarr.log	#Dataset-15376	http://bia/File	549
+experimentA/DLX2_12PCW/12968_12.sl3_FB_12PCW_92_DLX2.ome.zarr.zip	#Dataset-15376	http://bia/Image	2330644091
+experimentA/DLX2_12PCW/12968_12.sl3_FB_12PCW_92_DLX2.ome.zarr.log	#Dataset-15376	http://bia/File	549
+experimentA/DLX2_CS19/1032_1_head_CS19_49_DLX2.ome.zarr.zip	#Dataset-15265	http://bia/Image	731016016
+experimentA/DLX2_CS19/1032_1_head_CS19_49_DLX2.ome.zarr.log	#Dataset-15265	http://bia/File	538
+experimentA/DLX2_CS19/1032_1_head_CS19_59_DLX2.ome.zarr.zip	#Dataset-15265	http://bia/Image	683033916
+experimentA/DLX2_CS19/1032_1_head_CS19_59_DLX2.ome.zarr.log	#Dataset-15265	http://bia/File	538
+experimentA/DLX2_CS19/1032_1_head_CS19_73_DLX2.ome.zarr.zip	#Dataset-15265	http://bia/Image	604819966
+experimentA/DLX2_CS19/1032_1_head_CS19_73_DLX2.ome.zarr.log	#Dataset-15265	http://bia/File	538
+experimentA/DLX2_CS19/1032_1_head_CS19_86_DLX2.ome.zarr.zip	#Dataset-15265	http://bia/Image	611279378
+experimentA/DLX2_CS19/1032_1_head_CS19_86_DLX2.ome.zarr.log	#Dataset-15265	http://bia/File	538
+experimentA/DLX2_CS19/1032_1_head_CS19_99_DLX2.ome.zarr.zip	#Dataset-15265	http://bia/Image	1174823779
+experimentA/DLX2_CS19/1032_1_head_CS19_99_DLX2.ome.zarr.log	#Dataset-15265	http://bia/File	538
+experimentA/DLX2_CS19/3DView.ome.zarr.zip	#Dataset-15265	http://bia/Image	17830859
+experimentA/DLX2_CS19/3DView.ome.zarr.log	#Dataset-15265	http://bia/File	624
+experimentA/DLX2_CS19/DLX2_CS19_3DView.ome.zarr.zip	#Dataset-15265	http://bia/Image	206903
+experimentA/DLX2_CS19/DLX2_CS19_3DView.ome.zarr.log	#Dataset-15265	http://bia/File	634
+experimentA/DLX2_CS21/12128_1_head_CS21_114_DLX2.ome.zarr.zip	#Dataset-15380	http://bia/Image	1737296904
+experimentA/DLX2_CS21/12128_1_head_CS21_114_DLX2.ome.zarr.log	#Dataset-15380	http://bia/File	542
+experimentA/DLX2_CS21/13436_1_embryo_CS21_144_DLX2.ome.zarr.zip	#Dataset-15380	http://bia/Image	777127913
+experimentA/DLX2_CS21/13436_1_embryo_CS21_144_DLX2.ome.zarr.log	#Dataset-15380	http://bia/File	546
+experimentA/DLX2_CS23/11613_1_Embryo_CS23_325_2018-05-14 15_13_50.ome.zarr.zip	#Dataset-15266	http://bia/Image	1667047920
+experimentA/DLX2_CS23/11613_1_Embryo_CS23_325_2018-05-14 15_13_50.ome.zarr.log	#Dataset-15266	http://bia/File	550
+experimentA/DLX2_CS23/12204_1_Head_CS23_83_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	1114124804
+experimentA/DLX2_CS23/12204_1_Head_CS23_83_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12204_1_Head_CS23_94_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	646774503
+experimentA/DLX2_CS23/12204_1_Head_CS23_94_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12602_1_head_CS23_72_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	1040173019
+experimentA/DLX2_CS23/12602_1_head_CS23_72_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12602_1_head_CS23_99_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	1330900325
+experimentA/DLX2_CS23/12602_1_head_CS23_99_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12780_1_head_CS23_101_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	692877682
+experimentA/DLX2_CS23/12780_1_head_CS23_101_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	542
+experimentA/DLX2_CS23/12780_1_head_CS23_43_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	552571525
+experimentA/DLX2_CS23/12780_1_head_CS23_43_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12780_1_head_CS23_66_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	802910342
+experimentA/DLX2_CS23/12780_1_head_CS23_66_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12780_1_head_CS23_76_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	898221766
+experimentA/DLX2_CS23/12780_1_head_CS23_76_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12780_1_head_CS23_77_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	2658733824
+experimentA/DLX2_CS23/12780_1_head_CS23_77_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/12780_1_head_CS23_90_DLX2.ome.zarr.zip	#Dataset-15266	http://bia/Image	737770893
+experimentA/DLX2_CS23/12780_1_head_CS23_90_DLX2.ome.zarr.log	#Dataset-15266	http://bia/File	540
+experimentA/DLX2_CS23/3DView.ome.zarr.zip	#Dataset-15266	http://bia/Image	41355722
+experimentA/DLX2_CS23/3DView.ome.zarr.log	#Dataset-15266	http://bia/File	624
+experimentA/DLX2_CS23/DLX2_CS23_3DView.ome.zarr.zip	#Dataset-15266	http://bia/Image	191143
+experimentA/DLX2_CS23/DLX2_CS23_3DView.ome.zarr.log	#Dataset-15266	http://bia/File	634
+experimentA/EPHA7_10PCW/1702_3_Brain Slice 2_10pcw_38_2015-12-15 14_32_10.ome.zarr.zip	#Dataset-15267	http://bia/Image	6256269404
+experimentA/EPHA7_10PCW/1702_3_Brain Slice 2_10pcw_38_2015-12-15 14_32_10.ome.zarr.log	#Dataset-15267	http://bia/File	570
+experimentA/EPHA7_10PCW/1702_3_Brain Slice 2_10pcw_71_2015-12-15 12_14_17.ome.zarr.zip	#Dataset-15267	http://bia/Image	7161011780
+experimentA/EPHA7_10PCW/1702_3_Brain Slice 2_10pcw_71_2015-12-15 12_14_17.ome.zarr.log	#Dataset-15267	http://bia/File	570
+experimentA/EPHA7_12PCW/11795_11_R Hemi_12pcw_173_2015-12-14 12_25_56.ome.zarr.zip	#Dataset-15268	http://bia/Image	7494598779
+experimentA/EPHA7_12PCW/11795_11_R Hemi_12pcw_173_2015-12-14 12_25_56.ome.zarr.log	#Dataset-15268	http://bia/File	560
+experimentA/EPHA7_12PCW/11795_11_R Hemi_12pcw_198_2015-12-14 16_42_36.ome.zarr.zip	#Dataset-15268	http://bia/Image	6582239953
+experimentA/EPHA7_12PCW/11795_11_R Hemi_12pcw_198_2015-12-14 16_42_36.ome.zarr.log	#Dataset-15268	http://bia/File	560
+experimentA/EPHA7_12PCW/11795_11_R Hemi_12pcw_93_2015-12-14 12_43_47.ome.zarr.zip	#Dataset-15268	http://bia/Image	8723120238
+experimentA/EPHA7_12PCW/11795_11_R Hemi_12pcw_93_2015-12-14 12_43_47.ome.zarr.log	#Dataset-15268	http://bia/File	558
+experimentA/EPHA7_CS23/11557_3_Head_CS23_116_2015-12-14 11_50_48.ome.zarr.zip	#Dataset-15269	http://bia/Image	6043829579
+experimentA/EPHA7_CS23/11557_3_Head_CS23_116_2015-12-14 11_50_48.ome.zarr.log	#Dataset-15269	http://bia/File	548
+experimentA/EPHA7_CS23/11557_3_Head_CS23_49_EPHA7.ome.zarr.zip	#Dataset-15269	http://bia/Image	2404263057
+experimentA/EPHA7_CS23/11557_3_Head_CS23_49_EPHA7.ome.zarr.log	#Dataset-15269	http://bia/File	543
+experimentA/FEV_10PCW/12017_14_hb_mb_10pcw_72_FEV.ome.zarr.zip	#Dataset-15374	http://bia/Image	875269099
+experimentA/FEV_10PCW/12017_14_hb_mb_10pcw_72_FEV.ome.zarr.log	#Dataset-15374	http://bia/File	544
+experimentA/FEV_10PCW/13341_1_Brain_10pcw_295_FEV.ome.zarr.zip	#Dataset-15374	http://bia/Image	1435838235
+experimentA/FEV_10PCW/13341_1_Brain_10pcw_295_FEV.ome.zarr.log	#Dataset-15374	http://bia/File	544
+experimentA/FEV_11PCW/12532_19_hb_mb_11pcw_83_FEV.ome.zarr.zip	#Dataset-15389	http://bia/Image	925137815
+experimentA/FEV_11PCW/12532_19_hb_mb_11pcw_83_FEV.ome.zarr.log	#Dataset-15389	http://bia/File	544
+experimentA/FEV_CS23/12602_1_head_CS23_225_FEV.ome.zarr.zip	#Dataset-15372	http://bia/Image	1209460581
+experimentA/FEV_CS23/12602_1_head_CS23_225_FEV.ome.zarr.log	#Dataset-15372	http://bia/File	539
+experimentA/FEV_CS23/12780_1_head_CS23_148_FEV.ome.zarr.zip	#Dataset-15372	http://bia/Image	1145299841
+experimentA/FEV_CS23/12780_1_head_CS23_148_FEV.ome.zarr.log	#Dataset-15372	http://bia/File	539
+experimentA/FEV_CS23/12879_1_Head_CS23_168_FEV.ome.zarr.zip	#Dataset-15372	http://bia/Image	827895227
+experimentA/FEV_CS23/12879_1_Head_CS23_168_FEV.ome.zarr.log	#Dataset-15372	http://bia/File	539
+experimentA/FOXC1_12PCW/12998_4_12 PCW_MB_HB_116_foxc1.ome.zarr.zip	#Dataset-15398	http://bia/Image	1145718291
+experimentA/FOXC1_12PCW/12998_4_12 PCW_MB_HB_116_foxc1.ome.zarr.log	#Dataset-15398	http://bia/File	554
+experimentA/FOXC1_14PCW/12807_17_Hindbrain_14 PCW_227_foxc1.ome.zarr.zip	#Dataset-15401	http://bia/Image	676899433
+experimentA/FOXC1_14PCW/12807_17_Hindbrain_14 PCW_227_foxc1.ome.zarr.log	#Dataset-15401	http://bia/File	564
+experimentA/FOXC1_14PCW/13002_23_Hindbrain_14pcw_22_foxc1.ome.zarr.zip	#Dataset-15401	http://bia/Image	2207770208
+experimentA/FOXC1_14PCW/13002_23_Hindbrain_14pcw_22_foxc1.ome.zarr.log	#Dataset-15401	http://bia/File	558
+experimentA/FOXC1_18PCW/13463_31_MBHB_18pcw_34_foxc1.ome.zarr.zip	#Dataset-15395	http://bia/Image	3571992141
+experimentA/FOXC1_18PCW/13463_31_MBHB_18pcw_34_foxc1.ome.zarr.log	#Dataset-15395	http://bia/File	548
+experimentA/FOXC1_18PCW/14730_35_HB_18PCW_30_foxc1.ome.zarr.zip	#Dataset-15395	http://bia/Image	1012081812
+experimentA/FOXC1_18PCW/14730_35_HB_18PCW_30_foxc1.ome.zarr.log	#Dataset-15395	http://bia/File	544
+experimentA/FOXC1_CS20/11587_1_head_CS20_52_foxc1.ome.zarr.zip	#Dataset-15347	http://bia/Image	1368436259
+experimentA/FOXC1_CS20/11587_1_head_CS20_52_foxc1.ome.zarr.log	#Dataset-15347	http://bia/File	543
+experimentA/FOXP1_12PCW/12998_4_12 PCW_MB_HB_116_foxp1.ome.zarr.zip	#Dataset-15413	http://bia/Image	1282943670
+experimentA/FOXP1_12PCW/12998_4_12 PCW_MB_HB_116_foxp1.ome.zarr.log	#Dataset-15413	http://bia/File	554
+experimentA/FOXP1_14PCW/12807_17_Hindbrain_14 PCW_227_foxp1.ome.zarr.zip	#Dataset-15383	http://bia/Image	695948539
+experimentA/FOXP1_14PCW/12807_17_Hindbrain_14 PCW_227_foxp1.ome.zarr.log	#Dataset-15383	http://bia/File	564
+experimentA/FOXP1_14PCW/13002_23_Hindbrain_14pcw_22_foxp1.ome.zarr.zip	#Dataset-15383	http://bia/Image	2416334005
+experimentA/FOXP1_14PCW/13002_23_Hindbrain_14pcw_22_foxp1.ome.zarr.log	#Dataset-15383	http://bia/File	558
+experimentA/FOXP1_18PCW/13463_31_MBHB_18pcw_38_foxp1.ome.zarr.zip	#Dataset-15410	http://bia/Image	3392579301
+experimentA/FOXP1_18PCW/13463_31_MBHB_18pcw_38_foxp1.ome.zarr.log	#Dataset-15410	http://bia/File	548
+experimentA/FOXP1_18PCW/14730_35_HB_18PCW_30_foxp1.ome.zarr.zip	#Dataset-15410	http://bia/Image	995971546
+experimentA/FOXP1_18PCW/14730_35_HB_18PCW_30_foxp1.ome.zarr.log	#Dataset-15410	http://bia/File	544
+experimentA/FOXP1_CS20/11587_1_head_CS20_52_foxp1.ome.zarr.zip	#Dataset-15348	http://bia/Image	1358191654
+experimentA/FOXP1_CS20/11587_1_head_CS20_52_foxp1.ome.zarr.log	#Dataset-15348	http://bia/File	543
+experimentA/FOXP2_10PCW/12044_2_LFB_10PCW_103_FOXP2.ome.zarr.zip	#Dataset-15328	http://bia/Image	688033870
+experimentA/FOXP2_10PCW/12044_2_LFB_10PCW_103_FOXP2.ome.zarr.log	#Dataset-15328	http://bia/File	546
+experimentA/FOXP2_10PCW/12044_2_LFB_10PCW_73_FOXP2.ome.zarr.zip	#Dataset-15328	http://bia/Image	917304200
+experimentA/FOXP2_10PCW/12044_2_LFB_10PCW_73_FOXP2.ome.zarr.log	#Dataset-15328	http://bia/File	544
+experimentA/FOXP2_10PCW/12044_2_LFB_10PCW_82_FOXP2.ome.zarr.zip	#Dataset-15328	http://bia/Image	793869725
+experimentA/FOXP2_10PCW/12044_2_LFB_10PCW_82_FOXP2.ome.zarr.log	#Dataset-15328	http://bia/File	544
+experimentA/FOXP2_10PCW/13136_5_Forebrain_10pcw_109_FOXP2.ome.zarr.zip	#Dataset-15328	http://bia/Image	1950165670
+experimentA/FOXP2_10PCW/13136_5_Forebrain_10pcw_109_FOXP2.ome.zarr.log	#Dataset-15328	http://bia/File	558
+experimentA/FOXP2_10PCW/13136_5_Forebrain_10pcw_117_FOXP2.ome.zarr.zip	#Dataset-15328	http://bia/Image	425616267
+experimentA/FOXP2_10PCW/13136_5_Forebrain_10pcw_117_FOXP2.ome.zarr.log	#Dataset-15328	http://bia/File	558
+experimentA/FOXP2_10PCW/ImageCollection_0000012428_FOXP2.ome.zarr.zip	#Dataset-15328	http://bia/Image	1089665803
+experimentA/FOXP2_10PCW/ImageCollection_0000012428_FOXP2.ome.zarr.log	#Dataset-15328	http://bia/File	552
+experimentA/FOXP2_15PCW/13654_32_diencep_15pcw_14_FOXP2.ome.zarr.zip	#Dataset-15415	http://bia/Image	1083989243
+experimentA/FOXP2_15PCW/13654_32_diencep_15pcw_14_FOXP2.ome.zarr.log	#Dataset-15415	http://bia/File	554
+experimentA/FOXP2_15PCW/13654_32_diencep_15pcw_24_FOXP2.ome.zarr.zip	#Dataset-15415	http://bia/Image	1131538719
+experimentA/FOXP2_15PCW/13654_32_diencep_15pcw_24_FOXP2.ome.zarr.log	#Dataset-15415	http://bia/File	554
+experimentA/FOXP2_15PCW/13654_33_diencep_15pcw_11_FOXP2.ome.zarr.zip	#Dataset-15415	http://bia/Image	1127360846
+experimentA/FOXP2_15PCW/13654_33_diencep_15pcw_11_FOXP2.ome.zarr.log	#Dataset-15415	http://bia/File	554
+experimentA/FOXP2_15PCW/13654_33_diencep_15pcw_28_FOXP2.ome.zarr.zip	#Dataset-15415	http://bia/Image	1823753877
+experimentA/FOXP2_15PCW/13654_33_diencep_15pcw_28_FOXP2.ome.zarr.log	#Dataset-15415	http://bia/File	554
+experimentA/FOXP2_CS19/1032_1_head_CS19_101_FOXP2.ome.zarr.zip	#Dataset-15270	http://bia/Image	789215963
+experimentA/FOXP2_CS19/1032_1_head_CS19_101_FOXP2.ome.zarr.log	#Dataset-15270	http://bia/File	543
+experimentA/FOXP2_CS19/1032_1_head_CS19_51_FOXP2.ome.zarr.zip	#Dataset-15270	http://bia/Image	774563419
+experimentA/FOXP2_CS19/1032_1_head_CS19_51_FOXP2.ome.zarr.log	#Dataset-15270	http://bia/File	541
+experimentA/FOXP2_CS19/1032_1_head_CS19_62_FOXP2.ome.zarr.zip	#Dataset-15270	http://bia/Image	695629114
+experimentA/FOXP2_CS19/1032_1_head_CS19_62_FOXP2.ome.zarr.log	#Dataset-15270	http://bia/File	541
+experimentA/FOXP2_CS19/1032_1_head_CS19_75_FOXP2.ome.zarr.zip	#Dataset-15270	http://bia/Image	725003358
+experimentA/FOXP2_CS19/1032_1_head_CS19_75_FOXP2.ome.zarr.log	#Dataset-15270	http://bia/File	541
+experimentA/FOXP2_CS19/1032_1_head_CS19_88_FOXP2.ome.zarr.zip	#Dataset-15270	http://bia/Image	719310727
+experimentA/FOXP2_CS19/1032_1_head_CS19_88_FOXP2.ome.zarr.log	#Dataset-15270	http://bia/File	541
+experimentA/FOXP2_CS19/3DView.ome.zarr.zip	#Dataset-15270	http://bia/Image	18327839
+experimentA/FOXP2_CS19/3DView.ome.zarr.log	#Dataset-15270	http://bia/File	626
+experimentA/FOXP2_CS19/FOXP2_CS19_3DView.ome.zarr.zip	#Dataset-15270	http://bia/Image	214525
+experimentA/FOXP2_CS19/FOXP2_CS19_3DView.ome.zarr.log	#Dataset-15270	http://bia/File	637
+experimentA/FOXP2_CS23/11613_1_Embryo_CS23_295_2018-05-14 12_25_07.ome.zarr.zip	#Dataset-15271	http://bia/Image	1515407299
+experimentA/FOXP2_CS23/11613_1_Embryo_CS23_295_2018-05-14 12_25_07.ome.zarr.log	#Dataset-15271	http://bia/File	552
+experimentA/FOXP2_CS23/11613_1_Embryo_CS23_336_2018-05-14 15_28_36.ome.zarr.zip	#Dataset-15271	http://bia/Image	1263776665
+experimentA/FOXP2_CS23/11613_1_Embryo_CS23_336_2018-05-14 15_28_36.ome.zarr.log	#Dataset-15271	http://bia/File	552
+experimentA/FOXP2_CS23/12204_1_Head_CS23_76_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	825075955
+experimentA/FOXP2_CS23/12204_1_Head_CS23_76_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	543
+experimentA/FOXP2_CS23/12204_1_Head_CS23_82_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	909310889
+experimentA/FOXP2_CS23/12204_1_Head_CS23_82_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	543
+experimentA/FOXP2_CS23/12602_1_head_CS23_125_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	1494404160
+experimentA/FOXP2_CS23/12602_1_head_CS23_125_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	545
+experimentA/FOXP2_CS23/12602_1_head_CS23_157_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	1311837394
+experimentA/FOXP2_CS23/12602_1_head_CS23_157_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	545
+experimentA/FOXP2_CS23/12602_1_head_CS23_177_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	1346191895
+experimentA/FOXP2_CS23/12602_1_head_CS23_177_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	545
+experimentA/FOXP2_CS23/12602_1_head_CS23_209_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	1389085351
+experimentA/FOXP2_CS23/12602_1_head_CS23_209_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	545
+experimentA/FOXP2_CS23/12602_1_head_CS23_220_FOXP2.ome.zarr.zip	#Dataset-15271	http://bia/Image	1309625512
+experimentA/FOXP2_CS23/12602_1_head_CS23_220_FOXP2.ome.zarr.log	#Dataset-15271	http://bia/File	545
+experimentA/FOXP2_CS23/3DView.ome.zarr.zip	#Dataset-15271	http://bia/Image	40891830
+experimentA/FOXP2_CS23/3DView.ome.zarr.log	#Dataset-15271	http://bia/File	626
+experimentA/FOXP2_CS23/FOXP2_CS23_3DView.ome.zarr.zip	#Dataset-15271	http://bia/Image	189010
+experimentA/FOXP2_CS23/FOXP2_CS23_3DView.ome.zarr.log	#Dataset-15271	http://bia/File	637
+experimentA/GAD1_10PCW/13341_1_Brain_10pcw_142_GAD67.ome.zarr.zip	#Dataset-15406	http://bia/Image	1301419485
+experimentA/GAD1_10PCW/13341_1_Brain_10pcw_142_GAD67.ome.zarr.log	#Dataset-15406	http://bia/File	549
+experimentA/GAD1_CS23/12506_5_R hemi_CS23_33_GAD67.ome.zarr.zip	#Dataset-15386	http://bia/Image	1166688081
+experimentA/GAD1_CS23/12506_5_R hemi_CS23_33_GAD67.ome.zarr.log	#Dataset-15386	http://bia/File	548
+experimentA/GAD1_CS23/12602_1_head_CS23_72_GAD67.ome.zarr.zip	#Dataset-15386	http://bia/Image	894343215
+experimentA/GAD1_CS23/12602_1_head_CS23_72_GAD67.ome.zarr.log	#Dataset-15386	http://bia/File	542
+experimentA/GAD1_CS23/12602_1_head_CS23_99_GAD67.ome.zarr.zip	#Dataset-15386	http://bia/Image	1221206380
+experimentA/GAD1_CS23/12602_1_head_CS23_99_GAD67.ome.zarr.log	#Dataset-15386	http://bia/File	542
+experimentA/GAP43_10PCW/2036_5_Brain Slice 2_10pcw_25_2015-12-15 16_09_26.ome.zarr.zip	#Dataset-15272	http://bia/Image	4376444162
+experimentA/GAP43_10PCW/2036_5_Brain Slice 2_10pcw_25_2015-12-15 16_09_26.ome.zarr.log	#Dataset-15272	http://bia/File	570
+experimentA/GAP43_10PCW/2036_6_Brain Slice 3_10pcw_15_2015-12-15 17_30_06.ome.zarr.zip	#Dataset-15272	http://bia/Image	4975718004
+experimentA/GAP43_10PCW/2036_6_Brain Slice 3_10pcw_15_2015-12-15 17_30_06.ome.zarr.log	#Dataset-15272	http://bia/File	570
+experimentA/GAP43_CS15/Autotest_0000007674_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	104106752
+experimentA/GAP43_CS15/Autotest_0000007674_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	537
+experimentA/GAP43_CS15/ImageCollection_0000005367_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	421341490
+experimentA/GAP43_CS15/ImageCollection_0000005367_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	551
+experimentA/GAP43_CS15/ImageCollection_0000005368_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	514517684
+experimentA/GAP43_CS15/ImageCollection_0000005368_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	551
+experimentA/GAP43_CS15/ImageCollection_0000005369_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	478116066
+experimentA/GAP43_CS15/ImageCollection_0000005369_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	551
+experimentA/GAP43_CS15/ImageCollection_0000005370_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	448201573
+experimentA/GAP43_CS15/ImageCollection_0000005370_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	551
+experimentA/GAP43_CS15/ImageCollection_0000005371_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	501118048
+experimentA/GAP43_CS15/ImageCollection_0000005371_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	551
+experimentA/GAP43_CS15/ImageCollection_0000005372_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	456505238
+experimentA/GAP43_CS15/ImageCollection_0000005372_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	551
+experimentA/GAP43_CS15/N1459_0_whole_CS15_18_GAP43.ome.zarr.zip	#Dataset-15430	http://bia/Image	85008242
+experimentA/GAP43_CS15/N1459_0_whole_CS15_18_GAP43.ome.zarr.log	#Dataset-15430	http://bia/File	545
+experimentA/GAP43_CS23/11557_3_Head_CS23_113_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	2638655134
+experimentA/GAP43_CS23/11557_3_Head_CS23_113_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	545
+experimentA/GAP43_CS23/11557_3_Head_CS23_125_2015-12-15 15_43_09.ome.zarr.zip	#Dataset-15273	http://bia/Image	2808756233
+experimentA/GAP43_CS23/11557_3_Head_CS23_125_2015-12-15 15_43_09.ome.zarr.log	#Dataset-15273	http://bia/File	575
+experimentA/GAP43_CS23/11557_3_Head_CS23_165_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	2510678671
+experimentA/GAP43_CS23/11557_3_Head_CS23_165_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	545
+experimentA/GAP43_CS23/11557_3_Head_CS23_72_2015-12-15 14_58_04.ome.zarr.zip	#Dataset-15273	http://bia/Image	5097768160
+experimentA/GAP43_CS23/11557_3_Head_CS23_72_2015-12-15 14_58_04.ome.zarr.log	#Dataset-15273	http://bia/File	546
+experimentA/GAP43_CS23/11751_55_CS23_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	3327443739
+experimentA/GAP43_CS23/11751_55_CS23_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	498
+experimentA/GAP43_CS23/12204_1_Head_CS23_91_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	789732039
+experimentA/GAP43_CS23/12204_1_Head_CS23_91_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	543
+experimentA/GAP43_CS23/12780_1_head_CS23_61_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	788186445
+experimentA/GAP43_CS23/12780_1_head_CS23_61_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	543
+experimentA/GAP43_CS23/Autotest_0000007664_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	1166380154
+experimentA/GAP43_CS23/Autotest_0000007664_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	537
+experimentA/GAP43_CS23/Autotest_0000007665_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	1153841813
+experimentA/GAP43_CS23/Autotest_0000007665_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	537
+experimentA/GAP43_CS23/Autotest_0000007666_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	1258630253
+experimentA/GAP43_CS23/Autotest_0000007666_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	537
+experimentA/GAP43_CS23/Autotest_0000007667_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	1049841378
+experimentA/GAP43_CS23/Autotest_0000007667_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	537
+experimentA/GAP43_CS23/Autotest_0000007668_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	1567716322
+experimentA/GAP43_CS23/Autotest_0000007668_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	537
+experimentA/GAP43_CS23/Autotest_0000007669_GAP43.ome.zarr.zip	#Dataset-15273	http://bia/Image	1130580017
+experimentA/GAP43_CS23/Autotest_0000007669_GAP43.ome.zarr.log	#Dataset-15273	http://bia/File	537
+experimentA/GBX2_10PCW/13081_135_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	6488177253
+experimentA/GBX2_10PCW/13081_135_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	488
+experimentA/GBX2_10PCW/13081_183_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	5327436666
+experimentA/GBX2_10PCW/13081_183_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	488
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_101_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	765999049
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_101_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	555
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_111_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	807332998
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_111_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	555
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_120_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	2702378021
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_120_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	555
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_131_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	708618162
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_131_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	555
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_88_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	664927359
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_88_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	553
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_95_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	817801666
+experimentA/GBX2_10PCW/13136_5_Forebrain_10pcw_95_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	553
+experimentA/GBX2_10PCW/Autotest_0000025806_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	1832456880
+experimentA/GBX2_10PCW/Autotest_0000025806_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	523
+experimentA/GBX2_10PCW/Autotest_0000025810_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	1825005240
+experimentA/GBX2_10PCW/Autotest_0000025810_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	535
+experimentA/GBX2_10PCW/ImageCollection_0000010397_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	1270621854
+experimentA/GBX2_10PCW/ImageCollection_0000010397_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	549
+experimentA/GBX2_10PCW/ImageCollection_0000010398_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	1386424648
+experimentA/GBX2_10PCW/ImageCollection_0000010398_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	549
+experimentA/GBX2_10PCW/ImageCollection_0000010399_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	1344427201
+experimentA/GBX2_10PCW/ImageCollection_0000010399_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	549
+experimentA/GBX2_10PCW/ImageCollection_0000010400_GBX2.ome.zarr.zip	#Dataset-15274	http://bia/Image	1469394866
+experimentA/GBX2_10PCW/ImageCollection_0000010400_GBX2.ome.zarr.log	#Dataset-15274	http://bia/File	549
+experimentA/GBX2_15PCW/13654_32_diencep_15pcw_14_GBX2.ome.zarr.zip	#Dataset-15416	http://bia/Image	1119096141
+experimentA/GBX2_15PCW/13654_32_diencep_15pcw_14_GBX2.ome.zarr.log	#Dataset-15416	http://bia/File	551
+experimentA/GBX2_15PCW/13654_32_diencep_15pcw_24_GBX2.ome.zarr.zip	#Dataset-15416	http://bia/Image	955755191
+experimentA/GBX2_15PCW/13654_32_diencep_15pcw_24_GBX2.ome.zarr.log	#Dataset-15416	http://bia/File	551
+experimentA/GBX2_15PCW/13654_33_diencep_15pcw_11_GBX2.ome.zarr.zip	#Dataset-15416	http://bia/Image	1365794840
+experimentA/GBX2_15PCW/13654_33_diencep_15pcw_11_GBX2.ome.zarr.log	#Dataset-15416	http://bia/File	551
+experimentA/GBX2_15PCW/13654_33_diencep_15pcw_28_GBX2.ome.zarr.zip	#Dataset-15416	http://bia/Image	1640989410
+experimentA/GBX2_15PCW/13654_33_diencep_15pcw_28_GBX2.ome.zarr.log	#Dataset-15416	http://bia/File	551
+experimentA/GBX2_8PCW/13107_18_R brain_Late 8_33_GBX2.ome.zarr.zip	#Dataset-15332	http://bia/Image	1036087529
+experimentA/GBX2_8PCW/13107_18_R brain_Late 8_33_GBX2.ome.zarr.log	#Dataset-15332	http://bia/File	556
+experimentA/GBX2_8PCW/13107_18_R brain_Late 8_43_GBX2.ome.zarr.zip	#Dataset-15332	http://bia/Image	942268216
+experimentA/GBX2_8PCW/13107_18_R brain_Late 8_43_GBX2.ome.zarr.log	#Dataset-15332	http://bia/File	556
+experimentA/GBX2_CS19/1032_1_head_CS19_78_GBX2.ome.zarr.zip	#Dataset-15334	http://bia/Image	410166547
+experimentA/GBX2_CS19/1032_1_head_CS19_78_GBX2.ome.zarr.log	#Dataset-15334	http://bia/File	538
+experimentA/GBX2_CS21/13436_1_embryo_CS21_144_GBX2.ome.zarr.zip	#Dataset-15423	http://bia/Image	956620484
+experimentA/GBX2_CS21/13436_1_embryo_CS21_144_GBX2.ome.zarr.log	#Dataset-15423	http://bia/File	546
+experimentA/GBX2_CS21/13436_1_embryo_CS21_151_GBX2.ome.zarr.zip	#Dataset-15423	http://bia/Image	782788531
+experimentA/GBX2_CS21/13436_1_embryo_CS21_151_GBX2.ome.zarr.log	#Dataset-15423	http://bia/File	546
+experimentA/GBX2_CS23/11613_1_Embryo_CS23_294_2018-05-14 12_27_30.ome.zarr.zip	#Dataset-15275	http://bia/Image	1654046625
+experimentA/GBX2_CS23/11613_1_Embryo_CS23_294_2018-05-14 12_27_30.ome.zarr.log	#Dataset-15275	http://bia/File	550
+experimentA/GBX2_CS23/11613_1_Embryo_CS23_335_2018-05-14 15_17_14.ome.zarr.zip	#Dataset-15275	http://bia/Image	1611533272
+experimentA/GBX2_CS23/11613_1_Embryo_CS23_335_2018-05-14 15_17_14.ome.zarr.log	#Dataset-15275	http://bia/File	550
+experimentA/GBX2_CS23/12204_1_Head_CS23_76_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	939087695
+experimentA/GBX2_CS23/12204_1_Head_CS23_76_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	540
+experimentA/GBX2_CS23/12204_1_Head_CS23_82_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	814749163
+experimentA/GBX2_CS23/12204_1_Head_CS23_82_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	540
+experimentA/GBX2_CS23/12506_5_R hemi_CS23_20_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1067395743
+experimentA/GBX2_CS23/12506_5_R hemi_CS23_20_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	546
+experimentA/GBX2_CS23/12602_1_head_CS23_125_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1141603556
+experimentA/GBX2_CS23/12602_1_head_CS23_125_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	542
+experimentA/GBX2_CS23/12602_1_head_CS23_157_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1214136039
+experimentA/GBX2_CS23/12602_1_head_CS23_157_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	542
+experimentA/GBX2_CS23/12602_1_head_CS23_177_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1245295111
+experimentA/GBX2_CS23/12602_1_head_CS23_177_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	542
+experimentA/GBX2_CS23/12602_1_head_CS23_209_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1087017905
+experimentA/GBX2_CS23/12602_1_head_CS23_209_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	542
+experimentA/GBX2_CS23/12602_1_head_CS23_220_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1185449046
+experimentA/GBX2_CS23/12602_1_head_CS23_220_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	542
+experimentA/GBX2_CS23/12780_1_head_CS23_82_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	1112391150
+experimentA/GBX2_CS23/12780_1_head_CS23_82_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	540
+experimentA/GBX2_CS23/12780_1_head_CS23_90_GBX2.ome.zarr.zip	#Dataset-15275	http://bia/Image	764532736
+experimentA/GBX2_CS23/12780_1_head_CS23_90_GBX2.ome.zarr.log	#Dataset-15275	http://bia/File	540
+experimentA/HOPX_10PCW/12929_20_R.Head_10PCW_106_hopx.ome.zarr.zip	#Dataset-15385	http://bia/Image	1186625297
+experimentA/HOPX_10PCW/12929_20_R.Head_10PCW_106_hopx.ome.zarr.log	#Dataset-15385	http://bia/File	551
+experimentA/HOPX_18PCW/13463_31_MBHB_18pcw_25_hopx.ome.zarr.zip	#Dataset-15424	http://bia/Image	3012153382
+experimentA/HOPX_18PCW/13463_31_MBHB_18pcw_25_hopx.ome.zarr.log	#Dataset-15424	http://bia/File	545
+experimentA/ISL1_13PCW/13196_3_K_A_13PCW_20_ISL1.ome.zarr.zip	#Dataset-15405	http://bia/Image	2197270977
+experimentA/ISL1_13PCW/13196_3_K_A_13PCW_20_ISL1.ome.zarr.log	#Dataset-15405	http://bia/File	541
+experimentA/ISL1_CS15/11847_1_embryo_CS15_151_ISL1.ome.zarr.zip	#Dataset-15363	http://bia/Image	639216309
+experimentA/ISL1_CS15/11847_1_embryo_CS15_151_ISL1.ome.zarr.log	#Dataset-15363	http://bia/File	546
+experimentA/ISL1_CS17/11911_3_Head_CS17_106_ISL1.ome.zarr.zip	#Dataset-15369	http://bia/Image	709939232
+experimentA/ISL1_CS17/11911_3_Head_CS17_106_ISL1.ome.zarr.log	#Dataset-15369	http://bia/File	542
+experimentA/ISL1_CS19/12769_3_body_CS19_58_ISL1.ome.zarr.zip	#Dataset-15402	http://bia/Image	1909942923
+experimentA/ISL1_CS19/12769_3_body_CS19_58_ISL1.ome.zarr.log	#Dataset-15402	http://bia/File	540
+experimentA/ISL1_HB9_SOX2_CS11/290819_CS11_14653.12 B1.lif - 12.1.ome.zarr.zip	#Dataset-15276	http://bia/Image	10349287
+experimentA/ISL1_HB9_SOX2_CS11/290819_CS11_14653.12 B1.lif - 12.1.ome.zarr.log	#Dataset-15276	http://bia/File	550
+experimentA/ISL1_HB9_SOX2_CS11/290819_CS11_14653.12 B1.lif - 12.2.ome.zarr.zip	#Dataset-15276	http://bia/Image	9440735
+experimentA/ISL1_HB9_SOX2_CS11/290819_CS11_14653.12 B1.lif - 12.2.ome.zarr.log	#Dataset-15276	http://bia/File	550
+experimentA/ISL1_HB9_SOX2_CS13/290819_CS13_14457.1 B1.lif - TileScan 1 Position 3.ome.zarr.zip	#Dataset-15277	http://bia/Image	12616452
+experimentA/ISL1_HB9_SOX2_CS13/290819_CS13_14457.1 B1.lif - TileScan 1 Position 3.ome.zarr.log	#Dataset-15277	http://bia/File	588
+experimentA/ISL1_HB9_SOX2_CS15/290819_CS15_14631.2 F2.1.lif - 2.1.ome.zarr.zip	#Dataset-15278	http://bia/Image	13561731
+experimentA/ISL1_HB9_SOX2_CS15/290819_CS15_14631.2 F2.1.lif - 2.1.ome.zarr.log	#Dataset-15278	http://bia/File	550
+experimentA/ISL1_HB9_SOX2_CS15/290819_CS15_14631.2 F2.1.lif - 2.4.ome.zarr.zip	#Dataset-15278	http://bia/Image	13517981
+experimentA/ISL1_HB9_SOX2_CS15/290819_CS15_14631.2 F2.1.lif - 2.4.ome.zarr.log	#Dataset-15278	http://bia/File	550
+experimentA/ISL1_HB9_SOX2_CS17/290819_CS17_14437.2 B1.lif - TileScan 1 Region 6_Merged.ome.zarr.zip	#Dataset-15279	http://bia/Image	3024251
+experimentA/ISL1_HB9_SOX2_CS17/290819_CS17_14437.2 B1.lif - TileScan 1 Region 6_Merged.ome.zarr.log	#Dataset-15279	http://bia/File	752
+experimentA/ISL1_HB9_SOX2_CS17/290819_CS17_14437.2 B1.lif - TileScan 4 2.1.ome.zarr.zip	#Dataset-15279	http://bia/Image	19288483
+experimentA/ISL1_HB9_SOX2_CS17/290819_CS17_14437.2 B1.lif - TileScan 4 2.1.ome.zarr.log	#Dataset-15279	http://bia/File	572
+experimentA/ISL1_HB9_SOX2_CS17/290819_CS17_14437.2 B1.lif - TileScan 4 2.2.ome.zarr.zip	#Dataset-15279	http://bia/Image	21716300
+experimentA/ISL1_HB9_SOX2_CS17/290819_CS17_14437.2 B1.lif - TileScan 4 2.2.ome.zarr.log	#Dataset-15279	http://bia/File	572
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_cornea_CK19gVimentinrHoe_40xApo_010812_c1_c2_c3.ome.zarr.zip	#Dataset-15281	http://bia/Image	4398925
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_cornea_CK19gVimentinrHoe_40xApo_010812_c1_c2_c3.ome.zarr.log	#Dataset-15281	http://bia/File	590
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_cornea_CK19gVimentinrHoePhase_40xApo2_010812_c1_c2_c3.ome.zarr.zip	#Dataset-15281	http://bia/Image	4097529
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_cornea_CK19gVimentinrHoePhase_40xApo2_010812_c1_c2_c3.ome.zarr.log	#Dataset-15281	http://bia/File	602
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_PCM_CK19gVimentinrHoe_63xApo_010812_c1_c2_c3.ome.zarr.zip	#Dataset-15281	http://bia/Image	4385004
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_PCM_CK19gVimentinrHoe_63xApo_010812_c1_c2_c3.ome.zarr.log	#Dataset-15281	http://bia/File	584
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_retinayRPE_CK19gVimentinrHoe_40xApo_010812_c1_c2_c3.ome.zarr.zip	#Dataset-15281	http://bia/Image	4997086
+experimentA/KRT19_VIM_12PCW/hEyeF412wk_retinayRPE_CK19gVimentinrHoe_40xApo_010812_c1_c2_c3.ome.zarr.log	#Dataset-15281	http://bia/File	598
+experimentA/KRT19_VIM_CS22/hLensCS229y6_CK19gVimentinrHoe_40xApo_010812_c1_c2_c3.ome.zarr.zip	#Dataset-15282	http://bia/Image	4094096
+experimentA/KRT19_VIM_CS22/hLensCS229y6_CK19gVimentinrHoe_40xApo_010812_c1_c2_c3.ome.zarr.log	#Dataset-15282	http://bia/File	578
+experimentA/LHX6_10PCW/13341_1_Brain_10pcw_142_LHX6.ome.zarr.zip	#Dataset-15407	http://bia/Image	1486716131
+experimentA/LHX6_10PCW/13341_1_Brain_10pcw_142_LHX6.ome.zarr.log	#Dataset-15407	http://bia/File	547
+experimentA/LHX6_CS19/1032_1_head_CS19_100_LHX6.ome.zarr.zip	#Dataset-15325	http://bia/Image	529109564
+experimentA/LHX6_CS19/1032_1_head_CS19_100_LHX6.ome.zarr.log	#Dataset-15325	http://bia/File	540
+experimentA/LHX6_CS19/1032_1_head_CS19_50_LHX6.ome.zarr.zip	#Dataset-15325	http://bia/Image	750043710
+experimentA/LHX6_CS19/1032_1_head_CS19_50_LHX6.ome.zarr.log	#Dataset-15325	http://bia/File	538
+experimentA/LHX6_CS19/1032_1_head_CS19_60_LHX6.ome.zarr.zip	#Dataset-15325	http://bia/Image	706301169
+experimentA/LHX6_CS19/1032_1_head_CS19_60_LHX6.ome.zarr.log	#Dataset-15325	http://bia/File	538
+experimentA/LHX6_CS19/1032_1_head_CS19_74_LHX6.ome.zarr.zip	#Dataset-15325	http://bia/Image	388961987
+experimentA/LHX6_CS19/1032_1_head_CS19_74_LHX6.ome.zarr.log	#Dataset-15325	http://bia/File	538
+experimentA/LMX1A_10PCW/12929_20_R.Head_10PCW_116_lmx1a.ome.zarr.zip	#Dataset-15387	http://bia/Image	2114188996
+experimentA/LMX1A_10PCW/12929_20_R.Head_10PCW_116_lmx1a.ome.zarr.log	#Dataset-15387	http://bia/File	554
+experimentA/LMX1A_14PCW/13002_23_Hindbrain_14pcw_15_lmx1a.ome.zarr.zip	#Dataset-15414	http://bia/Image	2338368241
+experimentA/LMX1A_14PCW/13002_23_Hindbrain_14pcw_15_lmx1a.ome.zarr.log	#Dataset-15414	http://bia/File	558
+experimentA/LMX1A_18PCW/13463_31_MBHB_18pcw_42_lmx1a.ome.zarr.zip	#Dataset-15412	http://bia/Image	3556698567
+experimentA/LMX1A_18PCW/13463_31_MBHB_18pcw_42_lmx1a.ome.zarr.log	#Dataset-15412	http://bia/File	548
+experimentA/LMX1A_CS20/11587_1_head_CS20_59_lmx1a.ome.zarr.zip	#Dataset-15353	http://bia/Image	581750143
+experimentA/LMX1A_CS20/11587_1_head_CS20_59_lmx1a.ome.zarr.log	#Dataset-15353	http://bia/File	543
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_63_KI67.ome.zarr.zip	#Dataset-15329	http://bia/Image	964033821
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_63_KI67.ome.zarr.log	#Dataset-15329	http://bia/File	542
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_74_KI67.ome.zarr.zip	#Dataset-15329	http://bia/Image	722071257
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_74_KI67.ome.zarr.log	#Dataset-15329	http://bia/File	542
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_83_KI67.ome.zarr.zip	#Dataset-15329	http://bia/Image	491549768
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_83_KI67.ome.zarr.log	#Dataset-15329	http://bia/File	542
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_93_KI67.ome.zarr.zip	#Dataset-15329	http://bia/Image	661308100
+experimentA/MKI67_10PCW/12044_2_LFB_10PCW_93_KI67.ome.zarr.log	#Dataset-15329	http://bia/File	542
+experimentA/MKI67_10PCW/12929_20_R.Head_10PCW_106_ki67.ome.zarr.zip	#Dataset-15329	http://bia/Image	1247037841
+experimentA/MKI67_10PCW/12929_20_R.Head_10PCW_106_ki67.ome.zarr.log	#Dataset-15329	http://bia/File	552
+experimentA/MKI67_10PCW/13136_5_Forebrain_10pcw_118_KI67.ome.zarr.zip	#Dataset-15329	http://bia/Image	853800531
+experimentA/MKI67_10PCW/13136_5_Forebrain_10pcw_118_KI67.ome.zarr.log	#Dataset-15329	http://bia/File	556
+experimentA/MKI67_10PCW/13136_5_Forebrain_10pcw_141_Ki67.ome.zarr.zip	#Dataset-15329	http://bia/Image	768111231
+experimentA/MKI67_10PCW/13136_5_Forebrain_10pcw_141_Ki67.ome.zarr.log	#Dataset-15329	http://bia/File	556
+experimentA/MKI67_10PCW/13168_6_ribs_10pcw_14_Ki67.ome.zarr.zip	#Dataset-15329	http://bia/Image	1070196409
+experimentA/MKI67_10PCW/13168_6_ribs_10pcw_14_Ki67.ome.zarr.log	#Dataset-15329	http://bia/File	544
+experimentA/MKI67_12PCW/11523_10_Brain SL2_12pcw_33_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	2092637736
+experimentA/MKI67_12PCW/11523_10_Brain SL2_12pcw_33_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	558
+experimentA/MKI67_12PCW/11610_9_brain_12pcw_156_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	3812234468
+experimentA/MKI67_12PCW/11610_9_brain_12pcw_156_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	548
+experimentA/MKI67_12PCW/11761_10_Left Hemisphere_12pcw_50_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	1797375396
+experimentA/MKI67_12PCW/11761_10_Left Hemisphere_12pcw_50_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	570
+experimentA/MKI67_12PCW/11761_11_Left Hemisphere_12pcw_8_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	1994185484
+experimentA/MKI67_12PCW/11761_11_Left Hemisphere_12pcw_8_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	568
+experimentA/MKI67_12PCW/11761_12_Head_12pcw_042_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	2128745350
+experimentA/MKI67_12PCW/11761_12_Head_12pcw_042_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	548
+experimentA/MKI67_12PCW/11761_13_Brain Slice 4_12pcw_40_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	1683416914
+experimentA/MKI67_12PCW/11761_13_Brain Slice 4_12pcw_40_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	568
+experimentA/MKI67_12PCW/11761_13_Left Hemisphere_12pcw_4_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	1550188351
+experimentA/MKI67_12PCW/11761_13_Left Hemisphere_12pcw_4_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	568
+experimentA/MKI67_12PCW/ImageCollection_0000006757_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	1664913252
+experimentA/MKI67_12PCW/ImageCollection_0000006757_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	550
+experimentA/MKI67_12PCW/ImageCollection_0000006758_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	2049959888
+experimentA/MKI67_12PCW/ImageCollection_0000006758_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	550
+experimentA/MKI67_12PCW/ImageCollection_0000006768_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	2026733673
+experimentA/MKI67_12PCW/ImageCollection_0000006768_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	550
+experimentA/MKI67_12PCW/ImageCollection_0000007095_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	1735184181
+experimentA/MKI67_12PCW/ImageCollection_0000007095_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	550
+experimentA/MKI67_12PCW/ImageCollection_0000007096_Ki67.ome.zarr.zip	#Dataset-15340	http://bia/Image	2690100779
+experimentA/MKI67_12PCW/ImageCollection_0000007096_Ki67.ome.zarr.log	#Dataset-15340	http://bia/File	550
+experimentA/MKI67_14PCW/12686_19_K_A_14pcw_34_ki67.ome.zarr.zip	#Dataset-15331	http://bia/Image	2399569545
+experimentA/MKI67_14PCW/12686_19_K_A_14pcw_34_ki67.ome.zarr.log	#Dataset-15331	http://bia/File	544
+experimentA/MKI67_14PCW/12722_5_Eye_14pcw_80_ki67.ome.zarr.zip	#Dataset-15331	http://bia/Image	590061171
+experimentA/MKI67_14PCW/12722_5_Eye_14pcw_80_ki67.ome.zarr.log	#Dataset-15331	http://bia/File	542
+experimentA/MKI67_14PCW/12722_5_Eye_14pcw_81_ki67.ome.zarr.zip	#Dataset-15331	http://bia/Image	643220698
+experimentA/MKI67_14PCW/12722_5_Eye_14pcw_81_ki67.ome.zarr.log	#Dataset-15331	http://bia/File	542
+experimentA/MKI67_14PCW/13002_23_Hindbrain_14pcw_17_ki67.ome.zarr.zip	#Dataset-15331	http://bia/Image	2305395150
+experimentA/MKI67_14PCW/13002_23_Hindbrain_14pcw_17_ki67.ome.zarr.log	#Dataset-15331	http://bia/File	556
+experimentA/MKI67_14PCW/13002_23_Hindbrain_14pcw_20_ki67.ome.zarr.zip	#Dataset-15331	http://bia/Image	2289227429
+experimentA/MKI67_14PCW/13002_23_Hindbrain_14pcw_20_ki67.ome.zarr.log	#Dataset-15331	http://bia/File	556
+experimentA/MKI67_14PCW/13002_23_Hindbrain_14pcw_26_ki67.ome.zarr.zip	#Dataset-15331	http://bia/Image	2370636054
+experimentA/MKI67_14PCW/13002_23_Hindbrain_14pcw_26_ki67.ome.zarr.log	#Dataset-15331	http://bia/File	556
+experimentA/MKI67_17PCW/12026_16_Eye_17pcw_162_ki67.ome.zarr.zip	#Dataset-15326	http://bia/Image	963946781
+experimentA/MKI67_17PCW/12026_16_Eye_17pcw_162_ki67.ome.zarr.log	#Dataset-15326	http://bia/File	546
+experimentA/MKI67_17PCW/ImageCollection_0000000599_ki67.ome.zarr.zip	#Dataset-15326	http://bia/Image	847771128
+experimentA/MKI67_17PCW/ImageCollection_0000000599_ki67.ome.zarr.log	#Dataset-15326	http://bia/File	550
+experimentA/MKI67_18PCW/12130_12_K_A_18pcw_31_ki67.ome.zarr.zip	#Dataset-15345	http://bia/Image	3897170017
+experimentA/MKI67_18PCW/12130_12_K_A_18pcw_31_ki67.ome.zarr.log	#Dataset-15345	http://bia/File	544
+experimentA/MKI67_18PCW/13463_31_MBHB_18pcw_12_ki67.ome.zarr.zip	#Dataset-15345	http://bia/Image	476614637
+experimentA/MKI67_18PCW/13463_31_MBHB_18pcw_12_ki67.ome.zarr.log	#Dataset-15345	http://bia/File	546
+experimentA/MKI67_18PCW/13463_31_MBHB_18pcw_23_ki67.ome.zarr.zip	#Dataset-15345	http://bia/Image	3381002754
+experimentA/MKI67_18PCW/13463_31_MBHB_18pcw_23_ki67.ome.zarr.log	#Dataset-15345	http://bia/File	546
+experimentA/MKI67_18PCW/14730_35_HB_18PCW_99_ki67.ome.zarr.zip	#Dataset-15345	http://bia/Image	1081502072
+experimentA/MKI67_18PCW/14730_35_HB_18PCW_99_ki67.ome.zarr.log	#Dataset-15345	http://bia/File	542
+experimentA/MKI67_8PCW/11872_1_Head_Late 8pcw_109_KI67.ome.zarr.zip	#Dataset-15367	http://bia/Image	990766122
+experimentA/MKI67_8PCW/11872_1_Head_Late 8pcw_109_KI67.ome.zarr.log	#Dataset-15367	http://bia/File	555
+experimentA/MKI67_8PCW/11872_1_Head_Late 8pcw_118_Ki67.ome.zarr.zip	#Dataset-15367	http://bia/Image	1186946627
+experimentA/MKI67_8PCW/11872_1_Head_Late 8pcw_118_Ki67.ome.zarr.log	#Dataset-15367	http://bia/File	555
+experimentA/MKI67_9PCW/13159_6_ribs_9pcw_14_Ki67.ome.zarr.zip	#Dataset-15458	http://bia/Image	1852799282
+experimentA/MKI67_9PCW/13159_6_ribs_9pcw_14_Ki67.ome.zarr.log	#Dataset-15458	http://bia/File	541
+experimentA/MKI67_CS14/810_1_embryo_CS14_24_KI67.ome.zarr.zip	#Dataset-15429	http://bia/Image	269621236
+experimentA/MKI67_CS14/810_1_embryo_CS14_24_KI67.ome.zarr.log	#Dataset-15429	http://bia/File	541
+experimentA/MKI67_CS14/Autotest_0000015733_Ki67.ome.zarr.zip	#Dataset-15429	http://bia/Image	558676386
+experimentA/MKI67_CS14/Autotest_0000015733_Ki67.ome.zarr.log	#Dataset-15429	http://bia/File	535
+experimentA/MKI67_CS14/N938_1_Turners embryo_CS14_81_KI67.ome.zarr.zip	#Dataset-15429	http://bia/Image	66556841
+experimentA/MKI67_CS14/N938_1_Turners embryo_CS14_81_KI67.ome.zarr.log	#Dataset-15429	http://bia/File	561
+experimentA/MKI67_CS14/N939_1_Embryo_CS14_55_KI67.ome.zarr.zip	#Dataset-15429	http://bia/Image	55262136
+experimentA/MKI67_CS14/N939_1_Embryo_CS14_55_KI67.ome.zarr.log	#Dataset-15429	http://bia/File	543
+experimentA/MKI67_CS15/Autotest_0000007674_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	123348222
+experimentA/MKI67_CS15/Autotest_0000007674_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	535
+experimentA/MKI67_CS15/ImageCollection_0000005367_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	436095778
+experimentA/MKI67_CS15/ImageCollection_0000005367_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	549
+experimentA/MKI67_CS15/ImageCollection_0000005368_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	615366113
+experimentA/MKI67_CS15/ImageCollection_0000005368_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	549
+experimentA/MKI67_CS15/ImageCollection_0000005369_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	595279757
+experimentA/MKI67_CS15/ImageCollection_0000005369_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	549
+experimentA/MKI67_CS15/ImageCollection_0000005370_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	456159956
+experimentA/MKI67_CS15/ImageCollection_0000005370_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	549
+experimentA/MKI67_CS15/ImageCollection_0000005371_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	467485008
+experimentA/MKI67_CS15/ImageCollection_0000005371_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	549
+experimentA/MKI67_CS15/ImageCollection_0000005372_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	515324718
+experimentA/MKI67_CS15/ImageCollection_0000005372_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	549
+experimentA/MKI67_CS15/N1459_0_whole_CS15_18_Ki67.ome.zarr.zip	#Dataset-15469	http://bia/Image	84520819
+experimentA/MKI67_CS15/N1459_0_whole_CS15_18_Ki67.ome.zarr.log	#Dataset-15469	http://bia/File	543
+experimentA/MKI67_CS16/1060_1_whole_CS16_42_Ki67.ome.zarr.zip	#Dataset-15338	http://bia/Image	540089479
+experimentA/MKI67_CS16/1060_1_whole_CS16_42_Ki67.ome.zarr.log	#Dataset-15338	http://bia/File	541
+experimentA/MKI67_CS16/13714_3_HEAD _sag_CS16_47_ki67.ome.zarr.zip	#Dataset-15338	http://bia/Image	383227003
+experimentA/MKI67_CS16/13714_3_HEAD _sag_CS16_47_ki67.ome.zarr.log	#Dataset-15338	http://bia/File	556
+experimentA/MKI67_CS18/11863_1_sag_CS18_21_Ki67.ome.zarr.zip	#Dataset-15365	http://bia/Image	914777352
+experimentA/MKI67_CS18/11863_1_sag_CS18_21_Ki67.ome.zarr.log	#Dataset-15365	http://bia/File	539
+experimentA/MKI67_CS18/14542_3_Head_CS18_51_ki67.ome.zarr.zip	#Dataset-15365	http://bia/Image	507262341
+experimentA/MKI67_CS18/14542_3_Head_CS18_51_ki67.ome.zarr.log	#Dataset-15365	http://bia/File	541
+experimentA/MKI67_CS19/1032_1_head_CS19_78_KI67.ome.zarr.zip	#Dataset-15335	http://bia/Image	344727372
+experimentA/MKI67_CS19/1032_1_head_CS19_78_KI67.ome.zarr.log	#Dataset-15335	http://bia/File	539
+experimentA/MKI67_CS19/12063_1_embryo_CS19_148_Ki67.ome.zarr.zip	#Dataset-15335	http://bia/Image	436030894
+experimentA/MKI67_CS19/12063_1_embryo_CS19_148_Ki67.ome.zarr.log	#Dataset-15335	http://bia/File	547
+experimentA/MKI67_CS19/12769_3_body_CS19_51_KI67.ome.zarr.zip	#Dataset-15335	http://bia/Image	486135233
+experimentA/MKI67_CS19/12769_3_body_CS19_51_KI67.ome.zarr.log	#Dataset-15335	http://bia/File	541
+experimentA/MKI67_CS19/12769_4_Head_CS19_80_KI67.ome.zarr.zip	#Dataset-15335	http://bia/Image	354985712
+experimentA/MKI67_CS19/12769_4_Head_CS19_80_KI67.ome.zarr.log	#Dataset-15335	http://bia/File	541
+experimentA/MKI67_CS19/12769_4_Head_CS19_90_KI67.ome.zarr.zip	#Dataset-15335	http://bia/Image	390628685
+experimentA/MKI67_CS19/12769_4_Head_CS19_90_KI67.ome.zarr.log	#Dataset-15335	http://bia/File	541
+experimentA/MKI67_CS19/992_1_whole_CS19_65_KI67.ome.zarr.zip	#Dataset-15335	http://bia/Image	883396496
+experimentA/MKI67_CS19/992_1_whole_CS19_65_KI67.ome.zarr.log	#Dataset-15335	http://bia/File	539
+experimentA/MKI67_CS19/ImageCollection_0000005374_Ki67.ome.zarr.zip	#Dataset-15335	http://bia/Image	1801358599
+experimentA/MKI67_CS19/ImageCollection_0000005374_Ki67.ome.zarr.log	#Dataset-15335	http://bia/File	549
+experimentA/MKI67_CS19/N1168_1_0_CS19_25_Ki67.ome.zarr.zip	#Dataset-15335	http://bia/Image	432884335
+experimentA/MKI67_CS19/N1168_1_0_CS19_25_Ki67.ome.zarr.log	#Dataset-15335	http://bia/File	535
+experimentA/MKI67_CS19/N1168_1_0_CS19_98_Ki67.ome.zarr.zip	#Dataset-15335	http://bia/Image	599948824
+experimentA/MKI67_CS19/N1168_1_0_CS19_98_Ki67.ome.zarr.log	#Dataset-15335	http://bia/File	535
+experimentA/MKI67_CS19/N1168_1_CS19_1_Ki67.ome.zarr.zip	#Dataset-15335	http://bia/Image	197142135
+experimentA/MKI67_CS19/N1168_1_CS19_1_Ki67.ome.zarr.log	#Dataset-15335	http://bia/File	530
+experimentA/MKI67_CS20/11587_1_head_CS20_50_ki67.ome.zarr.zip	#Dataset-15344	http://bia/Image	686411366
+experimentA/MKI67_CS20/11587_1_head_CS20_50_ki67.ome.zarr.log	#Dataset-15344	http://bia/File	541
+experimentA/MKI67_CS20/11587_1_head_CS20_59_ki67.ome.zarr.zip	#Dataset-15344	http://bia/Image	629340933
+experimentA/MKI67_CS20/11587_1_head_CS20_59_ki67.ome.zarr.log	#Dataset-15344	http://bia/File	541
+experimentA/MKI67_CS21/12128_1_head_CS21_107_KI67.ome.zarr.zip	#Dataset-15339	http://bia/Image	422432965
+experimentA/MKI67_CS21/12128_1_head_CS21_107_KI67.ome.zarr.log	#Dataset-15339	http://bia/File	543
+experimentA/MKI67_CS21/13436_1_embryo_CS21_144_KI67.ome.zarr.zip	#Dataset-15339	http://bia/Image	877598373
+experimentA/MKI67_CS21/13436_1_embryo_CS21_144_KI67.ome.zarr.log	#Dataset-15339	http://bia/File	547
+experimentA/MKI67_CS21/13436_1_embryo_CS21_151_KI67.ome.zarr.zip	#Dataset-15339	http://bia/Image	1056236901
+experimentA/MKI67_CS21/13436_1_embryo_CS21_151_KI67.ome.zarr.log	#Dataset-15339	http://bia/File	547
+experimentA/MKI67_CS21/Autotest_0000015735_Ki67.ome.zarr.zip	#Dataset-15339	http://bia/Image	902988007
+experimentA/MKI67_CS21/Autotest_0000015735_Ki67.ome.zarr.log	#Dataset-15339	http://bia/File	535
+experimentA/MKI67_CS21/ImageCollection_0000011648_KI67.ome.zarr.zip	#Dataset-15339	http://bia/Image	725744770
+experimentA/MKI67_CS21/ImageCollection_0000011648_KI67.ome.zarr.log	#Dataset-15339	http://bia/File	549
+experimentA/MKI67_CS22/11949_3_U torso_CS22_71_Ki67.ome.zarr.zip	#Dataset-15371	http://bia/Image	813177454
+experimentA/MKI67_CS22/11949_3_U torso_CS22_71_Ki67.ome.zarr.log	#Dataset-15371	http://bia/File	549
+experimentA/MKI67_CS23/11613_1_Embryo_CS23_218_ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	2361054370
+experimentA/MKI67_CS23/11613_1_Embryo_CS23_218_ki67.ome.zarr.log	#Dataset-15359	http://bia/File	547
+experimentA/MKI67_CS23/11737_2_body_CS23_19_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	838035578
+experimentA/MKI67_CS23/11737_2_body_CS23_19_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	541
+experimentA/MKI67_CS23/12212_3_L Body_CS23_149_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1537676160
+experimentA/MKI67_CS23/12212_3_L Body_CS23_149_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	549
+experimentA/MKI67_CS23/12212_4_R body_CS23_77_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1544619960
+experimentA/MKI67_CS23/12212_4_R body_CS23_77_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	547
+experimentA/MKI67_CS23/12212_4_R body_CS23_79_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1689425818
+experimentA/MKI67_CS23/12212_4_R body_CS23_79_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	547
+experimentA/MKI67_CS23/Autotest_0000007664_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1022856632
+experimentA/MKI67_CS23/Autotest_0000007664_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	535
+experimentA/MKI67_CS23/Autotest_0000007665_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1143770200
+experimentA/MKI67_CS23/Autotest_0000007665_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	535
+experimentA/MKI67_CS23/Autotest_0000007667_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1269490858
+experimentA/MKI67_CS23/Autotest_0000007667_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	535
+experimentA/MKI67_CS23/Autotest_0000007668_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	1498818243
+experimentA/MKI67_CS23/Autotest_0000007668_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	535
+experimentA/MKI67_CS23/Autotest_0000007669_Ki67.ome.zarr.zip	#Dataset-15359	http://bia/Image	986051520
+experimentA/MKI67_CS23/Autotest_0000007669_Ki67.ome.zarr.log	#Dataset-15359	http://bia/File	535
+experimentA/NKX2-1_10PCW/12721_4_fb_10pcw_78_NKX2-1.ome.zarr.zip	#Dataset-15431	http://bia/Image	1719570139
+experimentA/NKX2-1_10PCW/12721_4_fb_10pcw_78_NKX2-1.ome.zarr.log	#Dataset-15431	http://bia/File	545
+experimentA/NKX2-1_10PCW/12721_4_fb_10pcw_97_NKX2-1.ome.zarr.zip	#Dataset-15431	http://bia/Image	2471065983
+experimentA/NKX2-1_10PCW/12721_4_fb_10pcw_97_NKX2-1.ome.zarr.log	#Dataset-15431	http://bia/File	545
+experimentA/NKX2-1_12PCW/11761_12_Head_12pcw_042_NKX2.1.ome.zarr.zip	#Dataset-15443	http://bia/Image	2048941798
+experimentA/NKX2-1_12PCW/11761_12_Head_12pcw_042_NKX2.1.ome.zarr.log	#Dataset-15443	http://bia/File	553
+experimentA/NKX2-1_12PCW/12968_12.sl3_FB_12PCW_30_NKX2-1.ome.zarr.zip	#Dataset-15443	http://bia/Image	2035895213
+experimentA/NKX2-1_12PCW/12968_12.sl3_FB_12PCW_30_NKX2-1.ome.zarr.log	#Dataset-15443	http://bia/File	555
+experimentA/NKX2-1_8PCW/11872_1_Head_Late 8pcw_118_NKX2-1.ome.zarr.zip	#Dataset-15436	http://bia/Image	1322711926
+experimentA/NKX2-1_8PCW/11872_1_Head_Late 8pcw_118_NKX2-1.ome.zarr.log	#Dataset-15436	http://bia/File	560
+experimentA/NKX2-1_8PCW/12294_1_Head_L8pcw_148_NKX2-1.ome.zarr.zip	#Dataset-15436	http://bia/Image	1952516478
+experimentA/NKX2-1_8PCW/12294_1_Head_L8pcw_148_NKX2-1.ome.zarr.log	#Dataset-15436	http://bia/File	550
+experimentA/NKX2-1_8PCW/12294_1_Head_L8pcw_152_NKX2-1.ome.zarr.zip	#Dataset-15436	http://bia/Image	1941926128
+experimentA/NKX2-1_8PCW/12294_1_Head_L8pcw_152_NKX2-1.ome.zarr.log	#Dataset-15436	http://bia/File	550
+experimentA/NKX2-1_CS19/1032_1_head_CS19_48_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	786559927
+experimentA/NKX2-1_CS19/1032_1_head_CS19_48_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	544
+experimentA/NKX2-1_CS19/1032_1_head_CS19_56_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	363185901
+experimentA/NKX2-1_CS19/1032_1_head_CS19_56_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	544
+experimentA/NKX2-1_CS19/1032_1_head_CS19_98_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	566381017
+experimentA/NKX2-1_CS19/1032_1_head_CS19_98_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	544
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_101_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	889214038
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_101_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	548
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_113_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	548214721
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_113_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	548
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_80_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	565605702
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_80_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	546
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_90_NKX2-1.ome.zarr.zip	#Dataset-15283	http://bia/Image	386749130
+experimentA/NKX2-1_CS19/12769_4_Head_CS19_90_NKX2-1.ome.zarr.log	#Dataset-15283	http://bia/File	546
+experimentA/NKX2-1_CS19/3DView.ome.zarr.zip	#Dataset-15283	http://bia/Image	17754344
+experimentA/NKX2-1_CS19/3DView.ome.zarr.log	#Dataset-15283	http://bia/File	628
+experimentA/NKX2-1_CS19/NKX2-1_CS19_3DView.ome.zarr.zip	#Dataset-15283	http://bia/Image	203564
+experimentA/NKX2-1_CS19/NKX2-1_CS19_3DView.ome.zarr.log	#Dataset-15283	http://bia/File	640
+experimentA/NKX2-1_CS21/12128_1_head_CS21_130_NKX2-1.ome.zarr.zip	#Dataset-15454	http://bia/Image	1208305492
+experimentA/NKX2-1_CS21/12128_1_head_CS21_130_NKX2-1.ome.zarr.log	#Dataset-15454	http://bia/File	548
+experimentA/NKX2-1_CS23/12506_5_R hemi_CS23_25_NKX2-1.ome.zarr.zip	#Dataset-15284	http://bia/Image	2048584426
+experimentA/NKX2-1_CS23/12506_5_R hemi_CS23_25_NKX2-1.ome.zarr.log	#Dataset-15284	http://bia/File	552
+experimentA/NKX2-1_CS23/12506_5_R hemi_CS23_32_NKX2-1.ome.zarr.zip	#Dataset-15284	http://bia/Image	2146873663
+experimentA/NKX2-1_CS23/12506_5_R hemi_CS23_32_NKX2-1.ome.zarr.log	#Dataset-15284	http://bia/File	552
+experimentA/NKX2-1_CS23/12780_1_head_CS23_57_NKX2-1.ome.zarr.zip	#Dataset-15284	http://bia/Image	714935432
+experimentA/NKX2-1_CS23/12780_1_head_CS23_57_NKX2-1.ome.zarr.log	#Dataset-15284	http://bia/File	546
+experimentA/NKX2-1_CS23/12780_1_head_CS23_65_NKX2-1.ome.zarr.zip	#Dataset-15284	http://bia/Image	651770782
+experimentA/NKX2-1_CS23/12780_1_head_CS23_65_NKX2-1.ome.zarr.log	#Dataset-15284	http://bia/File	546
+experimentA/NKX2-1_CS23/12780_1_head_CS23_79_NKX2-1.ome.zarr.zip	#Dataset-15284	http://bia/Image	674654067
+experimentA/NKX2-1_CS23/12780_1_head_CS23_79_NKX2-1.ome.zarr.log	#Dataset-15284	http://bia/File	546
+experimentA/NKX2-1_CS23/12780_1_head_CS23_83_NKX2-1.ome.zarr.zip	#Dataset-15284	http://bia/Image	933020120
+experimentA/NKX2-1_CS23/12780_1_head_CS23_83_NKX2-1.ome.zarr.log	#Dataset-15284	http://bia/File	546
+experimentA/NKX2-1_CS23/3DView.ome.zarr.zip	#Dataset-15284	http://bia/Image	40524686
+experimentA/NKX2-1_CS23/3DView.ome.zarr.log	#Dataset-15284	http://bia/File	628
+experimentA/NKX2-1_CS23/NKX2-1_CS23_3DView.ome.zarr.zip	#Dataset-15284	http://bia/Image	161470
+experimentA/NKX2-1_CS23/NKX2-1_CS23_3DView.ome.zarr.log	#Dataset-15284	http://bia/File	640
+experimentA/NKX2-2_CS19/1032_1_head_CS19_48_NKX2-2.ome.zarr.zip	#Dataset-15285	http://bia/Image	776709428
+experimentA/NKX2-2_CS19/1032_1_head_CS19_48_NKX2-2.ome.zarr.log	#Dataset-15285	http://bia/File	544
+experimentA/NKX2-2_CS19/1032_1_head_CS19_72_NKX2-2.ome.zarr.zip	#Dataset-15285	http://bia/Image	313458202
+experimentA/NKX2-2_CS19/1032_1_head_CS19_72_NKX2-2.ome.zarr.log	#Dataset-15285	http://bia/File	544
+experimentA/NKX2-2_CS19/1032_1_head_CS19_85_NKX2-2.ome.zarr.zip	#Dataset-15285	http://bia/Image	797781533
+experimentA/NKX2-2_CS19/1032_1_head_CS19_85_NKX2-2.ome.zarr.log	#Dataset-15285	http://bia/File	544
+experimentA/NKX2-2_CS19/1032_1_head_CS19_98_NKX2-2.ome.zarr.zip	#Dataset-15285	http://bia/Image	539449583
+experimentA/NKX2-2_CS19/1032_1_head_CS19_98_NKX2-2.ome.zarr.log	#Dataset-15285	http://bia/File	544
+experimentA/NKX2-2_CS19/12769_4_Head_CS19_80_NKX2-2.ome.zarr.zip	#Dataset-15285	http://bia/Image	372860632
+experimentA/NKX2-2_CS19/12769_4_Head_CS19_80_NKX2-2.ome.zarr.log	#Dataset-15285	http://bia/File	546
+experimentA/NKX2-2_CS19/12769_4_Head_CS19_90_NKX2-2.ome.zarr.zip	#Dataset-15285	http://bia/Image	466877972
+experimentA/NKX2-2_CS19/12769_4_Head_CS19_90_NKX2-2.ome.zarr.log	#Dataset-15285	http://bia/File	546
+experimentA/NKX2-2_CS19/3DView.ome.zarr.zip	#Dataset-15285	http://bia/Image	17723512
+experimentA/NKX2-2_CS19/3DView.ome.zarr.log	#Dataset-15285	http://bia/File	628
+experimentA/NKX2-2_CS19/NKX2-2_CS19_3DView.ome.zarr.zip	#Dataset-15285	http://bia/Image	203289
+experimentA/NKX2-2_CS19/NKX2-2_CS19_3DView.ome.zarr.log	#Dataset-15285	http://bia/File	640
+experimentA/NR2F1_10PCW/12721_4_fb_10pcw_97_COUPTFI.ome.zarr.zip	#Dataset-15452	http://bia/Image	4267532440
+experimentA/NR2F1_10PCW/12721_4_fb_10pcw_97_COUPTFI.ome.zarr.log	#Dataset-15452	http://bia/File	546
+experimentA/NR2F1_10PCW/13331_9_LFB_10PCW_67_COUPTFI.ome.zarr.zip	#Dataset-15452	http://bia/Image	1797569144
+experimentA/NR2F1_10PCW/13331_9_LFB_10PCW_67_COUPTFI.ome.zarr.log	#Dataset-15452	http://bia/File	548
+experimentA/NR2F1_12PCW/11523_10_Brain SL2_12pcw_22_COUPTFI.ome.zarr.zip	#Dataset-15286	http://bia/Image	2494809654
+experimentA/NR2F1_12PCW/11523_10_Brain SL2_12pcw_22_COUPTFI.ome.zarr.log	#Dataset-15286	http://bia/File	564
+experimentA/NR2F1_12PCW/11523_10_Brain SL2_12pcw_33_COUPTFI.ome.zarr.zip	#Dataset-15286	http://bia/Image	2400306135
+experimentA/NR2F1_12PCW/11523_10_Brain SL2_12pcw_33_COUPTFI.ome.zarr.log	#Dataset-15286	http://bia/File	564
+experimentA/NR2F1_12PCW/11523_12_Brain SL4_12pcw_34_2016-03-09 11_35_33.ome.zarr.zip	#Dataset-15286	http://bia/Image	8726463334
+experimentA/NR2F1_12PCW/11523_12_Brain SL4_12pcw_34_2016-03-09 11_35_33.ome.zarr.log	#Dataset-15286	http://bia/File	564
+experimentA/NR2F1_12PCW/11523_13_Brain SL5_12pcw_38_2016-03-09 11_35_16.ome.zarr.zip	#Dataset-15286	http://bia/Image	6184483750
+experimentA/NR2F1_12PCW/11523_13_Brain SL5_12pcw_38_2016-03-09 11_35_16.ome.zarr.log	#Dataset-15286	http://bia/File	564
+experimentA/NR2F1_12PCW/11610_9_brain_12pcw_180_2015-12-01 12_55_21.ome.zarr.zip	#Dataset-15286	http://bia/Image	9486698483
+experimentA/NR2F1_12PCW/11610_9_brain_12pcw_180_2015-12-01 12_55_21.ome.zarr.log	#Dataset-15286	http://bia/File	554
+experimentA/NR2F1_12PCW/11761_11_Left Hemisphere_12pcw_18_2015-12-02 10_08_01.ome.zarr.zip	#Dataset-15286	http://bia/Image	5740449218
+experimentA/NR2F1_12PCW/11761_11_Left Hemisphere_12pcw_18_2015-12-02 10_08_01.ome.zarr.log	#Dataset-15286	http://bia/File	576
+experimentA/NR2F1_12PCW/11795_11_R Hemi_12pcw_104_2015-12-01 12_55_39.ome.zarr.zip	#Dataset-15286	http://bia/Image	7594098267
+experimentA/NR2F1_12PCW/11795_11_R Hemi_12pcw_104_2015-12-01 12_55_39.ome.zarr.log	#Dataset-15286	http://bia/File	560
+experimentA/NR2F1_12PCW/11795_11_R Hemi_12pcw_105_2015-12-01 12_59_59.ome.zarr.zip	#Dataset-15286	http://bia/Image	8516673984
+experimentA/NR2F1_12PCW/11795_11_R Hemi_12pcw_105_2015-12-01 12_59_59.ome.zarr.log	#Dataset-15286	http://bia/File	560
+experimentA/NR2F1_12PCW/Autotest_0000013591_2015-12-02 10_27_01.ome.zarr.zip	#Dataset-15286	http://bia/Image	6909333366
+experimentA/NR2F1_12PCW/Autotest_0000013591_2015-12-02 10_27_01.ome.zarr.log	#Dataset-15286	http://bia/File	542
+experimentA/NR2F1_12PCW/Autotest_0000013592_2015-12-02 10_25_56.ome.zarr.zip	#Dataset-15286	http://bia/Image	7638394057
+experimentA/NR2F1_12PCW/Autotest_0000013592_2015-12-02 10_25_56.ome.zarr.log	#Dataset-15286	http://bia/File	542
+experimentA/NR2F1_8PCW/11872_1_Head_Late 8pcw_103_2015-12-01 12_52_19.ome.zarr.zip	#Dataset-15287	http://bia/Image	5515956910
+experimentA/NR2F1_8PCW/11872_1_Head_Late 8pcw_103_2015-12-01 12_52_19.ome.zarr.log	#Dataset-15287	http://bia/File	560
+experimentA/NR2F1_8PCW/12294_1_Head_L8pcw_152_COUPTFI.ome.zarr.zip	#Dataset-15287	http://bia/Image	2203952645
+experimentA/NR2F1_8PCW/12294_1_Head_L8pcw_152_COUPTFI.ome.zarr.log	#Dataset-15287	http://bia/File	551
+experimentA/NR2F1_8PCW/12294_1_Head_L8pcw_172_2015-12-01 12_52_48.ome.zarr.zip	#Dataset-15287	http://bia/Image	5183534862
+experimentA/NR2F1_8PCW/12294_1_Head_L8pcw_172_2015-12-01 12_52_48.ome.zarr.log	#Dataset-15287	http://bia/File	550
+experimentA/NR2F1_CS19/1032_1_head_CS19_100_COUPTFI.ome.zarr.zip	#Dataset-15288	http://bia/Image	783670712
+experimentA/NR2F1_CS19/1032_1_head_CS19_100_COUPTFI.ome.zarr.log	#Dataset-15288	http://bia/File	547
+experimentA/NR2F1_CS19/1032_1_head_CS19_50_COUPTFI.ome.zarr.zip	#Dataset-15288	http://bia/Image	761128324
+experimentA/NR2F1_CS19/1032_1_head_CS19_50_COUPTFI.ome.zarr.log	#Dataset-15288	http://bia/File	545
+experimentA/NR2F1_CS19/1032_1_head_CS19_60_COUPTFI.ome.zarr.zip	#Dataset-15288	http://bia/Image	745283727
+experimentA/NR2F1_CS19/1032_1_head_CS19_60_COUPTFI.ome.zarr.log	#Dataset-15288	http://bia/File	545
+experimentA/NR2F1_CS19/1032_1_head_CS19_74_COUPTFI.ome.zarr.zip	#Dataset-15288	http://bia/Image	767629102
+experimentA/NR2F1_CS19/1032_1_head_CS19_74_COUPTFI.ome.zarr.log	#Dataset-15288	http://bia/File	545
+experimentA/NR2F1_CS19/1032_1_head_CS19_87_COUPTFI.ome.zarr.zip	#Dataset-15288	http://bia/Image	776988242
+experimentA/NR2F1_CS19/1032_1_head_CS19_87_COUPTFI.ome.zarr.log	#Dataset-15288	http://bia/File	545
+experimentA/NR2F1_CS19/12769_4_Head_CS19_110_COUPTFI.ome.zarr.zip	#Dataset-15288	http://bia/Image	623909915
+experimentA/NR2F1_CS19/12769_4_Head_CS19_110_COUPTFI.ome.zarr.log	#Dataset-15288	http://bia/File	549
+experimentA/NR2F1_CS19/3DView.ome.zarr.zip	#Dataset-15288	http://bia/Image	18095255
+experimentA/NR2F1_CS19/3DView.ome.zarr.log	#Dataset-15288	http://bia/File	626
+experimentA/NR2F1_CS19/NR2F1_CS19_3DView.ome.zarr.zip	#Dataset-15288	http://bia/Image	214022
+experimentA/NR2F1_CS19/NR2F1_CS19_3DView.ome.zarr.log	#Dataset-15288	http://bia/File	637
+experimentA/NR2F1_CS21/12128_1_head_CS21_116_COUPTFI.ome.zarr.zip	#Dataset-15451	http://bia/Image	533816683
+experimentA/NR2F1_CS21/12128_1_head_CS21_116_COUPTFI.ome.zarr.log	#Dataset-15451	http://bia/File	549
+experimentA/NR2F1_CS23/11613_1_Embryo_CS23_333_2018-05-14 15_16_34.ome.zarr.zip	#Dataset-15289	http://bia/Image	1142367811
+experimentA/NR2F1_CS23/11613_1_Embryo_CS23_333_2018-05-14 15_16_34.ome.zarr.log	#Dataset-15289	http://bia/File	552
+experimentA/NR2F1_CS23/12204_1_Head_CS23_83_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	1089215970
+experimentA/NR2F1_CS23/12204_1_Head_CS23_83_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	547
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_25_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	2302048376
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_25_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	553
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_32_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	2600980347
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_32_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	553
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_55_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	1752608946
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_55_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	553
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_63_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	1745334720
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_63_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	553
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_79_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	1256742266
+experimentA/NR2F1_CS23/12506_5_R hemi_CS23_79_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	553
+experimentA/NR2F1_CS23/12780_1_head_CS23_121_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	706101663
+experimentA/NR2F1_CS23/12780_1_head_CS23_121_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	549
+experimentA/NR2F1_CS23/12780_1_head_CS23_66_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	629782141
+experimentA/NR2F1_CS23/12780_1_head_CS23_66_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	547
+experimentA/NR2F1_CS23/12780_1_head_CS23_78_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	792432986
+experimentA/NR2F1_CS23/12780_1_head_CS23_78_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	547
+experimentA/NR2F1_CS23/12780_1_head_CS23_84_COUPTFI.ome.zarr.zip	#Dataset-15289	http://bia/Image	857859522
+experimentA/NR2F1_CS23/12780_1_head_CS23_84_COUPTFI.ome.zarr.log	#Dataset-15289	http://bia/File	547
+experimentA/NR2F1_CS23/3DView.ome.zarr.zip	#Dataset-15289	http://bia/Image	41687855
+experimentA/NR2F1_CS23/3DView.ome.zarr.log	#Dataset-15289	http://bia/File	626
+experimentA/NR2F1_CS23/NR2F1_CS23_3DView.ome.zarr.zip	#Dataset-15289	http://bia/Image	191196
+experimentA/NR2F1_CS23/NR2F1_CS23_3DView.ome.zarr.log	#Dataset-15289	http://bia/File	637
+experimentA/NR2F2_10PCW/12044_2_LFB_10PCW_103_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	795613845
+experimentA/NR2F2_10PCW/12044_2_LFB_10PCW_103_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	552
+experimentA/NR2F2_10PCW/12044_2_LFB_10PCW_82_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	904678671
+experimentA/NR2F2_10PCW/12044_2_LFB_10PCW_82_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	550
+experimentA/NR2F2_10PCW/12721_4_fb_10pcw_94_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	2244519727
+experimentA/NR2F2_10PCW/12721_4_fb_10pcw_94_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	548
+experimentA/NR2F2_10PCW/12721_4_fb_10pcw_96_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	3890525393
+experimentA/NR2F2_10PCW/12721_4_fb_10pcw_96_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	548
+experimentA/NR2F2_10PCW/13081_148_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	5883880025
+experimentA/NR2F2_10PCW/13081_148_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	498
+experimentA/NR2F2_10PCW/13081_182_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	5129438330
+experimentA/NR2F2_10PCW/13081_182_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	498
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_101_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	697714018
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_101_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	564
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_111_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	813184957
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_111_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	564
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_131_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	1035608409
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_131_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	564
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_88_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	629061028
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_88_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	562
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_90_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	840323761
+experimentA/NR2F2_10PCW/13136_5_Forebrain_10pcw_90_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	562
+experimentA/NR2F2_10PCW/13331_9_LFB_10PCW_67_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	727877759
+experimentA/NR2F2_10PCW/13331_9_LFB_10PCW_67_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	550
+experimentA/NR2F2_10PCW/ImageCollection_0000012428_COUPTFII.ome.zarr.zip	#Dataset-15290	http://bia/Image	1132509840
+experimentA/NR2F2_10PCW/ImageCollection_0000012428_COUPTFII.ome.zarr.log	#Dataset-15290	http://bia/File	558
+experimentA/NR2F2_12PCW/11523_10_Brain SL2_12pcw_22_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	2865768362
+experimentA/NR2F2_12PCW/11523_10_Brain SL2_12pcw_22_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	566
+experimentA/NR2F2_12PCW/11523_11_Brain SL3_12pcw_27_2015-12-01 13_00_11.ome.zarr.zip	#Dataset-15280	http://bia/Image	4168339386
+experimentA/NR2F2_12PCW/11523_11_Brain SL3_12pcw_27_2015-12-01 13_00_11.ome.zarr.log	#Dataset-15280	http://bia/File	564
+experimentA/NR2F2_12PCW/11523_11_Brain SL3_12pcw_81_2015-12-02 10_08_12.ome.zarr.zip	#Dataset-15280	http://bia/Image	4522936808
+experimentA/NR2F2_12PCW/11523_11_Brain SL3_12pcw_81_2015-12-02 10_08_12.ome.zarr.log	#Dataset-15280	http://bia/File	564
+experimentA/NR2F2_12PCW/11523_11_Brain SL3_12pcw_84_2015-12-01 12_45_15.ome.zarr.zip	#Dataset-15280	http://bia/Image	5301458676
+experimentA/NR2F2_12PCW/11523_11_Brain SL3_12pcw_84_2015-12-01 12_45_15.ome.zarr.log	#Dataset-15280	http://bia/File	564
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_154_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	3621230995
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_154_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	556
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_156_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	3517951526
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_156_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	556
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_184_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	3858498776
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_184_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	556
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_186_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	4153509830
+experimentA/NR2F2_12PCW/11610_9_brain_12pcw_186_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	556
+experimentA/NR2F2_12PCW/11761_12_Head_12pcw_042_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	2116313743
+experimentA/NR2F2_12PCW/11761_12_Head_12pcw_042_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	544
+experimentA/NR2F2_12PCW/12968_12.sl3_FB_12PCW_93_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	2253636645
+experimentA/NR2F2_12PCW/12968_12.sl3_FB_12PCW_93_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	558
+experimentA/NR2F2_12PCW/Autotest_0000013590_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	3317914296
+experimentA/NR2F2_12PCW/Autotest_0000013590_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	544
+experimentA/NR2F2_12PCW/ImageCollection_0000006758_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	2052118735
+experimentA/NR2F2_12PCW/ImageCollection_0000006758_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	558
+experimentA/NR2F2_12PCW/ImageCollection_0000006768_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	2566700254
+experimentA/NR2F2_12PCW/ImageCollection_0000006768_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	558
+experimentA/NR2F2_12PCW/ImageCollection_0000007095_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	1397024327
+experimentA/NR2F2_12PCW/ImageCollection_0000007095_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	558
+experimentA/NR2F2_12PCW/ImageCollection_0000007096_COUPTFII.ome.zarr.zip	#Dataset-15280	http://bia/Image	2302534936
+experimentA/NR2F2_12PCW/ImageCollection_0000007096_COUPTFII.ome.zarr.log	#Dataset-15280	http://bia/File	558
+experimentA/NR2F2_15PCW/13654_32_diencep_15pcw_15_COUPTFII.ome.zarr.zip	#Dataset-15462	http://bia/Image	1386073569
+experimentA/NR2F2_15PCW/13654_32_diencep_15pcw_15_COUPTFII.ome.zarr.log	#Dataset-15462	http://bia/File	560
+experimentA/NR2F2_15PCW/13654_32_diencep_15pcw_25_COUPTFII.ome.zarr.zip	#Dataset-15462	http://bia/Image	1767255678
+experimentA/NR2F2_15PCW/13654_32_diencep_15pcw_25_COUPTFII.ome.zarr.log	#Dataset-15462	http://bia/File	560
+experimentA/NR2F2_15PCW/13654_32_diencep_15pcw_38_COUPTFII.ome.zarr.zip	#Dataset-15462	http://bia/Image	948620123
+experimentA/NR2F2_15PCW/13654_32_diencep_15pcw_38_COUPTFII.ome.zarr.log	#Dataset-15462	http://bia/File	560
+experimentA/NR2F2_15PCW/13654_33_diencep_15pcw_10_COUPTFII.ome.zarr.zip	#Dataset-15462	http://bia/Image	1444481070
+experimentA/NR2F2_15PCW/13654_33_diencep_15pcw_10_COUPTFII.ome.zarr.log	#Dataset-15462	http://bia/File	560
+experimentA/NR2F2_15PCW/13654_33_diencep_15pcw_27_COUPTFII.ome.zarr.zip	#Dataset-15462	http://bia/Image	1107767656
+experimentA/NR2F2_15PCW/13654_33_diencep_15pcw_27_COUPTFII.ome.zarr.log	#Dataset-15462	http://bia/File	560
+experimentA/NR2F2_8PCW/11872_1_Head_Late 8pcw_109_COUPTFII.ome.zarr.zip	#Dataset-15437	http://bia/Image	1532075980
+experimentA/NR2F2_8PCW/11872_1_Head_Late 8pcw_109_COUPTFII.ome.zarr.log	#Dataset-15437	http://bia/File	563
+experimentA/NR2F2_8PCW/11872_1_Head_Late 8pcw_118_COUPTFII.ome.zarr.zip	#Dataset-15437	http://bia/Image	1267984873
+experimentA/NR2F2_8PCW/11872_1_Head_Late 8pcw_118_COUPTFII.ome.zarr.log	#Dataset-15437	http://bia/File	563
+experimentA/NR2F2_8PCW/12294_1_Head_L8pcw_168_COUPTFII.ome.zarr.zip	#Dataset-15437	http://bia/Image	1140517150
+experimentA/NR2F2_8PCW/12294_1_Head_L8pcw_168_COUPTFII.ome.zarr.log	#Dataset-15437	http://bia/File	553
+experimentA/NR2F2_8PCW/12294_1_Head_L8pcw_171_COUPTFII.ome.zarr.zip	#Dataset-15437	http://bia/Image	1237259680
+experimentA/NR2F2_8PCW/12294_1_Head_L8pcw_171_COUPTFII.ome.zarr.log	#Dataset-15437	http://bia/File	553
+experimentA/NR2F2_CS19/1032_1_head_CS19_100_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	437556340
+experimentA/NR2F2_CS19/1032_1_head_CS19_100_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	549
+experimentA/NR2F2_CS19/1032_1_head_CS19_50_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	568079154
+experimentA/NR2F2_CS19/1032_1_head_CS19_50_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	547
+experimentA/NR2F2_CS19/1032_1_head_CS19_60_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	738097769
+experimentA/NR2F2_CS19/1032_1_head_CS19_60_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	547
+experimentA/NR2F2_CS19/1032_1_head_CS19_74_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	711974381
+experimentA/NR2F2_CS19/1032_1_head_CS19_74_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	547
+experimentA/NR2F2_CS19/1032_1_head_CS19_87_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	809094076
+experimentA/NR2F2_CS19/1032_1_head_CS19_87_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	547
+experimentA/NR2F2_CS19/12769_4_Head_CS19_102_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	649475784
+experimentA/NR2F2_CS19/12769_4_Head_CS19_102_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	551
+experimentA/NR2F2_CS19/12769_4_Head_CS19_108_COUPTFII.ome.zarr.zip	#Dataset-15291	http://bia/Image	1000257719
+experimentA/NR2F2_CS19/12769_4_Head_CS19_108_COUPTFII.ome.zarr.log	#Dataset-15291	http://bia/File	551
+experimentA/NR2F2_CS19/3DView.ome.zarr.zip	#Dataset-15291	http://bia/Image	18128658
+experimentA/NR2F2_CS19/3DView.ome.zarr.log	#Dataset-15291	http://bia/File	626
+experimentA/NR2F2_CS19/NR2F2_CS19_3DView.ome.zarr.zip	#Dataset-15291	http://bia/Image	235106
+experimentA/NR2F2_CS19/NR2F2_CS19_3DView.ome.zarr.log	#Dataset-15291	http://bia/File	637
+experimentA/NR2F2_CS21/12128_1_head_CS21_113_COUPTFII.ome.zarr.zip	#Dataset-15450	http://bia/Image	673284130
+experimentA/NR2F2_CS21/12128_1_head_CS21_113_COUPTFII.ome.zarr.log	#Dataset-15450	http://bia/File	551
+experimentA/NR2F2_CS21/12128_1_head_CS21_116_COUPTFII.ome.zarr.zip	#Dataset-15450	http://bia/Image	499137749
+experimentA/NR2F2_CS21/12128_1_head_CS21_116_COUPTFII.ome.zarr.log	#Dataset-15450	http://bia/File	551
+experimentA/NR2F2_CS21/12128_1_head_CS21_129_COUPTFII.ome.zarr.zip	#Dataset-15450	http://bia/Image	984083583
+experimentA/NR2F2_CS21/12128_1_head_CS21_129_COUPTFII.ome.zarr.log	#Dataset-15450	http://bia/File	551
+experimentA/NR2F2_CS23/11613_1_Embryo_CS23_322_2018-05-14 15_12_07.ome.zarr.zip	#Dataset-15292	http://bia/Image	1243719726
+experimentA/NR2F2_CS23/11613_1_Embryo_CS23_322_2018-05-14 15_12_07.ome.zarr.log	#Dataset-15292	http://bia/File	552
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_21_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	2206461384
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_21_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	555
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_33_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1910528840
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_33_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	555
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_52_2017-01-05 10_47_20.ome.zarr.zip	#Dataset-15292	http://bia/Image	6946887545
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_52_2017-01-05 10_47_20.ome.zarr.log	#Dataset-15292	http://bia/File	552
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_63_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1697174355
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_63_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	555
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_79_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1234495610
+experimentA/NR2F2_CS23/12506_5_R hemi_CS23_79_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	555
+experimentA/NR2F2_CS23/12602_1_head_CS23_158_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1424531441
+experimentA/NR2F2_CS23/12602_1_head_CS23_158_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	551
+experimentA/NR2F2_CS23/12602_1_head_CS23_176_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1109821317
+experimentA/NR2F2_CS23/12602_1_head_CS23_176_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	551
+experimentA/NR2F2_CS23/12602_1_head_CS23_210_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1029434127
+experimentA/NR2F2_CS23/12602_1_head_CS23_210_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	551
+experimentA/NR2F2_CS23/12602_1_head_CS23_222_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	1274786862
+experimentA/NR2F2_CS23/12602_1_head_CS23_222_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	551
+experimentA/NR2F2_CS23/12780_1_head_CS23_66_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	844124054
+experimentA/NR2F2_CS23/12780_1_head_CS23_66_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	549
+experimentA/NR2F2_CS23/12780_1_head_CS23_78_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	791757604
+experimentA/NR2F2_CS23/12780_1_head_CS23_78_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	549
+experimentA/NR2F2_CS23/12780_1_head_CS23_83_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	789591171
+experimentA/NR2F2_CS23/12780_1_head_CS23_83_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	549
+experimentA/NR2F2_CS23/12780_1_head_CS23_89_COUPTFII.ome.zarr.zip	#Dataset-15292	http://bia/Image	780954866
+experimentA/NR2F2_CS23/12780_1_head_CS23_89_COUPTFII.ome.zarr.log	#Dataset-15292	http://bia/File	549
+experimentA/NR2F2_CS23/3DView.ome.zarr.zip	#Dataset-15292	http://bia/Image	41209085
+experimentA/NR2F2_CS23/3DView.ome.zarr.log	#Dataset-15292	http://bia/File	626
+experimentA/NR2F2_CS23/NR2F2_CS23_3DView.ome.zarr.zip	#Dataset-15292	http://bia/Image	182985
+experimentA/NR2F2_CS23/NR2F2_CS23_3DView.ome.zarr.log	#Dataset-15292	http://bia/File	637
+experimentA/NRP2_10PCW/12044_2_LFB_10PCW_72_NRP2.ome.zarr.zip	#Dataset-15293	http://bia/Image	1572816788
+experimentA/NRP2_10PCW/12044_2_LFB_10PCW_72_NRP2.ome.zarr.log	#Dataset-15293	http://bia/File	541
+experimentA/NRP2_10PCW/12044_2_LFB_10PCW_86_NRP2.ome.zarr.zip	#Dataset-15293	http://bia/Image	1605257378
+experimentA/NRP2_10PCW/12044_2_LFB_10PCW_86_NRP2.ome.zarr.log	#Dataset-15293	http://bia/File	541
+experimentA/NRP2_10PCW/13081_105_NRP2.ome.zarr.zip	#Dataset-15293	http://bia/Image	4592359788
+experimentA/NRP2_10PCW/13081_105_NRP2.ome.zarr.log	#Dataset-15293	http://bia/File	488
+experimentA/NRP2_10PCW/13136_5_Forebrain_10pcw_114_2017-11-23 15_11_28.ome.zarr.zip	#Dataset-15293	http://bia/Image	4220653578
+experimentA/NRP2_10PCW/13136_5_Forebrain_10pcw_114_2017-11-23 15_11_28.ome.zarr.log	#Dataset-15293	http://bia/File	560
+experimentA/NRP2_10PCW/13136_5_Forebrain_10pcw_96_NRP2.ome.zarr.zip	#Dataset-15293	http://bia/Image	3273958616
+experimentA/NRP2_10PCW/13136_5_Forebrain_10pcw_96_NRP2.ome.zarr.log	#Dataset-15293	http://bia/File	553
+experimentA/NRP2_10PCW/Autotest_0000025804_NRP2.ome.zarr.zip	#Dataset-15293	http://bia/Image	3526441905
+experimentA/NRP2_10PCW/Autotest_0000025804_NRP2.ome.zarr.log	#Dataset-15293	http://bia/File	535
+experimentA/NRP2_10PCW/Autotest_0000025814_NRP2.ome.zarr.zip	#Dataset-15293	http://bia/Image	1678727031
+experimentA/NRP2_10PCW/Autotest_0000025814_NRP2.ome.zarr.log	#Dataset-15293	http://bia/File	535
+experimentA/OLIG2_10PCW/12721_4_fb_10pcw_78_OLIG2.ome.zarr.zip	#Dataset-15446	http://bia/Image	2013804970
+experimentA/OLIG2_10PCW/12721_4_fb_10pcw_78_OLIG2.ome.zarr.log	#Dataset-15446	http://bia/File	542
+experimentA/OLIG2_10PCW/13136_5_Forebrain_10pcw_125_OLIG2.ome.zarr.zip	#Dataset-15446	http://bia/Image	787730153
+experimentA/OLIG2_10PCW/13136_5_Forebrain_10pcw_125_OLIG2.ome.zarr.log	#Dataset-15446	http://bia/File	558
+experimentA/OLIG2_10PCW/13136_5_Forebrain_10pcw_148_OLIG2.ome.zarr.zip	#Dataset-15446	http://bia/Image	903223514
+experimentA/OLIG2_10PCW/13136_5_Forebrain_10pcw_148_OLIG2.ome.zarr.log	#Dataset-15446	http://bia/File	558
+experimentA/OLIG2_10PCW/Autotest_0000025799_OLIG2.ome.zarr.zip	#Dataset-15446	http://bia/Image	1281521196
+experimentA/OLIG2_10PCW/Autotest_0000025799_OLIG2.ome.zarr.log	#Dataset-15446	http://bia/File	538
+experimentA/OLIG2_12PCW/11610_9_brain_12pcw_155_OLIG2.ome.zarr.zip	#Dataset-15441	http://bia/Image	4015601183
+experimentA/OLIG2_12PCW/11610_9_brain_12pcw_155_OLIG2.ome.zarr.log	#Dataset-15441	http://bia/File	550
+experimentA/OLIG2_12PCW/11610_9_brain_12pcw_185_OLIG2.ome.zarr.zip	#Dataset-15441	http://bia/Image	3622038348
+experimentA/OLIG2_12PCW/11610_9_brain_12pcw_185_OLIG2.ome.zarr.log	#Dataset-15441	http://bia/File	550
+experimentA/OLIG2_8PCW/11872_1_Head_Late 8pcw_109_OLIG2.ome.zarr.zip	#Dataset-15438	http://bia/Image	1519250426
+experimentA/OLIG2_8PCW/11872_1_Head_Late 8pcw_109_OLIG2.ome.zarr.log	#Dataset-15438	http://bia/File	557
+experimentA/OLIG2_8PCW/11872_1_Head_Late 8pcw_118_OLIG2.ome.zarr.zip	#Dataset-15438	http://bia/Image	1369098485
+experimentA/OLIG2_8PCW/11872_1_Head_Late 8pcw_118_OLIG2.ome.zarr.log	#Dataset-15438	http://bia/File	557
+experimentA/OLIG2_8PCW/12294_1_Head_L8pcw_171_OLIG2.ome.zarr.zip	#Dataset-15438	http://bia/Image	1206626703
+experimentA/OLIG2_8PCW/12294_1_Head_L8pcw_171_OLIG2.ome.zarr.log	#Dataset-15438	http://bia/File	547
+experimentA/OLIG2_CS19/1032_1_head_CS19_49_OLIG2.ome.zarr.zip	#Dataset-15294	http://bia/Image	604582232
+experimentA/OLIG2_CS19/1032_1_head_CS19_49_OLIG2.ome.zarr.log	#Dataset-15294	http://bia/File	541
+experimentA/OLIG2_CS19/1032_1_head_CS19_59_OLIG2.ome.zarr.zip	#Dataset-15294	http://bia/Image	493016875
+experimentA/OLIG2_CS19/1032_1_head_CS19_59_OLIG2.ome.zarr.log	#Dataset-15294	http://bia/File	541
+experimentA/OLIG2_CS19/1032_1_head_CS19_73_OLIG2.ome.zarr.zip	#Dataset-15294	http://bia/Image	818700236
+experimentA/OLIG2_CS19/1032_1_head_CS19_73_OLIG2.ome.zarr.log	#Dataset-15294	http://bia/File	541
+experimentA/OLIG2_CS19/1032_1_head_CS19_86_OLIG2.ome.zarr.zip	#Dataset-15294	http://bia/Image	541950483
+experimentA/OLIG2_CS19/1032_1_head_CS19_86_OLIG2.ome.zarr.log	#Dataset-15294	http://bia/File	541
+experimentA/OLIG2_CS19/1032_1_head_CS19_99_OLIG2.ome.zarr.zip	#Dataset-15294	http://bia/Image	718446524
+experimentA/OLIG2_CS19/1032_1_head_CS19_99_OLIG2.ome.zarr.log	#Dataset-15294	http://bia/File	541
+experimentA/OLIG2_CS19/12769_4_Head_CS19_110_OLIG2.ome.zarr.zip	#Dataset-15294	http://bia/Image	453156899
+experimentA/OLIG2_CS19/12769_4_Head_CS19_110_OLIG2.ome.zarr.log	#Dataset-15294	http://bia/File	545
+experimentA/OLIG2_CS19/3DView.ome.zarr.zip	#Dataset-15294	http://bia/Image	17767633
+experimentA/OLIG2_CS19/3DView.ome.zarr.log	#Dataset-15294	http://bia/File	626
+experimentA/OLIG2_CS19/OLIG2_CS19_3DView.ome.zarr.zip	#Dataset-15294	http://bia/Image	204994
+experimentA/OLIG2_CS19/OLIG2_CS19_3DView.ome.zarr.log	#Dataset-15294	http://bia/File	637
+experimentA/OLIG2_CS23/12204_1_Head_CS23_69_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	917961734
+experimentA/OLIG2_CS23/12204_1_Head_CS23_69_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	543
+experimentA/OLIG2_CS23/12506_5_R hemi_CS23_24_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	2589513292
+experimentA/OLIG2_CS23/12506_5_R hemi_CS23_24_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	549
+experimentA/OLIG2_CS23/12780_1_head_CS23_121_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	992144979
+experimentA/OLIG2_CS23/12780_1_head_CS23_121_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	545
+experimentA/OLIG2_CS23/12780_1_head_CS23_65_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	615780150
+experimentA/OLIG2_CS23/12780_1_head_CS23_65_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	543
+experimentA/OLIG2_CS23/12780_1_head_CS23_79_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	776490145
+experimentA/OLIG2_CS23/12780_1_head_CS23_79_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	543
+experimentA/OLIG2_CS23/12780_1_head_CS23_83_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	966536257
+experimentA/OLIG2_CS23/12780_1_head_CS23_83_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	543
+experimentA/OLIG2_CS23/12780_1_head_CS23_90_OLIG2.ome.zarr.zip	#Dataset-15439	http://bia/Image	750576317
+experimentA/OLIG2_CS23/12780_1_head_CS23_90_OLIG2.ome.zarr.log	#Dataset-15439	http://bia/File	543
+experimentA/OTX2_10PCW/13136_5_Forebrain_10pcw_90_OTX2.ome.zarr.zip	#Dataset-15445	http://bia/Image	643363469
+experimentA/OTX2_10PCW/13136_5_Forebrain_10pcw_90_OTX2.ome.zarr.log	#Dataset-15445	http://bia/File	553
+experimentA/OTX2_10PCW/ImageCollection_0000012428_OTX2.ome.zarr.zip	#Dataset-15445	http://bia/Image	1039602028
+experimentA/OTX2_10PCW/ImageCollection_0000012428_OTX2.ome.zarr.log	#Dataset-15445	http://bia/File	549
+experimentA/OTX2_15PCW/13654_33_diencep_15pcw_28_OTX2.ome.zarr.zip	#Dataset-15461	http://bia/Image	1611548951
+experimentA/OTX2_15PCW/13654_33_diencep_15pcw_28_OTX2.ome.zarr.log	#Dataset-15461	http://bia/File	551
+experimentA/OTX2_CS19/1032_1_head_CS19_101_OTX2.ome.zarr.zip	#Dataset-15295	http://bia/Image	783993379
+experimentA/OTX2_CS19/1032_1_head_CS19_101_OTX2.ome.zarr.log	#Dataset-15295	http://bia/File	540
+experimentA/OTX2_CS19/1032_1_head_CS19_51_OTX2.ome.zarr.zip	#Dataset-15295	http://bia/Image	381142753
+experimentA/OTX2_CS19/1032_1_head_CS19_51_OTX2.ome.zarr.log	#Dataset-15295	http://bia/File	538
+experimentA/OTX2_CS19/1032_1_head_CS19_62_OTX2.ome.zarr.zip	#Dataset-15295	http://bia/Image	537310594
+experimentA/OTX2_CS19/1032_1_head_CS19_62_OTX2.ome.zarr.log	#Dataset-15295	http://bia/File	538
+experimentA/OTX2_CS19/1032_1_head_CS19_75_OTX2.ome.zarr.zip	#Dataset-15295	http://bia/Image	558511648
+experimentA/OTX2_CS19/1032_1_head_CS19_75_OTX2.ome.zarr.log	#Dataset-15295	http://bia/File	538
+experimentA/OTX2_CS19/1032_1_head_CS19_88_OTX2.ome.zarr.zip	#Dataset-15295	http://bia/Image	637622467
+experimentA/OTX2_CS19/1032_1_head_CS19_88_OTX2.ome.zarr.log	#Dataset-15295	http://bia/File	538
+experimentA/OTX2_CS19/3DView.ome.zarr.zip	#Dataset-15295	http://bia/Image	17779667
+experimentA/OTX2_CS19/3DView.ome.zarr.log	#Dataset-15295	http://bia/File	624
+experimentA/OTX2_CS19/OTX2_CS19_3DView.ome.zarr.zip	#Dataset-15295	http://bia/Image	202724
+experimentA/OTX2_CS19/OTX2_CS19_3DView.ome.zarr.log	#Dataset-15295	http://bia/File	634
+experimentA/OTX2_CS23/11613_1_Embryo_CS23_293_2018-05-14 12_26_33.ome.zarr.zip	#Dataset-15296	http://bia/Image	1527477450
+experimentA/OTX2_CS23/11613_1_Embryo_CS23_293_2018-05-14 12_26_33.ome.zarr.log	#Dataset-15296	http://bia/File	550
+experimentA/OTX2_CS23/11613_1_Embryo_CS23_332_2018-05-14 15_16_12.ome.zarr.zip	#Dataset-15296	http://bia/Image	1158855201
+experimentA/OTX2_CS23/11613_1_Embryo_CS23_332_2018-05-14 15_16_12.ome.zarr.log	#Dataset-15296	http://bia/File	550
+experimentA/OTX2_CS23/12602_1_head_CS23_177_OTX2.ome.zarr.zip	#Dataset-15296	http://bia/Image	1263331788
+experimentA/OTX2_CS23/12602_1_head_CS23_177_OTX2.ome.zarr.log	#Dataset-15296	http://bia/File	542
+experimentA/OTX2_CS23/12602_1_head_CS23_209_OTX2.ome.zarr.zip	#Dataset-15296	http://bia/Image	1140855607
+experimentA/OTX2_CS23/12602_1_head_CS23_209_OTX2.ome.zarr.log	#Dataset-15296	http://bia/File	542
+experimentA/OTX2_CS23/12602_1_head_CS23_220_OTX2.ome.zarr.zip	#Dataset-15296	http://bia/Image	1283957769
+experimentA/OTX2_CS23/12602_1_head_CS23_220_OTX2.ome.zarr.log	#Dataset-15296	http://bia/File	542
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_63_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	965303214
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_63_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	541
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_74_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	746865670
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_74_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	541
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_83_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	476813039
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_83_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	541
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_93_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	724741245
+experimentA/PAX6_10PCW/12044_2_LFB_10PCW_93_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	541
+experimentA/PAX6_10PCW/12721_4_fb_10pcw_96_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1998483743
+experimentA/PAX6_10PCW/12721_4_fb_10pcw_96_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	539
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_109_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	981861808
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_109_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_115_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	889333588
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_115_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_119_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	908951423
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_119_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_120_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	719750006
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_120_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_123_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	694382721
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_123_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_125_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	995450793
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_125_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_148_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	915046547
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_148_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	555
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_95_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	777209068
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_95_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	553
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_96_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	943981468
+experimentA/PAX6_10PCW/13136_5_Forebrain_10pcw_96_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	553
+experimentA/PAX6_10PCW/13331_9_LFB_10PCW_66_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1072537875
+experimentA/PAX6_10PCW/13331_9_LFB_10PCW_66_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	541
+experimentA/PAX6_10PCW/2036_4_Brain Slice 1_10pcw_77_2015-12-14 17_17_12.ome.zarr.zip	#Dataset-15297	http://bia/Image	3312125837
+experimentA/PAX6_10PCW/2036_4_Brain Slice 1_10pcw_77_2015-12-14 17_17_12.ome.zarr.log	#Dataset-15297	http://bia/File	568
+experimentA/PAX6_10PCW/2036_5_Brain Slice 2_10pcw_20_2015-12-15 16_17_01.ome.zarr.zip	#Dataset-15297	http://bia/Image	5401973339
+experimentA/PAX6_10PCW/2036_5_Brain Slice 2_10pcw_20_2015-12-15 16_17_01.ome.zarr.log	#Dataset-15297	http://bia/File	568
+experimentA/PAX6_10PCW/Autotest_0000025809_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1570663848
+experimentA/PAX6_10PCW/Autotest_0000025809_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	535
+experimentA/PAX6_10PCW/ImageCollection_0000010323_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	765297754
+experimentA/PAX6_10PCW/ImageCollection_0000010323_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	549
+experimentA/PAX6_10PCW/ImageCollection_0000010397_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1538776406
+experimentA/PAX6_10PCW/ImageCollection_0000010397_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	549
+experimentA/PAX6_10PCW/ImageCollection_0000010398_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1403006956
+experimentA/PAX6_10PCW/ImageCollection_0000010398_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	549
+experimentA/PAX6_10PCW/ImageCollection_0000010399_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1379620299
+experimentA/PAX6_10PCW/ImageCollection_0000010399_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	549
+experimentA/PAX6_10PCW/ImageCollection_0000010400_PAX6.ome.zarr.zip	#Dataset-15297	http://bia/Image	1781665822
+experimentA/PAX6_10PCW/ImageCollection_0000010400_PAX6.ome.zarr.log	#Dataset-15297	http://bia/File	549
+experimentA/PAX6_12PCW/11795_11_R Hemi_12pcw_132_12pcw.ome.zarr.zip	#Dataset-15298	http://bia/Image	3641795063
+experimentA/PAX6_12PCW/11795_11_R Hemi_12pcw_132_12pcw.ome.zarr.log	#Dataset-15298	http://bia/File	555
+experimentA/PAX6_12PCW/11795_11_R Hemi_12pcw_188_2015-12-15 17_00_37.ome.zarr.zip	#Dataset-15298	http://bia/Image	7751488183
+experimentA/PAX6_12PCW/11795_11_R Hemi_12pcw_188_2015-12-15 17_00_37.ome.zarr.log	#Dataset-15298	http://bia/File	558
+experimentA/PAX6_12PCW/11795_11_R Hemi_12pcw_98_2015-12-14 16_39_38.ome.zarr.zip	#Dataset-15298	http://bia/Image	8255475351
+experimentA/PAX6_12PCW/11795_11_R Hemi_12pcw_98_2015-12-14 16_39_38.ome.zarr.log	#Dataset-15298	http://bia/File	556
+experimentA/PAX6_12PCW/12968_12.sl3_FB_12PCW_30_PAX6.ome.zarr.zip	#Dataset-15298	http://bia/Image	2104610971
+experimentA/PAX6_12PCW/12968_12.sl3_FB_12PCW_30_PAX6.ome.zarr.log	#Dataset-15298	http://bia/File	549
+experimentA/PAX6_12PCW/2033_1_Hemisphere_12pcw_185_2015-12-15 14_32_09.ome.zarr.zip	#Dataset-15298	http://bia/Image	4440203044
+experimentA/PAX6_12PCW/2033_1_Hemisphere_12pcw_185_2015-12-15 14_32_09.ome.zarr.log	#Dataset-15298	http://bia/File	560
+experimentA/PAX6_12PCW/2033_1_Hemisphere_12pcw_75_2015-12-14 16_45_43.ome.zarr.zip	#Dataset-15298	http://bia/Image	5440063290
+experimentA/PAX6_12PCW/2033_1_Hemisphere_12pcw_75_2015-12-14 16_45_43.ome.zarr.log	#Dataset-15298	http://bia/File	558
+experimentA/PAX6_14PCW/13024_18_Left brain slice 1_14PCW_75_PAX6.ome.zarr.zip	#Dataset-15466	http://bia/Image	1409390044
+experimentA/PAX6_14PCW/13024_18_Left brain slice 1_14PCW_75_PAX6.ome.zarr.log	#Dataset-15466	http://bia/File	579
+experimentA/PAX6_18PCW/13463_31_MBHB_18pcw_44_pax6.ome.zarr.zip	#Dataset-15459	http://bia/Image	3996020146
+experimentA/PAX6_18PCW/13463_31_MBHB_18pcw_44_pax6.ome.zarr.log	#Dataset-15459	http://bia/File	545
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_112_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	1349752230
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_112_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	544
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_118_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	2878373386
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_118_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	544
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_19_2015-12-15 14_43_46.ome.zarr.zip	#Dataset-15299	http://bia/Image	5162446719
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_19_2015-12-15 14_43_46.ome.zarr.log	#Dataset-15299	http://bia/File	546
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_46_2015-12-15 16_28_19.ome.zarr.zip	#Dataset-15299	http://bia/Image	4405488564
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_46_2015-12-15 16_28_19.ome.zarr.log	#Dataset-15299	http://bia/File	546
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_53_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	2104197016
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_53_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	542
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_55_2015-12-15 14_45_57.ome.zarr.zip	#Dataset-15299	http://bia/Image	4739576194
+experimentA/PAX6_8PCW/11557_3_Head_L8pcw_55_2015-12-15 14_45_57.ome.zarr.log	#Dataset-15299	http://bia/File	546
+experimentA/PAX6_8PCW/12294_1_Head_L8pcw_168_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	1299318167
+experimentA/PAX6_8PCW/12294_1_Head_L8pcw_168_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	544
+experimentA/PAX6_8PCW/12294_1_Head_L8pcw_171_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	1207528420
+experimentA/PAX6_8PCW/12294_1_Head_L8pcw_171_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	544
+experimentA/PAX6_8PCW/13107_18_R brain_Late 8_33_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	1001553426
+experimentA/PAX6_8PCW/13107_18_R brain_Late 8_33_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	556
+experimentA/PAX6_8PCW/13107_18_R brain_Late 8_43_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	918725835
+experimentA/PAX6_8PCW/13107_18_R brain_Late 8_43_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	556
+experimentA/PAX6_8PCW/1975_1_Head_L8pcw_105_2015-12-15 11_02_18.ome.zarr.zip	#Dataset-15299	http://bia/Image	6797482968
+experimentA/PAX6_8PCW/1975_1_Head_L8pcw_105_2015-12-15 11_02_18.ome.zarr.log	#Dataset-15299	http://bia/File	546
+experimentA/PAX6_8PCW/1975_1_Head_L8pcw_65_PAX6.ome.zarr.zip	#Dataset-15299	http://bia/Image	2472835263
+experimentA/PAX6_8PCW/1975_1_Head_L8pcw_65_PAX6.ome.zarr.log	#Dataset-15299	http://bia/File	540
+experimentA/PAX6_CS19/1032_1_head_CS19_48_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	798889174
+experimentA/PAX6_CS19/1032_1_head_CS19_48_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	538
+experimentA/PAX6_CS19/1032_1_head_CS19_72_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	366985897
+experimentA/PAX6_CS19/1032_1_head_CS19_72_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	538
+experimentA/PAX6_CS19/1032_1_head_CS19_78_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	405146384
+experimentA/PAX6_CS19/1032_1_head_CS19_78_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	538
+experimentA/PAX6_CS19/1032_1_head_CS19_98_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	642271003
+experimentA/PAX6_CS19/1032_1_head_CS19_98_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	538
+experimentA/PAX6_CS19/12769_4_Head_CS19_101_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	1062279985
+experimentA/PAX6_CS19/12769_4_Head_CS19_101_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	542
+experimentA/PAX6_CS19/12769_4_Head_CS19_110_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	459849814
+experimentA/PAX6_CS19/12769_4_Head_CS19_110_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	542
+experimentA/PAX6_CS19/12769_4_Head_CS19_80_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	598425978
+experimentA/PAX6_CS19/12769_4_Head_CS19_80_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	540
+experimentA/PAX6_CS19/12769_4_Head_CS19_90_PAX6.ome.zarr.zip	#Dataset-15300	http://bia/Image	476661644
+experimentA/PAX6_CS19/12769_4_Head_CS19_90_PAX6.ome.zarr.log	#Dataset-15300	http://bia/File	540
+experimentA/PAX6_CS19/3DView.ome.zarr.zip	#Dataset-15300	http://bia/Image	17925591
+experimentA/PAX6_CS19/3DView.ome.zarr.log	#Dataset-15300	http://bia/File	624
+experimentA/PAX6_CS19/PAX6_CS19_3DView.ome.zarr.zip	#Dataset-15300	http://bia/Image	210294
+experimentA/PAX6_CS19/PAX6_CS19_3DView.ome.zarr.log	#Dataset-15300	http://bia/File	634
+experimentA/PAX6_CS21/12128_1_head_CS21_130_PAX6.ome.zarr.zip	#Dataset-15455	http://bia/Image	1166937771
+experimentA/PAX6_CS21/12128_1_head_CS21_130_PAX6.ome.zarr.log	#Dataset-15455	http://bia/File	542
+experimentA/PAX6_CS21/13436_1_embryo_CS21_144_PAX6.ome.zarr.zip	#Dataset-15455	http://bia/Image	1009843437
+experimentA/PAX6_CS21/13436_1_embryo_CS21_144_PAX6.ome.zarr.log	#Dataset-15455	http://bia/File	546
+experimentA/PAX6_CS21/13436_1_embryo_CS21_151_PAX6.ome.zarr.zip	#Dataset-15455	http://bia/Image	791473684
+experimentA/PAX6_CS21/13436_1_embryo_CS21_151_PAX6.ome.zarr.log	#Dataset-15455	http://bia/File	546
+experimentA/PAX6_CS23/11557_3_Head_CS23_49_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	2473194408
+experimentA/PAX6_CS23/11557_3_Head_CS23_49_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/11557_3_Head_CS23_74_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	2501397906
+experimentA/PAX6_CS23/11557_3_Head_CS23_74_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/11751_53_CS23_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	3366944625
+experimentA/PAX6_CS23/11751_53_CS23_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	494
+experimentA/PAX6_CS23/12204_1_Head_CS23_76_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	947116309
+experimentA/PAX6_CS23/12204_1_Head_CS23_76_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12204_1_Head_CS23_82_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	971895361
+experimentA/PAX6_CS23/12204_1_Head_CS23_82_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_11_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	903778559
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_11_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	546
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_24_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	3022159271
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_24_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	546
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_33_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	1008369671
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_33_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	546
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_54_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	1888530635
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_54_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	546
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_65_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	755241957
+experimentA/PAX6_CS23/12506_5_R hemi_CS23_65_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	546
+experimentA/PAX6_CS23/12780_1_head_CS23_100_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	741381435
+experimentA/PAX6_CS23/12780_1_head_CS23_100_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	542
+experimentA/PAX6_CS23/12780_1_head_CS23_43_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	592347314
+experimentA/PAX6_CS23/12780_1_head_CS23_43_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12780_1_head_CS23_57_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	673224430
+experimentA/PAX6_CS23/12780_1_head_CS23_57_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12780_1_head_CS23_65_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	707523389
+experimentA/PAX6_CS23/12780_1_head_CS23_65_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12780_1_head_CS23_79_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	724525347
+experimentA/PAX6_CS23/12780_1_head_CS23_79_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12780_1_head_CS23_83_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	973658941
+experimentA/PAX6_CS23/12780_1_head_CS23_83_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/12780_1_head_CS23_90_PAX6.ome.zarr.zip	#Dataset-15301	http://bia/Image	761983932
+experimentA/PAX6_CS23/12780_1_head_CS23_90_PAX6.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_CS23/980_1_Head_CS23_50_2015-12-15 11_44_08.ome.zarr.zip	#Dataset-15301	http://bia/Image	4175628888
+experimentA/PAX6_CS23/980_1_Head_CS23_50_2015-12-15 11_44_08.ome.zarr.log	#Dataset-15301	http://bia/File	540
+experimentA/PAX6_OLIG2_NKX2-2_CS11/120619_CS11_B1_11.lif - TileScan 1_11.1.ome.zarr.zip	#Dataset-15302	http://bia/Image	11254728
+experimentA/PAX6_OLIG2_NKX2-2_CS11/120619_CS11_B1_11.lif - TileScan 1_11.1.ome.zarr.log	#Dataset-15302	http://bia/File	568
+experimentA/PAX6_OLIG2_NKX2-2_CS11/120619_CS11_B1_11.lif - TileScan 1_11.2.ome.zarr.zip	#Dataset-15302	http://bia/Image	11573437
+experimentA/PAX6_OLIG2_NKX2-2_CS11/120619_CS11_B1_11.lif - TileScan 1_11.2.ome.zarr.log	#Dataset-15302	http://bia/File	568
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_1.ome.zarr.zip	#Dataset-15303	http://bia/Image	23490358
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_1.ome.zarr.log	#Dataset-15303	http://bia/File	709
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_2.ome.zarr.zip	#Dataset-15303	http://bia/Image	4284630
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_2.ome.zarr.log	#Dataset-15303	http://bia/File	550
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_3 -1_proper.ome.zarr.zip	#Dataset-15303	http://bia/Image	40116586
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_3 -1_proper.ome.zarr.log	#Dataset-15303	http://bia/File	572
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_4-1_proper.ome.zarr.zip	#Dataset-15303	http://bia/Image	38391474
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14364_brachial_1.lif - 1_4-1_proper.ome.zarr.log	#Dataset-15303	http://bia/File	568
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14401_mab 1_3 section.ome.zarr.zip	#Dataset-15303	http://bia/Image	3494268
+experimentA/PAX6_OLIG2_NKX2-2_CS13/CS13_14401_mab 1_3 section.ome.zarr.log	#Dataset-15303	http://bia/File	540
+experimentA/PAX6_OLIG2_NKX2-2_CS14/120619_CS14_14735_B1_partA1.lif - TileScan 1 Region 4_Merged.ome.zarr.zip	#Dataset-15304	http://bia/Image	25914861
+experimentA/PAX6_OLIG2_NKX2-2_CS14/120619_CS14_14735_B1_partA1.lif - TileScan 1 Region 4_Merged.ome.zarr.log	#Dataset-15304	http://bia/File	614
+experimentA/PAX6_OLIG2_NKX2-2_CS14/140120_P488_O568_N647.lif - CS14_15151.1_B1_1.1.ome.zarr.zip	#Dataset-15304	http://bia/Image	29852432
+experimentA/PAX6_OLIG2_NKX2-2_CS14/140120_P488_O568_N647.lif - CS14_15151.1_B1_1.1.ome.zarr.log	#Dataset-15304	http://bia/File	582
+experimentA/PAX6_OLIG2_NKX2-2_CS14/140120_P488_O568_N647.lif - CS14_15151.1_B1_1.2.ome.zarr.zip	#Dataset-15304	http://bia/Image	33338677
+experimentA/PAX6_OLIG2_NKX2-2_CS14/140120_P488_O568_N647.lif - CS14_15151.1_B1_1.2.ome.zarr.log	#Dataset-15304	http://bia/File	582
+experimentA/PAX6_OLIG2_NKX2-2_CS14/140120_P488_O568_N647.lif - CS14_15151.1_B1_1.3.ome.zarr.zip	#Dataset-15304	http://bia/Image	37755282
+experimentA/PAX6_OLIG2_NKX2-2_CS14/140120_P488_O568_N647.lif - CS14_15151.1_B1_1.3.ome.zarr.log	#Dataset-15304	http://bia/File	582
+experimentA/PAX6_OLIG2_NKX2-2_CS14/CS14_14505_b2_1.lif - 1505 1_2 40x crop.ome.zarr.zip	#Dataset-15304	http://bia/Image	80742149
+experimentA/PAX6_OLIG2_NKX2-2_CS14/CS14_14505_b2_1.lif - 1505 1_2 40x crop.ome.zarr.log	#Dataset-15304	http://bia/File	572
+experimentA/PAX6_OLIG2_NKX2-2_CS14/CS14_14505_b2_1.lif - 1505 1_4 40x.ome.zarr.zip	#Dataset-15304	http://bia/Image	81168527
+experimentA/PAX6_OLIG2_NKX2-2_CS14/CS14_14505_b2_1.lif - 1505 1_4 40x.ome.zarr.log	#Dataset-15304	http://bia/File	560
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.1.ome.zarr.zip	#Dataset-15305	http://bia/Image	22094555
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.1.ome.zarr.log	#Dataset-15305	http://bia/File	600
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.2.ome.zarr.zip	#Dataset-15305	http://bia/Image	22177194
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.2.ome.zarr.log	#Dataset-15305	http://bia/File	600
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.3.ome.zarr.zip	#Dataset-15305	http://bia/Image	23636106
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.3.ome.zarr.log	#Dataset-15305	http://bia/File	600
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.4.ome.zarr.zip	#Dataset-15305	http://bia/Image	16088814
+experimentA/PAX6_OLIG2_NKX2-2_CS15/020919_CS15_14631.3 pax6_o2_nkx22.lif - TileScan 1_3.4.ome.zarr.log	#Dataset-15305	http://bia/File	600
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1a.ome.zarr.zip	#Dataset-15305	http://bia/Image	23647298
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1a.ome.zarr.log	#Dataset-15305	http://bia/File	570
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1b.ome.zarr.zip	#Dataset-15305	http://bia/Image	22558917
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1b.ome.zarr.log	#Dataset-15305	http://bia/File	570
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1c.ome.zarr.zip	#Dataset-15305	http://bia/Image	22336464
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1c.ome.zarr.log	#Dataset-15305	http://bia/File	570
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1d.ome.zarr.zip	#Dataset-15305	http://bia/Image	20167027
+experimentA/PAX6_OLIG2_NKX2-2_CS15/120619_CS15_14735.lif - TileScan 1_B2_1d.ome.zarr.log	#Dataset-15305	http://bia/File	570
+experimentA/PAX6_OLIG2_NKX2-2_CS15/CS15_14346_brac_2.lif - 2_2 a.ome.zarr.zip	#Dataset-15305	http://bia/Image	59454149
+experimentA/PAX6_OLIG2_NKX2-2_CS15/CS15_14346_brac_2.lif - 2_2 a.ome.zarr.log	#Dataset-15305	http://bia/File	548
+experimentA/PAX6_OLIG2_NKX2-2_CS15/CS15_14346_brac_2.lif - 2_3 a.ome.zarr.zip	#Dataset-15305	http://bia/Image	61298735
+experimentA/PAX6_OLIG2_NKX2-2_CS15/CS15_14346_brac_2.lif - 2_3 a.ome.zarr.log	#Dataset-15305	http://bia/File	548
+experimentA/PAX6_OLIG2_NKX2-2_CS15/CS15_14346_brac_2.lif - 2_4.ome.zarr.zip	#Dataset-15305	http://bia/Image	47977680
+experimentA/PAX6_OLIG2_NKX2-2_CS15/CS15_14346_brac_2.lif - 2_4.ome.zarr.log	#Dataset-15305	http://bia/File	544
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.1_big.ome.zarr.zip	#Dataset-15306	http://bia/Image	12153999
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.1_big.ome.zarr.log	#Dataset-15306	http://bia/File	766
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.2.ome.zarr.zip	#Dataset-15306	http://bia/Image	9370009
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.2.ome.zarr.log	#Dataset-15306	http://bia/File	761
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.3.ome.zarr.zip	#Dataset-15306	http://bia/Image	10124982
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.3.ome.zarr.log	#Dataset-15306	http://bia/File	758
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.4.ome.zarr.zip	#Dataset-15306	http://bia/Image	11291214
+experimentA/PAX6_OLIG2_NKX2-2_CS17/020919_CS17_144.731.1 pax6_o2_nkx22.lif - TileScan 1_1.4.ome.zarr.log	#Dataset-15306	http://bia/File	758
+experimentA/PAX6_OLIG2_NKX2-2_CS19/140120_P488_O568_N647.lif - CS19_14391.1_B_3.ome.zarr.zip	#Dataset-15307	http://bia/Image	80124169
+experimentA/PAX6_OLIG2_NKX2-2_CS19/140120_P488_O568_N647.lif - CS19_14391.1_B_3.ome.zarr.log	#Dataset-15307	http://bia/File	576
+experimentA/PAX6_OLIG2_NKX2-2_CS19/140120_P488_O568_N647.lif - CS19_14391.1_B_4.ome.zarr.zip	#Dataset-15307	http://bia/Image	91124859
+experimentA/PAX6_OLIG2_NKX2-2_CS19/140120_P488_O568_N647.lif - CS19_14391.1_B_4.ome.zarr.log	#Dataset-15307	http://bia/File	576
+experimentA/PAX6_OLIG2_NKX2-2_CS20/140120_P488_O568_N647.lif - CS20_14569.1 B2_Region 2_Merged.ome.zarr.zip	#Dataset-15308	http://bia/Image	23384752
+experimentA/PAX6_OLIG2_NKX2-2_CS20/140120_P488_O568_N647.lif - CS20_14569.1 B2_Region 2_Merged.ome.zarr.log	#Dataset-15308	http://bia/File	764
+experimentA/PAX6_OLIG2_NKX2-2_CS20/140120_P488_O568_N647.lif - CS20_14569.1 B2_Region 3_Merged.ome.zarr.zip	#Dataset-15308	http://bia/Image	24564852
+experimentA/PAX6_OLIG2_NKX2-2_CS20/140120_P488_O568_N647.lif - CS20_14569.1 B2_Region 3_Merged.ome.zarr.log	#Dataset-15308	http://bia/File	764
+experimentA/PDGFRB_12PCW/12998_4_12 PCW_MB_HB_114_pdgfrb.ome.zarr.zip	#Dataset-15457	http://bia/Image	1533816516
+experimentA/PDGFRB_12PCW/12998_4_12 PCW_MB_HB_114_pdgfrb.ome.zarr.log	#Dataset-15457	http://bia/File	557
+experimentA/PDGFRB_14PCW/12807_17_Hindbrain_14 PCW_232_pdgfrb.ome.zarr.zip	#Dataset-15464	http://bia/Image	744432370
+experimentA/PDGFRB_14PCW/12807_17_Hindbrain_14 PCW_232_pdgfrb.ome.zarr.log	#Dataset-15464	http://bia/File	567
+experimentA/PDGFRB_14PCW/13002_23_Hindbrain_14pcw_21_pdgfrb.ome.zarr.zip	#Dataset-15464	http://bia/Image	2349434034
+experimentA/PDGFRB_14PCW/13002_23_Hindbrain_14pcw_21_pdgfrb.ome.zarr.log	#Dataset-15464	http://bia/File	561
+experimentA/PDGFRB_18PCW/13463_31_MBHB_18pcw_53_pdgfrb.ome.zarr.zip	#Dataset-15460	http://bia/Image	4176218108
+experimentA/PDGFRB_18PCW/13463_31_MBHB_18pcw_53_pdgfrb.ome.zarr.log	#Dataset-15460	http://bia/File	551
+experimentA/PDGFRB_18PCW/14730_35_HB_18PCW_29_pdgfrb.ome.zarr.zip	#Dataset-15460	http://bia/Image	1159395767
+experimentA/PDGFRB_18PCW/14730_35_HB_18PCW_29_pdgfrb.ome.zarr.log	#Dataset-15460	http://bia/File	547
+experimentA/PDGFRB_CS20/11587_1_head_CS20_53_pdgfrb.ome.zarr.zip	#Dataset-15440	http://bia/Image	1342051327
+experimentA/PDGFRB_CS20/11587_1_head_CS20_53_pdgfrb.ome.zarr.log	#Dataset-15440	http://bia/File	546
+experimentA/ROBO1_10PCW/13136_5_Forebrain_10pcw_147_ROBO1.ome.zarr.zip	#Dataset-15468	http://bia/Image	1003076629
+experimentA/ROBO1_10PCW/13136_5_Forebrain_10pcw_147_ROBO1.ome.zarr.log	#Dataset-15468	http://bia/File	558
+experimentA/ROBO1_10PCW/13136_5_Forebrain_10pcw_98_ROBO1.ome.zarr.zip	#Dataset-15468	http://bia/Image	1034628805
+experimentA/ROBO1_10PCW/13136_5_Forebrain_10pcw_98_ROBO1.ome.zarr.log	#Dataset-15468	http://bia/File	556
+experimentA/ROBO1_12PCW/Autotest_0000019875_ROBO1.ome.zarr.zip	#Dataset-15465	http://bia/Image	3839560587
+experimentA/ROBO1_12PCW/Autotest_0000019875_ROBO1.ome.zarr.log	#Dataset-15465	http://bia/File	538
+experimentA/ROBO1_12PCW/Autotest_0000019880_ROBO1.ome.zarr.zip	#Dataset-15465	http://bia/Image	3327456537
+experimentA/ROBO1_12PCW/Autotest_0000019880_ROBO1.ome.zarr.log	#Dataset-15465	http://bia/File	538
+experimentA/ROBO1_CS19/12769_4_Head_CS19_101_ROBO1.ome.zarr.zip	#Dataset-15309	http://bia/Image	471341117
+experimentA/ROBO1_CS19/12769_4_Head_CS19_101_ROBO1.ome.zarr.log	#Dataset-15309	http://bia/File	545
+experimentA/ROBO1_CS19/3DView.ome.zarr.zip	#Dataset-15309	http://bia/Image	17745440
+experimentA/ROBO1_CS19/3DView.ome.zarr.log	#Dataset-15309	http://bia/File	626
+experimentA/ROBO1_CS19/ROBO1_CS19_3DView.ome.zarr.zip	#Dataset-15309	http://bia/Image	202725
+experimentA/ROBO1_CS19/ROBO1_CS19_3DView.ome.zarr.log	#Dataset-15309	http://bia/File	637
+experimentA/ROBO1_CS21/12128_1_head_CS21_107_ROBO1.ome.zarr.zip	#Dataset-15448	http://bia/Image	537391584
+experimentA/ROBO1_CS21/12128_1_head_CS21_107_ROBO1.ome.zarr.log	#Dataset-15448	http://bia/File	545
+experimentA/ROBO1_CS21/ImageCollection_0000011648_ROBO1.ome.zarr.zip	#Dataset-15448	http://bia/Image	795097497
+experimentA/ROBO1_CS21/ImageCollection_0000011648_ROBO1.ome.zarr.log	#Dataset-15448	http://bia/File	551
+experimentA/ROBO1_CS23/11613_1_Embryo_CS23_291_2018-05-14 12_26_13.ome.zarr.zip	#Dataset-15310	http://bia/Image	1446206142
+experimentA/ROBO1_CS23/11613_1_Embryo_CS23_291_2018-05-14 12_26_13.ome.zarr.log	#Dataset-15310	http://bia/File	552
+experimentA/ROBO1_CS23/12506_5_R hemi_CS23_64_ROBO1.ome.zarr.zip	#Dataset-15310	http://bia/Image	1475294943
+experimentA/ROBO1_CS23/12506_5_R hemi_CS23_64_ROBO1.ome.zarr.log	#Dataset-15310	http://bia/File	549
+experimentA/SCGN_10PCW/13081_127_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	4954429062
+experimentA/SCGN_10PCW/13081_127_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	488
+experimentA/SCGN_10PCW/13136_5_Forebrain_10pcw_147_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	998877194
+experimentA/SCGN_10PCW/13136_5_Forebrain_10pcw_147_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	555
+experimentA/SCGN_10PCW/13136_5_Forebrain_10pcw_150_2017-11-23 15_16_07.ome.zarr.zip	#Dataset-15311	http://bia/Image	6424084461
+experimentA/SCGN_10PCW/13136_5_Forebrain_10pcw_150_2017-11-23 15_16_07.ome.zarr.log	#Dataset-15311	http://bia/File	560
+experimentA/SCGN_10PCW/13136_5_Forebrain_10pcw_98_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	1060946610
+experimentA/SCGN_10PCW/13136_5_Forebrain_10pcw_98_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	553
+experimentA/SCGN_10PCW/13331_9_LFB_10PCW_65_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	990802077
+experimentA/SCGN_10PCW/13331_9_LFB_10PCW_65_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	541
+experimentA/SCGN_10PCW/13341_1_Brain_10pcw_140_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	1079562850
+experimentA/SCGN_10PCW/13341_1_Brain_10pcw_140_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	547
+experimentA/SCGN_10PCW/13341_1_Brain_10pcw_168_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	1560989908
+experimentA/SCGN_10PCW/13341_1_Brain_10pcw_168_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	547
+experimentA/SCGN_10PCW/13341_1_Brain_10pcw_186_SCGN.ome.zarr.zip	#Dataset-15311	http://bia/Image	1567593718
+experimentA/SCGN_10PCW/13341_1_Brain_10pcw_186_SCGN.ome.zarr.log	#Dataset-15311	http://bia/File	547
+experimentA/SCGN_12PCW/11523_10_Brain SL2_12pcw_14_2017-11-23 15_19_38.ome.zarr.zip	#Dataset-15312	http://bia/Image	4478597348
+experimentA/SCGN_12PCW/11523_10_Brain SL2_12pcw_14_2017-11-23 15_19_38.ome.zarr.log	#Dataset-15312	http://bia/File	562
+experimentA/SCGN_12PCW/11795_11_R Hemi_12pcw_151_2017-11-23 15_20_01.ome.zarr.zip	#Dataset-15312	http://bia/Image	6544665392
+experimentA/SCGN_12PCW/11795_11_R Hemi_12pcw_151_2017-11-23 15_20_01.ome.zarr.log	#Dataset-15312	http://bia/File	558
+experimentA/SCGN_12PCW/12968_12.sl3_FB_12PCW_19_SCGN.ome.zarr.zip	#Dataset-15312	http://bia/Image	2416325307
+experimentA/SCGN_12PCW/12968_12.sl3_FB_12PCW_19_SCGN.ome.zarr.log	#Dataset-15312	http://bia/File	549
+experimentA/SCGN_12PCW/12968_12.sl3_FB_12PCW_20_SCGN.ome.zarr.zip	#Dataset-15312	http://bia/Image	2389597167
+experimentA/SCGN_12PCW/12968_12.sl3_FB_12PCW_20_SCGN.ome.zarr.log	#Dataset-15312	http://bia/File	549
+experimentA/SCGN_CS19/1032_1_head_CS19_47_SCGN.ome.zarr.zip	#Dataset-15313	http://bia/Image	384138294
+experimentA/SCGN_CS19/1032_1_head_CS19_47_SCGN.ome.zarr.log	#Dataset-15313	http://bia/File	538
+experimentA/SCGN_CS19/1032_1_head_CS19_61_SCGN.ome.zarr.zip	#Dataset-15313	http://bia/Image	706972285
+experimentA/SCGN_CS19/1032_1_head_CS19_61_SCGN.ome.zarr.log	#Dataset-15313	http://bia/File	538
+experimentA/SCGN_CS19/12769_4_Head_CS19_109_SCGN.ome.zarr.zip	#Dataset-15313	http://bia/Image	458997418
+experimentA/SCGN_CS19/12769_4_Head_CS19_109_SCGN.ome.zarr.log	#Dataset-15313	http://bia/File	542
+experimentA/SCGN_CS19/12769_4_Head_CS19_110_SCGN.ome.zarr.zip	#Dataset-15313	http://bia/Image	501441497
+experimentA/SCGN_CS19/12769_4_Head_CS19_110_SCGN.ome.zarr.log	#Dataset-15313	http://bia/File	542
+experimentA/SCGN_CS19/12769_4_Head_CS19_113_SCGN.ome.zarr.zip	#Dataset-15313	http://bia/Image	589320938
+experimentA/SCGN_CS19/12769_4_Head_CS19_113_SCGN.ome.zarr.log	#Dataset-15313	http://bia/File	542
+experimentA/SCGN_CS19/3DView.ome.zarr.zip	#Dataset-15313	http://bia/Image	17812647
+experimentA/SCGN_CS19/3DView.ome.zarr.log	#Dataset-15313	http://bia/File	624
+experimentA/SCGN_CS19/SCGN_CS19_3DView.ome.zarr.zip	#Dataset-15313	http://bia/Image	204425
+experimentA/SCGN_CS19/SCGN_CS19_3DView.ome.zarr.log	#Dataset-15313	http://bia/File	634
+experimentA/SCGN_CS21/12128_1_head_CS21_107_SCGN.ome.zarr.zip	#Dataset-15449	http://bia/Image	432093312
+experimentA/SCGN_CS21/12128_1_head_CS21_107_SCGN.ome.zarr.log	#Dataset-15449	http://bia/File	542
+experimentA/SCGN_CS21/12128_1_head_CS21_128_SCGN.ome.zarr.zip	#Dataset-15449	http://bia/Image	521010105
+experimentA/SCGN_CS21/12128_1_head_CS21_128_SCGN.ome.zarr.log	#Dataset-15449	http://bia/File	542
+experimentA/SCGN_CS21/12128_1_head_CS21_131_SCGN.ome.zarr.zip	#Dataset-15449	http://bia/Image	397707216
+experimentA/SCGN_CS21/12128_1_head_CS21_131_SCGN.ome.zarr.log	#Dataset-15449	http://bia/File	542
+experimentA/SCGN_CS21/ImageCollection_0000011648_SCGN.ome.zarr.zip	#Dataset-15449	http://bia/Image	755855655
+experimentA/SCGN_CS21/ImageCollection_0000011648_SCGN.ome.zarr.log	#Dataset-15449	http://bia/File	548
+experimentA/SCGN_CS23/11613_1_Embryo_CS23_292_2018-05-14 12_25_07.ome.zarr.zip	#Dataset-15314	http://bia/Image	1719831010
+experimentA/SCGN_CS23/11613_1_Embryo_CS23_292_2018-05-14 12_25_07.ome.zarr.log	#Dataset-15314	http://bia/File	550
+experimentA/SCGN_CS23/12204_1_Head_CS23_69_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	817047421
+experimentA/SCGN_CS23/12204_1_Head_CS23_69_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12204_1_Head_CS23_77_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	863828848
+experimentA/SCGN_CS23/12204_1_Head_CS23_77_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12204_1_Head_CS23_80_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	832239009
+experimentA/SCGN_CS23/12204_1_Head_CS23_80_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12204_1_Head_CS23_91_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	1083365315
+experimentA/SCGN_CS23/12204_1_Head_CS23_91_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12204_1_Head_CS23_92_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	943343005
+experimentA/SCGN_CS23/12204_1_Head_CS23_92_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12204_1_Head_CS23_94_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	691617020
+experimentA/SCGN_CS23/12204_1_Head_CS23_94_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12780_1_head_CS23_100_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	817136798
+experimentA/SCGN_CS23/12780_1_head_CS23_100_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	542
+experimentA/SCGN_CS23/12780_1_head_CS23_43_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	600011375
+experimentA/SCGN_CS23/12780_1_head_CS23_43_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12780_1_head_CS23_54_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	617623536
+experimentA/SCGN_CS23/12780_1_head_CS23_54_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12780_1_head_CS23_61_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	790870393
+experimentA/SCGN_CS23/12780_1_head_CS23_61_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12780_1_head_CS23_82_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	1044947643
+experimentA/SCGN_CS23/12780_1_head_CS23_82_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SCGN_CS23/12780_1_head_CS23_89_SCGN.ome.zarr.zip	#Dataset-15314	http://bia/Image	827578638
+experimentA/SCGN_CS23/12780_1_head_CS23_89_SCGN.ome.zarr.log	#Dataset-15314	http://bia/File	540
+experimentA/SHH_CS16/11788_1_embryo_CS16_112_SHH.ome.zarr.zip	#Dataset-15444	http://bia/Image	220903927
+experimentA/SHH_CS16/11788_1_embryo_CS16_112_SHH.ome.zarr.log	#Dataset-15444	http://bia/File	543
+experimentA/SHH_CS19/1032_1_head_CS19_53_SHH.ome.zarr.zip	#Dataset-15432	http://bia/Image	432362688
+experimentA/SHH_CS19/1032_1_head_CS19_53_SHH.ome.zarr.log	#Dataset-15432	http://bia/File	535
+experimentA/SHH_CS19/1032_1_head_CS19_57_SHH.ome.zarr.zip	#Dataset-15432	http://bia/Image	429230713
+experimentA/SHH_CS19/1032_1_head_CS19_57_SHH.ome.zarr.log	#Dataset-15432	http://bia/File	535
+experimentA/SHH_CS19/1032_1_head_CS19_84_SHH.ome.zarr.zip	#Dataset-15432	http://bia/Image	355610305
+experimentA/SHH_CS19/1032_1_head_CS19_84_SHH.ome.zarr.log	#Dataset-15432	http://bia/File	535
+experimentA/SHH_CS23/11613_1_Embryo_CS23_298_2018-05-14 15_18_41.ome.zarr.zip	#Dataset-15315	http://bia/Image	3035772901
+experimentA/SHH_CS23/11613_1_Embryo_CS23_298_2018-05-14 15_18_41.ome.zarr.log	#Dataset-15315	http://bia/File	548
+experimentA/SHH_CS23/11613_1_Embryo_CS23_313_2018-05-14 15_20_27.ome.zarr.zip	#Dataset-15315	http://bia/Image	3107135150
+experimentA/SHH_CS23/11613_1_Embryo_CS23_313_2018-05-14 15_20_27.ome.zarr.log	#Dataset-15315	http://bia/File	548
+experimentA/SHH_CS23/11613_1_Embryo_CS23_328_2018-05-14 15_21_31.ome.zarr.zip	#Dataset-15315	http://bia/Image	2770146279
+experimentA/SHH_CS23/11613_1_Embryo_CS23_328_2018-05-14 15_21_31.ome.zarr.log	#Dataset-15315	http://bia/File	548
+experimentA/SHH_CS23/12602_1_head_CS23_114_SHH.ome.zarr.zip	#Dataset-15315	http://bia/Image	1266288672
+experimentA/SHH_CS23/12602_1_head_CS23_114_SHH.ome.zarr.log	#Dataset-15315	http://bia/File	539
+experimentA/SHH_CS23/12602_1_head_CS23_122_SHH.ome.zarr.zip	#Dataset-15315	http://bia/Image	1332057989
+experimentA/SHH_CS23/12602_1_head_CS23_122_SHH.ome.zarr.log	#Dataset-15315	http://bia/File	539
+experimentA/SHH_CS23/12602_1_head_CS23_149_SHH.ome.zarr.zip	#Dataset-15315	http://bia/Image	1102922205
+experimentA/SHH_CS23/12602_1_head_CS23_149_SHH.ome.zarr.log	#Dataset-15315	http://bia/File	539
+experimentA/SHH_CS23/12602_1_head_CS23_202_SHH.ome.zarr.zip	#Dataset-15315	http://bia/Image	1001098964
+experimentA/SHH_CS23/12602_1_head_CS23_202_SHH.ome.zarr.log	#Dataset-15315	http://bia/File	539
+experimentA/SHH_CS23/12602_1_head_CS23_239_SHH.ome.zarr.zip	#Dataset-15315	http://bia/Image	1095147887
+experimentA/SHH_CS23/12602_1_head_CS23_239_SHH.ome.zarr.log	#Dataset-15315	http://bia/File	539
+experimentA/SHH_CS23/12602_1_head_CS23_SHH.ome.zarr.zip	#Dataset-15315	http://bia/Image	1319058217
+experimentA/SHH_CS23/12602_1_head_CS23_SHH.ome.zarr.log	#Dataset-15315	http://bia/File	530
+experimentA/SP8_10PCW/12044_2_LFB_10PCW_101_SP8.ome.zarr.zip	#Dataset-15316	http://bia/Image	1369396792
+experimentA/SP8_10PCW/12044_2_LFB_10PCW_101_SP8.ome.zarr.log	#Dataset-15316	http://bia/File	540
+experimentA/SP8_10PCW/12044_2_LFB_10PCW_61_SP8.ome.zarr.zip	#Dataset-15316	http://bia/Image	650157074
+experimentA/SP8_10PCW/12044_2_LFB_10PCW_61_SP8.ome.zarr.log	#Dataset-15316	http://bia/File	538
+experimentA/SP8_10PCW/12044_2_LFB_10PCW_71_SP8.ome.zarr.zip	#Dataset-15316	http://bia/Image	1089423649
+experimentA/SP8_10PCW/12044_2_LFB_10PCW_71_SP8.ome.zarr.log	#Dataset-15316	http://bia/File	538
+experimentA/SP8_10PCW/12721_4_fb_10pcw_86_2016-12-05 11_25_36.ome.zarr.zip	#Dataset-15316	http://bia/Image	5955823251
+experimentA/SP8_10PCW/12721_4_fb_10pcw_86_2016-12-05 11_25_36.ome.zarr.log	#Dataset-15316	http://bia/File	542
+experimentA/SP8_10PCW/13136_5_Forebrain_10pcw_94_SP8.ome.zarr.zip	#Dataset-15316	http://bia/Image	686639627
+experimentA/SP8_10PCW/13136_5_Forebrain_10pcw_94_SP8.ome.zarr.log	#Dataset-15316	http://bia/File	550
+experimentA/SP8_12PCW/11523_10_Brain SL2_12pcw_15_2016-12-05 11_26_40.ome.zarr.zip	#Dataset-15317	http://bia/Image	4575126198
+experimentA/SP8_12PCW/11523_10_Brain SL2_12pcw_15_2016-12-05 11_26_40.ome.zarr.log	#Dataset-15317	http://bia/File	560
+experimentA/SP8_12PCW/11523_11_Brain SL3_12pcw_57_2016-12-05 11_33_09.ome.zarr.zip	#Dataset-15317	http://bia/Image	4533262393
+experimentA/SP8_12PCW/11523_11_Brain SL3_12pcw_57_2016-12-05 11_33_09.ome.zarr.log	#Dataset-15317	http://bia/File	560
+experimentA/SP8_12PCW/11795_11_R Hemi_12pcw_146_2016-12-05 11_28_59.ome.zarr.zip	#Dataset-15317	http://bia/Image	7279405568
+experimentA/SP8_12PCW/11795_11_R Hemi_12pcw_146_2016-12-05 11_28_59.ome.zarr.log	#Dataset-15317	http://bia/File	556
+experimentA/SP8_12PCW/12968_12.sl3_FB_12PCW_20_SP8.ome.zarr.zip	#Dataset-15317	http://bia/Image	2193119107
+experimentA/SP8_12PCW/12968_12.sl3_FB_12PCW_20_SP8.ome.zarr.log	#Dataset-15317	http://bia/File	546
+experimentA/SP8_CS19/12769_4_Head_CS19_108_SP8.ome.zarr.zip	#Dataset-15318	http://bia/Image	824714587
+experimentA/SP8_CS19/12769_4_Head_CS19_108_SP8.ome.zarr.log	#Dataset-15318	http://bia/File	539
+experimentA/SP8_CS19/3DView.ome.zarr.zip	#Dataset-15318	http://bia/Image	17798757
+experimentA/SP8_CS19/3DView.ome.zarr.log	#Dataset-15318	http://bia/File	622
+experimentA/SP8_CS19/SP8_CS19_3DView.ome.zarr.zip	#Dataset-15318	http://bia/Image	224128
+experimentA/SP8_CS19/SP8_CS19_3DView.ome.zarr.log	#Dataset-15318	http://bia/File	631
+experimentA/SP8_CS21/12128_1_head_CS21_129_SP8.ome.zarr.zip	#Dataset-15453	http://bia/Image	493963525
+experimentA/SP8_CS21/12128_1_head_CS21_129_SP8.ome.zarr.log	#Dataset-15453	http://bia/File	539
+experimentA/SP8_CS23/12204_1_Head_CS23_94_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	673545152
+experimentA/SP8_CS23/12204_1_Head_CS23_94_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	537
+experimentA/SP8_CS23/12506_5_R hemi_CS23_64_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1233768307
+experimentA/SP8_CS23/12506_5_R hemi_CS23_64_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	543
+experimentA/SP8_CS23/12506_5_R hemi_CS23_66_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1726322326
+experimentA/SP8_CS23/12506_5_R hemi_CS23_66_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	543
+experimentA/SP8_CS23/12602_1_head_CS23_158_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1299213078
+experimentA/SP8_CS23/12602_1_head_CS23_158_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	539
+experimentA/SP8_CS23/12602_1_head_CS23_176_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1112799749
+experimentA/SP8_CS23/12602_1_head_CS23_176_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	539
+experimentA/SP8_CS23/12602_1_head_CS23_210_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1044820696
+experimentA/SP8_CS23/12602_1_head_CS23_210_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	539
+experimentA/SP8_CS23/12602_1_head_CS23_222_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1265649133
+experimentA/SP8_CS23/12602_1_head_CS23_222_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	539
+experimentA/SP8_CS23/12780_1_head_CS23_78_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1041238056
+experimentA/SP8_CS23/12780_1_head_CS23_78_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	537
+experimentA/SP8_CS23/12780_1_head_CS23_84_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	937112818
+experimentA/SP8_CS23/12780_1_head_CS23_84_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	537
+experimentA/SP8_CS23/12780_1_head_CS23_92_SP8.ome.zarr.zip	#Dataset-15434	http://bia/Image	1037926020
+experimentA/SP8_CS23/12780_1_head_CS23_92_SP8.ome.zarr.log	#Dataset-15434	http://bia/File	537
+experimentA/SRPK3_8PCW/Autotest_0000007664_SRPK3.ome.zarr.zip	#Dataset-15463	http://bia/Image	1151783966
+experimentA/SRPK3_8PCW/Autotest_0000007664_SRPK3.ome.zarr.log	#Dataset-15463	http://bia/File	537
+experimentA/SRPK3_8PCW/Autotest_0000007665_SRPK3.ome.zarr.zip	#Dataset-15463	http://bia/Image	1238374138
+experimentA/SRPK3_8PCW/Autotest_0000007665_SRPK3.ome.zarr.log	#Dataset-15463	http://bia/File	537
+experimentA/SRPK3_8PCW/Autotest_0000007666_SRPK3.ome.zarr.zip	#Dataset-15463	http://bia/Image	1287427305
+experimentA/SRPK3_8PCW/Autotest_0000007666_SRPK3.ome.zarr.log	#Dataset-15463	http://bia/File	537
+experimentA/SRPK3_8PCW/Autotest_0000007667_SRPK3.ome.zarr.zip	#Dataset-15463	http://bia/Image	1502704202
+experimentA/SRPK3_8PCW/Autotest_0000007667_SRPK3.ome.zarr.log	#Dataset-15463	http://bia/File	537
+experimentA/SRPK3_8PCW/Autotest_0000007668_SRPK3.ome.zarr.zip	#Dataset-15463	http://bia/Image	1455243270
+experimentA/SRPK3_8PCW/Autotest_0000007668_SRPK3.ome.zarr.log	#Dataset-15463	http://bia/File	537
+experimentA/SRPK3_8PCW/Autotest_0000007669_SRPK3.ome.zarr.zip	#Dataset-15463	http://bia/Image	1152620424
+experimentA/SRPK3_8PCW/Autotest_0000007669_SRPK3.ome.zarr.log	#Dataset-15463	http://bia/File	537
+experimentA/SRPK3_CS15/Autotest_0000007674_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	117187931
+experimentA/SRPK3_CS15/Autotest_0000007674_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	537
+experimentA/SRPK3_CS15/ImageCollection_0000005367_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	475878419
+experimentA/SRPK3_CS15/ImageCollection_0000005367_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	551
+experimentA/SRPK3_CS15/ImageCollection_0000005368_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	556593628
+experimentA/SRPK3_CS15/ImageCollection_0000005368_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	551
+experimentA/SRPK3_CS15/ImageCollection_0000005369_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	539360304
+experimentA/SRPK3_CS15/ImageCollection_0000005369_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	551
+experimentA/SRPK3_CS15/ImageCollection_0000005370_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	465323609
+experimentA/SRPK3_CS15/ImageCollection_0000005370_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	551
+experimentA/SRPK3_CS15/ImageCollection_0000005371_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	475013474
+experimentA/SRPK3_CS15/ImageCollection_0000005371_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	551
+experimentA/SRPK3_CS15/ImageCollection_0000005372_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	553726649
+experimentA/SRPK3_CS15/ImageCollection_0000005372_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	551
+experimentA/SRPK3_CS15/N1459_0_whole_CS15_18_SRPK3.ome.zarr.zip	#Dataset-15467	http://bia/Image	97630278
+experimentA/SRPK3_CS15/N1459_0_whole_CS15_18_SRPK3.ome.zarr.log	#Dataset-15467	http://bia/File	545
+experimentA/SRPK3_CS19/Autotest_0000007672_SRPK3.ome.zarr.zip	#Dataset-15456	http://bia/Image	543946715
+experimentA/SRPK3_CS19/Autotest_0000007672_SRPK3.ome.zarr.log	#Dataset-15456	http://bia/File	537
+experimentA/SRPK3_CS19/Autotest_0000007673_SRPK3.ome.zarr.zip	#Dataset-15456	http://bia/Image	350446251
+experimentA/SRPK3_CS19/Autotest_0000007673_SRPK3.ome.zarr.log	#Dataset-15456	http://bia/File	537
+experimentA/SRPK3_CS19/ImageCollection_0000005373_SRPK3.ome.zarr.zip	#Dataset-15456	http://bia/Image	2072900703
+experimentA/SRPK3_CS19/ImageCollection_0000005373_SRPK3.ome.zarr.log	#Dataset-15456	http://bia/File	551
+experimentA/SRPK3_CS19/N459_0_whole_CS19_67_SRPK3.ome.zarr.zip	#Dataset-15456	http://bia/Image	494212665
+experimentA/SRPK3_CS19/N459_0_whole_CS19_67_SRPK3.ome.zarr.log	#Dataset-15456	http://bia/File	543
+experimentA/SRPK3_CS19/N703_0_whole_CS19_79_SRPK3.ome.zarr.zip	#Dataset-15456	http://bia/Image	429320866
+experimentA/SRPK3_CS19/N703_0_whole_CS19_79_SRPK3.ome.zarr.log	#Dataset-15456	http://bia/File	543
+experimentA/SRY_CS17/N1699_1_0_CS17_201_SRY.ome.zarr.zip	#Dataset-15470	http://bia/Image	209918021
+experimentA/SRY_CS17/N1699_1_0_CS17_201_SRY.ome.zarr.log	#Dataset-15470	http://bia/File	533
+experimentA/SRY_CS18/1227_1_whole_CS18_84_SRY.ome.zarr.zip	#Dataset-15435	http://bia/Image	308104546
+experimentA/SRY_CS18/1227_1_whole_CS18_84_SRY.ome.zarr.log	#Dataset-15435	http://bia/File	537
+experimentA/SRY_CS19/12063_1_embryo_CS19_207_SRY.ome.zarr.zip	#Dataset-15447	http://bia/Image	288186309
+experimentA/SRY_CS19/12063_1_embryo_CS19_207_SRY.ome.zarr.log	#Dataset-15447	http://bia/File	543
+experimentA/SRY_CS19/12769_3_body_CS19_101_SRY.ome.zarr.zip	#Dataset-15447	http://bia/Image	639185240
+experimentA/SRY_CS19/12769_3_body_CS19_101_SRY.ome.zarr.log	#Dataset-15447	http://bia/File	539
+experimentA/SRY_CS19/530_1_embryo_CS19_097_SRY.ome.zarr.zip	#Dataset-15447	http://bia/Image	1001072256
+experimentA/SRY_CS19/530_1_embryo_CS19_097_SRY.ome.zarr.log	#Dataset-15447	http://bia/File	539
+experimentA/TBR1_10PCW/13136_5_Forebrain_10pcw_125_TBR1.ome.zarr.zip	#Dataset-15319	http://bia/Image	1015275128
+experimentA/TBR1_10PCW/13136_5_Forebrain_10pcw_125_TBR1.ome.zarr.log	#Dataset-15319	http://bia/File	555
+experimentA/TBR1_10PCW/13136_5_Forebrain_10pcw_148_TBR1.ome.zarr.zip	#Dataset-15319	http://bia/Image	848364578
+experimentA/TBR1_10PCW/13136_5_Forebrain_10pcw_148_TBR1.ome.zarr.log	#Dataset-15319	http://bia/File	555
+experimentA/TBR1_10PCW/2036_4_Brain Slice 1_10pcw_69_2015-12-15 17_10_57.ome.zarr.zip	#Dataset-15319	http://bia/Image	3311409299
+experimentA/TBR1_10PCW/2036_4_Brain Slice 1_10pcw_69_2015-12-15 17_10_57.ome.zarr.log	#Dataset-15319	http://bia/File	568
+experimentA/TBR1_12PCW/11761_12_Brain Slice 3_12pcw_27_2015-12-15 17_08_59.ome.zarr.zip	#Dataset-15320	http://bia/Image	5107963947
+experimentA/TBR1_12PCW/11761_12_Brain Slice 3_12pcw_27_2015-12-15 17_08_59.ome.zarr.log	#Dataset-15320	http://bia/File	572
+experimentA/TBR1_8PCW/1975_1_Head_L8pcw_116_2015-12-15 17_07_42.ome.zarr.zip	#Dataset-15321	http://bia/Image	7020681161
+experimentA/TBR1_8PCW/1975_1_Head_L8pcw_116_2015-12-15 17_07_42.ome.zarr.log	#Dataset-15321	http://bia/File	546
+experimentA/TBR1_CS19/12769_4_Head_CS19_101_TBR1.ome.zarr.zip	#Dataset-15322	http://bia/Image	405810878
+experimentA/TBR1_CS19/12769_4_Head_CS19_101_TBR1.ome.zarr.log	#Dataset-15322	http://bia/File	542
+experimentA/TBR1_CS19/3DView.ome.zarr.zip	#Dataset-15322	http://bia/Image	17726268
+experimentA/TBR1_CS19/3DView.ome.zarr.log	#Dataset-15322	http://bia/File	624
+experimentA/TBR1_CS19/TBR1_CS19_3DView.ome.zarr.zip	#Dataset-15322	http://bia/Image	202620
+experimentA/TBR1_CS19/TBR1_CS19_3DView.ome.zarr.log	#Dataset-15322	http://bia/File	634
+experimentA/TBR1_CS23/12506_5_R hemi_CS23_54_TBR1.ome.zarr.zip	#Dataset-15442	http://bia/Image	1830449553
+experimentA/TBR1_CS23/12506_5_R hemi_CS23_54_TBR1.ome.zarr.log	#Dataset-15442	http://bia/File	546
+experimentA/TBR1_CS23/12506_5_R hemi_CS23_65_TBR1.ome.zarr.zip	#Dataset-15442	http://bia/Image	690913952
+experimentA/TBR1_CS23/12506_5_R hemi_CS23_65_TBR1.ome.zarr.log	#Dataset-15442	http://bia/File	546
+experimentA/TUBB3_SOX1_CS18/CS18_s14_N1899_HoeTuj1gSOX1rPh_20x1_090216_c1_c2_c3.ome.zarr.zip	#Dataset-15323	http://bia/Image	3857219
+experimentA/TUBB3_SOX1_CS18/CS18_s14_N1899_HoeTuj1gSOX1rPh_20x1_090216_c1_c2_c3.ome.zarr.log	#Dataset-15323	http://bia/File	576
+experimentA/TUBB3_SOX1_CS18/CS18_s14_N1899_HoeTuj1gSOX1rPh_20x2_090216_c1_c2_c3.ome.zarr.zip	#Dataset-15323	http://bia/Image	3753010
+experimentA/TUBB3_SOX1_CS18/CS18_s14_N1899_HoeTuj1gSOX1rPh_20x2_090216_c1_c2_c3.ome.zarr.log	#Dataset-15323	http://bia/File	576
+experimentA/ZIC4_CS19/1032_1_head_CS19_53_ZIC4.ome.zarr.zip	#Dataset-15433	http://bia/Image	451039616
+experimentA/ZIC4_CS19/1032_1_head_CS19_53_ZIC4.ome.zarr.log	#Dataset-15433	http://bia/File	538
+experimentA/ZIC4_CS23/11613_1_Embryo_CS23_296_2018-05-14 15_18_13.ome.zarr.zip	#Dataset-15324	http://bia/Image	2681863257
+experimentA/ZIC4_CS23/11613_1_Embryo_CS23_296_2018-05-14 15_18_13.ome.zarr.log	#Dataset-15324	http://bia/File	550
+experimentA/ZIC4_CS23/12602_1_head_CS23_149_ZIC4.ome.zarr.zip	#Dataset-15324	http://bia/Image	1068904864
+experimentA/ZIC4_CS23/12602_1_head_CS23_149_ZIC4.ome.zarr.log	#Dataset-15324	http://bia/File	542
+experimentA/ZIC4_CS23/12602_1_head_CS23_202_ZIC4.ome.zarr.zip	#Dataset-15324	http://bia/Image	980226077
+experimentA/ZIC4_CS23/12602_1_head_CS23_202_ZIC4.ome.zarr.log	#Dataset-15324	http://bia/File	542
+experimentA/ZIC4_CS23/12602_1_head_CS23_239_ZIC4.ome.zarr.zip	#Dataset-15324	http://bia/Image	1155958737
+experimentA/ZIC4_CS23/12602_1_head_CS23_239_ZIC4.ome.zarr.log	#Dataset-15324	http://bia/File	542

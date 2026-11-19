@@ -1,0 +1,7456 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid9606",
+      "@type": "bia:Taxon",
+      "scientificName": "Homo sapiens",
+      "commonName": "human"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid9606"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-bright-field-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "imagingInstrumentDescription": "bright-field microscopy",
+      "imagingMethodName": [
+        "bright-field microscopy"
+      ],
+      "fbbiId": [
+        "Fbbi_00000243"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-dark-field-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "dark-field microscopy",
+      "description": "dark-field microscopy",
+      "imagingInstrumentDescription": "dark-field microscopy",
+      "imagingMethodName": [
+        "dark-field microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000244"
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.1111/j.1469-7580.2010.01290.x",
+      "@type": "bia:Publication",
+      "name": "The HUDSEN Atlas: a three-dimensional (3D) spatial framework for studying gene expression in the developing human brain.",
+      "doi": "https://doi.org/10.1111/j.1469-7580.2010.01290.x",
+      "pubmedId": "20979583",
+      "authorNames": "Kerwin J, Yang Y, Merchan P, Sarma S, Thompson J, Wang X, Sandoval J, Puelles L, Baldock R, Lindsay S"
+    },
+    {
+      "@id": "#affiliation-hdbr-newcastle-university-international-centre-for-life-newcastle-ne1-4ep",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "HDBR, Newcastle University, international Centre for Life, Newcastle, NE1 4EP"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Kerwin J",
+      "memberOf": [
+        {
+          "@id": "#affiliation-hdbr-newcastle-university-international-centre-for-life-newcastle-ne1-4ep"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Yang Y",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Merchan P",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Sarma S",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Thompson J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Wang X",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Sandoval J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-7",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Puelles L",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-8",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Baldock R",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-9",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Lindsay S",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-10449",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ACTA2-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10447",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ACTA2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10448",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ACTA2-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10360",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/BMP4-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10361",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/BMP4-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10362",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/BMP4-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10450",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/BRCA1-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10451",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/C5AR1-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10452",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CALB2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10453",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CALB2-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10454",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CALB2-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10455",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CALD1-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10456",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CD34-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10457",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CD34-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10282",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CDH8-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10283",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CDH8-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10284",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CITED2-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10285",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CITED2-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10458",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/CNN1-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10459",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DBX1-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10460",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DBX1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10286",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DCHS1-13PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10287",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DCHS1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10461",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DLX2-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10462",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DMBX1-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10463",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DMBX1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10288",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/DONSON-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10291",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EFR3A-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10289",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EFR3A-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10290",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EFR3A-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10464",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EMX1-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10465",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EMX1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10466",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EMX2-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10467",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EMX2-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10468",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/EMX2-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10293",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FAT4-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10294",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FAT4-11PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10292",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FAT4-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10295",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FAT4-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10296",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FAT4-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10469",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FGFR3-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10363",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FGFR3-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10364",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FGFR3-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10470",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/FOXP2-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10471",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAD2-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10472",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAD2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10473",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAD2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10474",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10475",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10476",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10477",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10478",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10479",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10480",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10481",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10482",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GAP43-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10400",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GCG-15PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10401",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GFAP-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10402",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/GPC3-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10403",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INS-15PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10299",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10305",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10298",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10300",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10301",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10303",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10302",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10297",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10304",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/INSM1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10308",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10310",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-11PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10313",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10306",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10312",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10314",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10309",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10307",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10311",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/IRX1-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10315",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ISL1-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10404",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/L1CAM-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10405",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LHX2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10318",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LHX3-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10316",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LHX3-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10317",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LHX3-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10319",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LHX3-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10406",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LRRN1-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10407",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LRRN1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10320",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LRRTM1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10408",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/LYPD1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10409",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MAP2-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10410",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MAP2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10412",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MCPH1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10411",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MCPH1-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10415",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MKI67-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10413",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MKI67-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10414",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MKI67-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10416",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MSX1-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10417",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MYBPC3-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10418",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MYBPC3-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10419",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/MYL2-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10420",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NES-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10322",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NEUROD1-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10321",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NEUROD1-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10323",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NEUROD1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10365",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NEUROG2-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10367",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NEUROG2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10366",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NEUROG2-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10421",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NHEJ1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10422",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NHEJ1-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10423",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NHEJ1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10424",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NHEJ1-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10426",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-1-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10425",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-1-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10427",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-2-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10428",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-2-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10429",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10430",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-2-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10431",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NKX2-2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10435",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NPPA-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10432",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NPPA-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10433",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NPPA-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10434",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/NPPA-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10436",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OLIG2-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10437",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OLIG2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10438",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OLIG2-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10440",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX1-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10439",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10446",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX2-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10442",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX2-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10444",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX2-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10441",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX2-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10445",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX2-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10443",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/OTX2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10368",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10369",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10370",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10356",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10357",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-11PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10358",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10359",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-17PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10354",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10355",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10345",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10346",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10347",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10348",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10349",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10350",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10351",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10352",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10353",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX6-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10484",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX7-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10483",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX7-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10486",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX7-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10485",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX7-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10371",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX9-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10372",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX9-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10373",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PAX9-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10325",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PBX1-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10324",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PBX1-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10326",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PBX1-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10487",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX1-15PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10488",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10490",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX1-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10489",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PDX1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10491",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/PECAM1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10374",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/RAB3GAP1-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10375",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/RAB3GAP1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10327",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/RIMS1-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10329",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SERPINI2-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10328",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SERPINI2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10331",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SERPINI2-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10330",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SERPINI2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10492",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SFRP2-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10496",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SFRP2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10495",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SFRP2-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10494",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SFRP2-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10493",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SFRP2-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10497",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS12",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10499",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10500",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10501",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10502",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10503",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10504",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10498",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10505",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10506",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHH-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10507",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10508",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10509",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10510",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10511",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10512",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10513",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SHOX-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10340",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10333",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10338",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10332",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10334",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10336",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10339",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10335",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10337",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX2-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10382",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10383",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10384",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10376",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10378",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10377",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10386",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10380",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10379",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10381",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10385",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SOX9-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10514",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SRGAP3-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10515",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SRGAP3-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10516",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SRGAP3-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10389",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SYP-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10388",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SYP-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10387",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/SYP-17PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10521",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBR1-10PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10517",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBR1-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10518",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBR1-17PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10520",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBR1-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10522",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBR1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10519",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBR1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10342",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX20-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10343",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX20-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10341",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX20-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10344",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX20-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10523",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX22-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10524",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX22-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10525",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX22-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10526",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX22-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10527",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX5-CS12",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10528",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX5-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10529",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TBX5-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10530",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TGFA-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10533",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TGFA-9PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10532",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TGFA-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10531",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TGFA-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10534",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TMEM67-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10535",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TMEM67-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10536",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TPM1-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10537",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TPM1-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10539",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBA8-CS16",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10540",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBA8-cs17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10541",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBA8-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10542",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBA8-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10543",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBA8-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10538",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBA8-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10544",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBB3-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10545",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBB3-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10546",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBB3-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10547",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/TUBB3-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10548",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/VCL-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10549",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT1-CS15",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10550",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT2B-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10552",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT2B-9pcw",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10551",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT2B-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10553",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT2B-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10390",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT3A-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10391",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT3A-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10555",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT5A-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10554",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT5A-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10556",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT7A-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10557",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-12PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10558",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-8PCW",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10559",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10564",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10560",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS19",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10563",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10565",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10562",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS22",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10561",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WNT8B-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10392",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WWTR1-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10394",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WWTR1-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10393",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WWTR1-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10395",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/WWTR1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10396",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YAP1-CS13",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10398",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YAP1-CS14",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10397",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YAP1-CS18",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10399",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/YAP1-CS21",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10566",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ZIC1-CS17",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10567",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ZIC1-CS20",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-10568",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/ZIC1-CS23",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-dark-field-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "HDBR Atlas: Gene Expression in Early Human Development",
+      "description": "Gene expression studies in early human development from 3 to 17 post conceptional weeks (PCW).",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2020-06-30",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        },
+        {
+          "@id": "#author-7"
+        },
+        {
+          "@id": "#author-8"
+        },
+        {
+          "@id": "#author-9"
+        }
+      ],
+      "keywords": [
+        "bright-field microscopy",
+        "dark-field microscopy",
+        "Human"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-10449"
+        },
+        {
+          "@id": "#Dataset-10447"
+        },
+        {
+          "@id": "#Dataset-10448"
+        },
+        {
+          "@id": "#Dataset-10360"
+        },
+        {
+          "@id": "#Dataset-10361"
+        },
+        {
+          "@id": "#Dataset-10362"
+        },
+        {
+          "@id": "#Dataset-10450"
+        },
+        {
+          "@id": "#Dataset-10451"
+        },
+        {
+          "@id": "#Dataset-10452"
+        },
+        {
+          "@id": "#Dataset-10453"
+        },
+        {
+          "@id": "#Dataset-10454"
+        },
+        {
+          "@id": "#Dataset-10455"
+        },
+        {
+          "@id": "#Dataset-10456"
+        },
+        {
+          "@id": "#Dataset-10457"
+        },
+        {
+          "@id": "#Dataset-10282"
+        },
+        {
+          "@id": "#Dataset-10283"
+        },
+        {
+          "@id": "#Dataset-10284"
+        },
+        {
+          "@id": "#Dataset-10285"
+        },
+        {
+          "@id": "#Dataset-10458"
+        },
+        {
+          "@id": "#Dataset-10459"
+        },
+        {
+          "@id": "#Dataset-10460"
+        },
+        {
+          "@id": "#Dataset-10286"
+        },
+        {
+          "@id": "#Dataset-10287"
+        },
+        {
+          "@id": "#Dataset-10461"
+        },
+        {
+          "@id": "#Dataset-10462"
+        },
+        {
+          "@id": "#Dataset-10463"
+        },
+        {
+          "@id": "#Dataset-10288"
+        },
+        {
+          "@id": "#Dataset-10291"
+        },
+        {
+          "@id": "#Dataset-10289"
+        },
+        {
+          "@id": "#Dataset-10290"
+        },
+        {
+          "@id": "#Dataset-10464"
+        },
+        {
+          "@id": "#Dataset-10465"
+        },
+        {
+          "@id": "#Dataset-10466"
+        },
+        {
+          "@id": "#Dataset-10467"
+        },
+        {
+          "@id": "#Dataset-10468"
+        },
+        {
+          "@id": "#Dataset-10293"
+        },
+        {
+          "@id": "#Dataset-10294"
+        },
+        {
+          "@id": "#Dataset-10292"
+        },
+        {
+          "@id": "#Dataset-10295"
+        },
+        {
+          "@id": "#Dataset-10296"
+        },
+        {
+          "@id": "#Dataset-10469"
+        },
+        {
+          "@id": "#Dataset-10363"
+        },
+        {
+          "@id": "#Dataset-10364"
+        },
+        {
+          "@id": "#Dataset-10470"
+        },
+        {
+          "@id": "#Dataset-10471"
+        },
+        {
+          "@id": "#Dataset-10472"
+        },
+        {
+          "@id": "#Dataset-10473"
+        },
+        {
+          "@id": "#Dataset-10474"
+        },
+        {
+          "@id": "#Dataset-10475"
+        },
+        {
+          "@id": "#Dataset-10476"
+        },
+        {
+          "@id": "#Dataset-10477"
+        },
+        {
+          "@id": "#Dataset-10478"
+        },
+        {
+          "@id": "#Dataset-10479"
+        },
+        {
+          "@id": "#Dataset-10480"
+        },
+        {
+          "@id": "#Dataset-10481"
+        },
+        {
+          "@id": "#Dataset-10482"
+        },
+        {
+          "@id": "#Dataset-10400"
+        },
+        {
+          "@id": "#Dataset-10401"
+        },
+        {
+          "@id": "#Dataset-10402"
+        },
+        {
+          "@id": "#Dataset-10403"
+        },
+        {
+          "@id": "#Dataset-10299"
+        },
+        {
+          "@id": "#Dataset-10305"
+        },
+        {
+          "@id": "#Dataset-10298"
+        },
+        {
+          "@id": "#Dataset-10300"
+        },
+        {
+          "@id": "#Dataset-10301"
+        },
+        {
+          "@id": "#Dataset-10303"
+        },
+        {
+          "@id": "#Dataset-10302"
+        },
+        {
+          "@id": "#Dataset-10297"
+        },
+        {
+          "@id": "#Dataset-10304"
+        },
+        {
+          "@id": "#Dataset-10308"
+        },
+        {
+          "@id": "#Dataset-10310"
+        },
+        {
+          "@id": "#Dataset-10313"
+        },
+        {
+          "@id": "#Dataset-10306"
+        },
+        {
+          "@id": "#Dataset-10312"
+        },
+        {
+          "@id": "#Dataset-10314"
+        },
+        {
+          "@id": "#Dataset-10309"
+        },
+        {
+          "@id": "#Dataset-10307"
+        },
+        {
+          "@id": "#Dataset-10311"
+        },
+        {
+          "@id": "#Dataset-10315"
+        },
+        {
+          "@id": "#Dataset-10404"
+        },
+        {
+          "@id": "#Dataset-10405"
+        },
+        {
+          "@id": "#Dataset-10318"
+        },
+        {
+          "@id": "#Dataset-10316"
+        },
+        {
+          "@id": "#Dataset-10317"
+        },
+        {
+          "@id": "#Dataset-10319"
+        },
+        {
+          "@id": "#Dataset-10406"
+        },
+        {
+          "@id": "#Dataset-10407"
+        },
+        {
+          "@id": "#Dataset-10320"
+        },
+        {
+          "@id": "#Dataset-10408"
+        },
+        {
+          "@id": "#Dataset-10409"
+        },
+        {
+          "@id": "#Dataset-10410"
+        },
+        {
+          "@id": "#Dataset-10412"
+        },
+        {
+          "@id": "#Dataset-10411"
+        },
+        {
+          "@id": "#Dataset-10415"
+        },
+        {
+          "@id": "#Dataset-10413"
+        },
+        {
+          "@id": "#Dataset-10414"
+        },
+        {
+          "@id": "#Dataset-10416"
+        },
+        {
+          "@id": "#Dataset-10417"
+        },
+        {
+          "@id": "#Dataset-10418"
+        },
+        {
+          "@id": "#Dataset-10419"
+        },
+        {
+          "@id": "#Dataset-10420"
+        },
+        {
+          "@id": "#Dataset-10322"
+        },
+        {
+          "@id": "#Dataset-10321"
+        },
+        {
+          "@id": "#Dataset-10323"
+        },
+        {
+          "@id": "#Dataset-10365"
+        },
+        {
+          "@id": "#Dataset-10367"
+        },
+        {
+          "@id": "#Dataset-10366"
+        },
+        {
+          "@id": "#Dataset-10421"
+        },
+        {
+          "@id": "#Dataset-10422"
+        },
+        {
+          "@id": "#Dataset-10423"
+        },
+        {
+          "@id": "#Dataset-10424"
+        },
+        {
+          "@id": "#Dataset-10426"
+        },
+        {
+          "@id": "#Dataset-10425"
+        },
+        {
+          "@id": "#Dataset-10427"
+        },
+        {
+          "@id": "#Dataset-10428"
+        },
+        {
+          "@id": "#Dataset-10429"
+        },
+        {
+          "@id": "#Dataset-10430"
+        },
+        {
+          "@id": "#Dataset-10431"
+        },
+        {
+          "@id": "#Dataset-10435"
+        },
+        {
+          "@id": "#Dataset-10432"
+        },
+        {
+          "@id": "#Dataset-10433"
+        },
+        {
+          "@id": "#Dataset-10434"
+        },
+        {
+          "@id": "#Dataset-10436"
+        },
+        {
+          "@id": "#Dataset-10437"
+        },
+        {
+          "@id": "#Dataset-10438"
+        },
+        {
+          "@id": "#Dataset-10440"
+        },
+        {
+          "@id": "#Dataset-10439"
+        },
+        {
+          "@id": "#Dataset-10446"
+        },
+        {
+          "@id": "#Dataset-10442"
+        },
+        {
+          "@id": "#Dataset-10444"
+        },
+        {
+          "@id": "#Dataset-10441"
+        },
+        {
+          "@id": "#Dataset-10445"
+        },
+        {
+          "@id": "#Dataset-10443"
+        },
+        {
+          "@id": "#Dataset-10368"
+        },
+        {
+          "@id": "#Dataset-10369"
+        },
+        {
+          "@id": "#Dataset-10370"
+        },
+        {
+          "@id": "#Dataset-10356"
+        },
+        {
+          "@id": "#Dataset-10357"
+        },
+        {
+          "@id": "#Dataset-10358"
+        },
+        {
+          "@id": "#Dataset-10359"
+        },
+        {
+          "@id": "#Dataset-10354"
+        },
+        {
+          "@id": "#Dataset-10355"
+        },
+        {
+          "@id": "#Dataset-10345"
+        },
+        {
+          "@id": "#Dataset-10346"
+        },
+        {
+          "@id": "#Dataset-10347"
+        },
+        {
+          "@id": "#Dataset-10348"
+        },
+        {
+          "@id": "#Dataset-10349"
+        },
+        {
+          "@id": "#Dataset-10350"
+        },
+        {
+          "@id": "#Dataset-10351"
+        },
+        {
+          "@id": "#Dataset-10352"
+        },
+        {
+          "@id": "#Dataset-10353"
+        },
+        {
+          "@id": "#Dataset-10484"
+        },
+        {
+          "@id": "#Dataset-10483"
+        },
+        {
+          "@id": "#Dataset-10486"
+        },
+        {
+          "@id": "#Dataset-10485"
+        },
+        {
+          "@id": "#Dataset-10371"
+        },
+        {
+          "@id": "#Dataset-10372"
+        },
+        {
+          "@id": "#Dataset-10373"
+        },
+        {
+          "@id": "#Dataset-10325"
+        },
+        {
+          "@id": "#Dataset-10324"
+        },
+        {
+          "@id": "#Dataset-10326"
+        },
+        {
+          "@id": "#Dataset-10487"
+        },
+        {
+          "@id": "#Dataset-10488"
+        },
+        {
+          "@id": "#Dataset-10490"
+        },
+        {
+          "@id": "#Dataset-10489"
+        },
+        {
+          "@id": "#Dataset-10491"
+        },
+        {
+          "@id": "#Dataset-10374"
+        },
+        {
+          "@id": "#Dataset-10375"
+        },
+        {
+          "@id": "#Dataset-10327"
+        },
+        {
+          "@id": "#Dataset-10329"
+        },
+        {
+          "@id": "#Dataset-10328"
+        },
+        {
+          "@id": "#Dataset-10331"
+        },
+        {
+          "@id": "#Dataset-10330"
+        },
+        {
+          "@id": "#Dataset-10492"
+        },
+        {
+          "@id": "#Dataset-10496"
+        },
+        {
+          "@id": "#Dataset-10495"
+        },
+        {
+          "@id": "#Dataset-10494"
+        },
+        {
+          "@id": "#Dataset-10493"
+        },
+        {
+          "@id": "#Dataset-10497"
+        },
+        {
+          "@id": "#Dataset-10499"
+        },
+        {
+          "@id": "#Dataset-10500"
+        },
+        {
+          "@id": "#Dataset-10501"
+        },
+        {
+          "@id": "#Dataset-10502"
+        },
+        {
+          "@id": "#Dataset-10503"
+        },
+        {
+          "@id": "#Dataset-10504"
+        },
+        {
+          "@id": "#Dataset-10498"
+        },
+        {
+          "@id": "#Dataset-10505"
+        },
+        {
+          "@id": "#Dataset-10506"
+        },
+        {
+          "@id": "#Dataset-10507"
+        },
+        {
+          "@id": "#Dataset-10508"
+        },
+        {
+          "@id": "#Dataset-10509"
+        },
+        {
+          "@id": "#Dataset-10510"
+        },
+        {
+          "@id": "#Dataset-10511"
+        },
+        {
+          "@id": "#Dataset-10512"
+        },
+        {
+          "@id": "#Dataset-10513"
+        },
+        {
+          "@id": "#Dataset-10340"
+        },
+        {
+          "@id": "#Dataset-10333"
+        },
+        {
+          "@id": "#Dataset-10338"
+        },
+        {
+          "@id": "#Dataset-10332"
+        },
+        {
+          "@id": "#Dataset-10334"
+        },
+        {
+          "@id": "#Dataset-10336"
+        },
+        {
+          "@id": "#Dataset-10339"
+        },
+        {
+          "@id": "#Dataset-10335"
+        },
+        {
+          "@id": "#Dataset-10337"
+        },
+        {
+          "@id": "#Dataset-10382"
+        },
+        {
+          "@id": "#Dataset-10383"
+        },
+        {
+          "@id": "#Dataset-10384"
+        },
+        {
+          "@id": "#Dataset-10376"
+        },
+        {
+          "@id": "#Dataset-10378"
+        },
+        {
+          "@id": "#Dataset-10377"
+        },
+        {
+          "@id": "#Dataset-10386"
+        },
+        {
+          "@id": "#Dataset-10380"
+        },
+        {
+          "@id": "#Dataset-10379"
+        },
+        {
+          "@id": "#Dataset-10381"
+        },
+        {
+          "@id": "#Dataset-10385"
+        },
+        {
+          "@id": "#Dataset-10514"
+        },
+        {
+          "@id": "#Dataset-10515"
+        },
+        {
+          "@id": "#Dataset-10516"
+        },
+        {
+          "@id": "#Dataset-10389"
+        },
+        {
+          "@id": "#Dataset-10388"
+        },
+        {
+          "@id": "#Dataset-10387"
+        },
+        {
+          "@id": "#Dataset-10521"
+        },
+        {
+          "@id": "#Dataset-10517"
+        },
+        {
+          "@id": "#Dataset-10518"
+        },
+        {
+          "@id": "#Dataset-10520"
+        },
+        {
+          "@id": "#Dataset-10522"
+        },
+        {
+          "@id": "#Dataset-10519"
+        },
+        {
+          "@id": "#Dataset-10342"
+        },
+        {
+          "@id": "#Dataset-10343"
+        },
+        {
+          "@id": "#Dataset-10341"
+        },
+        {
+          "@id": "#Dataset-10344"
+        },
+        {
+          "@id": "#Dataset-10523"
+        },
+        {
+          "@id": "#Dataset-10524"
+        },
+        {
+          "@id": "#Dataset-10525"
+        },
+        {
+          "@id": "#Dataset-10526"
+        },
+        {
+          "@id": "#Dataset-10527"
+        },
+        {
+          "@id": "#Dataset-10528"
+        },
+        {
+          "@id": "#Dataset-10529"
+        },
+        {
+          "@id": "#Dataset-10530"
+        },
+        {
+          "@id": "#Dataset-10533"
+        },
+        {
+          "@id": "#Dataset-10532"
+        },
+        {
+          "@id": "#Dataset-10531"
+        },
+        {
+          "@id": "#Dataset-10534"
+        },
+        {
+          "@id": "#Dataset-10535"
+        },
+        {
+          "@id": "#Dataset-10536"
+        },
+        {
+          "@id": "#Dataset-10537"
+        },
+        {
+          "@id": "#Dataset-10539"
+        },
+        {
+          "@id": "#Dataset-10540"
+        },
+        {
+          "@id": "#Dataset-10541"
+        },
+        {
+          "@id": "#Dataset-10542"
+        },
+        {
+          "@id": "#Dataset-10543"
+        },
+        {
+          "@id": "#Dataset-10538"
+        },
+        {
+          "@id": "#Dataset-10544"
+        },
+        {
+          "@id": "#Dataset-10545"
+        },
+        {
+          "@id": "#Dataset-10546"
+        },
+        {
+          "@id": "#Dataset-10547"
+        },
+        {
+          "@id": "#Dataset-10548"
+        },
+        {
+          "@id": "#Dataset-10549"
+        },
+        {
+          "@id": "#Dataset-10550"
+        },
+        {
+          "@id": "#Dataset-10552"
+        },
+        {
+          "@id": "#Dataset-10551"
+        },
+        {
+          "@id": "#Dataset-10553"
+        },
+        {
+          "@id": "#Dataset-10390"
+        },
+        {
+          "@id": "#Dataset-10391"
+        },
+        {
+          "@id": "#Dataset-10555"
+        },
+        {
+          "@id": "#Dataset-10554"
+        },
+        {
+          "@id": "#Dataset-10556"
+        },
+        {
+          "@id": "#Dataset-10557"
+        },
+        {
+          "@id": "#Dataset-10558"
+        },
+        {
+          "@id": "#Dataset-10559"
+        },
+        {
+          "@id": "#Dataset-10564"
+        },
+        {
+          "@id": "#Dataset-10560"
+        },
+        {
+          "@id": "#Dataset-10563"
+        },
+        {
+          "@id": "#Dataset-10565"
+        },
+        {
+          "@id": "#Dataset-10562"
+        },
+        {
+          "@id": "#Dataset-10561"
+        },
+        {
+          "@id": "#Dataset-10392"
+        },
+        {
+          "@id": "#Dataset-10394"
+        },
+        {
+          "@id": "#Dataset-10393"
+        },
+        {
+          "@id": "#Dataset-10395"
+        },
+        {
+          "@id": "#Dataset-10396"
+        },
+        {
+          "@id": "#Dataset-10398"
+        },
+        {
+          "@id": "#Dataset-10397"
+        },
+        {
+          "@id": "#Dataset-10399"
+        },
+        {
+          "@id": "#Dataset-10566"
+        },
+        {
+          "@id": "#Dataset-10567"
+        },
+        {
+          "@id": "#Dataset-10568"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0070",
+      "doi": "https://doi.org/10.17867/10000137",
+      "pubmedId": "20979583",
+      "imagingMethodName": [
+        "bright-field microscopy",
+        "dark-field microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1111/j.1469-7580.2010.01290.x"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

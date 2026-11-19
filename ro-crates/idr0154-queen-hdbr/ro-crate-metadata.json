@@ -1,0 +1,806 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@type": {
+        "@container": "@set"
+      },
+      "accessionId": {
+        "@id": "bia:accessionId"
+      },
+      "acknowledgement": {
+        "@id": "bia:acknowledgement"
+      },
+      "additionalType": {
+        "@id": "schema:additionalType"
+      },
+      "address": {
+        "@id": "schema:address"
+      },
+      "annotationCoverage": {
+        "@id": "bia:annotationCoverage"
+      },
+      "annotationCriteria": {
+        "@id": "bia:annotationCriteria"
+      },
+      "annotationMethod": {
+        "@id": "bia:annotationMethod",
+        "@container": "@set"
+      },
+      "annotationSourceIndicator": {
+        "@id": "bia:annotationSourceIndicator"
+      },
+      "associatedAnnotationMethod": {
+        "@id": "bia:associatedAnnotationMethod",
+        "@container": "@set"
+      },
+      "associatedBiologicalEntity": {
+        "@id": "bia:associatedBiologicalEntity",
+        "@container": "@set"
+      },
+      "associatedCreationProcess": {
+        "@id": "bia:associatedCreationProcess"
+      },
+      "associatedImageAcquisitionProtocol": {
+        "@id": "bia:associatedImageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "associatedImageAnalysisMethod": {
+        "@id": "bia:associatedAnalysisMethod",
+        "@container": "@set"
+      },
+      "associatedImageCorrelationMethod": {
+        "@id": "bia:associatedCorrelationMethod",
+        "@container": "@set"
+      },
+      "associatedProtocol": {
+        "@id": "bia:associatedProtocol",
+        "@container": "@set"
+      },
+      "associatedSourceImage": {
+        "@id": "bia:associatedSourceImage",
+        "@container": "@set"
+      },
+      "associatedSpecimen": {
+        "@id": "bia:associatedSubject"
+      },
+      "associatedSpecimenImagingPreparationProtocol": {
+        "@id": "bia:associatedImagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "author": {
+        "@id": "schema:author",
+        "@container": "@set"
+      },
+      "authorNames": {
+        "@id": "bia:authorNames"
+      },
+      "bia": "http://bia/",
+      "biologicalEntity": {
+        "@id": "bia:sampleOf",
+        "@container": "@set"
+      },
+      "channelBiologicalEntity": {
+        "@id": "bia:channelBiologicalEntity"
+      },
+      "channelContentDescription": {
+        "@id": "bia:channelContentDescription"
+      },
+      "column": {
+        "@id": "csvw:column",
+        "@container": "@set"
+      },
+      "columnName": {
+        "@id": "csvw:name"
+      },
+      "commonName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/vernacularName"
+      },
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "datePublished": {
+        "@id": "schema:datePublished"
+      },
+      "dc": "http://purl.org/dc/terms/",
+      "description": {
+        "@id": "schema:description"
+      },
+      "doi": {
+        "@id": "bia:doi"
+      },
+      "email": {
+        "@id": "schema:email"
+      },
+      "experimentalVariableDescription": {
+        "@id": "bia:experimentalVariableDescription",
+        "@container": "@set"
+      },
+      "extrinsicVariableDescription": {
+        "@id": "bia:extrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "fbbiId": {
+        "@id": "bia:fbbiId",
+        "@container": "@set"
+      },
+      "featuresAnalysed": {
+        "@id": "bia:featuresAnalysed"
+      },
+      "fiducialsUsed": {
+        "@id": "bia:fiducialsUsed"
+      },
+      "funder": {
+        "@id": "schema:funder",
+        "@container": "@set"
+      },
+      "funding": {
+        "@id": "schema:funding",
+        "@container": "@set"
+      },
+      "growthProtocol": {
+        "@id": "bia:growthProtocol"
+      },
+      "hasPart": {
+        "@id": "schema:hasPart",
+        "@container": "@set"
+      },
+      "identifier": {
+        "@id": "schema:identifier"
+      },
+      "imageAcquisitionProtocol": {
+        "@id": "bia:imageAcquisitionProtocol",
+        "@container": "@set"
+      },
+      "imagingInstrumentDescription": {
+        "@id": "bia:imagingInstrumentDescription"
+      },
+      "imagingMethodName": {
+        "@id": "bia:imagingMethodName",
+        "@container": "@set"
+      },
+      "imagingPreparationProtocol": {
+        "@id": "bia:imagingPreparationProtocol",
+        "@container": "@set"
+      },
+      "inputImage": {
+        "@id": "bia:inputImage",
+        "@container": "@set"
+      },
+      "intrinsicVariableDescription": {
+        "@id": "bia:intrinsicVariableDescription",
+        "@container": "@set"
+      },
+      "keywords": {
+        "@id": "schema:keywords",
+        "@container": "@set"
+      },
+      "license": {
+        "@id": "schema:license"
+      },
+      "memberOf": {
+        "@id": "schema:memberOf",
+        "@container": "@set"
+      },
+      "methodType": {
+        "@id": "bia:annotationMethodType",
+        "@container": "@set"
+      },
+      "name": {
+        "@id": "schema:name"
+      },
+      "organismClassification": {
+        "@id": "schema:taxonomicRange",
+        "@container": "@set"
+      },
+      "propertyUrl": {
+        "@id": "csvw:propertyUrl"
+      },
+      "protocol": {
+        "@id": "bia:protocol",
+        "@container": "@set"
+      },
+      "pubmedId": {
+        "@id": "bia:pubmedId"
+      },
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "relatedPublication": {
+        "@id": "bia:relatedPublication",
+        "@container": "@set"
+      },
+      "resultOf": {
+        "@id": "bia:resultOf"
+      },
+      "role": {
+        "@id": "bia:role",
+        "@container": "@set"
+      },
+      "schema": "http://schema.org/",
+      "scientificName": {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      },
+      "seeAlso": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@container": "@set"
+      },
+      "signalChannelInformation": {
+        "@id": "bia:signalChannelInformation",
+        "@container": "@set"
+      },
+      "signalContrastMechanismDescription": {
+        "@id": "bia:signalContrastMechanismDescription"
+      },
+      "spatialInformation": {
+        "@id": "bia:spatialInformation"
+      },
+      "subject": {
+        "@id": "bia:subject"
+      },
+      "tableSchema": {
+        "@id": "csvw:tableSchema"
+      },
+      "transformationDescription": {
+        "@id": "bia:transformationDescription"
+      },
+      "transformationMatrix": {
+        "@id": "bia:transformationMatrix"
+      },
+      "website": {
+        "@id": "bia:website"
+      },
+      "yearPublished": {
+        "@id": "bia:yearPublished"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "NCBI:txid9606",
+      "@type": "bia:Taxon",
+      "scientificName": "Homo sapiens",
+      "commonName": "human"
+    },
+    {
+      "@id": "NCBI:txid10090",
+      "@type": "bia:Taxon",
+      "scientificName": "Mus musculus",
+      "commonName": "house mouse"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "bia:BioSample",
+      "name": "tissue",
+      "description": "tissue",
+      "organismClassification": [
+        {
+          "@id": "NCBI:txid9606"
+        }
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-bright-field-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "imagingInstrumentDescription": "bright-field microscopy",
+      "imagingMethodName": [
+        "bright-field microscopy"
+      ],
+      "fbbiId": [
+        "Fbbi_00000243"
+      ]
+    },
+    {
+      "@id": "#image-acquisition-protocol-fluorescence-microscopy",
+      "@type": "bia:ImageAcquisitionProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "imagingInstrumentDescription": "fluorescence microscopy",
+      "imagingMethodName": [
+        "fluorescence microscopy"
+      ],
+      "fbbiId": [
+        "FBbi_00000246"
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pgen.1010777",
+      "@type": "bia:Publication",
+      "name": "Spatial transcriptomics reveals novel genes during the remodelling of the embryonic human arterial valves",
+      "doi": "https://doi.org/10.1371/journal.pgen.1010777",
+      "pubmedId": "38011284",
+      "authorNames": "Queen R, Crosier M, Eley L, Kerwin J, Turner JE, Yu J, Alqahtani A, Dhanaseelan T, Overman L, Soetjoadi H, Baldock R, Coxhead J, Boczonadi V, Laude A, Cockell SJ, Kane MA, Lisgo S, Henderson DJ"
+    },
+    {
+      "@id": "#affiliation-hdbr-newcastle-university-international-centre-for-life-newcastle-ne1-4ep",
+      "@type": [
+        "Organisation",
+        "bia:Affiliation"
+      ],
+      "name": "HDBR, Newcastle University, International Centre for Life, Newcastle, NE1 4EP"
+    },
+    {
+      "@id": "#author-0",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Queen R",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-1",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Crosier M",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-2",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Eley L",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-3",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Kerwin J",
+      "memberOf": [
+        {
+          "@id": "#affiliation-hdbr-newcastle-university-international-centre-for-life-newcastle-ne1-4ep"
+        }
+      ],
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-4",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Turner JE",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-5",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Yu J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-6",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Alqahtani A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-7",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Dhanaseelan T",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-8",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Overman L",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-9",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Soetjoadi H",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-10",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Baldock R",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-11",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Coxhead J",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-12",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Boczonadi V",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-13",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Laude A",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-14",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Cockell SJ",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-15",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Kane MA",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-16",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Lisgo S",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#author-17",
+      "@type": [
+        "Person",
+        "bia:Contributor"
+      ],
+      "name": "Henderson DJ",
+      "role": [
+        "author"
+      ]
+    },
+    {
+      "@id": "#Dataset-18151",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Human_HE",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-18152",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Human_IF",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-18153",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Mouse_HE",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-18154",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/Mouse_IF",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "#Dataset-18155",
+      "@type": [
+        "Dataset",
+        "bia:Dataset"
+      ],
+      "name": "experimentA/RNAscope",
+      "associatedBiologicalEntity": [
+        {
+          "@id": "#biosample-1"
+        }
+      ],
+      "associatedImageAcquisitionProtocol": [
+        {
+          "@id": "#image-acquisition-protocol-bright-field-microscopy"
+        },
+        {
+          "@id": "#image-acquisition-protocol-fluorescence-microscopy"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "bia:Study"
+      ],
+      "name": "Novel genes in human embryonic arterial valves",
+      "description": "Validation of novel genes identified by Spatial Transcriptomics in human embryonic arterial valves at CS16 and CS19.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2024-03-05",
+      "author": [
+        {
+          "@id": "#author-0"
+        },
+        {
+          "@id": "#author-1"
+        },
+        {
+          "@id": "#author-2"
+        },
+        {
+          "@id": "#author-3"
+        },
+        {
+          "@id": "#author-4"
+        },
+        {
+          "@id": "#author-5"
+        },
+        {
+          "@id": "#author-6"
+        },
+        {
+          "@id": "#author-7"
+        },
+        {
+          "@id": "#author-8"
+        },
+        {
+          "@id": "#author-9"
+        },
+        {
+          "@id": "#author-10"
+        },
+        {
+          "@id": "#author-11"
+        },
+        {
+          "@id": "#author-12"
+        },
+        {
+          "@id": "#author-13"
+        },
+        {
+          "@id": "#author-14"
+        },
+        {
+          "@id": "#author-15"
+        },
+        {
+          "@id": "#author-16"
+        },
+        {
+          "@id": "#author-17"
+        }
+      ],
+      "keywords": [
+        "bright-field microscopy",
+        "fluorescence microscopy",
+        "Human embryo"
+      ],
+      "hasPart": [
+        {
+          "@id": "#Dataset-18151"
+        },
+        {
+          "@id": "#Dataset-18152"
+        },
+        {
+          "@id": "#Dataset-18153"
+        },
+        {
+          "@id": "#Dataset-18154"
+        },
+        {
+          "@id": "#Dataset-18155"
+        },
+        {
+          "@id": "file_list.tsv"
+        }
+      ],
+      "accessionId": "IDR0154",
+      "doi": "https://doi.org/10.17867/10000196",
+      "pubmedId": "38011284",
+      "imagingMethodName": [
+        "bright-field microscopy",
+        "fluorescence microscopy"
+      ],
+      "relatedPublication": [
+        {
+          "@id": "https://doi.org/10.1371/journal.pgen.1010777"
+        }
+      ]
+    },
+    {
+      "@id": "_:ts0",
+      "@type": [
+        "csvw:Schema"
+      ],
+      "column": [
+        {
+          "@id": "_:col0"
+        },
+        {
+          "@id": "_:col1"
+        },
+        {
+          "@id": "_:col2"
+        },
+        {
+          "@id": "_:col3"
+        }
+      ]
+    },
+    {
+      "@id": "_:col0",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "file_path",
+      "propertyUrl": "http://bia/filePath"
+    },
+    {
+      "@id": "_:col1",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "dataset",
+      "propertyUrl": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "_:col2",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "type",
+      "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    {
+      "@id": "_:col3",
+      "@type": [
+        "csvw:Column"
+      ],
+      "columnName": "size_in_bytes",
+      "propertyUrl": "http://bia/fileSize"
+    },
+    {
+      "@id": "file_list.tsv",
+      "@type": [
+        "File",
+        "bia:FileList",
+        "csvw:Table"
+      ],
+      "tableSchema": {
+        "@id": "_:ts0"
+      }
+    }
+  ]
+}

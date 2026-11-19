@@ -1,0 +1,97 @@
+file_path	dataset	type	size_in_bytes
+experimentA/Human_HE/CS16_Well31_brightfield_resized.ome.zarr.zip	#Dataset-18151	http://bia/Image	1453380466
+experimentA/Human_HE/CS16_Well31_brightfield_resized.ome.zarr.log	#Dataset-18151	http://bia/File	497
+experimentA/Human_HE/CS19_Well31_Brightfield_Seq0004.ome.zarr.zip	#Dataset-18151	http://bia/Image	228683265
+experimentA/Human_HE/CS19_Well31_Brightfield_Seq0004.ome.zarr.log	#Dataset-18151	http://bia/File	497
+experimentA/Human_IF/CS16 CRABP2 1_c1_2.ome.zarr.zip	#Dataset-18152	http://bia/Image	2495586
+experimentA/Human_IF/CS16 CRABP2 1_c1_2.ome.zarr.log	#Dataset-18152	http://bia/File	470
+experimentA/Human_IF/CS16 Galectin 1_2_c1_2.ome.zarr.zip	#Dataset-18152	http://bia/Image	2228761
+experimentA/Human_IF/CS16 Galectin 1_2_c1_2.ome.zarr.log	#Dataset-18152	http://bia/File	478
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 10.ome.zarr.zip	#Dataset-18153	http://bia/Image	4188895
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 10.ome.zarr.log	#Dataset-18153	http://bia/File	538
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 11.ome.zarr.zip	#Dataset-18153	http://bia/Image	4147999
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 11.ome.zarr.log	#Dataset-18153	http://bia/File	538
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 26.ome.zarr.zip	#Dataset-18153	http://bia/Image	4413092
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 26.ome.zarr.log	#Dataset-18153	http://bia/File	538
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 27.ome.zarr.zip	#Dataset-18153	http://bia/Image	4484254
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 27.ome.zarr.log	#Dataset-18153	http://bia/File	538
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 29.ome.zarr.zip	#Dataset-18153	http://bia/Image	4450216
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 29.ome.zarr.log	#Dataset-18153	http://bia/File	538
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 38.ome.zarr.zip	#Dataset-18153	http://bia/Image	4325963
+experimentA/Mouse_HE/851 2 RBP1 KO P1 T Sectioned head to tail 38.ome.zarr.log	#Dataset-18153	http://bia/File	538
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 10 copy.ome.zarr.zip	#Dataset-18153	http://bia/Image	4678840
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 10 copy.ome.zarr.log	#Dataset-18153	http://bia/File	554
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 10.ome.zarr.zip	#Dataset-18153	http://bia/Image	4678000
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 10.ome.zarr.log	#Dataset-18153	http://bia/File	542
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 28.ome.zarr.zip	#Dataset-18153	http://bia/Image	4874731
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 28.ome.zarr.log	#Dataset-18153	http://bia/File	542
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 4.ome.zarr.zip	#Dataset-18153	http://bia/Image	4652251
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 4.ome.zarr.log	#Dataset-18153	http://bia/File	540
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 5.ome.zarr.zip	#Dataset-18153	http://bia/Image	4593310
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 5.ome.zarr.log	#Dataset-18153	http://bia/File	540
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 7.ome.zarr.zip	#Dataset-18153	http://bia/Image	4606809
+experimentA/Mouse_HE/872 2 RBP1 KO 15.5 T Sectioned tail to head 7.ome.zarr.log	#Dataset-18153	http://bia/File	540
+experimentA/Mouse_HE/872 3 RBP1 KO 15.5 T Sectioned tail to head 18.ome.zarr.zip	#Dataset-18153	http://bia/Image	5011649
+experimentA/Mouse_HE/872 3 RBP1 KO 15.5 T Sectioned tail to head 18.ome.zarr.log	#Dataset-18153	http://bia/File	542
+experimentA/Mouse_HE/872 3 RBP1 KO 15.5 T Sectioned tail to head 23.ome.zarr.zip	#Dataset-18153	http://bia/Image	5054516
+experimentA/Mouse_HE/872 3 RBP1 KO 15.5 T Sectioned tail to head 23.ome.zarr.log	#Dataset-18153	http://bia/File	542
+experimentA/Mouse_HE/872 3 RBP1 KO 15.5 T Sectioned tail to head 24.ome.zarr.zip	#Dataset-18153	http://bia/Image	5060312
+experimentA/Mouse_HE/872 3 RBP1 KO 15.5 T Sectioned tail to head 24.ome.zarr.log	#Dataset-18153	http://bia/File	542
+experimentA/Mouse_HE/872 4 RBP1 KO 15.5 T Sectioned tail to head 18.ome.zarr.zip	#Dataset-18153	http://bia/Image	5030577
+experimentA/Mouse_HE/872 4 RBP1 KO 15.5 T Sectioned tail to head 18.ome.zarr.log	#Dataset-18153	http://bia/File	542
+experimentA/Mouse_HE/872 4 RBP1 KO 15.5 T Sectioned tail to head 6.ome.zarr.zip	#Dataset-18153	http://bia/Image	5066321
+experimentA/Mouse_HE/872 4 RBP1 KO 15.5 T Sectioned tail to head 6.ome.zarr.log	#Dataset-18153	http://bia/File	540
+experimentA/Mouse_HE/872 RBP1 KO 15.5 T Sectioned tail to head 12.ome.zarr.zip	#Dataset-18153	http://bia/Image	4734731
+experimentA/Mouse_HE/872 RBP1 KO 15.5 T Sectioned tail to head 12.ome.zarr.log	#Dataset-18153	http://bia/File	536
+experimentA/Mouse_HE/872 RBP1 KO 15.5 T Sectioned tail to head 32.ome.zarr.zip	#Dataset-18153	http://bia/Image	4355207
+experimentA/Mouse_HE/872 RBP1 KO 15.5 T Sectioned tail to head 32.ome.zarr.log	#Dataset-18153	http://bia/File	536
+experimentA/Mouse_HE/E15.5 WT_1.ome.zarr.zip	#Dataset-18153	http://bia/Image	4368202
+experimentA/Mouse_HE/E15.5 WT_1.ome.zarr.log	#Dataset-18153	http://bia/File	452
+experimentA/Mouse_HE/E15.5 WT_2.ome.zarr.zip	#Dataset-18153	http://bia/Image	4329523
+experimentA/Mouse_HE/E15.5 WT_2.ome.zarr.log	#Dataset-18153	http://bia/File	452
+experimentA/Mouse_HE/E15.5 WT_3.ome.zarr.zip	#Dataset-18153	http://bia/Image	4323254
+experimentA/Mouse_HE/E15.5 WT_3.ome.zarr.log	#Dataset-18153	http://bia/File	452
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 1.ome.zarr.zip	#Dataset-18153	http://bia/Image	4422800
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 1.ome.zarr.log	#Dataset-18153	http://bia/File	514
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 39.ome.zarr.zip	#Dataset-18153	http://bia/Image	4513306
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 39.ome.zarr.log	#Dataset-18153	http://bia/File	516
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 41.ome.zarr.zip	#Dataset-18153	http://bia/Image	4498610
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 41.ome.zarr.log	#Dataset-18153	http://bia/File	516
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 43.ome.zarr.zip	#Dataset-18153	http://bia/Image	4351271
+experimentA/Mouse_HE/P1 WT T 1 Sectioned head to rear 43.ome.zarr.log	#Dataset-18153	http://bia/File	516
+experimentA/Mouse_HE/P1 WT T 1 Sectioned rear to head 16.ome.zarr.zip	#Dataset-18153	http://bia/Image	4548673
+experimentA/Mouse_HE/P1 WT T 1 Sectioned rear to head 16.ome.zarr.log	#Dataset-18153	http://bia/File	516
+experimentA/Mouse_HE/P1 WT T 1 Sectioned rear to head 33.ome.zarr.zip	#Dataset-18153	http://bia/Image	4523483
+experimentA/Mouse_HE/P1 WT T 1 Sectioned rear to head 33.ome.zarr.log	#Dataset-18153	http://bia/File	516
+experimentA/Mouse_HE/P1 WT T 1 Sectioned rear to head 36.ome.zarr.zip	#Dataset-18153	http://bia/Image	4671637
+experimentA/Mouse_HE/P1 WT T 1 Sectioned rear to head 36.ome.zarr.log	#Dataset-18153	http://bia/File	516
+experimentA/Mouse_IF/CD1_E11.5T_CRABP2_Rb_568_02_c1_2 Hannah set 2.ome.zarr.zip	#Dataset-18154	http://bia/Image	2815140
+experimentA/Mouse_IF/CD1_E11.5T_CRABP2_Rb_568_02_c1_2 Hannah set 2.ome.zarr.log	#Dataset-18154	http://bia/File	529
+experimentA/Mouse_IF/CD1_E11.5T_RBP1_Rb_568_03_c1_2 Hannah set 2.ome.zarr.zip	#Dataset-18154	http://bia/Image	2585837
+experimentA/Mouse_IF/CD1_E11.5T_RBP1_Rb_568_03_c1_2 Hannah set 2.ome.zarr.log	#Dataset-18154	http://bia/File	525
+experimentA/Mouse_IF/CD1_E12.5T_RBP1_Rb_568_33_c1_2.ome.zarr.zip	#Dataset-18154	http://bia/Image	2581333
+experimentA/Mouse_IF/CD1_E12.5T_RBP1_Rb_568_33_c1_2.ome.zarr.log	#Dataset-18154	http://bia/File	493
+experimentA/Mouse_IF/CD1_E13.5T_RBP1_Rb_568_04_c1_2.ome.zarr.zip	#Dataset-18154	http://bia/Image	2645670
+experimentA/Mouse_IF/CD1_E13.5T_RBP1_Rb_568_04_c1_2.ome.zarr.log	#Dataset-18154	http://bia/File	493
+experimentA/Mouse_IF/Galectin _r_ E12.5 T Embryo 3-10_c1_2 _1_ Scale Bar.ome.zarr.zip	#Dataset-18154	http://bia/Image	3269436
+experimentA/Mouse_IF/Galectin _r_ E12.5 T Embryo 3-10_c1_2 _1_ Scale Bar.ome.zarr.log	#Dataset-18154	http://bia/File	552
+experimentA/RNAscope/1268_CS16_11_ID4-Change Scaling-02 2.ome.zarr.zip	#Dataset-18155	http://bia/Image	85663519
+experimentA/RNAscope/1268_CS16_11_ID4-Change Scaling-02 2.ome.zarr.log	#Dataset-18155	http://bia/File	511
+experimentA/RNAscope/1268_CS16_11_MXRA5-Change Scaling-04.ome.zarr.zip	#Dataset-18155	http://bia/Image	81030234
+experimentA/RNAscope/1268_CS16_11_MXRA5-Change Scaling-04.ome.zarr.log	#Dataset-18155	http://bia/File	509
+experimentA/RNAscope/1268_CS16_11_STX10_JT.ome.zarr.zip	#Dataset-18155	http://bia/Image	25007471
+experimentA/RNAscope/1268_CS16_11_STX10_JT.ome.zarr.log	#Dataset-18155	http://bia/File	477
+experimentA/RNAscope/1268_CS16_12_HES4-Change Scaling-05.ome.zarr.zip	#Dataset-18155	http://bia/Image	84274427
+experimentA/RNAscope/1268_CS16_12_HES4-Change Scaling-05.ome.zarr.log	#Dataset-18155	http://bia/File	507
+experimentA/RNAscope/1268_CS16_12_PDLIM-Change Scaling-06.ome.zarr.zip	#Dataset-18155	http://bia/Image	76750197
+experimentA/RNAscope/1268_CS16_12_PDLIM-Change Scaling-06.ome.zarr.log	#Dataset-18155	http://bia/File	509
+experimentA/RNAscope/CS16_1962_EIF2_S3_10X.ome.zarr.zip	#Dataset-18155	http://bia/Image	10035722
+experimentA/RNAscope/CS16_1962_EIF2_S3_10X.ome.zarr.log	#Dataset-18155	http://bia/File	477
+experimentA/RNAscope/CS19_Hotair_Section3_apotomestitched.ome.zarr.zip	#Dataset-18155	http://bia/Image	103120758
+experimentA/RNAscope/CS19_Hotair_Section3_apotomestitched.ome.zarr.log	#Dataset-18155	http://bia/File	507
+experimentA/RNAscope/RBP1 RNAScope CS16_Overview2 copy.ome.zarr.zip	#Dataset-18155	http://bia/Image	1306528
+experimentA/RNAscope/RBP1 RNAScope CS16_Overview2 copy.ome.zarr.log	#Dataset-18155	http://bia/File	659
+experimentA/RNAscope/RBP1 RNAScope CS19_Aortic Valve2.ome.zarr.zip	#Dataset-18155	http://bia/Image	2330339
+experimentA/RNAscope/RBP1 RNAScope CS19_Aortic Valve2.ome.zarr.log	#Dataset-18155	http://bia/File	657
+experimentA/RNAscope/RBP1 RNAScope CS20_13737_Overview4.ome.zarr.zip	#Dataset-18155	http://bia/Image	735406
+experimentA/RNAscope/RBP1 RNAScope CS20_13737_Overview4.ome.zarr.log	#Dataset-18155	http://bia/File	659

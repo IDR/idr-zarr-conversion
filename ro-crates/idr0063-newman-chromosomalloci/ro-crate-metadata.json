@@ -615,6 +615,11 @@
       "doi": "https://doi.org/10.17867/10000159",
       "imagingMethodName": [
         "spinning disk confocal microscopy"
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0063"
+        }
       ]
     },
     {

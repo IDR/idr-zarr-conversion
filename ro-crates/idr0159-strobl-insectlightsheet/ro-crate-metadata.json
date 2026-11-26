@@ -479,6 +479,11 @@
         {
           "@id": "https://doi.org/10.1242/dev.108795"
         }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0159"
+        }
       ]
     },
     {

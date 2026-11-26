@@ -1408,6 +1408,11 @@
         {
           "@id": "https://doi.org/10.7554/eLife.55963"
         }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0087"
+        }
       ]
     },
     {

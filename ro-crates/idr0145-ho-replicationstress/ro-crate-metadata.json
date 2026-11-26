@@ -804,6 +804,11 @@
         {
           "@id": "https://doi.org/10.7554/eLife.82483"
         }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0145"
+        }
       ]
     },
     {

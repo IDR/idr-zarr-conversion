@@ -668,6 +668,11 @@
         {
           "@id": "https://doi.org/10.1186/s12860-016-0111-y"
         }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0027"
+        }
       ]
     },
     {

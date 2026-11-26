@@ -617,6 +617,11 @@
         {
           "@id": "https://doi.org/10.1073/pnas.2025795118"
         }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0113"
+        }
       ]
     },
     {

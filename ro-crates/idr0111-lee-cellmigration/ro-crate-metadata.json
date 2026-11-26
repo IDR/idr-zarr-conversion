@@ -877,6 +877,11 @@
         {
           "@id": "https://doi.org/10.1038/s41598-021-89130-6"
         }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://idr.openmicroscopy.org/study/idr0111"
+        }
       ]
     },
     {

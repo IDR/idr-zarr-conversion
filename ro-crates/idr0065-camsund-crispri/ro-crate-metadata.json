@@ -306,6 +306,18 @@
       ]
     },
     {
+      "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "TODO!"
+    },
+    {
+      "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "TODO!"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41592-019-0629-y",
       "@type": "bia:Publication",
       "name": "Time-resolved imaging-based CRISPRi screening",
@@ -415,6 +427,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -434,6 +451,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -457,6 +479,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -476,6 +503,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -499,6 +531,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -518,6 +555,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -541,6 +583,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -560,6 +607,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -583,6 +635,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -602,6 +659,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -625,6 +687,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -644,6 +711,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -667,6 +739,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -686,6 +763,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -709,6 +791,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -728,6 +815,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -751,6 +843,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -770,6 +867,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -793,6 +895,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -812,6 +919,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -835,6 +947,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -854,6 +971,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -877,6 +999,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -896,6 +1023,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -919,6 +1051,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -938,6 +1075,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -961,6 +1103,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -980,6 +1127,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1003,6 +1155,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1022,6 +1179,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1045,6 +1207,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1064,6 +1231,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1087,6 +1259,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1106,6 +1283,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1129,6 +1311,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1148,6 +1335,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1171,6 +1363,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1190,6 +1387,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1213,6 +1415,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1232,6 +1439,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1255,6 +1467,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1274,6 +1491,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1297,6 +1519,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1316,6 +1543,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1339,6 +1571,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1358,6 +1595,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1381,6 +1623,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1400,6 +1647,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1423,6 +1675,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1442,6 +1699,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1465,6 +1727,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1484,6 +1751,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1507,6 +1779,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1526,6 +1803,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1549,6 +1831,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1568,6 +1855,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1591,6 +1883,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1610,6 +1907,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1633,6 +1935,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1652,6 +1959,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1675,6 +1987,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1694,6 +2011,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1717,6 +2039,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1736,6 +2063,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1759,6 +2091,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1778,6 +2115,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1801,6 +2143,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1820,6 +2167,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1843,6 +2195,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1862,6 +2219,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1885,6 +2247,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1904,6 +2271,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1927,6 +2299,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1946,6 +2323,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1969,6 +2351,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -1988,6 +2375,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2011,6 +2403,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2030,6 +2427,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2053,6 +2455,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2072,6 +2479,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2095,6 +2507,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2114,6 +2531,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2137,6 +2559,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2156,6 +2583,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2179,6 +2611,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2198,6 +2635,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2221,6 +2663,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2240,6 +2687,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2263,6 +2715,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2282,6 +2739,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2305,6 +2767,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2324,6 +2791,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2347,6 +2819,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2366,6 +2843,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2389,6 +2871,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2408,6 +2895,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2431,6 +2923,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2450,6 +2947,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2473,6 +2975,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2492,6 +2999,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2515,6 +3027,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2534,6 +3051,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2557,6 +3079,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2576,6 +3103,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2599,6 +3131,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2618,6 +3155,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2641,6 +3183,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2660,6 +3207,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2683,6 +3235,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2702,6 +3259,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2725,6 +3287,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2744,6 +3311,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2767,6 +3339,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2786,6 +3363,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2809,6 +3391,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2828,6 +3415,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2851,6 +3443,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2870,6 +3467,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2893,6 +3495,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2912,6 +3519,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2935,6 +3547,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2954,6 +3571,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -2977,6 +3599,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -2996,6 +3623,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3019,6 +3651,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3038,6 +3675,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3061,6 +3703,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3080,6 +3727,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3103,6 +3755,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3122,6 +3779,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3145,6 +3807,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3164,6 +3831,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3187,6 +3859,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3206,6 +3883,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3229,6 +3911,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3248,6 +3935,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3271,6 +3963,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3290,6 +3987,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3313,6 +4015,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3332,6 +4039,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3355,6 +4067,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3374,6 +4091,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3397,6 +4119,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3416,6 +4143,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3439,6 +4171,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3458,6 +4195,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3481,6 +4223,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3500,6 +4247,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3523,6 +4275,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3542,6 +4299,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3565,6 +4327,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3584,6 +4351,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3607,6 +4379,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3626,6 +4403,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -3649,6 +4431,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-phase-contrast-microscopy"
@@ -3668,6 +4455,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0065-camsund-crispri-experimentb"
         }
       ],
       "associatedImageAcquisitionProtocol": [

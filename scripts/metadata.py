@@ -524,15 +524,14 @@ def build_crate(
             component["data"].get("Protocol Description", "") if component
             else study.get("Protocol Description", "")
         ).strip()
-        if protocol_description:
-            preparation_id = f"#specimen-imaging-preparation-protocol-{slugify(container_name)}"
-            graph.append({
-                "@id": preparation_id,
-                "@type": "bia:SpecimenImagingPreparationProtocol",
-                "name": "Specimen imaging preparation protocol",
-                "description": protocol_description,
-            })
-            container_preparation_refs[container_name] = [{"@id": preparation_id}]
+        preparation_id = f"#specimen-imaging-preparation-protocol-{slugify(container_name)}"
+        graph.append({
+            "@id": preparation_id,
+            "@type": "bia:SpecimenImagingPreparationProtocol",
+            "name": "Specimen imaging preparation protocol",
+            "description": protocol_description or "TODO!",
+        })
+        container_preparation_refs[container_name] = [{"@id": preparation_id}]
 
     # Datasets / plates, across every container in the study
     for entry in containers_info:

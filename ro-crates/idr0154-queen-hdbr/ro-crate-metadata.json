@@ -312,6 +312,12 @@
       ]
     },
     {
+      "@id": "#specimen-imaging-preparation-protocol-idr0154-queen-hdbr-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "TODO!"
+    },
+    {
       "@id": "https://doi.org/10.1371/journal.pgen.1010777",
       "@type": "bia:Publication",
       "name": "Spatial transcriptomics reveals novel genes during the remodelling of the embryonic human arterial valves",
@@ -542,6 +548,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0154-queen-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -561,6 +572,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0154-queen-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -584,6 +600,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0154-queen-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -605,6 +626,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0154-queen-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -624,6 +650,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0154-queen-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [

@@ -306,6 +306,12 @@
       ]
     },
     {
+      "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta",
+      "@type": "bia:SpecimenImagingPreparationProtocol",
+      "name": "Specimen imaging preparation protocol",
+      "description": "TODO!"
+    },
+    {
       "@id": "https://doi.org/10.1111/joa.13644",
       "@type": "bia:Publication",
       "name": "Tyramide signal amplification coupled with multiple immunolabeling and RNAScope in situ hybridization in formaldehyde-fixed paraffin-embedded human fetal brain",
@@ -393,6 +399,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -412,6 +423,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -435,6 +451,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -454,6 +475,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -477,6 +503,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -496,6 +527,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -519,6 +555,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -538,6 +579,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -561,6 +607,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -580,6 +631,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -603,6 +659,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -622,6 +683,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -645,6 +711,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -664,6 +735,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -687,6 +763,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -706,6 +787,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -729,6 +815,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -748,6 +839,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -771,6 +867,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -790,6 +891,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -813,6 +919,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -832,6 +943,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -855,6 +971,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -874,6 +995,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -897,6 +1023,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -916,6 +1047,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -939,6 +1075,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -958,6 +1099,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -981,6 +1127,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1000,6 +1151,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1023,6 +1179,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1042,6 +1203,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1065,6 +1231,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1084,6 +1255,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1107,6 +1283,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1126,6 +1307,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1149,6 +1335,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1168,6 +1359,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1191,6 +1387,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1210,6 +1411,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1233,6 +1439,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1252,6 +1463,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1275,6 +1491,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1294,6 +1515,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1317,6 +1543,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1336,6 +1567,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1359,6 +1595,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1378,6 +1619,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1401,6 +1647,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1420,6 +1671,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1443,6 +1699,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1462,6 +1723,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1485,6 +1751,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1504,6 +1775,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1527,6 +1803,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1546,6 +1827,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1569,6 +1855,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1588,6 +1879,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1611,6 +1907,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1630,6 +1931,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1653,6 +1959,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1672,6 +1983,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
@@ -1695,6 +2011,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1716,6 +2037,11 @@
           "@id": "#biosample-1"
         }
       ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
+        }
+      ],
       "associatedImageAcquisitionProtocol": [
         {
           "@id": "#image-acquisition-protocol-bright-field-microscopy"
@@ -1735,6 +2061,11 @@
       "associatedBiologicalEntity": [
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "associatedSpecimenImagingPreparationProtocol": [
+        {
+          "@id": "#specimen-imaging-preparation-protocol-idr0164-alzubi-hdbr-experimenta"
         }
       ],
       "associatedImageAcquisitionProtocol": [
